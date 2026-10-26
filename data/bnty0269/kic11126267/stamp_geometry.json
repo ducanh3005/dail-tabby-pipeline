@@ -1,0 +1,119 @@
+{
+  "aperture_extension": {
+    "bitpix": 32,
+    "extname": "APERTURE",
+    "naxis1": 5,
+    "naxis2": 4,
+    "shape_row_major": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "target_flat_indices_layout_A": [
+      10,
+      11,
+      15
+    ],
+    "target_pixel_count": 3,
+    "value_counts": {
+      "1": 17,
+      "3": 3
+    }
+  },
+  "generated_by": "src/run_pipeline.py",
+  "lc_file": "kplr011126267-2010355172524_llc.fits",
+  "orientation_tests": {
+    "T1_ratio_A": 1.0000000181321733,
+    "T1_ratio_B": 0.1311108113930006,
+    "T3_peak_placement": {
+      "aperture_value_at_peak_layout_A": 1,
+      "peak_flat_index": 16,
+      "peak_value_e_per_s": 206188.796875,
+      "probe_cadence_index": 200
+    },
+    "T4_always_nan_placement": {
+      "always_nan_flat_indices": [],
+      "n_aperture_zero_pixels": 0,
+      "n_cadences": 4375
+    },
+    "layout_A_name": "A_5wide_4tall",
+    "layout_B_name": "B_4wide_5tall",
+    "per_layout": {
+      "A_5wide_4tall": {
+        "T1_median_SAP_FLUX": 20196.748046875,
+        "T1_median_sum_target_px": 20196.748413085938,
+        "T1_ratio_sum_target_over_SAP_FLUX": 1.0000000181321733,
+        "T2_mean_offset_x_px": -707.2346207034891,
+        "T2_mean_offset_y_px": -842.5038616333823,
+        "T2_pearson_r_cx_vs_MOM_CENTR1": -0.5336563563106379,
+        "T2_pearson_r_cy_vs_MOM_CENTR2": 0.2204520931732313,
+        "T2_scatter_x_mpix": 237.6861661813474,
+        "T2_scatter_y_mpix": 284.1264859918682,
+        "n_cadences": 4227,
+        "n_target_pixels": 3,
+        "ncol": 5,
+        "target_flat_indices": [
+          10,
+          11,
+          15
+        ]
+      },
+      "B_4wide_5tall": {
+        "T1_median_SAP_FLUX": 20196.748046875,
+        "T1_median_sum_target_px": 2648.0120239257812,
+        "T1_ratio_sum_target_over_SAP_FLUX": 0.1311108113930006,
+        "T2_mean_offset_x_px": -706.0186493036263,
+        "T2_mean_offset_y_px": -843.9504479152789,
+        "T2_pearson_r_cx_vs_MOM_CENTR1": 0.16932891207575568,
+        "T2_pearson_r_cy_vs_MOM_CENTR2": -0.35448901770896724,
+        "T2_scatter_x_mpix": 168.6748828271754,
+        "T2_scatter_y_mpix": 396.89462281440757,
+        "n_cadences": 4227,
+        "n_target_pixels": 3,
+        "ncol": 4,
+        "target_flat_indices": [
+          2,
+          3,
+          6
+        ]
+      }
+    },
+    "votes": [
+      "A",
+      "A"
+    ],
+    "winner": "A"
+  },
+  "pos_corr_quality0": {
+    "corr_cx_poscorr1": 0.8210034572652241,
+    "corr_cy_poscorr2": -0.6996280001621148,
+    "n_cadences_used": 3511
+  },
+  "target_kepid": 11126267,
+  "tpf_file": "kplr011126267-2010355172524_lpd-targ.fits"
+}

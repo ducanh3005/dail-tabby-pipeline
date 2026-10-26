@@ -1,0 +1,182 @@
+{
+  "gate1_passed": true,
+  "generated_by": "src/run_pipeline.py",
+  "negative_controls": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition FROM cumulative WHERE kepid IN (99999998,99999999)",
+    "raw_csv": "kepid,kepoi_name,koi_disposition",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition+FROM+cumulative+WHERE+kepid+IN+%2899999998%2C99999999%29&format=csv"
+  },
+  "positive_controls": {
+    "n_rows": 4,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period FROM cumulative WHERE kepid IN (10963065,11904151,9101271) ORDER BY kepid,kepoi_name",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period\n9101271,\"K07926.01\",\"FALSE POSITIVE\",\"FALSE POSITIVE\",1,0,0,0,29.3657204\n10963065,\"K01612.01\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,2.465024332\n11904151,\"K00072.01\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,0.837491225\n11904151,\"K00072.02\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,45.29422297",
+    "rows": [
+      {
+        "kepid": "9101271",
+        "kepoi_name": "K07926.01",
+        "koi_disposition": "FALSE POSITIVE",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "1",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "FALSE POSITIVE",
+        "koi_period": "29.3657204"
+      },
+      {
+        "kepid": "10963065",
+        "kepoi_name": "K01612.01",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "2.465024332"
+      },
+      {
+        "kepid": "11904151",
+        "kepoi_name": "K00072.01",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "0.837491225"
+      },
+      {
+        "kepid": "11904151",
+        "kepoi_name": "K00072.02",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "45.29422297"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period+FROM+cumulative+WHERE+kepid+IN+%2810963065%2C11904151%2C9101271%29+ORDER+BY+kepid%2Ckepoi_name&format=csv"
+  },
+  "target_cumulative": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment FROM cumulative WHERE kepid=7431659",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_vet_stat%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_num_transits%2Ckoi_comment+FROM+cumulative+WHERE+kepid%3D7431659&format=csv"
+  },
+  "target_dr25_tces": {
+    "n_rows": 1,
+    "query": "SELECT kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_model_snr,tce_num_transits,tce_dicco_msky,tce_dikco_msky FROM q1_q17_dr25_tce WHERE kepid=7431659 ORDER BY tce_plnt_num ASC",
+    "raw_csv": "kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_model_snr,tce_num_transits,tce_dicco_msky,tce_dikco_msky\n7431659,1,1.04984,131.843,12.6,2.65e+04,110.8,86,0.10151,0.39225",
+    "rows": [
+      {
+        "kepid": "7431659",
+        "tce_depth": "2.65e+04",
+        "tce_dicco_msky": "0.10151",
+        "tce_dikco_msky": "0.39225",
+        "tce_duration": "12.6",
+        "tce_model_snr": "110.8",
+        "tce_num_transits": "86",
+        "tce_period": "1.04984",
+        "tce_plnt_num": "1",
+        "tce_time0bk": "131.843"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_model_snr%2Ctce_num_transits%2Ctce_dicco_msky%2Ctce_dikco_msky+FROM+q1_q17_dr25_tce+WHERE+kepid%3D7431659+ORDER+BY+tce_plnt_num+ASC&format=csv"
+  },
+  "target_kepid": 7431659,
+  "target_keplerstellar": {
+    "n_rows": 5,
+    "query": "SELECT kepid,tm_designation,ra,dec,kepmag,teff,logg,feh,radius,mass,dens FROM keplerstellar WHERE kepid=7431659 ORDER BY radius ASC",
+    "raw_csv": "kepid,tm_designation,ra,dec,kepmag,teff,logg,feh,radius,mass,dens\n7431659,\"2MASS J19092969+4301384\",287.373720,43.027359,16.248,3422,4.914,0.000,0.334,0.3340,12.62\n7431659,\"2MASS J19092969+4301384\",287.373720,43.027359,16.248,3422,4.914,0.000,0.334,0.3340,12.62\n7431659,\"2MASS J19092969+4301384\",287.373720,43.027359,16.248,3417,4.899,0.000,0.350,0.3540,11.63\n7431659,\"2MASS J19092969+4301384\",287.373720,43.027359,16.248,3417,4.899,0.000,0.350,0.3540,11.63\n7431659,\"2MASS J19092969+4301384\",287.373720,43.027359,16.248,3626,4.319,0.565,0.848,,",
+    "rows": [
+      {
+        "dec": "43.027359",
+        "dens": "12.62",
+        "feh": "0.000",
+        "kepid": "7431659",
+        "kepmag": "16.248",
+        "logg": "4.914",
+        "mass": "0.3340",
+        "ra": "287.373720",
+        "radius": "0.334",
+        "teff": "3422",
+        "tm_designation": "2MASS J19092969+4301384"
+      },
+      {
+        "dec": "43.027359",
+        "dens": "12.62",
+        "feh": "0.000",
+        "kepid": "7431659",
+        "kepmag": "16.248",
+        "logg": "4.914",
+        "mass": "0.3340",
+        "ra": "287.373720",
+        "radius": "0.334",
+        "teff": "3422",
+        "tm_designation": "2MASS J19092969+4301384"
+      },
+      {
+        "dec": "43.027359",
+        "dens": "11.63",
+        "feh": "0.000",
+        "kepid": "7431659",
+        "kepmag": "16.248",
+        "logg": "4.899",
+        "mass": "0.3540",
+        "ra": "287.373720",
+        "radius": "0.350",
+        "teff": "3417",
+        "tm_designation": "2MASS J19092969+4301384"
+      },
+      {
+        "dec": "43.027359",
+        "dens": "11.63",
+        "feh": "0.000",
+        "kepid": "7431659",
+        "kepmag": "16.248",
+        "logg": "4.899",
+        "mass": "0.3540",
+        "ra": "287.373720",
+        "radius": "0.350",
+        "teff": "3417",
+        "tm_designation": "2MASS J19092969+4301384"
+      },
+      {
+        "dec": "43.027359",
+        "dens": "",
+        "feh": "0.565",
+        "kepid": "7431659",
+        "kepmag": "16.248",
+        "logg": "4.319",
+        "mass": "",
+        "ra": "287.373720",
+        "radius": "0.848",
+        "teff": "3626",
+        "tm_designation": "2MASS J19092969+4301384"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ctm_designation%2Cra%2Cdec%2Ckepmag%2Cteff%2Clogg%2Cfeh%2Cradius%2Cmass%2Cdens+FROM+keplerstellar+WHERE+kepid%3D7431659+ORDER+BY+radius+ASC&format=csv"
+  },
+  "target_q1_q17_dr25_koi": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment FROM q1_q17_dr25_koi WHERE kepid=7431659",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_vet_stat%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_num_transits%2Ckoi_comment+FROM+q1_q17_dr25_koi+WHERE+kepid%3D7431659&format=csv"
+  },
+  "target_stellar_summary": {
+    "dec_deg": 43.027359,
+    "kepmag": 16.248,
+    "logg_cgs": 4.914,
+    "mass_msun": 0.334,
+    "ra_deg": 287.37372,
+    "radius_rsun": 0.334,
+    "teff_k": 3422.0,
+    "tm_designation": "2MASS J19092969+4301384"
+  },
+  "verdict": "PASS: 0 rows in cumulative and 0 rows in q1_q17_dr25_koi for kepid=7431659 (positive controls 10963065, 11904151, 9101271 returned 4 rows; negative controls returned 0 rows)."
+}

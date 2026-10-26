@@ -1,0 +1,223 @@
+{
+  "alias_band_best_2P": {
+    "dchi2": 20724528.5833,
+    "depth_pct": 2.9415,
+    "duration_d": 0.04,
+    "epoch_bkjd": 631.98295,
+    "even_depth_pct": 0.0,
+    "n_in_transit": 218,
+    "odd_depth_pct": 0.0001,
+    "odd_even_delta_pct": 0.0001,
+    "period_d": 671.7725311,
+    "sigma_out_pct": 1.4048,
+    "snr": 30.92
+  },
+  "alias_exact_2P": {
+    "dchi2": 2830301.8158,
+    "depth_pct": 0.9314,
+    "duration_d": 0.04,
+    "epoch_bkjd": 649.21073,
+    "even_depth_pct": 0.0003,
+    "n_in_transit": 214,
+    "odd_depth_pct": -0.0002,
+    "odd_even_delta_pct": 0.0005,
+    "period_d": 673.7939128,
+    "sigma_out_pct": 1.4801,
+    "snr": 9.21
+  },
+  "best_fit_P": {
+    "dchi2": 25079385.0368,
+    "depth_pct": 4.4112,
+    "duration_d": 0.08,
+    "epoch_bkjd": 294.90743,
+    "even_depth_pct": 0.0016,
+    "n_in_transit": 163,
+    "odd_depth_pct": 0.0,
+    "odd_even_delta_pct": 0.0016,
+    "period_d": 336.8969564,
+    "sigma_out_pct": 1.4105,
+    "snr": 39.93
+  },
+  "full_curve_n_cadences": 51502,
+  "full_curve_sigma_mad_pct": 0.0249,
+  "full_curve_span_days": 1459.4893,
+  "full_curve_t_max_bkjd": 1591.0017,
+  "full_curve_t_min_bkjd": 131.5124,
+  "generated_by": "src/run_pipeline.py",
+  "n_quarters_analyzed": 14,
+  "n_quarters_available": 14,
+  "q7_standalone_at_2P": {
+    "dchi2": 42356870.4955,
+    "depth_pct": 3.367,
+    "duration_d": 0.054,
+    "epoch_bkjd": 649.25586,
+    "even_depth_pct": null,
+    "n_in_transit": 1727,
+    "odd_depth_pct": null,
+    "odd_even_delta_pct": null,
+    "period_d": 673.7939128,
+    "sigma_out_pct": 4.9036,
+    "snr": 28.53
+  },
+  "q7_standalone_at_P": {
+    "dchi2": 19039902.7022,
+    "depth_pct": 2.5716,
+    "duration_d": 0.256,
+    "epoch_bkjd": 631.94324,
+    "even_depth_pct": null,
+    "n_in_transit": 2139,
+    "odd_depth_pct": null,
+    "odd_even_delta_pct": null,
+    "period_d": 336.8969564,
+    "sigma_out_pct": 4.1463,
+    "snr": 28.68
+  },
+  "quarters": [
+    {
+      "filename": "kplr011126267-2009166043257_llc.fits",
+      "n_cadences": 1624,
+      "quarter": 1,
+      "sigma_flat_mad_pct": 0.021546032381868994,
+      "span_days": 33.471122346833,
+      "t_max_bkjd": 164.9835332030052,
+      "t_min_bkjd": 131.5124108561722
+    },
+    {
+      "filename": "kplr011126267-2009259160929_llc.fits",
+      "n_cadences": 4070,
+      "quarter": 2,
+      "sigma_flat_mad_pct": 0.023399493301459635,
+      "span_days": 88.70195132211666,
+      "t_max_bkjd": 258.46704082997167,
+      "t_min_bkjd": 169.765089507855
+    },
+    {
+      "filename": "kplr011126267-2009350155506_llc.fits",
+      "n_cadences": 4134,
+      "quarter": 3,
+      "sigma_flat_mad_pct": 0.027283361934568498,
+      "span_days": 89.25120649176097,
+      "t_max_bkjd": 349.49590361191804,
+      "t_min_bkjd": 260.24469712015707
+    },
+    {
+      "filename": "kplr011126267-2010009091648_llc.fits",
+      "n_cadences": 1008,
+      "quarter": 4,
+      "sigma_flat_mad_pct": 0.02304711923770774,
+      "span_days": 20.821500873229525,
+      "t_max_bkjd": 373.2189037081189,
+      "t_min_bkjd": 352.39740283488936
+    },
+    {
+      "filename": "kplr011126267-2010174085026_llc.fits",
+      "n_cadences": 4486,
+      "quarter": 5,
+      "sigma_flat_mad_pct": 0.021631631989694488,
+      "span_days": 94.65121390088461,
+      "t_max_bkjd": 538.1624020483068,
+      "t_min_bkjd": 443.5111881474222
+    },
+    {
+      "filename": "kplr011126267-2010265121752_llc.fits",
+      "n_cadences": 4272,
+      "quarter": 6,
+      "sigma_flat_mad_pct": 0.0213094630186003,
+      "span_days": 89.8258293753679,
+      "t_max_bkjd": 629.2959956889972,
+      "t_min_bkjd": 539.4701663136293
+    },
+    {
+      "filename": "kplr011126267-2010355172524_llc.fits",
+      "n_cadences": 4226,
+      "quarter": 7,
+      "sigma_flat_mad_pct": 0.142402512791748,
+      "span_days": 89.35340170454583,
+      "t_max_bkjd": 719.5484319138122,
+      "t_min_bkjd": 630.1950302092664
+    },
+    {
+      "filename": "kplr011126267-2011177032512_llc.fits",
+      "n_cadences": 4608,
+      "quarter": 9,
+      "sigma_flat_mad_pct": 0.022680211933333926,
+      "span_days": 97.38942261771444,
+      "t_max_bkjd": 905.9262452113762,
+      "t_min_bkjd": 808.5368225936618
+    },
+    {
+      "filename": "kplr011126267-2011271113734_llc.fits",
+      "n_cadences": 4441,
+      "quarter": 10,
+      "sigma_flat_mad_pct": 0.023253551573395436,
+      "span_days": 93.40185118545196,
+      "t_max_bkjd": 1000.2680369298614,
+      "t_min_bkjd": 906.8661857444094
+    },
+    {
+      "filename": "kplr011126267-2012004120508_llc.fits",
+      "n_cadences": 4473,
+      "quarter": 11,
+      "sigma_flat_mad_pct": 0.03202860272902272,
+      "span_days": 97.09754245742079,
+      "t_max_bkjd": 1098.3258834690132,
+      "t_min_bkjd": 1001.2283410115924
+    },
+    {
+      "filename": "kplr011126267-2012179063303_llc.fits",
+      "n_cadences": 4241,
+      "quarter": 13,
+      "sigma_flat_mad_pct": 0.02451477013218891,
+      "span_days": 90.29879931268079,
+      "t_max_bkjd": 1273.0565879475544,
+      "t_min_bkjd": 1182.7577886348736
+    },
+    {
+      "filename": "kplr011126267-2012277125453_llc.fits",
+      "n_cadences": 4269,
+      "quarter": 14,
+      "sigma_flat_mad_pct": 0.02221089055094298,
+      "span_days": 97.16177428834635,
+      "t_max_bkjd": 1371.3217796766621,
+      "t_min_bkjd": 1274.1600053883158
+    },
+    {
+      "filename": "kplr011126267-2013011073258_llc.fits",
+      "n_cadences": 4366,
+      "quarter": 15,
+      "sigma_flat_mad_pct": 0.027742044350850016,
+      "span_days": 97.62881429593108,
+      "t_max_bkjd": 1471.1368848752827,
+      "t_min_bkjd": 1373.5080705793516
+    },
+    {
+      "filename": "kplr011126267-2013131215648_llc.fits",
+      "n_cadences": 1284,
+      "quarter": 17,
+      "sigma_flat_mad_pct": 0.02091396412723161,
+      "span_days": 31.754775076173246,
+      "t_max_bkjd": 1591.0017170017745,
+      "t_min_bkjd": 1559.2469419256013
+    }
+  ],
+  "quarters_coverage_pct": 100.0,
+  "ratio_dchi2_band_2P_over_P": 0.8264,
+  "ratio_dchi2_exact_2P_over_P": 0.1129,
+  "search_configuration": {
+    "broad_period_max_d": 400.0,
+    "broad_period_min_d": 1.0,
+    "detrend": "running median per quarter, window 200 cadences",
+    "dip_only": true,
+    "durations_days": [
+      0.04,
+      0.06,
+      0.08,
+      0.12,
+      0.16,
+      0.2
+    ],
+    "n_bins": 300,
+    "n_periods_searched": 81
+  },
+  "target_kepid": 11126267
+}

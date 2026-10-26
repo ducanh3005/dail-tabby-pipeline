@@ -1,0 +1,106 @@
+{
+  "alias_band_best_2P": {
+    "dchi2": 1216920.7957,
+    "depth_pct": 3.223,
+    "duration_d": 0.168,
+    "epoch_bkjd": 630.51396,
+    "even_depth_pct": 3.189,
+    "n_in_transit": 735,
+    "odd_depth_pct": 2.9452,
+    "odd_even_delta_pct": 0.2438,
+    "period_d": 2.099716,
+    "sigma_out_pct": 1.816,
+    "snr": 48.11
+  },
+  "alias_exact_2P": {
+    "dchi2": 1216920.7957,
+    "depth_pct": 3.223,
+    "duration_d": 0.168,
+    "epoch_bkjd": 630.51396,
+    "even_depth_pct": 3.189,
+    "n_in_transit": 735,
+    "odd_depth_pct": 2.9452,
+    "odd_even_delta_pct": 0.2438,
+    "period_d": 2.099716,
+    "sigma_out_pct": 1.816,
+    "snr": 48.11
+  },
+  "best_fit_P": {
+    "dchi2": 2921813.7879,
+    "depth_pct": 3.8261,
+    "duration_d": 0.4,
+    "epoch_bkjd": 630.507,
+    "even_depth_pct": 5.27,
+    "n_in_transit": 1691,
+    "odd_depth_pct": 5.2531,
+    "odd_even_delta_pct": 0.0168,
+    "period_d": 1.049858,
+    "sigma_out_pct": 0.7872,
+    "snr": 199.87
+  },
+  "full_curve_n_cadences": 4226,
+  "full_curve_sigma_mad_pct": 2.1503,
+  "full_curve_span_days": 89.3526,
+  "full_curve_t_max_bkjd": 719.548,
+  "full_curve_t_min_bkjd": 630.1954,
+  "generated_by": "src/run_pipeline.py",
+  "n_quarters_analyzed": 1,
+  "n_quarters_available": 1,
+  "q7_standalone_at_2P": {
+    "dchi2": 1216920.7957,
+    "depth_pct": 3.223,
+    "duration_d": 0.168,
+    "epoch_bkjd": 630.51396,
+    "even_depth_pct": 3.189,
+    "n_in_transit": 735,
+    "odd_depth_pct": 2.9452,
+    "odd_even_delta_pct": 0.2438,
+    "period_d": 2.099716,
+    "sigma_out_pct": 1.816,
+    "snr": 48.11
+  },
+  "q7_standalone_at_P": {
+    "dchi2": 2921813.7879,
+    "depth_pct": 3.8261,
+    "duration_d": 0.4,
+    "epoch_bkjd": 630.507,
+    "even_depth_pct": 5.27,
+    "n_in_transit": 1691,
+    "odd_depth_pct": 5.2531,
+    "odd_even_delta_pct": 0.0168,
+    "period_d": 1.049858,
+    "sigma_out_pct": 0.7872,
+    "snr": 199.87
+  },
+  "quarters": [
+    {
+      "filename": "kplr007431659-2010355172524_llc.fits",
+      "n_cadences": 4226,
+      "quarter": 7,
+      "sigma_flat_mad_pct": 2.1502697663276593,
+      "span_days": 89.3526465849427,
+      "t_max_bkjd": 719.5480284148143,
+      "t_min_bkjd": 630.1953818298716
+    }
+  ],
+  "quarters_coverage_pct": 100.0,
+  "ratio_dchi2_band_2P_over_P": 0.4165,
+  "ratio_dchi2_exact_2P_over_P": 0.4165,
+  "search_configuration": {
+    "broad_period_max_d": 40.0,
+    "broad_period_min_d": 0.5,
+    "detrend": "running median per quarter, window 200 cadences",
+    "dip_only": true,
+    "durations_days": [
+      0.04,
+      0.06,
+      0.08,
+      0.12,
+      0.16,
+      0.2
+    ],
+    "n_bins": 300,
+    "n_periods_searched": 621
+  },
+  "target_kepid": 7431659
+}

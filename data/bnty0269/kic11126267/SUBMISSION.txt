@@ -1,0 +1,40 @@
+DAiL bnty_0269 — KIC 11126267 (14-Quarter G-Dwarf Episodic Dipper, SPOCS 2191)
+Repo (stdlib code, JSON, claim-checker): https://github.com/ducanh3005/dail-tabby-pipeline
+Star: KIC 11126267 (2MASS J19022382+4843237), RA=285.599240, Dec=+48.723270, Kp=14.280, Teff=5677K, logg=4.569, R*=0.818Rsun, M*=0.913Msun.
+
+1. GATE 1 (NO KOI, LIVE NASA TAP + CONTROLS)
+- cumulative (kepid=11126267): n_rows=0 (header only, 0 data rows); q1_q17_dr25_koi (kepid=11126267): n_rows=0.
+- Controls: positive n_rows=4 [9101271:K07926.01(FALSE POSITIVE,fp_nt=1);10963065:K01612.01(CONFIRMED,fp_nt=0);11904151:K00072.01(CONFIRMED,fp_nt=0);11904151:K00072.02(CONFIRMED,fp_nt=0)]; negative (99999998,99999999) n_rows=0.
+- Unclassified DR25 TCE: plnt=1, P=367.758 d, depth=2564 ppm, SNR=9.783, dicco=3.672".
+
+2. GATE 2 (NOT IN KEPLER EB / VSX / SIMBAD + CONTROLS)
+- Kepler EB (Kirk+ 2016 J/AJ/151/68, sha256=eeb03622ef97..., 2876 rows): KIC 11126267->0 rows. Controls: KIC 9101279->1 row (P=1.8114606 d, Kp=13.947, raw='09101279    1.8114606  0.000'...); KIC 7431665->1 row (P=281.4 d, Kp=10.974).
+- AAVSO VSX (B/vsx/vsx, 30" cone at 285.599240,48.723270): n_rows=0 (data=[]). Control (30" at KIC 7431665): n_rows=1 (raw=[479117, 'KIC 7431665', 'EA:+HB', 281.4, 287.377, 43.0095]).
+- SIMBAD (15" cone): n_rows=1->['SPOCS 2191', '*'] (ordinary star '*'); control KIC 8462852->n_rows=4 (['TYC 3162-665-1', '*']).
+
+3. GATE 3 (FULL LIGHT CURVE BLS & LIKE-FOR-LIKE P vs 2P ALIAS TEST)
+- Coverage: 14/14 quarters (100.0%: Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q9,Q10,Q11,Q13,Q14,Q15,Q17), 51502 cadences, BKJD 131.5124..1591.0017 (1459.4893 d), detrended MAD sigma=0.0249%.
+- Best P=336.8969564 d: dchi2=25079385.0368, SNR=39.93, depth=4.4112%, dur=0.0800 d, epoch=294.90743 BKJD, n_in=163, odd=0.0%, even=0.0016% (delta=0.0016%).
+- Exact 2P=673.7939128 d (same grid [0.04, 0.06, 0.08, 0.12, 0.16, 0.2] d, 300 bins, dip_only=True): dchi2=2830301.8158, dchi2(2P)/dchi2(P)=0.1129, SNR=9.21, depth=0.9314%, dur=0.0400 d, n_in=214; +/-1% 2P band best (671.7725311 d) dchi2=20724528.5833 (ratio=0.8264). 2P is weaker with no alternating EB depth.
+
+4. GATES 4 & 5 (PDCSAP >= 5% BOX-MEAN, RAW SAP DIP, PEAK DEPTH & PER-CADENCE SNR)
+- Q7 OOT 1.4826*MAD scatter: PDCSAP sigma_q=0.1085%, SAP sigma_q=0.0864%.
+- E1_BKJD666p10 (BKJD 666.0958 [666.0140..666.1775], n=5, 4.41h): PDCSAP box=14.340% (pk=19.323%), SAP box=14.313% (pk=19.284%), sigma_loc=29.5022%, SNR_cad=132.19 (pk=178.12, loc=0.49, evt=295.58).
+- E2_BKJD675p37 (BKJD 675.3723 [675.2906..675.4541], n=5, 4.41h): PDCSAP box=13.805% (pk=18.011%), SAP box=13.791% (pk=17.986%), sigma_loc=14.2450%, SNR_cad=127.25 (pk=166.02, loc=0.97, evt=284.55).
+- E3_BKJD665p86 (BKJD 665.8608 [665.8302..665.8915], n=4, 1.96h): PDCSAP box=12.595% (pk=13.824%), SAP box=12.575% (pk=13.800%), sigma_loc=18.1363%, SNR_cad=116.10 (pk=127.43, loc=0.69, evt=232.20).
+
+5. GATE 6 (STAMP GEOMETRY EVIDENCED & CENTROID SHIFT < 1.0 MILLIPIXEL)
+- kplr011126267-2010355172524_lpd-targ.fits APERTURE: NAXIS1=5, NAXIS2=4, counts={'1': 17, '3': 3} (3 target px val=3 at [10, 11, 15]). Orientation (2/4 votes for Layout A=A_5wide_4tall vs B_4wide_5tall): T1 sum(target)/SAP_FLUX: A=1.0000000181 vs B=0.1311108114; T2 scatter vs MOM_CENTR1: A=237.686 vs B=168.675 mpix; T3 peak idx=16 on mask=1; T4 always-NaN=0 matches mask=0 (0); POS_CORR1 r_x=0.8210 (r_y=-0.6996, n=3511).
+- Centroid shifts (<1.000 mpix): TPF Layout A=[0.769, 0.655, 0.398, 0.025] mpix (max=0.769 mpix); layout-free MOM_CENTR=[0.136, 0.054, 0.028, 0.306] mpix (max=0.306 mpix). Primary E1_BKJD666p10: TPF (0.731,-0.238)->0.769 mpix; MOM_CENTR (-0.033,-0.132)->0.136 mpix.
+
+6. GATE 7 (NEIGHBOUR EXCLUSION FROM LIGHT CURVE & FOLD-DOWN ALIAS TRAP)
+- gal2eq(0,0)=(266.40499,-28.93617) vs (266.405,-28.9362) [ok=True].
+- KIC 11126298 (AAVSO VSX OID 517340, sep=38.08", P_nb=29.276 d): dchi2=2943412.4702 (SNR=22.45, depth=0.3336%) = 2.46x local 0.7-3.2 d median (1198338.1657), 8.52x weaker than P.
+- Gaia DR3 2131922947128237696 (AAVSO VSX OID 7291736, sep=150.21", P_nb=0.88172 d): dchi2=125109.0565 (SNR=4.47, depth=0.1334%) = 0.10x local 0.7-3.2 d median (1198338.1657), 200.46x weaker than P.
+- KIC 11125936 (Kepler EB, sep=445.42", P_nb=2.6722175 d): dchi2=717792.8738 (SNR=12.90, depth=0.1449%) = 0.60x local 0.7-3.2 d median (1198338.1657), 34.94x weaker than P.
+- Fold-down alias trap: P / 10=33.6896956 d gives dchi2=1799191.7615 (1.50x local median) — target signal folded by 10, not a blend.
+
+7. ARCHIVE URLS & ZERO-KEY REPRODUCTION
+- LC: https://archive.stsci.edu/missions/kepler/lightcurves/0111/011126267/kplr011126267-2009166043257_llc.fits (sha256=1ea2fc5275553732...; 14 file(s))
+- TPF: https://archive.stsci.edu/missions/kepler/target_pixel_files/0111/011126267/kplr011126267-2010355172524_lpd-targ.fits.gz (sha256=3538b3d8d12a1a29...)
+- Run: python3 src/fetch_mast_payloads.py && python3 src/run_pipeline.py && python3 src/build_submissions.py && python3 scripts/check_claims.py

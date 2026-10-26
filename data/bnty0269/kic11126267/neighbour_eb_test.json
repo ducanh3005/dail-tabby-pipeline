@@ -1,0 +1,132 @@
+{
+  "conversion_self_check": {
+    "expected_dec_deg": -28.9362,
+    "expected_ra_deg": 266.405,
+    "galactic_0_0_gives_dec_deg": -28.93617,
+    "galactic_0_0_gives_ra_deg": 266.40499,
+    "ok": true
+  },
+  "fold_down_alias": {
+    "alias_period_d": 33.6896956,
+    "bls_at_alias": {
+      "dchi2": 1799191.7615,
+      "depth_pct": 1.3723,
+      "duration_d": 0.2,
+      "epoch_bkjd": 160.26095,
+      "even_depth_pct": -0.0005,
+      "n_in_transit": 324,
+      "odd_depth_pct": 0.0,
+      "odd_even_delta_pct": 0.0005,
+      "period_d": 33.6896956,
+      "sigma_out_pct": 1.4618,
+      "snr": 16.9
+    },
+    "divisor": 10,
+    "formula": "P / 10",
+    "ratio_to_local_median": 1.5
+  },
+  "gate7_passed": true,
+  "generated_by": "src/run_pipeline.py",
+  "local_null_distribution": {
+    "max_dchi2": 1340796.5725,
+    "median_dchi2": 1198338.1657,
+    "n_periods": 40,
+    "period_range_d": [
+      0.7,
+      3.2
+    ]
+  },
+  "target_best_fit_P": {
+    "dchi2": 25079385.0368,
+    "depth_pct": 4.4112,
+    "duration_d": 0.08,
+    "epoch_bkjd": 294.90743,
+    "even_depth_pct": 0.0016,
+    "n_in_transit": 163,
+    "odd_depth_pct": 0.0,
+    "odd_even_delta_pct": 0.0016,
+    "period_d": 336.8969564,
+    "sigma_out_pct": 1.4105,
+    "snr": 39.93
+  },
+  "target_dec_deg": 48.72327,
+  "target_kepid": 11126267,
+  "target_kpmag": 14.28,
+  "target_ra_deg": 285.59924,
+  "tested_neighbours": [
+    {
+      "bls_at_catalogue_period": {
+        "dchi2": 2943412.4702,
+        "depth_pct": 0.3336,
+        "duration_d": 0.2,
+        "epoch_bkjd": 136.23484,
+        "even_depth_pct": 0.0,
+        "n_in_transit": 10423,
+        "odd_depth_pct": 0.0,
+        "odd_even_delta_pct": 0.0,
+        "period_d": 29.276,
+        "sigma_out_pct": 1.5169,
+        "snr": 22.45
+      },
+      "catalog": "AAVSO VSX OID 517340 (ROT)",
+      "dec_deg": 48.7274,
+      "kic": 11126298,
+      "name": "KIC 11126298",
+      "period_d": 29.276,
+      "ra_deg": 285.614,
+      "ratio_dchi2_to_local_median": 2.46,
+      "ratio_target_P_over_neighbour": 8.52,
+      "separation_arcsec": 38.08
+    },
+    {
+      "bls_at_catalogue_period": {
+        "dchi2": 125109.0565,
+        "depth_pct": 0.1334,
+        "duration_d": 0.04,
+        "epoch_bkjd": 132.25599,
+        "even_depth_pct": -0.0,
+        "n_in_transit": 2397,
+        "odd_depth_pct": 0.0001,
+        "odd_even_delta_pct": 0.0002,
+        "period_d": 0.88172,
+        "sigma_out_pct": 1.4621,
+        "snr": 4.47
+      },
+      "catalog": "AAVSO VSX OID 7291736 (Eclipsing binary E)",
+      "dec_deg": 48.7181,
+      "kic": null,
+      "name": "Gaia DR3 2131922947128237696",
+      "period_d": 0.88172,
+      "ra_deg": 285.662,
+      "ratio_dchi2_to_local_median": 0.1,
+      "ratio_target_P_over_neighbour": 200.46,
+      "separation_arcsec": 150.21
+    },
+    {
+      "bjd0": 54993.892041,
+      "bls_at_catalogue_period": {
+        "dchi2": 717792.8738,
+        "depth_pct": 0.1449,
+        "duration_d": 0.32,
+        "epoch_bkjd": 134.31348,
+        "even_depth_pct": 0.0,
+        "n_in_transit": 16491,
+        "odd_depth_pct": 0.0,
+        "odd_even_delta_pct": 0.0,
+        "period_d": 2.6722175,
+        "sigma_out_pct": 1.4424,
+        "snr": 12.9
+      },
+      "catalog": "Kepler EB (Kirk+ 2016 J/AJ/151/68)",
+      "dec_deg": 48.72521441332138,
+      "kic": 11125936,
+      "kpmag": 15.507,
+      "name": "KIC 11125936",
+      "period_d": 2.6722175,
+      "ra_deg": 285.41170561803574,
+      "ratio_dchi2_to_local_median": 0.6,
+      "ratio_target_P_over_neighbour": 34.94,
+      "separation_arcsec": 445.42
+    }
+  ]
+}

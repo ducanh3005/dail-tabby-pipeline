@@ -1,0 +1,118 @@
+{
+  "gate2_passed": true,
+  "generated_by": "src/run_pipeline.py",
+  "kepler_eb_catalog": {
+    "positive_control_kic7431665": {
+      "bjd0": 55005.28158,
+      "dec_deg": 43.00948348470023,
+      "glat": 15.0572,
+      "glon": 73.9164,
+      "kic": 7431665,
+      "kic_str": "07431665",
+      "kpmag": 10.974,
+      "morph": -1.0,
+      "per_d": 281.4,
+      "per_err": 0.0027943,
+      "ra_deg": 287.3763759365019,
+      "raw_line": "07431665  281.4000000  0.0027943 55005.281580 -1.       -1.00 73.9164 15.0572 10.9740  4729.0000 False",
+      "teff": 4729.0
+    },
+    "positive_control_kic9101279": {
+      "bjd0": 54965.932213,
+      "dec_deg": 45.44816409755995,
+      "glat": 10.5435,
+      "glon": 78.9116,
+      "kic": 9101279,
+      "kic_str": "09101279",
+      "kpmag": 13.947,
+      "morph": 0.58,
+      "per_d": 1.8114606,
+      "per_err": 2.5e-06,
+      "ra_deg": 296.001313953068,
+      "raw_line": "09101279    1.8114606  0.0000025 54965.932213  0.047264  0.58 78.9116 10.5435 13.9470  8372.0000 True",
+      "teff": 8372.0
+    },
+    "sha256_gz": "eeb03622ef97781d488294621efa36868aba3721d67d100c3a4dd4e3bb2bbae7",
+    "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/151/68/catalog.dat.gz",
+    "target_rows": [],
+    "target_rows_count": 0,
+    "total_catalog_rows": 2876
+  },
+  "simbad_15arcsec": {
+    "positive_control_kic8462852": {
+      "n_rows": 4,
+      "query": "SELECT main_id, otype, ra, dec FROM basic WHERE 1=CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 301.564390, 44.456880, 0.0041667))",
+      "raw_json_excerpt": "{\"metadata\":[{\"name\":\"main_id\",\"description\":\"Main identifier for an object\",\"datatype\":\"CHAR\",\"arraysize\":\"*\",\"ucd\":\"meta.id;meta.main\",\"utype\":\"mango:MangoObject.identifier\"},{\"name\":\"otype\",\"description\":\"Object type\",\"datatype\":\"CHAR\",\"arraysize\":\"*\",\"ucd\":\"src.class\",\"utype\":\"mango:Label.text[CT.vocabulary=https://www.ivoa.net/rdf/uat#classification]\"},{\"name\":\"ra\",\"description\":\"Right ascension\",\"datatype\":\"DOUBLE\",\"unit\":\"deg\",\"ucd\":\"pos.eq.ra;meta.main\",\"utype\":\"mango:EpochPosition.longitude[CS.spaceSys=ICRS CT.epoch=J2000]\"},{\"name\":\"dec\",\"description\":\"Declination\",\"datatype\":\"DOUBLE",
+      "rows": [
+        [
+          "2MASS J20061594+4427365",
+          "*",
+          301.56650870493,
+          44.46013941976
+        ],
+        [
+          "TYC 3162-665-1",
+          "*",
+          301.5643860504275,
+          44.4568863525439
+        ],
+        [
+          "2MASS J20061551+4427330",
+          "NIR",
+          301.56472096544,
+          44.45924923316
+        ],
+        [
+          "NAME KIC 8462852B",
+          "*",
+          301.5651388861992,
+          44.45683155524166
+        ]
+      ],
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+main_id%2C+otype%2C+ra%2C+dec+FROM+basic+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+301.564390%2C+44.456880%2C+0.0041667%29%29"
+    },
+    "target": {
+      "n_rows": 1,
+      "query": "SELECT main_id, otype, ra, dec FROM basic WHERE 1=CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 285.599240, 48.723270, 0.0041667))",
+      "raw_json_excerpt": "{\"metadata\":[{\"name\":\"main_id\",\"description\":\"Main identifier for an object\",\"datatype\":\"CHAR\",\"arraysize\":\"*\",\"ucd\":\"meta.id;meta.main\",\"utype\":\"mango:MangoObject.identifier\"},{\"name\":\"otype\",\"description\":\"Object type\",\"datatype\":\"CHAR\",\"arraysize\":\"*\",\"ucd\":\"src.class\",\"utype\":\"mango:Label.text[CT.vocabulary=https://www.ivoa.net/rdf/uat#classification]\"},{\"name\":\"ra\",\"description\":\"Right ascension\",\"datatype\":\"DOUBLE\",\"unit\":\"deg\",\"ucd\":\"pos.eq.ra;meta.main\",\"utype\":\"mango:EpochPosition.longitude[CS.spaceSys=ICRS CT.epoch=J2000]\"},{\"name\":\"dec\",\"description\":\"Declination\",\"datatype\":\"DOUBLE",
+      "rows": [
+        [
+          "SPOCS 2191",
+          "*",
+          285.59931095334,
+          48.723293469969995
+        ]
+      ],
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+main_id%2C+otype%2C+ra%2C+dec+FROM+basic+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+285.599240%2C+48.723270%2C+0.0041667%29%29"
+    }
+  },
+  "target_dec_deg": 48.72327,
+  "target_kepid": 11126267,
+  "target_ra_deg": 285.59924,
+  "verdict": "PASS: KIC 11126267 has 0 rows in Kepler EB Catalog (J/AJ/151/68, 2876 rows, positive controls KIC 9101279 & KIC 7431665 = 1 row each), 0 rows in AAVSO VSX within 30\" (positive control KIC 9101279 = 1 row), and SIMBAD 15\" cone returns ordinary star [['SPOCS 2191', '*', 285.59931095334, 48.723293469969995]].",
+  "vsx_30arcsec": {
+    "positive_control_kic9101279": {
+      "n_rows": 1,
+      "query": "SELECT OID, Name, Type, Period, RAJ2000, DEJ2000 FROM \"B/vsx/vsx\" WHERE 1=CONTAINS(POINT('ICRS', RAJ2000, DEJ2000), CIRCLE('ICRS', 287.377000, 43.009500, 0.0083333))",
+      "raw_json_excerpt": "{\"metadata\":[{\"name\":\"OID\",\"description\":\"Internal identifier, can be used to link out to the VSX database (1)\",\"datatype\":\"INT\",\"ucd\":\"meta.id\"},{\"name\":\"Name\",\"description\":\"Variable star identifier\",\"datatype\":\"CHAR\",\"arraysize\":\"30\",\"ucd\":\"meta.id;meta.main\"},{\"name\":\"Type\",\"description\":\"? Variability type, ariability type, as in GCVS catalog Variability type (see details of VSX type list)\",\"datatype\":\"CHAR\",\"arraysize\":\"30\",\"ucd\":\"src.class\"},{\"name\":\"Period\",\"description\":\"[0.0/27400.0]? Period of the variable in days\",\"datatype\":\"DOUBLE\",\"unit\":\"d\",\"ucd\":\"time.period\"},{\"name\":\"RAJ2000",
+      "rows": [
+        [
+          479117,
+          "KIC 7431665                   ",
+          "EA:+HB                        ",
+          281.4,
+          287.377,
+          43.0095
+        ]
+      ],
+      "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+OID%2C+Name%2C+Type%2C+Period%2C+RAJ2000%2C+DEJ2000+FROM+%22B%2Fvsx%2Fvsx%22+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2C+RAJ2000%2C+DEJ2000%29%2C+CIRCLE%28%27ICRS%27%2C+287.377000%2C+43.009500%2C+0.0083333%29%29"
+    },
+    "target": {
+      "n_rows": 0,
+      "query": "SELECT OID, Name, Type, Period, RAJ2000, DEJ2000 FROM \"B/vsx/vsx\" WHERE 1=CONTAINS(POINT('ICRS', RAJ2000, DEJ2000), CIRCLE('ICRS', 285.599240, 48.723270, 0.0083333))",
+      "raw_json_excerpt": "{\"metadata\":[{\"name\":\"OID\",\"description\":\"Internal identifier, can be used to link out to the VSX database (1)\",\"datatype\":\"INT\",\"ucd\":\"meta.id\"},{\"name\":\"Name\",\"description\":\"Variable star identifier\",\"datatype\":\"CHAR\",\"arraysize\":\"30\",\"ucd\":\"meta.id;meta.main\"},{\"name\":\"Type\",\"description\":\"? Variability type, ariability type, as in GCVS catalog Variability type (see details of VSX type list)\",\"datatype\":\"CHAR\",\"arraysize\":\"30\",\"ucd\":\"src.class\"},{\"name\":\"Period\",\"description\":\"[0.0/27400.0]? Period of the variable in days\",\"datatype\":\"DOUBLE\",\"unit\":\"d\",\"ucd\":\"time.period\"},{\"name\":\"RAJ2000",
+      "rows": [],
+      "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=json&QUERY=SELECT+OID%2C+Name%2C+Type%2C+Period%2C+RAJ2000%2C+DEJ2000+FROM+%22B%2Fvsx%2Fvsx%22+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2C+RAJ2000%2C+DEJ2000%29%2C+CIRCLE%28%27ICRS%27%2C+285.599240%2C+48.723270%2C+0.0083333%29%29"
+    }
+  }
+}

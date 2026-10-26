@@ -1,0 +1,125 @@
+{
+  "conversion_self_check": {
+    "expected_dec_deg": -28.9362,
+    "expected_ra_deg": 266.405,
+    "galactic_0_0_gives_dec_deg": -28.93617,
+    "galactic_0_0_gives_ra_deg": 266.40499,
+    "ok": true
+  },
+  "fold_down_alias": {
+    "alias_period_d": 0.524929,
+    "bls_at_alias": {
+      "dchi2": 42420.6186,
+      "depth_pct": 0.7133,
+      "duration_d": 0.06,
+      "epoch_bkjd": 630.52084,
+      "even_depth_pct": -0.6181,
+      "n_in_transit": 476,
+      "odd_depth_pct": -1.2376,
+      "odd_even_delta_pct": 0.6195,
+      "period_d": 0.524929,
+      "sigma_out_pct": 1.9447,
+      "snr": 8.0
+    },
+    "divisor": 2,
+    "formula": "P / 2",
+    "ratio_to_local_median": 19.98
+  },
+  "gate7_passed": true,
+  "generated_by": "src/run_pipeline.py",
+  "local_null_distribution": {
+    "max_dchi2": 41805.6134,
+    "median_dchi2": 2123.3963,
+    "n_periods": 150,
+    "period_range_d": [
+      0.45,
+      0.85
+    ]
+  },
+  "target_best_fit_P": {
+    "dchi2": 2921813.7879,
+    "depth_pct": 3.8261,
+    "duration_d": 0.4,
+    "epoch_bkjd": 630.507,
+    "even_depth_pct": 5.27,
+    "n_in_transit": 1691,
+    "odd_depth_pct": 5.2531,
+    "odd_even_delta_pct": 0.0168,
+    "period_d": 1.049858,
+    "sigma_out_pct": 0.7872,
+    "snr": 199.87
+  },
+  "target_dec_deg": 43.027359,
+  "target_kepid": 7431659,
+  "target_kpmag": 16.248,
+  "target_ra_deg": 287.37372,
+  "tested_neighbours": [
+    {
+      "bjd0": 55005.28158,
+      "catalog": "Kepler EB (Kirk+ 2016 J/AJ/151/68) & VSX OID 479117 (EA:+HB)",
+      "dec_deg": 43.00948348470023,
+      "ephemeris_bkjd0": 172.28158,
+      "kic": 7431665,
+      "kpmag": 10.974,
+      "n_eclipses_in_baseline": 0,
+      "name": "KIC 7431665",
+      "period_d": 281.4,
+      "predicted_eclipses_near_baseline_bkjd": [
+        453.6816,
+        735.0816
+      ],
+      "ra_deg": 287.3763759365019,
+      "separation_arcsec": 64.73
+    },
+    {
+      "bjd0": 54953.887641,
+      "bls_at_catalogue_period": {
+        "dchi2": 166.5901,
+        "depth_pct": 0.0339,
+        "duration_d": 0.22,
+        "epoch_bkjd": 630.77281,
+        "even_depth_pct": 0.4022,
+        "n_in_transit": 933,
+        "odd_depth_pct": -0.052,
+        "odd_even_delta_pct": 0.4542,
+        "period_d": 0.5725258,
+        "sigma_out_pct": 2.086,
+        "snr": 0.5
+      },
+      "catalog": "Kepler EB (Kirk+ 2016 J/AJ/151/68)",
+      "dec_deg": 43.09869749417936,
+      "kic": 7431703,
+      "kpmag": 12.247,
+      "name": "KIC 7431703",
+      "period_d": 0.5725258,
+      "ra_deg": 287.3911395869243,
+      "ratio_dchi2_to_local_median": 0.08,
+      "ratio_target_P_over_neighbour": 17538.94,
+      "separation_arcsec": 260.87
+    },
+    {
+      "bls_at_catalogue_period": {
+        "dchi2": 51902.2465,
+        "depth_pct": 2.7201,
+        "duration_d": 0.16,
+        "epoch_bkjd": 645.0884,
+        "even_depth_pct": -0.5397,
+        "n_in_transit": 37,
+        "odd_depth_pct": -0.8745,
+        "odd_even_delta_pct": 0.3348,
+        "period_d": 18.972,
+        "sigma_out_pct": 2.0727,
+        "snr": 7.98
+      },
+      "catalog": "AAVSO VSX OID 519915 (ROT)",
+      "dec_deg": 43.0453,
+      "kic": 7431632,
+      "name": "KIC 7431632",
+      "period_d": 18.972,
+      "ra_deg": 287.361,
+      "ratio_dchi2_to_local_median": 24.44,
+      "ratio_target_P_over_neighbour": 56.29,
+      "separation_arcsec": 72.74
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "gate1_passed": true,
+  "generated_by": "src/run_pipeline.py",
+  "negative_controls": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition FROM cumulative WHERE kepid IN (99999998,99999999)",
+    "raw_csv": "kepid,kepoi_name,koi_disposition",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition+FROM+cumulative+WHERE+kepid+IN+%2899999998%2C99999999%29&format=csv"
+  },
+  "positive_controls": {
+    "n_rows": 4,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period FROM cumulative WHERE kepid IN (10963065,11904151,9101271) ORDER BY kepid,kepoi_name",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period\n9101271,\"K07926.01\",\"FALSE POSITIVE\",\"FALSE POSITIVE\",1,0,0,0,29.3657204\n10963065,\"K01612.01\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,2.465024332\n11904151,\"K00072.01\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,0.837491225\n11904151,\"K00072.02\",\"CONFIRMED\",\"CANDIDATE\",0,0,0,0,45.29422297",
+    "rows": [
+      {
+        "kepid": "9101271",
+        "kepoi_name": "K07926.01",
+        "koi_disposition": "FALSE POSITIVE",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "1",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "FALSE POSITIVE",
+        "koi_period": "29.3657204"
+      },
+      {
+        "kepid": "10963065",
+        "kepoi_name": "K01612.01",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "2.465024332"
+      },
+      {
+        "kepid": "11904151",
+        "kepoi_name": "K00072.01",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "0.837491225"
+      },
+      {
+        "kepid": "11904151",
+        "kepoi_name": "K00072.02",
+        "koi_disposition": "CONFIRMED",
+        "koi_fpflag_co": "0",
+        "koi_fpflag_ec": "0",
+        "koi_fpflag_nt": "0",
+        "koi_fpflag_ss": "0",
+        "koi_pdisposition": "CANDIDATE",
+        "koi_period": "45.29422297"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period+FROM+cumulative+WHERE+kepid+IN+%2810963065%2C11904151%2C9101271%29+ORDER+BY+kepid%2Ckepoi_name&format=csv"
+  },
+  "target_cumulative": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment FROM cumulative WHERE kepid=11126267",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_vet_stat%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_num_transits%2Ckoi_comment+FROM+cumulative+WHERE+kepid%3D11126267&format=csv"
+  },
+  "target_dr25_tces": {
+    "n_rows": 5,
+    "query": "SELECT kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_model_snr,tce_num_transits,tce_dicco_msky,tce_dikco_msky FROM q1_q17_dr25_tce WHERE kepid=11126267 ORDER BY tce_plnt_num ASC",
+    "raw_csv": "kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_model_snr,tce_num_transits,tce_dicco_msky,tce_dikco_msky\n11126267,1,367.758,280.757,8.237,2564,9.783,3,3.672,4.2925\n11126267,2,362.267,296.451,15,1.93e+04,-1,0,3.4364,4.2991\n11126267,3,367.825,282.168,15,1.113e+04,-1,0,2.8721,3.9907\n11126267,4,374.262,260.184,3.841,1.328e+05,181.2,3,2.1556,4.1277\n11126267,5,373.56,260.348,101.9,4.583e+04,177.6,4,0,0",
+    "rows": [
+      {
+        "kepid": "11126267",
+        "tce_depth": "2564",
+        "tce_dicco_msky": "3.672",
+        "tce_dikco_msky": "4.2925",
+        "tce_duration": "8.237",
+        "tce_model_snr": "9.783",
+        "tce_num_transits": "3",
+        "tce_period": "367.758",
+        "tce_plnt_num": "1",
+        "tce_time0bk": "280.757"
+      },
+      {
+        "kepid": "11126267",
+        "tce_depth": "1.93e+04",
+        "tce_dicco_msky": "3.4364",
+        "tce_dikco_msky": "4.2991",
+        "tce_duration": "15",
+        "tce_model_snr": "-1",
+        "tce_num_transits": "0",
+        "tce_period": "362.267",
+        "tce_plnt_num": "2",
+        "tce_time0bk": "296.451"
+      },
+      {
+        "kepid": "11126267",
+        "tce_depth": "1.113e+04",
+        "tce_dicco_msky": "2.8721",
+        "tce_dikco_msky": "3.9907",
+        "tce_duration": "15",
+        "tce_model_snr": "-1",
+        "tce_num_transits": "0",
+        "tce_period": "367.825",
+        "tce_plnt_num": "3",
+        "tce_time0bk": "282.168"
+      },
+      {
+        "kepid": "11126267",
+        "tce_depth": "1.328e+05",
+        "tce_dicco_msky": "2.1556",
+        "tce_dikco_msky": "4.1277",
+        "tce_duration": "3.841",
+        "tce_model_snr": "181.2",
+        "tce_num_transits": "3",
+        "tce_period": "374.262",
+        "tce_plnt_num": "4",
+        "tce_time0bk": "260.184"
+      },
+      {
+        "kepid": "11126267",
+        "tce_depth": "4.583e+04",
+        "tce_dicco_msky": "0",
+        "tce_dikco_msky": "0",
+        "tce_duration": "101.9",
+        "tce_model_snr": "177.6",
+        "tce_num_transits": "4",
+        "tce_period": "373.56",
+        "tce_plnt_num": "5",
+        "tce_time0bk": "260.348"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_model_snr%2Ctce_num_transits%2Ctce_dicco_msky%2Ctce_dikco_msky+FROM+q1_q17_dr25_tce+WHERE+kepid%3D11126267+ORDER+BY+tce_plnt_num+ASC&format=csv"
+  },
+  "target_kepid": 11126267,
+  "target_keplerstellar": {
+    "n_rows": 5,
+    "query": "SELECT kepid,tm_designation,ra,dec,kepmag,teff,logg,feh,radius,mass,dens FROM keplerstellar WHERE kepid=11126267 ORDER BY radius ASC",
+    "raw_csv": "kepid,tm_designation,ra,dec,kepmag,teff,logg,feh,radius,mass,dens\n11126267,\"2MASS J19022382+4843237\",285.599240,48.723270,14.280,5677,4.569,-0.220,0.818,0.9130,2.347\n11126267,\"2MASS J19022382+4843237\",285.599240,48.723270,14.280,5677,4.569,-0.220,0.818,0.9130,2.347\n11126267,\"2MASS J19022382+4843237\",285.599240,48.723270,14.280,5674,4.561,-0.220,0.822,0.8980,2.273\n11126267,\"2MASS J19022382+4843237\",285.599240,48.723270,14.280,5674,4.561,-0.220,0.822,0.8978,2.273\n11126267,\"2MASS J19022382+4843237\",285.599240,48.723270,14.280,5681,4.564,-0.200,0.841,,",
+    "rows": [
+      {
+        "dec": "48.723270",
+        "dens": "2.347",
+        "feh": "-0.220",
+        "kepid": "11126267",
+        "kepmag": "14.280",
+        "logg": "4.569",
+        "mass": "0.9130",
+        "ra": "285.599240",
+        "radius": "0.818",
+        "teff": "5677",
+        "tm_designation": "2MASS J19022382+4843237"
+      },
+      {
+        "dec": "48.723270",
+        "dens": "2.347",
+        "feh": "-0.220",
+        "kepid": "11126267",
+        "kepmag": "14.280",
+        "logg": "4.569",
+        "mass": "0.9130",
+        "ra": "285.599240",
+        "radius": "0.818",
+        "teff": "5677",
+        "tm_designation": "2MASS J19022382+4843237"
+      },
+      {
+        "dec": "48.723270",
+        "dens": "2.273",
+        "feh": "-0.220",
+        "kepid": "11126267",
+        "kepmag": "14.280",
+        "logg": "4.561",
+        "mass": "0.8980",
+        "ra": "285.599240",
+        "radius": "0.822",
+        "teff": "5674",
+        "tm_designation": "2MASS J19022382+4843237"
+      },
+      {
+        "dec": "48.723270",
+        "dens": "2.273",
+        "feh": "-0.220",
+        "kepid": "11126267",
+        "kepmag": "14.280",
+        "logg": "4.561",
+        "mass": "0.8978",
+        "ra": "285.599240",
+        "radius": "0.822",
+        "teff": "5674",
+        "tm_designation": "2MASS J19022382+4843237"
+      },
+      {
+        "dec": "48.723270",
+        "dens": "",
+        "feh": "-0.200",
+        "kepid": "11126267",
+        "kepmag": "14.280",
+        "logg": "4.564",
+        "mass": "",
+        "ra": "285.599240",
+        "radius": "0.841",
+        "teff": "5681",
+        "tm_designation": "2MASS J19022382+4843237"
+      }
+    ],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ctm_designation%2Cra%2Cdec%2Ckepmag%2Cteff%2Clogg%2Cfeh%2Cradius%2Cmass%2Cdens+FROM+keplerstellar+WHERE+kepid%3D11126267+ORDER+BY+radius+ASC&format=csv"
+  },
+  "target_q1_q17_dr25_koi": {
+    "n_rows": 0,
+    "query": "SELECT kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment FROM q1_q17_dr25_koi WHERE kepid=11126267",
+    "raw_csv": "kepid,kepoi_name,koi_disposition,koi_pdisposition,koi_vet_stat,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period,koi_time0bk,koi_duration,koi_depth,koi_num_transits,koi_comment",
+    "rows": [],
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=SELECT+kepid%2Ckepoi_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_vet_stat%2Ckoi_fpflag_nt%2Ckoi_fpflag_ss%2Ckoi_fpflag_co%2Ckoi_fpflag_ec%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_num_transits%2Ckoi_comment+FROM+q1_q17_dr25_koi+WHERE+kepid%3D11126267&format=csv"
+  },
+  "target_stellar_summary": {
+    "dec_deg": 48.72327,
+    "kepmag": 14.28,
+    "logg_cgs": 4.569,
+    "mass_msun": 0.913,
+    "ra_deg": 285.59924,
+    "radius_rsun": 0.818,
+    "teff_k": 5677.0,
+    "tm_designation": "2MASS J19022382+4843237"
+  },
+  "verdict": "PASS: 0 rows in cumulative and 0 rows in q1_q17_dr25_koi for kepid=11126267 (positive controls 10963065, 11904151, 9101271 returned 4 rows; negative controls returned 0 rows)."
+}

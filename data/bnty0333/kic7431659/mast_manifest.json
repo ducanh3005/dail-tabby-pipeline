@@ -1,0 +1,26 @@
+{
+  "bounty": "bnty0333",
+  "generated_by": "src/fetch_mast_payloads.py",
+  "kepid": 7431659,
+  "lightcurves": [
+    {
+      "bytes": 466560,
+      "filename": "kplr007431659-2010355172524_llc.fits",
+      "sha256": "a0d3c63eafe813368974f76bf7149362dde3102ee951c7c6097e3444689898a5",
+      "url": "https://archive.stsci.edu/missions/kepler/lightcurves/0074/007431659/kplr007431659-2010355172524_llc.fits"
+    }
+  ],
+  "mast_lightcurve_index_url": "https://archive.stsci.edu/missions/kepler/lightcurves/0074/007431659/",
+  "mast_tpf_index_url": "https://archive.stsci.edu/missions/kepler/target_pixel_files/0074/007431659/",
+  "n_lightcurve_files": 1,
+  "n_tpf_files": 1,
+  "target_pixel_files": [
+    {
+      "archive_gz": "kplr007431659-2010355172524_lpd-targ.fits.gz",
+      "bytes": 2612160,
+      "filename": "kplr007431659-2010355172524_lpd-targ.fits",
+      "sha256": "96a787f3c32ac73365017941e01e0c2b397c6e1d4dc82250e121f7255a46d750",
+      "url": "https://archive.stsci.edu/missions/kepler/target_pixel_files/0074/007431659/kplr007431659-2010355172524_lpd-targ.fits.gz"
+    }
+  ]
+}
