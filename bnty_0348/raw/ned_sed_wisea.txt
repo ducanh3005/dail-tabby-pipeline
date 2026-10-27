@@ -1,0 +1,39 @@
+
+Results from query to  NASA/IPAC Extragalactic Database (NED),
+which is operated by the Jet Propulsion Laboratory, California Institute of
+Technology, under contract with the National Aeronautics and Space Administration.
+This work was (partially) supported by the US National Virtual Observatory
+development project, which is funded by the National Science Foundation
+under cooperative agreement AST0122449 with The Johns Hopkins University.
+
+
+
+queryDateTime:2026-10-27T09:48:43PDT
+
+
+
+Photometric Data for WISEA J161305.29-384009.6
+
+No.|Observed Passband|Photometry Measurement|Uncertainty|Units|Frequency|Flux Density|Upper limit of uncertainty|Lower limit of uncertainty|Upper limit of Flux Density|Lower limit of Flux Density|NED Uncertainty|NED Units|Refcode|Significance|Published frequency|Frequency Mode|Coordinates Targeted|Spatial Mode|Qualifiers|Comments
+1|W1 (WISE)           | 15.078    |+/-0.043|mag                 |8.94E+13|  2.88E-04|1.14E-05|1.14E-05|||+/-1.14E-05|Jy|2013wise.rept....1C|uncertainty|3.3526     microns   | Broad-band measurement|| From fitting to map|Profile-fit                             |From new raw data
+2|W1 (WISE)           | 14.789    |+/-0.203|mag                 |8.94E+13|  3.76E-04|7.03E-05|7.03E-05|||+/-7.03E-05|Jy|2013wise.rept....1C|uncertainty|3.3526     microns   | Broad-band measurement|| Flux in fixed aperture|r=8.25" COG-corrected                   |From new raw data; Uncorrected for known sources in beam
+3|W1 (WISE)           | 11.437    |+/-0.02 |mag                 |8.94E+13|  8.24E-03|1.52E-04|1.52E-04|||+/-1.52E-04|Jy|2013wise.rept....1C|uncertainty|3.3526     microns   | Broad-band measurement|| Flux in fixed aperture|r=22.0" aperture                        |From new raw data; Uncorrected for known sources in beam
+4|3.6 microns (IRAC)  | 4.0755E+02|+/-2.4869E+00|uJy                 |8.44E+13|  4.08E-04|2.49E-06|2.49E-06|||+/-2.49E-06|Jy|2013SSTSLC4.2....0C|uncertainty|3.55       microns   | Broad-band measurement|| Flux in fixed aperture|3.8" aperture                           |From new raw data
+5|3.6 microns (IRAC)  | 3.9629E+02|+/-3.1447E+00|uJy                 |8.44E+13|  3.96E-04|3.14E-06|3.14E-06|||+/-3.14E-06|Jy|2013SSTSLC4.2....0C|uncertainty|3.55       microns   | Broad-band measurement|| Flux in fixed aperture|5.8" aperture                           |From new raw data
+6|4.5 microns (IRAC)  | 4.4205E+02|+/-3.4232E+00|uJy                 |6.67E+13|  4.42E-04|3.42E-06|3.42E-06|||+/-3.42E-06|Jy|2013SSTSLC4.2....0C|uncertainty|4.493      microns   | Broad-band measurement|| Flux in fixed aperture|5.8" aperture                           |From new raw data
+7|4.5 microns (IRAC)  | 4.3698E+02|+/-2.9306E+00|uJy                 |6.67E+13|  4.37E-04|2.93E-06|2.93E-06|||+/-2.93E-06|Jy|2013SSTSLC4.2....0C|uncertainty|4.493      microns   | Broad-band measurement|| Flux in fixed aperture|3.8" aperture                           |From new raw data
+8|W2 (WISE)           | 14.198    |+/-0.052|mag                 |6.51E+13|  3.60E-04|1.72E-05|1.72E-05|||+/-1.72E-05|Jy|2013wise.rept....1C|uncertainty|4.6028     microns   | Broad-band measurement|| From fitting to map|Profile-fit                             |From new raw data
+9|W2 (WISE)           | 14.236    |+/-0.168|mag                 |6.51E+13|  3.47E-04|5.37E-05|5.37E-05|||+/-5.37E-05|Jy|2013wise.rept....1C|uncertainty|4.6028     microns   | Broad-band measurement|| Flux in fixed aperture|r=8.25" COG-corrected                   |From new raw data; Uncorrected for known sources in beam
+10|W2 (WISE)           | 11.565    |+/-0.029|mag                 |6.51E+13|  4.06E-03|1.09E-04|1.09E-04|||+/-1.09E-04|Jy|2013wise.rept....1C|uncertainty|4.6028     microns   | Broad-band measurement|| Flux in fixed aperture|r=22.0" aperture                        |From new raw data; Uncorrected for known sources in beam
+11|5.8 microns (IRAC)  | 4.9095E+02|+/-1.4136E+01|uJy                 |5.23E+13|  4.91E-04|1.41E-05|1.41E-05|||+/-1.41E-05|Jy|2013SSTSLC4.2....0C|uncertainty|5.731      microns   | Broad-band measurement|| Flux in fixed aperture|5.8" aperture                           |From new raw data
+12|5.8 microns (IRAC)  | 4.9861E+02|+/-1.0548E+01|uJy                 |5.23E+13|  4.99E-04|1.05E-05|1.05E-05|||+/-1.05E-05|Jy|2013SSTSLC4.2....0C|uncertainty|5.731      microns   | Broad-band measurement|| Flux in fixed aperture|3.8" aperture                           |From new raw data
+13|8.0 microns (IRAC)  | 5.2917E+02|+/-1.3960E+01|uJy                 |3.81E+13|  5.29E-04|1.40E-05|1.40E-05|||+/-1.40E-05|Jy|2013SSTSLC4.2....0C|uncertainty|7.872      microns   | Broad-band measurement|| Flux in fixed aperture|5.8" aperture                           |From new raw data
+14|8.0 microns (IRAC)  | 5.2385E+02|+/-1.0745E+01|uJy                 |3.81E+13|  5.24E-04|1.07E-05|1.07E-05|||+/-1.07E-05|Jy|2013SSTSLC4.2....0C|uncertainty|7.872      microns   | Broad-band measurement|| Flux in fixed aperture|3.8" aperture                           |From new raw data
+15|W3 (WISE)           | 12.128    |+/-0.45 |mag                 |2.59E+13|  4.46E-04|1.85E-04|1.85E-04|||+/-1.85E-04|Jy|2013wise.rept....1C|uncertainty|11.5608    microns   | Broad-band measurement|| From fitting to map|Profile-fit                             |From new raw data
+16|W3 (WISE)           ||>11.157    |mag                 |2.59E+13|||||1.09E-03|<1.09E-03|Jy|2013wise.rept....1C|95% confidence|11.5608    microns   | Broad-band measurement|| Flux in fixed aperture|r=8.25" COG-corrected                   |From new raw data
+17|W3 (WISE)           | 11.387    |+/-0.421|mag                 |2.59E+13|  8.83E-04|3.42E-04|3.42E-04|||+/-3.42E-04|Jy|2013wise.rept....1C|uncertainty|11.5608    microns   | Broad-band measurement|| Flux in fixed aperture|r=22.0" aperture                        |From new raw data; Uncorrected for known sources in beam
+18|W4 (WISE)           ||>8.268     |mag                 |1.36E+13|||||4.12E-03|<4.12E-03|Jy|2013wise.rept....1C|95% confidence|22.0883    microns   | Broad-band measurement|| Flux in fixed aperture|r=16.5" COG-corrected                   |From new raw data
+19|W4 (WISE)           ||>8.432     |mag                 |1.36E+13|||||3.54E-03|<3.54E-03|Jy|2013wise.rept....1C|95% confidence|22.0883    microns   | Broad-band measurement|| From fitting to map|Profile-fit                             |From new raw data
+20|W4 (WISE)           ||>8.484     |mag                 |1.36E+13|||||3.38E-03|<3.38E-03|Jy|2013wise.rept....1C|95% confidence|22.0883    microns   | Broad-band measurement|| Flux in fixed aperture|r=22.0" aperture                        |From new raw data
+21|24 microns (MIPS)   | 8.4279E+02|+/-1.5902E+02|uJy                 |1.27E+13|  8.43E-04|1.59E-04|1.59E-04|||+/-1.59E-04|Jy|2013SSTSLC4.2....0C|uncertainty|23.68      microns   | Broad-band measurement|| Modelled datum|PSF fit                                 |From new raw data
+22|24 microns (MIPS)   | 8.1072E+02|+/-1.6115E+02|uJy                 |1.27E+13|  8.11E-04|1.61E-04|1.61E-04|||+/-1.61E-04|Jy|2013SSTSLC4.2....0C|uncertainty|23.68      microns   | Broad-band measurement|| Flux in fixed aperture|14.7" aperture                          |From new raw data

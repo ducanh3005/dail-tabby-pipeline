@@ -1,0 +1,63 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:48:53 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:48:53	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I/355/paramp&-c=243.2720453+-38.6693591&-c.rs=10.8&-out.max=50	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rs=10.8	
+#Constraint -out.max=50
+
+#RESOURCE=yCat_1355
+#Name: I/355
+#Title: Gaia DR3 Part 1. Main source (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1355....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1355	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-12-12	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_355_paramp:
+#Name: I/355/paramp
+#Title: 1D astrophysical parameters produced by the Apsis processing chain developed in Gaia DPAC CU8 (1590932717 sources) (astrophysical_parameters)
+#Column	Source	(I19)	Source Identifier (source_id)	[ucd=meta.id;meta.main]
+#Column	RA_ICRS	(F15.11)	Right ascension (ICRS) at Ep=2016.0 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	Declination (ICRS) at Ep=2016.0 (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	PQSO	(F11.8)	? Probability from DSC-Combmod of being a quasar (data used: BP/RP spectrum) (classprob_dsc_combmod_quasar)	[ucd=stat.probability]
+#Column	PGal	(F11.8)	? Probability from DSC-Combmod of being a galaxy (data used: BP/RP spectrum) (classprob_dsc_combmod_galaxy)	[ucd=stat.probability]
+#Column	Pstar	(F11.8)	? Probability from DSC-Combmod of being a single star (but not a white dwarf) (data used: BP/RP spectrum) (classprob_dsc_combmod_star)	[ucd=stat.probability]
+#Column	PWD	(F11.8)	? Probability from DSC-Combmod of being a white dwarf (data used: BP/RP spectrum) (classprob_dsc_combmod_whitedwarf)	[ucd=stat.probability]
+#Column	Pbin	(F11.8)	? Probability from DSC-Combmod of being a binary star (data used: BP/RP spectrum) (classprob_dsc_combmod_binarystar)	[ucd=stat.probability]
+#Column	Teff	(F10.4)	? Effective temperature from GSP-Phot Aeneas best library using BP/RP spectra (teff_gspphot)	[ucd=phys.temperature.effective]
+#Column	logg	(F7.4)	? Surface gravity from GSP-Phot Aeneas best library using BP/RP spectra (logg_gspphot)	[ucd=phys.gravity]
+#Column	[Fe/H]	(F7.4)	? Iron abundance from GSP-Phot Aeneas best library using BP/RP spectra (mh_gspphot)	[ucd=phys.abund.Fe]
+#Column	Dist	(F10.4)	? Distance from GSP-Phot Aeneas best library using BP/RP spectra (distance_gspphot)	[ucd=pos.distance]
+#Column	A0	(F7.4)	? Monochromatic extinction A0 at 547.7nm from GSP-Phot Aeneas best library using BP/RP spectra (azero_gspphot)	[ucd=phys.absorption;em.opt.V]
+#Column	AG	(F7.4)	? Extinction in G band from GSP-Phot Aeneas best library using BP/RP spectra (ag_gspphot)	[ucd=phys.absorption]
+#Column	ABP	(F7.4)	? Extinction in G_BP_ band from GSP-Phot Aeneas best library using BP/RP spectra (abp_gspphot)	[ucd=phys.absorption;em.opt.B]
+#Column	ARP	(F7.4)	? Extinction in G_RP_ band from GSP-Phot Aeneas best library using BP/RP spectra (arp_gspphot)	[ucd=phys.absorption;em.opt.R]
+#Column	E(BP-RP)	(F7.4)	? Reddening E(G_BP_-G_RP_) from GSP-Phot Aeneas best library using BP/RP spectra (ebpminrp_gspphot)	[ucd=stat.value;phot.color.excess;em.opt]
+#Column	GMAG	(F7.4)	? Absolute magnitude M_G_ from GSP-Phot Aeneas best library using BP/RP spectra (mg_gspphot)	[ucd=phys.magAbs;em.opt]
+#Column	Rad	(F9.4)	? Radius from GSP-Phot Aeneas best library using BP/RP spectra (radius_gspphot)	[ucd=phys.size.radius]
+#Column	Rad-Flame	(F8.4)	? Radius of the star from FLAME using teff_gspphot and lum_flame (radius_flame)	[ucd=phys.size.radius]
+#Column	Lum-Flame	(E10.3)	? Luminosity of the star from FLAME using G band magnitude, extinction (ag_gspphot), parallax or distance, and a bolometric correction bc_flame (lum_flame)	[ucd=phys.luminosity]
+#Column	Mass-Flame	(F6.3)	? Mass of the star from FLAME using stellar models, lum_flame, and teff_gspphot (mass_flame)	[ucd=phys.mass]
+#Column	Age-Flame	(F6.3)	? Age of the star from FLAME using stellar models (age_flame)	[ucd=time.age]
+#Column	z-Flame	(F11.8)	? Gravitational redshift from FLAME using radiusFlame and loggGspphot (gravredshift_flame)	[ucd=src.redshift]
+Source	RA_ICRS	DE_ICRS	PQSO	PGal	Pstar	PWD	Pbin	Teff	logg	[Fe/H]	Dist	A0	AG	ABP	ARP	E(BP-RP)	GMAG	Rad	Rad-Flame	Lum-Flame	Mass-Flame	Age-Flame	z-Flame
+ 	deg	deg	 	 	 	 	 	K	[cm/s2]	[-]	pc	mag	mag	mag	mag	mag	mag	solRad	Rsun	Lsun	Msun	Gyr	km/s
+-------------------	---------------	---------------	-----------	-----------	-----------	-----------	-----------	----------	-------	-------	----------	-------	-------	-------	-------	-------	-------	---------	--------	----------	------	------	-----------
+5997528070559678848	243.27377948280	-38.67132713573	 0.00000000	 0.00000000	 0.99999170	 0.00000000	 0.00000829	          	       	       	          	       	       	       	       	       	       	         	        	          	      	      	
+5997528070572416256	243.27204768116	-38.66939478301	 0.00000007	 0.00000005	 0.99999887	 0.00000000	 0.00000100	          	       	       	          	       	       	       	       	       	       	         	        	          	      	      	
+

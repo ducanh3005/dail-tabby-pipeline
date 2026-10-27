@@ -1,0 +1,94 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:48:52 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:48:52	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I/355/gaiadr3&-c=243.2720453+-38.6693591&-c.rm=1.0&RV=!&-out=RAJ2000,DEJ2000,Source,Gmag,RV,e_RV,RVS&-out.max=50	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rm=1.	
+#Constraint -out.max=50
+
+#RESOURCE=yCat_1355
+#Name: I/355
+#Title: Gaia DR3 Part 1. Main source (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1355....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1355	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-12-12	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_355_gaiadr3:
+#Name: I/355/gaiadr3
+#Title: Gaia DR3 source catalog (1811709771 sources)
+#Column	RAJ2000	(F15.11)	Barycentric right ascension (ICRS) at Ep=2000.0 (added by CDS) (ra2000)	[ucd=pos.eq.ra]
+#Column	DEJ2000	(F15.11)	Barycentric declination (ICRS) at Ep=2000.0 (added by CDS) (dec2000)	[ucd=pos.eq.dec]
+#Column	Source	(I19)	Unique source identifier (unique within a particular Data Release) (source_id)	[ucd=meta.id;meta.main]
+#Column	Gmag	(F9.6)	? G-band mean magnitude (phot_g_mean_mag)	[ucd=phot.mag;em.opt]
+#Column	RV	(F7.2)	? Radial velocity (radial_velocity)	[ucd=spect.dopplerVeloc.opt;em.opt.I]
+#Column	e_RV	(F5.2)	? Radial velocity error (radial_velocity_error)	[ucd=stat.error;spect.dopplerVeloc.opt;em.opt.I]
+#Column	RVS	(I1)	[0/1] Flag indicating the availability of mean RVS spectrum for this source (has_rvs)	[ucd=meta.code.status]
+RAJ2000	DEJ2000	Source	Gmag	RV	e_RV	RVS
+deg	deg	 	mag	km/s	km/s	
+---------------	---------------	-------------------	---------	-------	-----	-
+243.28179160341	-38.68278125259	5997246561235556480	20.145390	       	     	0
+243.28202515671	-38.68363286800	5997246561242302592	19.699635	       	     	0
+243.28905685826	-38.67424769413	5997340393374898944	18.842634	       	     	0
+243.29127899818	-38.67411629023	5997340397679764992	20.294622	       	     	0
+243.28476461782	-38.68169974056	5997340397680080896	20.625177	       	     	0
+243.28998209716	-38.67564010504	5997340397690251392	18.241600	       	     	0
+243.29173043886	-38.67498528073	5997340397690251520	17.351093	       	     	0
+243.29128903581	-38.67474296354	5997340397692097408	20.818642	       	     	0
+243.27462342823	-38.68538280244	5997434229821205120	19.073870	       	     	0
+243.27596674225	-38.68378905632	5997434229821213696	18.669256	       	     	0
+243.26543090377	-38.68448099164	5997434229821224832	19.059694	       	     	0
+243.26187575238	-38.68143498193	5997434229821227136	18.762117	       	     	0
+243.27863827536	-38.67949200923	5997434229821233408	18.602524	       	     	0
+243.27649441132	-38.67881886135	5997434229821236992	19.106700	       	     	0
+243.26965381835	-38.67758612624	5997434229821243136	18.899128	       	     	0
+243.26423145782	-38.67904913632	5997434229821243264	19.030848	       	     	0
+243.26355395535	-38.67784025113	5997434229821243392	19.347921	       	     	0
+243.27184603700	-38.67758554095	5997434229821244800	18.416822	       	     	0
+243.26804071877	-38.67694300255	5997434229821250560	18.444410	       	     	0
+243.26925274013	-38.67598467656	5997434229821250688	19.071157	       	     	0
+243.26948259313	-38.67876267670	5997434229826995840	20.426859	       	     	0
+243.27027942367	-38.68288744623	5997434234115812864	20.472950	       	     	0
+243.27018992377	-38.68315378645	5997434234115812992	20.011170	       	     	0
+243.26266758702	-38.67910838212	5997434234115820800	18.906857	       	     	0
+243.26868607813	-38.68438485940	5997434234116319232	20.315508	       	     	0
+243.27056583042	-38.67827380267	5997434234117269376	20.606030	       	     	0
+243.27696830626	-38.67796538010	5997434234117269504	20.670320	       	     	0
+243.27562986438	-38.67843193171	5997434234117269760	20.551891	       	     	0
+243.28110609577	-38.68209251546	5997434234117554944	20.877650	       	     	0
+243.27785313583	-38.68346006218	5997434234117555584	21.060894	       	     	0
+243.26445988386	-38.68238379391	5997434234117784960	21.003070	       	     	0
+243.26797088514	-38.68513392182	5997434234130059264	15.941136	       	     	0
+243.27018959085	-38.68411122062	5997434234130059648	15.586181	       	     	0
+243.26425554996	-38.68372298227	5997434234130059776	18.907770	       	     	0
+243.27039639511	-38.68171196976	5997434234130060288	19.050646	       	     	0
+243.27056110886	-38.67330756711	5997434234130064384	18.654211	       	     	0
+243.26597885106	-38.68485834592	5997434234130181120	20.496866	       	     	0
+243.25517102205	-38.67827877786	5997434264180979840	19.830828	       	     	0
+243.25744607497	-38.68147257986	5997434268475554432	19.764553	       	     	0
+243.26699849859	-38.67302372449	5997434298540741120	19.626135	       	     	0
+243.26440303354	-38.67170780491	5997434298540747136	18.069576	       	     	0
+243.25102168354	-38.67174538087	5997434298540750080	20.108204	       	     	0
+243.26203297356	-38.66929927359	5997434298540759680	18.598972	       	     	0
+243.25243297949	-38.66652419113	5997434298540771456	19.164042	       	     	0
+243.25688947798	-38.66424220280	5997434298540781312	19.105013	       	     	0
+243.25869581463	-38.67568974546	5997434298541267328	19.545689	       	     	0
+243.25649116886	-38.67586790361	5997434302835304064	19.949860	       	     	0
+243.26151017605	-38.67366550653	5997434302835307776	19.953754	       	     	0
+243.26219182784	-38.67265961876	5997434302835309312	20.051495	       	     	0
+243.26564609166	-38.67219528756	5997434302835309824	20.304270	       	     	0
+

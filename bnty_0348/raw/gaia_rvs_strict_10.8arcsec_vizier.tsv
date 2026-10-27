@@ -1,0 +1,40 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:50:20 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:50:20	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I/355/gaiadr3&-c=243.2720453+-38.6693591&-c.rs=10.8&RVS=1&-out=RAJ2000,DEJ2000,Source,Gmag,RV,e_RV,RVS&-out.max=50	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rs=10.8	
+#Constraint -out.max=50
+
+#RESOURCE=yCat_1355
+#Name: I/355
+#Title: Gaia DR3 Part 1. Main source (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1355....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1355	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-12-12	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_355_gaiadr3:
+#Name: I/355/gaiadr3
+#Title: Gaia DR3 source catalog (1811709771 sources)
+#Column	RAJ2000	(F15.11)	Barycentric right ascension (ICRS) at Ep=2000.0 (added by CDS) (ra2000)	[ucd=pos.eq.ra]
+#Column	DEJ2000	(F15.11)	Barycentric declination (ICRS) at Ep=2000.0 (added by CDS) (dec2000)	[ucd=pos.eq.dec]
+#Column	Source	(I19)	Unique source identifier (unique within a particular Data Release) (source_id)	[ucd=meta.id;meta.main]
+#Column	Gmag	(F9.6)	? G-band mean magnitude (phot_g_mean_mag)	[ucd=phot.mag;em.opt]
+#Column	RV	(F7.2)	? Radial velocity (radial_velocity)	[ucd=spect.dopplerVeloc.opt;em.opt.I]
+#Column	e_RV	(F5.2)	? Radial velocity error (radial_velocity_error)	[ucd=stat.error;spect.dopplerVeloc.opt;em.opt.I]
+#Column	RVS	(I1)	[0/1] Flag indicating the availability of mean RVS spectrum for this source (has_rvs)	[ucd=meta.code.status]

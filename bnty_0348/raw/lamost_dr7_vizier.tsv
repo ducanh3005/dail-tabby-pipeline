@@ -1,0 +1,71 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:40:52 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:40:52	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=V/156/dr7lrs&-c=243.2720453+-38.6693591&-c.rm=1.0&-out.max=50&-out.all=1	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rm=1.	
+#Constraint -out.all=1
+
+#RESOURCE=yCat_5156
+#Name: V/156
+#Title: LAMOST DR7 catalogs (Luo+, 2019)
+#INFO	ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	creator=Luo A.-L.	    First author or institution
+#INFO	cites=2019RAA..in.prep..L	    Article or Data origin sources
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/V/156	    Dataset landing page
+#INFO	publication_date=2024-09-09	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	V_156_dr7lrs:
+#Name: V/156/dr7lrs
+#Title: LAMOST LRS General Catalog
+#Column	_r	(F6.4)	Distance from center (243.2720453000-38.6693591000)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	sp	(A2)	Display the LaMOST spectrum	[ucd=meta.ref.url]
+#Column	ObsID	(I9)	Unique Spectra ID (obsid)	[ucd=meta.id]
+#Column	Target	(A19)	Target Designation, JHHMMSS.ss+DDMMSS.s (designation)	[ucd=meta.id;meta.main]
+#Column	Obs.Date	(A10)	Target Observation Date (obsdate)	[ucd=time.epoch;obs]
+#Column	LMJD	(I5)	Local Modified Julian Day (lmjd)	[ucd=time.epoch]
+#Column	MJD	(I5)	Modified Julian Day (mjd)	[ucd=time.epoch]
+#Column	PlanId	(a20)	Plan Name (planid)	[ucd=obs.field]
+#Column	spId	(I2)	Spectrograph ID (spid)	[ucd=meta.id;instr]
+#Column	FiberId	(I3)	Fiber ID (fiberid)	[ucd=meta.id]
+#Column	RAJ2000	(F14.10)	Fiber Pointing Right Ascension (J2000) (ra_obs)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Fiber Pointing Declination (J2000) (dec_obs)	[ucd=pos.eq.dec;meta.main]
+#Column	snru	(F8.2)	? S/N of u filter (snru)	[ucd=stat.snr]
+#Column	snrg	(F8.2)	? S/N of g filter (snrg)	[ucd=stat.snr]
+#Column	snrr	(F8.2)	? S/N of r filter (snrr)	[ucd=stat.snr]
+#Column	snri	(F8.2)	? S/N of i filter (snri)	[ucd=stat.snr]
+#Column	snrz	(F8.2)	? S/N of z filter (snrz)	[ucd=stat.snr]
+#Column	objType	(a10)	Object Type (objtype)	[ucd=src.class]
+#Column	Class	(a7)	Spectra Type (class)	[ucd=src.class]
+#Column	subClass	(a10)	Stellar Sub-Class (subclass)	[ucd=src.class]
+#Column	z	(F16.10)	? Redshift (z)	[ucd=src.redshift]
+#Column	e_z	(F19.10)	[]? Redshift Uncertainty (z_err)	[ucd=stat.error;src.redshift]
+#Column	magType	(a10)	Target Magnitude Type (magtype)	[ucd=meta.note]
+#Column	mag1	(F5.2)	? Magnitude in Band 1 of magType (mag1)	[ucd=phot.mag]
+#Column	mag2	(F5.2)	? Magnitude in Band 2 of magType (mag2)	[ucd=phot.mag]
+#Column	mag3	(F5.2)	? Magnitude in Band 3 of magType (mag3)	[ucd=phot.mag]
+#Column	mag4	(F5.2)	? Magnitude in Band 4 of magType (mag4)	[ucd=phot.mag]
+#Column	mag5	(F5.2)	? Magnitude in Band 5 of magType (mag5)	[ucd=phot.mag]
+#Column	mag6	(F5.2)	? Magnitude in Band 6 of magType (mag6)	[ucd=phot.mag]
+#Column	mag7	(F5.2)	? Magnitude in Band 7 of magType (mag7)	[ucd=phot.mag]
+#Column	tsource	(a10)	Organization or person who submit input catalog (tsource)	[ucd=meta.curation]
+#Column	FiberType	(A5)	Fiber Type of target (Obj, Sky, F-std, Unused, PosErr, Dead) (fibertype)	[ucd=meta.note]
+#Column	tfrom	(a14)	Input catalog submitted by an organization or a person determined by the tsource (tfrom)	[ucd=obs.observer]
+#Column	tcomment	(a73)	Target ID from SDSS, UCAC4, PANSTAR and other catalogues (tcomment)	[ucd=meta.note]
+#Column	offsets	(I1)	Whether there is a fiber offset during observation (offsets)	[ucd=meta.note]
+#Column	offsetsv	(F6.3)	? If the 'offsets' field is true, 'offsetsv' gives the offset distance from the target's coordinator in input catalog (offsets_v)	[ucd=meta.note]
+#Column	RAOdeg	(F14.10)	Right Ascension from input catalog (ra)	[ucd=pos.eq.ra]
+#Column	DEOdeg	(F13.10)	Declination from input catalog (dec)	[ucd=pos.eq.dec]
+#Column	FiberMask	(I3)	Possible fiber problems (fibermask)	[ucd=meta.note]
+#Column	GaiaDR2	(I19)	? The "source_id" field of Gaia DR2 catalog (gaia_source_id)	[ucd=meta.id]
+#Column	Gmag	(F14.8)	? The "phot_g_mean_mag" field of Gaia DR2 catalog (gaia_g_mean_mag)	[ucd=phot.mag;em.opt]

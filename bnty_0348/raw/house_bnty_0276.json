@@ -1,0 +1,168 @@
+{
+ "counterparts": [
+  {
+   "4fgl_name": "J2108.7-0408",
+   "glat": -32.24,
+   "p_chance": 0.00605,
+   "radio_result": "NVSS J210844-040812 (6.9 mJy)",
+   "sep_arcsec": 3.2,
+   "significance": 5.7,
+   "w1_w2": 0.759,
+   "w2_w3": 2.29,
+   "wise_designation": "J210843.97-040811.8"
+  },
+  {
+   "4fgl_name": "J1910.8+2856",
+   "glat": 8.9,
+   "p_chance": 0.01398,
+   "radio_result": "NVSS J191052+285621 (4.9 mJy)",
+   "sep_arcsec": 12.3,
+   "significance": 12.7,
+   "w1_w2": 0.634,
+   "w2_w3": 2.301,
+   "wise_designation": "J191052.13+285624.3"
+  },
+  {
+   "4fgl_name": "J1225.9+2951",
+   "glat": 84.1,
+   "p_chance": 0.00341,
+   "radio_result": "absent",
+   "sep_arcsec": 1.8,
+   "significance": 14.2,
+   "w1_w2": 0.512,
+   "w2_w3": 4.458,
+   "wise_designation": "J122557.76+295133.6"
+  },
+  {
+   "4fgl_name": "J1250.9-4943",
+   "glat": 13.15,
+   "p_chance": 0.0068,
+   "radio_result": "absent",
+   "sep_arcsec": 5.4,
+   "significance": 17.2,
+   "w1_w2": 1.436,
+   "w2_w3": 3.428,
+   "wise_designation": "J125054.28-494318.4"
+  },
+  {
+   "4fgl_name": "J0226.9+7744",
+   "glat": 15.83,
+   "p_chance": 0.0086,
+   "radio_result": "absent",
+   "sep_arcsec": 3.6,
+   "significance": 5.3,
+   "w1_w2": 0.638,
+   "w2_w3": 3.898,
+   "wise_designation": "J022659.08+774428.2"
+  },
+  {
+   "4fgl_name": "J2112.5-3043",
+   "glat": -42.44,
+   "p_chance": 0.02648,
+   "radio_result": "absent",
+   "sep_arcsec": 6.9,
+   "significance": 64.6,
+   "w1_w2": 0.555,
+   "w2_w3": 3.971,
+   "wise_designation": "J211233.33-304339.4"
+  },
+  {
+   "4fgl_name": "J1338.0-4159",
+   "glat": 20.04,
+   "p_chance": 0.02791,
+   "radio_result": "absent",
+   "sep_arcsec": 8.0,
+   "significance": 6.5,
+   "w1_w2": 0.924,
+   "w2_w3": 3.627,
+   "wise_designation": "J133804.66-415937.7"
+  },
+  {
+   "4fgl_name": "J1842.1+2737",
+   "glat": 16.8,
+   "p_chance": 0.02821,
+   "radio_result": "absent",
+   "sep_arcsec": 8.5,
+   "significance": 9.4,
+   "w1_w2": 0.621,
+   "w2_w3": 4.198,
+   "wise_designation": "J184209.19+273737.5"
+  },
+  {
+   "4fgl_name": "J1916.8-3025",
+   "glat": -18.42,
+   "p_chance": 0.03096,
+   "radio_result": "absent",
+   "sep_arcsec": 12.1,
+   "significance": 24.2,
+   "w1_w2": 0.811,
+   "w2_w3": 2.378,
+   "wise_designation": "J191653.54-302540.4"
+  },
+  {
+   "4fgl_name": "J1058.4-6625",
+   "glat": -5.99,
+   "p_chance": 0.0314,
+   "radio_result": "absent",
+   "sep_arcsec": 35.5,
+   "significance": 10.5,
+   "w1_w2": 0.723,
+   "w2_w3": 2.107,
+   "wise_designation": "J105831.92-662601.9"
+  },
+  {
+   "4fgl_name": "J0843.7-6933",
+   "glat": -16.31,
+   "p_chance": 0.03555,
+   "radio_result": "absent",
+   "sep_arcsec": 7.4,
+   "significance": 5.3,
+   "w1_w2": 1.092,
+   "w2_w3": 3.288,
+   "wise_designation": "J084346.00-693308.3"
+  },
+  {
+   "4fgl_name": "J1754.1-4333",
+   "glat": -8.91,
+   "p_chance": 0.03788,
+   "radio_result": "absent",
+   "sep_arcsec": 35.4,
+   "significance": 7.8,
+   "w1_w2": 0.883,
+   "w2_w3": 2.717,
+   "wise_designation": "J175414.02-433357.1"
+  },
+  {
+   "4fgl_name": "J1441.4-1934",
+   "glat": 36.23,
+   "p_chance": 0.04113,
+   "radio_result": "absent",
+   "sep_arcsec": 6.3,
+   "significance": 11.5,
+   "w1_w2": 0.627,
+   "w2_w3": 3.666,
+   "wise_designation": "J144123.66-193440.4"
+  },
+  {
+   "4fgl_name": "J1514.8+4448",
+   "glat": 55.4,
+   "p_chance": 0.04902,
+   "radio_result": "absent",
+   "sep_arcsec": 6.7,
+   "significance": 11.8,
+   "w1_w2": 0.509,
+   "w2_w3": 3.302,
+   "wise_designation": "J151452.56+444831.1"
+  }
+ ],
+ "funnel": {
+  "allwise_inside_ellipse": 23410,
+  "lat_cut_abs_gt_5": 5815,
+  "p_chance_lt_0_05": 14,
+  "radio_confirmed_counterparts": 2,
+  "sources_queried": 250,
+  "total_4fgl_dr4": 7195,
+  "unassociated_in_dr4": 1704,
+  "wise_blazar_strip_colors": 2140
+ }
+}

@@ -1,0 +1,45 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:40:58 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:40:58	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I/355/spectra&-c=243.2720453+-38.6693591&-c.rm=1.0&-out.max=50&-out.all=1	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rm=1.	
+#Constraint -out.all=1
+
+#RESOURCE=yCat_1355
+#Name: I/355
+#Title: Gaia DR3 Part 1. Main source (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/355	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1355....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1355	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-12-12	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_355_spectra:
+#Name: I/355/spectra
+#Title: Gaia DR3 spectra view (34468373 sources)
+#Column	_r	(F6.4)	Distance from center (243.27204530000-38.66935910000)[ICRS], at Epoch=J2016.0	[ucd=pos.angDistance]
+#Column	RA_ICRS	(F15.11)	? Right ascension (ICRS) at Ep=2016.0 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	? Declination (ICRS) at Ep=2016.0 (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	Source	(I19)	Unique source identifier (unique within a particular Data Release) (source_id)	[ucd=meta.id;meta.main]
+#Column	plotXPsamp	(A4)	spectra Plot by CDS	[ucd=meta.ref.url]
+#Column	dataXPSamp	(A3)	spectra TSV by CDS	[ucd=meta.ref.url]
+_r	RA_ICRS	DE_ICRS	Source	plotXPsamp	dataXPSamp
+arcmin	deg	deg	 	 	
+------	---------------	---------------	-------------------	----	---
+0.2791	243.26675663201	-38.66721712027	5997434302849543552	plot	tsv
+0.8207	243.28806712547	-38.66382568366	5997528104932154752	plot	tsv
+

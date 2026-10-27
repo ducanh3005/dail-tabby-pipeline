@@ -1,0 +1,18 @@
+
+Results from query to  NASA/IPAC Extragalactic Database (NED),
+which is operated by the Jet Propulsion Laboratory, California Institute of
+Technology, under contract with the National Aeronautics and Space Administration.
+This work was (partially) supported by the US National Virtual Observatory
+development project, which is funded by the National Science Foundation
+under cooperative agreement AST0122449 with The Johns Hopkins University.
+
+
+
+queryDateTime:2026-10-27T09:48:47PDT
+
+
+
+Photometric Data for NVSS J161305-384010
+
+No.|Observed Passband|Photometry Measurement|Uncertainty|Units|Frequency|Flux Density|Upper limit of uncertainty|Lower limit of uncertainty|Upper limit of Flux Density|Lower limit of Flux Density|NED Uncertainty|NED Units|Refcode|Significance|Published frequency|Frequency Mode|Coordinates Targeted|Spatial Mode|Qualifiers|Comments
+1|1.4GHz              | 8.4       |+/-1.0  |mJy                 |1.40E+09|  8.40E-03|1.00E-03|1.00E-03|||+/-1.00E-03|Jy|1998AJ....115.1693C|uncertainty|    1.40   GHz       | Broad-band measurement|16 13 5.03 -38 40 10.1 (J2000)| Flux integrated from map|                                        |From new raw data

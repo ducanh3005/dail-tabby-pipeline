@@ -1,0 +1,163 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-27T16:40:50 [V7.6.2]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-27T16:40:50	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=V/154/sdss16&-c=243.2720453+-38.6693591&-c.rm=1.0&-out.max=50&-out.all=1	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.2	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=243.272045-38.669359,rm=1.	
+#Constraint -out.all=1
+
+#RESOURCE=yCat_5154
+#Name: V/154
+#Title: Sloan Digital Sky Surveys (SDSS), Release 16 (DR16) (Ahumada+, 2020)
+#INFO	ivoid=ivo://cds.vizier/v/154	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/v/154	    IVOID of underlying data collection
+#INFO	creator=Ahumada R.	    First author or institution
+#INFO	cites=bibcode:2020ApJS..249....3A	    Article or Data origin sources
+#INFO	journal=ApJS	    Journal name
+#INFO	original_date=2020	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/V/154	    Dataset landing page
+#INFO	publication_date=2026-03-18	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_0.000:	ICRS
+#Table	V_154_sdss16:
+#Name: V/154/sdss16
+#Title: * output of the SDSS photometric catalog
+#Column	_r	(F6.4)	Distance from center (243.272045-38.669359)[ICRS], at Epoch of catalog (MJD)	[ucd=pos.angDistance]
+#Column	objID	(I19)	SDSS unique object identifier (1)	[ucd=meta.id;meta.main]
+#Column	RA_ICRS	(F10.6)	Right Ascension of the object (ICRS) at Epoch="MJD" (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F10.6)	Declination of the object (ICRS) at Epoch="MJD" (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	fieldID	(I19)	The field this object is in	[ucd=meta.note]
+#Column	mode	(I1)	[1/4] PhotoMode (1=primary, 2=secondary, 3=family, 4=outside)	[ucd=meta.code.class]
+#Column	class	(I1)	[0/8]? Type of object (3=galaxy, 6=star) (type) (2)	[ucd=src.class]
+#Column	clean	(I1)	[0/1] Clean photometry flag (1=clean; 0=unclean)	[ucd=meta.code]
+#Column	flags	(I19)	Photo Object Attribute flags (3)	[ucd=meta.code.error]
+#Column	upmag	(F6.3)	[4/35]? PSF magnitude in u band (psfMag_u) (4)	[ucd=phot.mag;em.opt.U]
+#Column	gpmag	(F6.3)	[3.7/37]? PSF magnitude in g band (psfMag_g) (4)	[ucd=phot.mag;em.opt.B]
+#Column	rpmag	(F6.3)	[3.8/36]? PSF magnitude in r band (psfMag_r) (4)	[ucd=phot.mag;em.opt.R]
+#Column	ipmag	(F6.3)	[2.6/34]? PSF magnitude in i band (psfMag_i) (4)	[ucd=phot.mag;em.opt.I]
+#Column	zpmag	(F6.3)	[3.8/33.3]? PSF magnitude in z band (psfMag_z) (4)	[ucd=phot.mag;em.opt.I]
+#Column	e_upmag	(F7.3)	[1.5e-5/100]? Mean error on upmag (psfMagErr_u) (4)	[ucd=stat.error;phot.mag]
+#Column	e_gpmag	(F6.3)	? Mean error on gpmag (psfMagErr_g) (4)	[ucd=stat.error;phot.mag]
+#Column	e_rpmag	(F7.3)	? Mean error on rpmag (psfMagErr_r) (4)	[ucd=stat.error;phot.mag]
+#Column	e_ipmag	(F7.3)	? Mean error on ipmag (psfMagErr_i) (4)	[ucd=stat.error;phot.mag]
+#Column	e_zpmag	(F7.3)	? Mean error on zpmag (psfMagErr_z) (4)	[ucd=stat.error;phot.mag]
+#Column	uPmag	(F6.3)	[-0.4/47.2]? Petrosian magnitude in u band (petroMag_u) (4)	[ucd=phot.mag;em.opt.U]
+#Column	gPmag	(F6.3)	[3.7/48]? Petrosian magnitude in g band (petroMag_g) (4)	[ucd=phot.mag;em.opt.B]
+#Column	rPmag	(F6.3)	[1.3/48.6]? Petrosian magnitude in r band (petroMag_r) (4)	[ucd=phot.mag;em.opt.R]
+#Column	iPmag	(F6.3)	[2.6/48.4]? Petrosian magnitude in i band (petroMag_i) (4)	[ucd=phot.mag;em.opt.I]
+#Column	zPmag	(F6.3)	[-2.9/45.1]? Petrosian magnitude in z band (petroMag_z) (4)	[ucd=phot.mag;em.opt.I]
+#Column	e_uPmag	(F7.3)	[1e-7/100]? Mean error in uPmag (petroMagErr_u) (4)	[ucd=stat.error;phot.mag]
+#Column	e_gPmag	(F7.3)	[9.1e-9/100]? Mean error in gPmag (petroMagErr_g) (4)	[ucd=stat.error;phot.mag]
+#Column	e_rPmag	(F7.3)	? Mean error in rPmag (petroMagErr_r) (4)	[ucd=stat.error;phot.mag]
+#Column	e_iPmag	(F7.3)	? Mean error in iPmag (petroMagErr_i) (4)	[ucd=stat.error;phot.mag]
+#Column	e_zPmag	(F7.3)	? Mean error in zPmag (petroMagErr_z) (4)	[ucd=stat.error;phot.mag]
+#Column	uPrad	(F7.3)	[1.2e-6/261]? Petrosian radius in u band (petroRad_u)	[ucd=phys.angSize;src]
+#Column	gPrad	(F7.3)	[2.3e-6/261]? Petrosian radius in g band (petroRad_g)	[ucd=phys.angSize;src]
+#Column	rPrad	(F7.3)	[4.9e-6/260]? Petrosian radius in r band (petroRad_r)	[ucd=phys.angSize;src]
+#Column	iPrad	(F7.3)	[2.2e-6/263]? Petrosian radius in i band (petroRad_i)	[ucd=phys.angSize;src]
+#Column	zPrad	(F7.3)	[8.3e-7/261]? Petrosian radius in z band (petroRad_z)	[ucd=phys.angSize;src]
+#Column	e_uPrad	(F9.3)	[-1000/259]? Mean error in rPrad (petroRadErr_u)	[ucd=stat.error]
+#Column	e_gPrad	(F9.3)	[-1000/259]? Mean error in rPrad (petroRadErr_g)	[ucd=stat.error]
+#Column	e_rPrad	(F9.3)	[-1000/259]? Mean error in rPrad (petroRadErr_r)	[ucd=stat.error]
+#Column	e_iPrad	(F9.3)	[-1000/259]? Mean error in rPrad (petroRadErr_i)	[ucd=stat.error]
+#Column	e_zPrad	(F9.3)	[-1000/257]? Mean error in rPrad (petroRadErr_z)	[ucd=stat.error]
+#Column	udVrad	(F7.3)	[0/257]? De Vaucouleurs fit radius u band (deVRad_u)	[ucd=phys.angSize;src]
+#Column	gdVrad	(F7.3)	[0/238]? De Vaucouleurs fit radius g band (deVRad_g)	[ucd=phys.angSize;src]
+#Column	rdVrad	(F7.3)	[0/238]? De Vaucouleurs fit radius r band (deVRad_r)	[ucd=phys.angSize;src]
+#Column	idVrad	(F7.3)	[0/232]? De Vaucouleurs fit radius i band (deVRad_i)	[ucd=phys.angSize;src]
+#Column	zdVrad	(F7.3)	[0/238]? De Vaucouleurs fit radius z band (deVRad_z)	[ucd=phys.angSize;src]
+#Column	udVell	(F6.3)	[0.05/1]? De Vaucouleurs fit b/a u band (deVAB_u)	[ucd=phys.size.axisRatio]
+#Column	gdVell	(F6.3)	[0.05/1]? De Vaucouleurs fit b/a g band (deVAB_g)	[ucd=phys.size.axisRatio]
+#Column	rdVell	(F6.3)	[0.05/1]? De Vaucouleurs fit b/a r band (deVAB_r)	[ucd=phys.size.axisRatio]
+#Column	idVell	(F6.3)	[0.05/1]? De Vaucouleurs fit b/a i band (deVAB_i)	[ucd=phys.size.axisRatio]
+#Column	zdVell	(F6.3)	[0.05/1]? De Vaucouleurs fit b/a z band (deVAB_z)	[ucd=phys.size.axisRatio]
+#Column	uPA	(F8.1)	[-10105/271]? Position angle of dVrad in u band (deVPhi_u)	[ucd=pos.posAng]
+#Column	gPA	(F8.1)	[-10105/271]? Position angle of dVrad in g band (deVPhi_g)	[ucd=pos.posAng]
+#Column	rPA	(F8.1)	[-10105/271]? Position angle of dVrad in r band (deVPhi_r)	[ucd=pos.posAng]
+#Column	iPA	(F8.1)	[-10105/271]? Position angle of dVrad in i band (deVPhi_i)	[ucd=pos.posAng]
+#Column	zPA	(F8.1)	[-10105/271]? Position angle of dVrad in z band (deVPhi_z)	[ucd=pos.posAng]
+#Column	uFlags	(I19)	Detection flags u band (flags_u) (3)	[ucd=meta.code]
+#Column	gFlags	(I19)	Detection flags g band (flags_g) (3)	[ucd=meta.code]
+#Column	rFlags	(I19)	Detection flags r band (flags_r) (3)	[ucd=meta.code]
+#Column	iFlags	(I19)	Detection flags i band (flags_i) (3)	[ucd=meta.code]
+#Column	zFlags	(I19)	Detection flags z band (flags_z) (3)	[ucd=meta.code]
+#Column	uc	(I1)	[0/8]? Phototype in u band (6=Star ; 3=galaxy) (type_u) (2)	[ucd=src.class.starGalaxy]
+#Column	gc	(I1)	[0/8]? Phototype in i band (6=Star ; 3=galaxy) (type_g) (2)	[ucd=src.class.starGalaxy]
+#Column	rc	(I1)	[0/8]? Phototype in r band (6=Star ; 3=galaxy) (type_r) (2)	[ucd=src.class.starGalaxy]
+#Column	ic	(I1)	[0/8]? Phototype in i band (6=Star ; 3=galaxy) (type_i) (2)	[ucd=src.class.starGalaxy]
+#Column	zc	(I1)	[0/8]? Phototype in z band (6=Star ; 3=galaxy) (type_z) (2)	[ucd=src.class.starGalaxy]
+#Column	us	(F4.1)	[0/1]? 0=notStar 1=Star in u band (probPSF_u)	[ucd=src.class.starGalaxy]
+#Column	gs	(F4.1)	[0/1]? 0=notStar 1=Star in g band (probPSF_g)	[ucd=src.class.starGalaxy]
+#Column	rs	(F4.1)	[0/1]? 0=notStar 1=Star in r band (probPSF_r)	[ucd=src.class.starGalaxy]
+#Column	is	(F4.1)	[0/1]? 0=notStar 1=Star in i band (probPSF_i)	[ucd=src.class.starGalaxy]
+#Column	zs	(F4.1)	[0/1]? 0=notStar 1=Star in z band (probPSF_z)	[ucd=src.class.starGalaxy]
+#Column	e_RA_ICRS	(F9.3)	[0/51703] Mean error on RAdeg (raErr)	[ucd=stat.error;pos.eq.ra]
+#Column	e_DE_ICRS	(F9.3)	[0/22795] Mean error on DEdeg (decErr)	[ucd=stat.error;pos.eq.dec]
+#Column	uoRA	(F11.2)	Offset of u position along RA (offsetRa_u)	[ucd=pos.angDistance]
+#Column	goRA	(F11.2)	Offset of g position along RA (offsetRa_g)	[ucd=pos.angDistance]
+#Column	roRA	(F11.2)	Offset of r position along RA (offsetRa_r)	[ucd=pos.angDistance]
+#Column	ioRA	(F11.2)	Offset of i position along RA (offsetRa_i)	[ucd=pos.angDistance]
+#Column	zoRA	(F11.2)	Offset of z position along RA (offsetRa_z)	[ucd=pos.angDistance]
+#Column	uoDE	(F7.2)	Offset of u position along Dec (offsetDec_u)	[ucd=pos.angDistance]
+#Column	goDE	(F7.2)	Offset of g position along Dec (offsetDec_g)	[ucd=pos.angDistance]
+#Column	roDE	(F7.2)	Offset of r position along Dec (offsetDec_r)	[ucd=pos.angDistance]
+#Column	ioDE	(F7.2)	Offset of i position along Dec (offsetDec_i)	[ucd=pos.angDistance]
+#Column	zoDE	(F7.2)	Offset of z position along Dec (offsetDec_z)	[ucd=pos.angDistance]
+#Column	parentID	(I19)	Pointer to parent (if object deblended)	[ucd=meta.id.parent]
+#Column	SpObjID	(a20)	Pointer to the spectrum of object or 0 (specObjID) (6)	[ucd=meta.id]
+#Column	umag	(F6.3)	[4/37.3]? Model magnitude in u filter AB scale (u) (7)	[ucd=phot.mag;em.opt.U]
+#Column	gmag	(F6.3)	[3.7/39.6]? Model magnitude in g filter AB scale (g) (7)	[ucd=phot.mag;em.opt.B]
+#Column	rmag	(F6.3)	[3.8/40.4]? Model magnitude in r filter AB scale (r) (7)	[ucd=phot.mag;em.opt.R]
+#Column	imag	(F6.3)	[2.6/39.5]? Model magnitude in i filter AB scale (i) (7)	[ucd=phot.mag;em.opt.I]
+#Column	zmag	(F6.3)	[3.5/37.2]? Model magnitude in z filter AB scale (z) (7)	[ucd=phot.mag;em.opt.I]
+#Column	e_umag	(F8.3)	[8.9e-8/3444]? Mean error on umag (err_u)	[ucd=stat.error;phot.mag]
+#Column	e_gmag	(F8.3)	[3.8e-8/5955]? Mean error on gmag (err_g)	[ucd=stat.error;phot.mag]
+#Column	e_rmag	(F7.3)	[5.2e-8/915]? Mean error on rmag (err_r)	[ucd=stat.error;phot.mag]
+#Column	e_imag	(F7.3)	[0/634]? Mean error on imag (err_i)	[ucd=stat.error;phot.mag]
+#Column	e_zmag	(F8.3)	[9.4e-8/3529]? Mean error on zmag (err_z)	[ucd=stat.error;phot.mag]
+#Column	Status	(I4)	[0/4145] Decimal status (resolveStatus) (5)	[ucd=meta.code]
+#Column	spInst	(A4)	? Spectral instrument used ("SDSS" or "BOSS") (spec_instrument) (6)	[ucd=meta.id;instr]
+#Column	spType	(a25)	? Source type (spec_sourceType) (6)(8)	[ucd=src.class]
+#Column	zsp	(F8.5)	[-0.012/7.06]? Spectroscopic final redshift (when SpObjID>0) (spec_z) (6)	[ucd=src.redshift]
+#Column	e_zsp	(F11.5)	[-6/30689]? Mean error on zsp (negative for bad fit) (spec_zErr) (6)	[ucd=stat.error]
+#Column	f_zsp	(I3)	[0/902]? Zwarning flag (spec_zWarning) (6)(9)	[ucd=meta.code]
+#Column	spCl	(a6)	? Spectroscopic class: "GALAXY"; "QSO"; "STAR" (spec_class) (6)	[ucd=meta.code.class;pos.parallax.spect]
+#Column	subCl	(a12)	? Spectroscopic subclass (spec_subClass) (6)(10)	[ucd=src.class]
+#Column	Vdisp	(F7.3)	[0/850]? Velocity dispersion (spec_velDisp) (6)	[ucd=phys.veloc.dispersion]
+#Column	e_Vdisp	(F8.3)	[-7/4526]? Mean error on Vdisp (spec_velDispErr) (6)	[ucd=stat.error]
+#Column	spS/N	(F8.2)	[-1927/132]? Median signal-to-noise over all good pixels (spec_snMedian) (6)	[ucd=em.wl.central;stat.median]
+#Column	M	(I1)	[0/4]? Number of USNO-B objects matched within 1arcsec (pm_match) (11)	[ucd=meta.number]
+#Column	pmRA	(F8.2)	[-6121/5519]? Proper motion along Right Ascension (pm_pmRa) (11)	[ucd=pos.pm;pos.eq.ra]
+#Column	pmDE	(F8.2)	[-4846/4437]? Proper motion along Declination (pm_pmDec) (11)	[ucd=pos.pm;pos.eq.dec]
+#Column	e_pmRA	(F7.2)	[0/4709]? Mean error on pmRA (pm_pmRaErr) (11)	[ucd=stat.error;pos.pm;pos.eq.ra]
+#Column	e_pmDE	(F7.2)	[0/4709]? Mean error on pmDE (pm_pmDecErr) (11)	[ucd=stat.error;pos.pm;pos.eq.dec]
+#Column	sigRA	(F7.2)	[0/8662]? RMS residual of proper motion fit in RA (pm_sigRa) (11)	[ucd=stat.fit.residual]
+#Column	sigDE	(F8.2)	[0/10625]? RMS residual of proper motion fit in Dec (pm_sigDec) (11)	[ucd=stat.fit.residual]
+#Column	N	(I1)	[0/6]? Number of detections used in the pm fit including SDSS (pm_nFit) (11)	[ucd=meta.number]
+#Column	g(O)	(F9.1)	[-214740/70189]? Magnitude from USNO-B O plate recalibrated to SDSS g (pm_O) (11)	[ucd=phot.mag;em.opt.B]
+#Column	r(E)	(F9.1)	? Magnitude from E plate recalibrated to SDSS r (pm_E) (11)	[ucd=phot.mag;em.opt.R]
+#Column	g(J)	(F9.1)	? Magnitude from J plate recalibrated to SDSS g (pm_J) (11)	[ucd=phot.mag;em.opt.B]
+#Column	r(F)	(F9.1)	? Magnitude from F plate recalibrated to SDSS r (pm_F) (11)	[ucd=phot.mag;em.opt.R]
+#Column	i(N)	(F9.1)	? Magnitude from N plate recalibrated to SDSS i (pm_N) (11)	[ucd=phot.mag;em.opt.I]
+#Column	zph	(F7.4)	[5e-4/1]? Photometric redshift estimated by robust fit to nearest neighbors in a reference set (photoz_z) (12)	[ucd=src.redshift]
+#Column	e_zph	(F7.4)	[0.003/0.3]? Estimated error of the photometric redshift (photoz_zErr) (12)	[ucd=stat.error]
+#Column	<zph>	(F7.4)	[0.009/0.9]? Average redshift of the nearest neighbors; if significantly different from zph this might be a better estimate than zph (photoz_nnAvgZ) (12)	[ucd=src.redshift.phot]
+#Column	chi2	(F12.3)	[2e-12/6.3e7]? Chi-square value for the minimum chi-square template fit (photoz_chisq) (12)	[ucd=stat.value]
+#Column	Q	(I1)	[1/3] Quality of the observation: 1=bad; 2=barely acceptable; 3=good (field_quality) (13)	[ucd=meta.code.qual;obs.param;obs]
+#Column	uMJD	(F10.4)	Date of observation in u band (field_mjd_u) (13)	[ucd=time.epoch]
+#Column	gMJD	(F10.4)	Date of observation in g band (field_mjd_g) (13)	[ucd=time.epoch]
+#Column	rMJD	(F10.4)	Date of observation in r band (field_mjd_r) (13)	[ucd=time.epoch]
+#Column	iMJD	(F10.4)	Date of observation in i band (field_mjd_i) (13)	[ucd=time.epoch]
+#Column	zMJD	(F10.4)	Date of observation in z band (field_mjd_z) (13)	[ucd=time.epoch]
+#Column	SDSS16	(a24)	SDSS-DR16 name based on J2000 position; provided by CDS	[ucd=meta.id]
+#Column	SDSS-ID	(a20)	SDSS object identifier (run-rerun-camcol-field-object) (14)	[ucd=meta.id]
+#Column	Sp-ID	(a16)	? Spectroscopic Plate-MJD-Fiber identifier (plate-mjd-fiberID)	[ucd=meta.id]
+#Column	MJD	(F10.4)	Mean observation date (average calculated by CDS from the uMJD, gMJD, rMJD, iMJD, zMJD)	[ucd=time.epoch]

@@ -1,0 +1,39 @@
+::script::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+output console=on script=on
+coo 243.2720453 -38.6693591 radius=60s frame=ICRS
+
+::console:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.27CET17:41:01
+total execution time: 0.011 secs
+simbatch done
+
+::error:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+incorrect action code: console=on script=on
+
+::data::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+dist(asec):      52.46
+dist(asec):      52.46
+main otype: gamma ~
+otypes    : BL?,gam
+coobox: 16550
+coord : 16 13 09.4-38 40 30 (Gam ) [209520 204480 90] E 2022ApJS..260...53A
+liste identificateurs (1) :
+4FGL J1613.1-3840
+
+parents: 0  children: 0  siblings: 0
+liste bibcodes (5) :
+2024A&A...684A.208M
+2022A&A...660A..87B
+2022ApJS..260...53A
+2021ApJ...914...42B
+2021MNRAS.505.5853G
+
+liste mesures () :
+notes(0) :
+
+
+
