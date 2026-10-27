@@ -33,7 +33,7 @@ C. Radio Gate (r <= 10.8" at WISE counterpart 291.8797823, +1.8994303):
 Ruling: MISS — passes BOTH house P_chance < 0.05 (0.00918) and the 10.8" radio gate (1.06" VLASS).
 
 2. 4FGL J1613.1-3840: ARCHIVE SEARCH AT WISE COUNTERPART POSITION
-WISE counterpart: WISE J161305.29-384009.6 | Coordinates queried (J2000): RA = 243.2720453 deg (16h13m05.2909s), Dec = -38.6693591 deg (-38d40m09.693s).
+WISE counterpart: WISE J161305.29-384009.6 | Coordinates (J2000): RA = 243.2720453 deg (16h13m05.2909s), Dec = -38.6693591 deg (-38d40m09.693s).
 (Radio at WISE position: VLASS1QLCIR J161305.31-384008.9 at 0.82", Ftot=5.427 mJy; NVSS 161305-384010 at 3.08", S1.4=7.0 mJy; SUMSS v2.1 0-row null.)
 
 1) SDSS (V/154/sdss16, raw/sdss_dr16_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0):
@@ -52,8 +52,8 @@ WISE counterpart: WISE J161305.29-384009.6 | Coordinates queried (J2000): RA = 2
      1|WISEA J161305.29-384009.6|243.27205 | -38.66936 |IrS||||     |  0.000|0|0|22|2|0|0|0
      2|NVSS J161305-384010|243.27096 | -38.66947 |RadioS|||| 0.92|  0.051|0|0|1|1|0|0|0
    - 0 spectra, 0 redshifts (Redshift=null; Type=IrS, RadioS).
-   - 23 SED points: WISEA J161305.29-384009.6 (22 IR points: profile-fit W1=15.078+/-0.043 mag/0.288 mJy, W2=14.198+/-0.052 mag/0.360 mJy, W3=12.128+/-0.45 mag/0.446 mJy, W4>8.432 mag/<3.54 mJy + 8 aperture rows; 10 Spitzer IRAC/MIPS rows 2013SSTSLC4.2....0C: 3.6um=407.55+/-2.49 & 396.29+/-3.14 uJy, 4.5um=436.98+/-2.93 & 442.05+/-3.42 uJy, 5.8um=498.61+/-10.55 & 490.95+/-14.14 uJy, 8.0um=523.85+/-10.75 & 529.17+/-13.96 uJy, 24um=842.79+/-159.02 & 810.72+/-161.15 uJy); NVSS J161305-384010 (1 radio point: 1.4 GHz = 8.4+/-1.0 mJy).
+   - 23 SED points: WISEA J161305.29-384009.6 (22 IR points: profile-fit W1=15.078 mag/0.288 mJy, W2=14.198 mag/0.360 mJy, W3=12.128 mag/0.446 mJy, W4>8.432 mag/<3.54 mJy + 8 aperture rows; 10 Spitzer IRAC/MIPS rows 2013SSTSLC4.2....0C: 3.6um=407.55 & 396.29 uJy, 4.5um=436.98 & 442.05 uJy, 5.8um=498.61 & 490.95 uJy, 8.0um=523.85 & 529.17 uJy, 24um=842.79 & 810.72 uJy); NVSS J161305-384010 (1 radio point: 1.4 GHz = 8.4+/-1.0 mJy).
 6) SIMBAD (raw/simbad_tap_10.8arcsec.tsv & raw/simbad_tap_60arcsec.tsv, ADQL at 243.2720453, -38.6693591):
-   - Within 10.8": Well-formed 0-row null (header "main_id	ra	dec	otype	sp_type	rvz_type	rvz_radvel	rvz_redshift	sep_arcsec", 0 rows).
+   - Within 10.8": Well-formed 0-row null ("main_id	ra	dec	otype	sp_type	rvz_type	rvz_radvel	rvz_redshift	sep_arcsec", 0 rows).
    - Within 60.0": 1 row at 52.46": "4FGL J1613.1-3840"	243.28919999999994	-38.6751	"gam"					52.45843444095285 (BL?,gam; sp_type=null, z=null).
 No discovery is claimed.
