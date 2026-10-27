@@ -1,27 +1,25 @@
 bnty_0348 — Settle the two open threads from bnty_0314: J1927.5+0154 and J1613.1-3840
-Hunter: ducanh3005 | Public Git Repo: https://github.com/ducanh3005/dail-tabby-pipeline (bnty_0348/)
+Hunter: ducanh3005 | Repo: https://github.com/ducanh3005/dail-tabby-pipeline (bnty_0348/)
 Reproduce offline (no API key, no network):
   git clone https://github.com/ducanh3005/dail-tabby-pipeline.git
   cd dail-tabby-pipeline && python3 bnty_0348/verify_bnty_0348.py
-All 44 verbatim raw catalog responses (with query headers) are in bnty_0348/raw/, with full writeup in bnty_0348/README.md. verify_bnty_0348.py re-derives every number below from raw bytes (25/25 checks pass, 0 truncated/errored).
+All 44 raw responses are committed verbatim in bnty_0348/raw/ (full writeup: bnty_0348/README.md; 25/25 checks pass, 0 truncated).
 
 1. 4FGL J1927.5+0154: RULING = MISS
-A. House (bnty_0276) P_chance Convention (verbatim as published in bnty_0276 Stage 3 & Sec. 2.3):
-- Stage 3 cone: "High-precision sample (R <= 1.5 * a_95) | 250 | Queried in AllWISE spatial cone"
-- Sec. 2.3: "Given local blazar surface density Sigma_blazar = N_blazar / (pi * R_cone^2), expected false matches within theta_sep is mu = Sigma_blazar * pi * theta_sep^2. Under Poisson statistics: P_chance = 1 - exp(-mu) < 0.05."
-Thus mu = N_blazar * (theta_sep / R_cone)^2. House uses R_cone = 1.5 * a_95 (with a 3.0' floor on small ellipses; for J1927.5+0154, 1.5*a_95 = 3.8970' > 3.0', so both are identical); Orbit (bnty_0314, vet_4fgl.py) uses fixed R_cone = 10.0' = 600.0".
+A. House (bnty_0276) P_chance Convention (verbatim from bnty_0276 Stage 3 & Sec. 2.3):
+Stage 3: "High-precision sample (R <= 1.5 * a_95)". Sec 2.3: "Sigma_blazar = N_blazar / (pi * R_cone^2), mu = Sigma_blazar * pi * theta_sep^2, P_chance = 1 - exp(-mu) < 0.05." House uses R_cone = 1.5*a_95 (3.8970' = 233.82" for J1927.5+0154); Orbit (bnty_0314) uses fixed R_cone = 10.0' = 600.0".
 
 B. Recomputation Under Both Conventions (raw/J1927.5+0154.allwise.tsv.gz & raw/unassociated.json):
 - 4FGL J1927.5+0154: RA=291.876, Dec=+1.9017, a95=0.0433 deg (2.5980'=155.88"), b95=0.0365 deg, PA95=-80.60 deg. Inside bnty_0276 sample (1.5*a95 = 3.8970' <= 5.0').
 - Verbatim AllWISE row (-source=II/328/allwise&-c=291.8760000+1.9017000&-c.rm=10.0):
   291.8797823	+01.8994303	14.668	14.151	11.814	J192731.14+015357.9
-- WISE J192731.14+015357.9: inside 95% ellipse ((x/a95)^2+(y/b95)^2=0.0144<=1), W1-W2=0.517, W2-W3=2.337, theta_sep = 15.8732" (2dp: 15.87", 1dp: 15.9").
-- Blazar-strip sources in 10' cone: 11 (at 15.87", 193.27", 413.96", 417.36", 500.25", 502.90", 535.91", 545.46", 559.59", 565.60", 581.93").
+- WISE J192731.14+015357.9: in 95% ellipse ((x/a95)^2+(y/b95)^2=0.0144<=1), W1-W2=0.517, W2-W3=2.337, theta_sep = 15.8732" (2dp: 15.87", 1dp: 15.9").
+- Blazar-strip sources in 10' cone: 11 (2 within 233.82": 15.87", 193.27"; 9 more between 413.96" and 581.93").
 - House convention (R_cone = 1.5*a95 = 0.06495 deg = 3.8970' = 233.82"):
-  N_blazar(<= 233.82") = 2 (15.87", 193.27"); Sigma_blazar = 150.911 deg^-2; mu = 0.009217 ->
+  N_blazar(<=233.82") = 2 (15.87", 193.27"); Sigma_blazar = 150.911 deg^-2; mu = 0.009217 ->
   P_chance (house) = 0.009175 (0.00918; 0.009171 at 15.87", 0.009206 at 15.9") < 0.05 [PASS].
 - Orbit convention (R_cone = 10.0' = 600.0"):
-  N_blazar(<= 600.0") = 11; Sigma_blazar = 126.051 deg^-2; mu = 0.007696 ->
+  N_blazar(<=600.0") = 11; Sigma_blazar = 126.051 deg^-2; mu = 0.007696 ->
   P_chance (orbit) = 0.007666 (0.00767) < 0.05 [PASS].
 
 C. Radio Gate (r <= 10.8" at WISE counterpart 291.8797823, +1.8994303):
@@ -33,27 +31,20 @@ C. Radio Gate (r <= 10.8" at WISE counterpart 291.8797823, +1.8994303):
 Ruling: MISS — passes BOTH house P_chance < 0.05 (0.00918) and the 10.8" radio gate (1.06" VLASS).
 
 2. 4FGL J1613.1-3840: ARCHIVE SEARCH AT WISE COUNTERPART POSITION
-WISE counterpart: WISE J161305.29-384009.6 | Coordinates (J2000): RA = 243.2720453 deg (16h13m05.2909s), Dec = -38.6693591 deg (-38d40m09.693s).
-(Radio at WISE position: VLASS1QLCIR J161305.31-384008.9 at 0.82", Ftot=5.427 mJy; NVSS 161305-384010 at 3.08", S1.4=7.0 mJy; SUMSS v2.1 0-row null.)
-
-1) SDSS (V/154/sdss16, raw/sdss_dr16_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0):
-   Well-formed 0-row null (no "---" separator, 0 rows; south of SDSS footprint). 0 spectra, 0 SED points.
-2) LAMOST (V/156/dr7lrs, raw/lamost_dr7_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0):
-   Well-formed 0-row null (no "---" separator, 0 rows; south of LAMOST footprint). 0 spectra, 0 SED points.
-3) APOGEE (III/286/catalog DR17 & III/284/allstars DR16, raw/apogee_dr17_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0):
-   Well-formed 0-row null (no "---" separator, 0 rows in DR17 & DR16). 0 spectra, 0 SED points.
+WISE J161305.29-384009.6 | Coordinates (J2000): RA = 243.2720453 deg (16h13m05.2909s), Dec = -38.6693591 deg (-38d40m09.693s).
+1) SDSS (V/154/sdss16, raw/sdss_dr16_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0): Well-formed 0-row null (0 rows; south of SDSS). 0 spectra/SED.
+2) LAMOST (V/156/dr7lrs, raw/lamost_dr7_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0): Well-formed 0-row null (0 rows; south of LAMOST). 0 spectra/SED.
+3) APOGEE (III/286/catalog DR17 & III/284/allstars DR16, raw/apogee_dr17_vizier.tsv, -c=243.2720453+-38.6693591&-c.rm=1.0): Well-formed 0-row null (0 rows). 0 spectra/SED.
 4) Gaia RVS & Gaia DR3 (I/355/gaiadr3, raw/gaia_rvs_strict_10.8arcsec_vizier.tsv & raw/gaia_dr3_10.8arcsec_vizier.tsv):
    - RVS=1 query (r=10.8" and 60"): Well-formed 0-row null (0 RVS spectra).
-   - Unfiltered Gaia DR3 (r=10.8") matches optical counterpart Gaia DR3 5997528070572416256 at sep = 0.14":
+   - Unfiltered Gaia DR3 (r=10.8") matches Gaia DR3 5997528070572416256 at sep = 0.14":
      243.27203625139	-38.66939598915	5997528070572416256	19.761465	20.732006	18.937782	       	     	0
      3 broadband SED points (G=19.761465, BP=20.732006, RP=18.937782 mag); RV=null, RVS=0 (no spectrum).
 5) NED (raw/ned_objsearch_1arcmin.txt, raw/ned_sed_wisea.txt, raw/ned_sed_nvss.txt, r=1.0' at 243.2720453, -38.6693591):
-   - Verbatim main rows within 10.8":
-     1|WISEA J161305.29-384009.6|243.27205 | -38.66936 |IrS||||     |  0.000|0|0|22|2|0|0|0
-     2|NVSS J161305-384010|243.27096 | -38.66947 |RadioS|||| 0.92|  0.051|0|0|1|1|0|0|0
-   - 0 spectra, 0 redshifts (Redshift=null; Type=IrS, RadioS).
-   - 23 SED points: WISEA J161305.29-384009.6 (22 IR points: profile-fit W1=15.078 mag/0.288 mJy, W2=14.198 mag/0.360 mJy, W3=12.128 mag/0.446 mJy, W4>8.432 mag/<3.54 mJy + 8 aperture rows; 10 Spitzer IRAC/MIPS rows 2013SSTSLC4.2....0C: 3.6um=407.55 & 396.29 uJy, 4.5um=436.98 & 442.05 uJy, 5.8um=498.61 & 490.95 uJy, 8.0um=523.85 & 529.17 uJy, 24um=842.79 & 810.72 uJy); NVSS J161305-384010 (1 radio point: 1.4 GHz = 8.4+/-1.0 mJy).
-6) SIMBAD (raw/simbad_tap_10.8arcsec.tsv & raw/simbad_tap_60arcsec.tsv, ADQL at 243.2720453, -38.6693591):
+   1|WISEA J161305.29-384009.6|243.27205 | -38.66936 |IrS||||     |  0.000|0|0|22|2|0|0|0
+   2|NVSS J161305-384010|243.27096 | -38.66947 |RadioS|||| 0.92|  0.051|0|0|1|1|0|0|0
+   0 spectra, 0 redshifts (z=null; Type=IrS, RadioS). 23 SED points: WISEA J161305.29-384009.6 (22 IR points: profile-fit W1=15.078/0.288 mJy, W2=14.198/0.360 mJy, W3=12.128/0.446 mJy, W4>8.432/<3.54 mJy + 8 aperture rows; 10 Spitzer IRAC/MIPS rows 2013SSTSLC4.2....0C: 3.6um=407.55 & 396.29 uJy, 4.5um=436.98 & 442.05 uJy, 5.8um=498.61 & 490.95 uJy, 8.0um=523.85 & 529.17 uJy, 24um=842.79 & 810.72 uJy); NVSS J161305-384010 (1 radio point: 1.4 GHz = 8.4+/-1.0 mJy).
+6) SIMBAD (raw/simbad_tap_10.8arcsec.tsv & raw/simbad_tap_60arcsec.tsv):
    - Within 10.8": Well-formed 0-row null ("main_id	ra	dec	otype	sp_type	rvz_type	rvz_radvel	rvz_redshift	sep_arcsec", 0 rows).
    - Within 60.0": 1 row at 52.46": "4FGL J1613.1-3840"	243.28919999999994	-38.6751	"gam"					52.45843444095285 (BL?,gam; sp_type=null, z=null).
 No discovery is claimed.
