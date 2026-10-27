@@ -1,0 +1,162 @@
+[
+  {
+    "url": "https://github.com/modelcontextprotocol/servers/issues/5328",
+    "title": "filesystem: bounded-walk 100000-entry test times out on slow Windows runners (vitest's 5 s default)",
+    "repo": "modelcontextprotocol/servers",
+    "number": 5328,
+    "updated_at": "2026-10-27T14:04:49Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/modelcontextprotocol/servers/issues/5320",
+    "title": "filesystem: allowed directories are trimmed after realpath, so a name ending in a space or quote allows its sibling",
+    "repo": "modelcontextprotocol/servers",
+    "number": 5320,
+    "updated_at": "2026-10-27T14:04:47Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/coinbase/agentkit/issues/1595",
+    "title": "[Showcase / Integration] Algernon x402 Oracle: B2B Compliance & Security Verification on Base",
+    "repo": "coinbase/agentkit",
+    "number": 1595,
+    "updated_at": "2026-10-24T00:22:14Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/coinbase/agentkit/issues/1592",
+    "title": "Python: Permit2 approval in CdpSmartWalletActionProvider.swap always reports failure (integer vs string receipt status)",
+    "repo": "coinbase/agentkit",
+    "number": 1592,
+    "updated_at": "2026-10-23T15:29:34Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/crewAIInc/crewAI/issues/8672",
+    "title": "Docs: listing a remote MCP server (NetNest Design Fundamentals) under MCP",
+    "repo": "crewAIInc/crewAI",
+    "number": 8672,
+    "updated_at": "2026-10-27T14:01:36Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/crewAIInc/crewAI/issues/8669",
+    "title": "[BUG] FileUrl ignores filename MIME hints for download URLs",
+    "repo": "crewAIInc/crewAI",
+    "number": 8669,
+    "updated_at": "2026-10-27T13:30:18Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/microsoft/autogen/issues/8377",
+    "title": "[Proposal] SpendAuthority tool wrapper: external fail-closed gate + signed receipts for paid tool calls",
+    "repo": "microsoft/autogen",
+    "number": 8377,
+    "updated_at": "2026-10-21T23:42:29Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/microsoft/autogen/issues/8358",
+    "title": "CancellationToken.link_future() cancels asyncio futures from the wrong thread",
+    "repo": "microsoft/autogen",
+    "number": 8358,
+    "updated_at": "2026-10-24T12:03:03Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/langchain-ai/langgraph/issues/9438",
+    "title": "[BUG] keep_latest prune raises NotImplementedError for DeltaChannel threads",
+    "repo": "langchain-ai/langgraph",
+    "number": 9438,
+    "updated_at": "2026-10-26T10:16:11Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/langchain-ai/langgraph/issues/9434",
+    "title": "defer=True node runs while a Send chain is still in flight (and then runs a second time)",
+    "repo": "langchain-ai/langgraph",
+    "number": 9434,
+    "updated_at": "2026-10-26T04:44:29Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/pydantic/pydantic-ai/issues/11597",
+    "title": "clai2: web UI cold session switch (139 ms) and reload-to-visible (96 ms) still slow after #11355/#11341 (follow-up to #11303/#11304)",
+    "repo": "pydantic/pydantic-ai",
+    "number": 11597,
+    "updated_at": "2026-10-27T16:16:35Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/pydantic/pydantic-ai/issues/11596",
+    "title": "clai2: web UI New session dialog only lists repos that already have sessions; new repos and their worktrees are unreachable",
+    "repo": "pydantic/pydantic-ai",
+    "number": 11596,
+    "updated_at": "2026-10-27T16:16:31Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/run-llama/llama_index/issues/23736",
+    "title": "[Bug]: BaiduVectorDB returns raw L2 distances as similarities (closest match scores lowest)",
+    "repo": "run-llama/llama_index",
+    "number": 23736,
+    "updated_at": "2026-10-26T18:40:37Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/run-llama/llama_index/issues/23731",
+    "title": "[Bug]: OracleDB, DB2 and Bagel vector stores return inverted similarity scores (closest match gets 0.0)",
+    "repo": "run-llama/llama_index",
+    "number": 23731,
+    "updated_at": "2026-10-26T13:05:18Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/elizaOS/eliza/issues/37879",
+    "title": "Add Aurifex MCP for Macro/Commodities data (x402)",
+    "repo": "elizaOS/eliza",
+    "number": 37879,
+    "updated_at": "2026-10-27T04:31:59Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/elizaOS/eliza/issues/37862",
+    "title": "Billing-policy decision",
+    "repo": "elizaOS/eliza",
+    "number": 37862,
+    "updated_at": "2026-10-27T01:06:04Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/sendaifun/solana-agent-kit/issues/639",
+    "title": "Third-party action contribution: token safety check (guarddog)",
+    "repo": "sendaifun/solana-agent-kit",
+    "number": 639,
+    "updated_at": "2026-10-26T21:46:39Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/sendaifun/solana-agent-kit/issues/625",
+    "title": "Plugin proposal: CrewPay (Autohire + Pump.fun fee-shares) for SAK v2",
+    "repo": "sendaifun/solana-agent-kit",
+    "number": 625,
+    "updated_at": "2026-10-10T16:18:21Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/mastra-ai/mastra/issues/28594",
+    "title": "[FEATURE] @mastra/libsql: support Windows ARM64 for URL-based connections (default storage path)",
+    "repo": "mastra-ai/mastra",
+    "number": 28594,
+    "updated_at": "2026-10-27T13:45:16Z",
+    "http_status": 200
+  },
+  {
+    "url": "https://github.com/mastra-ai/mastra/issues/28593",
+    "title": "[BUG] AzureOpenAIGateway (Responses API): structured output is never prepared for strict mode; strictJsonSchema: true sends an unprepared schema and strict tools",
+    "repo": "mastra-ai/mastra",
+    "number": 28593,
+    "updated_at": "2026-10-27T13:24:56Z",
+    "http_status": 200
+  }
+]
