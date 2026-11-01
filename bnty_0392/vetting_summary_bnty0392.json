@@ -1,0 +1,202 @@
+{
+  "bounty_id": "bnty_0392",
+  "status": "PASS",
+  "target": {
+    "ztf_oid": "ZTF18aaxioyg",
+    "gaia_dr3_source_id": 2068537514833439104,
+    "tic_id": "TIC 193573083",
+    "twomass_id": "2MASS J20241119+4217091",
+    "allwise_id": "AllWISE J202411.21+421709.2",
+    "ra_deg_j2000": 306.046612,
+    "dec_deg_j2000": 42.2858,
+    "sexagesimal_j2000": "20h24m11.19s +42d17m08.9s",
+    "gaia_g_mag": 16.0844,
+    "gaia_bp_mag": 16.892,
+    "gaia_rp_mag": 15.1795,
+    "parallax_mas": 1.0281,
+    "parallax_err_mas": 0.0358,
+    "distance_pc": 972.6,
+    "ruwe": 1.0525,
+    "teff_k": 4272,
+    "radius_rsun": 1.26467,
+    "mass_msun": 0.67,
+    "ir_magnitudes": {
+      "J": 13.608,
+      "H": 12.641,
+      "K": 11.975,
+      "W1": 10.949,
+      "W2": 10.242,
+      "W3": 8.239,
+      "W4": 6.911,
+      "W1_minus_W4_excess_mag": 4.038
+    }
+  },
+  "light_curve_evidence": {
+    "total_ztf_detections": 924,
+    "clean_non_dubious_rb070_detections": {
+      "total": 717,
+      "zg": 413,
+      "zr": 304
+    },
+    "strict_sigmapsf008_detections": {
+      "total": 254,
+      "zg": 85,
+      "zr": 169
+    },
+    "same_night_zg_zr_pairs": 49,
+    "zg_stats": {
+      "median_mag": 16.9944,
+      "bright_min_mag": 16.6764,
+      "dim_max_mag": 18.4515,
+      "peak_to_peak_mag": 1.7751,
+      "max_dimming_from_median_mag": 1.4571,
+      "max_flux_drop_fraction": 0.7387
+    },
+    "zr_stats": {
+      "median_mag": 15.9093,
+      "bright_min_mag": 15.4186,
+      "dim_max_mag": 17.1965,
+      "peak_to_peak_mag": 1.7779,
+      "max_dimming_from_median_mag": 1.2872,
+      "max_flux_drop_fraction": 0.6944
+    },
+    "top_3_simultaneous_dimming_events": [
+      {
+        "mjd_zg": 60092.3421,
+        "zg_mag": 18.4515,
+        "zg_sigmapsf": 0.0741,
+        "zg_delta_med": 1.4571,
+        "zg_rb": 0.957,
+        "zg_distnr_arcsec": 0.097,
+        "mjd_zr": 60092.3859,
+        "zr_mag": 16.9046,
+        "zr_sigmapsf": 0.0476,
+        "zr_delta_med": 0.9953,
+        "zr_rb": 0.807,
+        "zr_distnr_arcsec": 0.179,
+        "dt_hours": 1.05
+      },
+      {
+        "mjd_zg": 60449.4467,
+        "zg_mag": 18.3068,
+        "zg_sigmapsf": 0.0768,
+        "zg_delta_med": 1.3124,
+        "zg_rb": 0.933,
+        "zg_distnr_arcsec": 0.196,
+        "mjd_zr": 60449.3818,
+        "zr_mag": 16.8236,
+        "zr_sigmapsf": 0.0336,
+        "zr_delta_med": 0.9143,
+        "zr_rb": 0.829,
+        "zr_distnr_arcsec": 0.097,
+        "dt_hours": 1.56
+      },
+      {
+        "mjd_zg": 59470.2455,
+        "zg_mag": 18.1492,
+        "zg_sigmapsf": 0.0784,
+        "zg_delta_med": 1.1547,
+        "zg_rb": 0.959,
+        "zg_distnr_arcsec": 0.138,
+        "mjd_zr": 59470.2676,
+        "zr_mag": 16.6919,
+        "zr_sigmapsf": 0.0517,
+        "zr_delta_med": 0.7826,
+        "zr_rb": 0.709,
+        "zr_distnr_arcsec": 0.039,
+        "dt_hours": 0.53
+      }
+    ],
+    "top_3_simultaneous_brightening_events": [
+      {
+        "mjd_zg": 58365.2814,
+        "zg_mag": 16.6795,
+        "zg_sigmapsf": 0.0486,
+        "zg_delta_med": -0.3149,
+        "mjd_zr": 58365.2011,
+        "zr_mag": 15.7533,
+        "zr_sigmapsf": 0.0496,
+        "zr_delta_med": -0.156,
+        "dt_hours": 1.93
+      },
+      {
+        "mjd_zg": 59883.1738,
+        "zg_mag": 16.6968,
+        "zg_sigmapsf": 0.0509,
+        "zg_delta_med": -0.2976,
+        "mjd_zr": 59883.1188,
+        "zr_mag": 15.5644,
+        "zr_sigmapsf": 0.0616,
+        "zr_delta_med": -0.3449,
+        "dt_hours": 1.32
+      },
+      {
+        "mjd_zg": 60149.3595,
+        "zg_mag": 16.715,
+        "zg_sigmapsf": 0.0682,
+        "zg_delta_med": -0.2794,
+        "mjd_zr": 60149.3856,
+        "zr_mag": 15.6718,
+        "zr_sigmapsf": 0.0446,
+        "zr_delta_med": -0.2375,
+        "dt_hours": 0.63
+      }
+    ]
+  },
+  "artifact_checks": {
+    "blend_check": {
+      "sources_within_9_7_arcsec": 1,
+      "sources_within_20_arcsec": 2,
+      "nearest_neighbor_gaia_id": 2068537510539372672,
+      "nearest_neighbor_sep_arcsec": 9.76,
+      "nearest_neighbor_g_mag": 20.4059,
+      "delta_g_mag": 4.3214,
+      "max_neighbor_flux_fraction": 0.01868,
+      "verdict": "PASS (1.87% neighbor flux at 9.76 arcsec cannot cause a 73.9% zg / 60.0% zr flux drop; difference PSF centroid distnr <= 0.196 arcsec)"
+    },
+    "saturation_check": {
+      "brightest_zg_mag": 16.6764,
+      "brightest_zr_mag": 15.4186,
+      "ztf_saturation_limit_mag": 13.5,
+      "margin_fainter_than_saturation_mag": 1.9186,
+      "verdict": "PASS (0 saturated epochs; >1.9 mag fainter than ZTF saturation threshold at all times)"
+    },
+    "bad_pixel_ check": {
+      "dubious_flagged_epochs_used": 0,
+      "min_real_bogus_rb": 0.7,
+      "median_real_bogus_rb": 0.896,
+      "same_night_dual_band_confirmations": 49,
+      "verdict": "PASS (all 254 strict detections have dubious=false, rb >= 0.70, sigmapsf < 0.08, and 49 same-night zg+zr confirmations)"
+    }
+  },
+  "known_variable_checks_with_positive_controls": {
+    "gaia_dr3_variability": {
+      "cone_radius_arcsec": 120.0,
+      "total_rows_returned": 59,
+      "target_phot_variable_flag": "NOT_AVAILABLE",
+      "target_non_single_star": 0,
+      "positive_controls_in_same_cone": 5,
+      "nearest_positive_control": {
+        "source_id": 2068537480473640192,
+        "sep_arcsec": 53.9,
+        "phot_variable_flag": "VARIABLE"
+      }
+    },
+    "tic_v8_2_disposition": {
+      "cone_radius_arcsec": 60.0,
+      "total_rows_returned": 31,
+      "target_tic_id": "TIC 193573083",
+      "target_disposition": null
+    },
+    "nasa_exoplanet_archive_pscomppars": {
+      "total_rows_returned": 5,
+      "target_rows": 0,
+      "positive_control_tic_307210830_rows": 5
+    },
+    "nasa_exoplanet_archive_toi": {
+      "total_rows_returned": 2,
+      "target_rows": 0,
+      "positive_control_tic_270341214_rows": 2
+    }
+  }
+}
