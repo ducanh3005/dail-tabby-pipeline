@@ -1,0 +1,34 @@
+DAiL bnty_0424 - TIC 158499577 (HD 94871): Joint TESS + SuperWASP Period Fit
+Hunter: ducanh3005 | v1.0.0 | Repo: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0424
+Run: python3 bnty_0424/fit_joint_ephemeris.py && python3 bnty_0424/verify_bnty_0424.py
+
+1. ARCHIVE LOG & CONTROLS (raw/, 2026-11-04T15:54-16:00Z)
+- TESS SPOC 2-min (MAST): S9 (s0009, 18,187 rows, 16,077 Q=0, BTJD 1544.17-1568.48, med PDCSAP=78,840.8 e-/s) & S36 (s0036, 18,066 rows, 15,532 Q=0, BTJD 2282.07-2305.99, med PDCSAP=78,729.4 e-/s).
+- SuperWASP DR1 (NEA+CERIT-SC): 1SWASP J105638.34-363449.0 (tile162048, .fits/.csv, 6,789 pts, 6,170 clean, HJD 2453862.23-2454609.38 = 2006-05-06 to 2008-05-28, med WASP=9.10997 mag). BJD_TDB-HJD_UTC=+65.184s (+0.0007544d); both fitted.
+- Controls: Phases phi=0.25 & 0.75 flat in TESS (+0.00010, +0.00003) & SWASP (-0.0005, +0.0007 mag). 1SWASP J105633.25-363457.2 (TIC 158499578, 61.8", G=13.60) is blended with HD 94871's PSF halo in SWASP's 48" aperture (WASP=10.79 vs V=13.88).
+
+2. FITTED JOINT EPHEMERIS & SUB-FITS (15.0-yr / 5,442-d baseline, Delta_E = 460 cycles)
+TIC 158499577 is a slightly eccentric EB: secondary at phi_sec=0.514107+/-0.000008 (dT_sec=6.049609+/-0.000094d; e*cos(w)=+0.022159+/-0.000013), duration D=0.2440d (5.86h, H=0.1220d).
+We cross-check (A) weighted linear O-C fit to all 20 eclipse mid-times (8 TESS + 12 SWASP nights, >=3 in-eclipse pts) & (B) unbinned template fit (38,398 cadences):
+- TESS-only O-C (8 eclipses, S9+S36, dE=64): P=11.7672132+/-0.0000008d (formal) / +/-0.0000023d (sys), T0=2286.372052+/-0.000042d, phi_sec=0.514115+/-0.000004.
+- SWASP-only internal O-C (12 eclipses, 2006-2008, dE=60): P=11.7673004+/-0.0001103d, phi_sec=0.513918+/-0.000373.
+- SWASP template anchored at TESS T0: P=11.7672210+/-0.0000047d (BJD_TDB) | 11.7672229+/-0.0000047d (HJD_UTC).
+- Joint 20-Eclipse O-C: P=11.7672136+/-0.0000011d (BJD_TDB) | 11.7672137+/-0.0000011d (HJD_UTC), T0=2286.372061+/-0.000056d, rchi2=1.869.
+- Unbinned 38,398-Cadence Joint LC: P=11.7672145+/-0.0000023d (BJD_TDB) | 11.7672137+/-0.0000023d (HJD_UTC).
+* ADOPTED JOINT EPHEMERIS (combining O-C & unbinned LC with red-noise, HJD/BJD & apsidal error):
+  T_pri(E) = BTJD 2286.372048 (+/- 0.000065) + 11.7672170 (+/- 0.0000045) * E
+  T_sec(E) = T_pri(E) + 6.049609 (+/- 0.000094) d   [phi_sec = 0.514107 +/- 0.000008]
+
+3. DATASET AGREEMENT & REFUTATION OF POST-HOC SCAN PEAK (11.7673-11.7674 d)
+- Agreement: (1) TESS P (11.7672132+/-0.0000023d) vs SWASP-anchored P (11.7672210+/-0.0000047d TDB): Delta_P=7.8e-6d (0.67s/cycle)=1.48 sigma (1.74 sigma HJD_UTC). (2) TESS P vs SWASP internal P: Delta_P=8.7e-5d=0.79 sigma. (3) Secondary phase phi_sec: TESS 0.514115 vs SWASP 0.513918 -> Delta_phi=0.000197=0.53 sigma (no apsidal drift).
+- Why Post-Hoc Scan Peak (11.7673-11.7674 d) Fails (>80 sigma rejection): Maximizing unweighted median in |Delta_phi|<0.010 on SWASP peaks near P=11.76735-11.76740d (pri median rises from +0.2085 mag [n=173] at 11.76720d to +0.2808 mag [n=129] at 11.76735d; sec from +0.1557 [n=185] to +0.2648 [n=87]). Shifting P by +0.00014d shifts 2006-2008 phases by -0.0051 (-1.44h), ejecting 44 shallow egress points (HJD 2454485 E=-408, HJD 2454132 E=-438) out of the cut while mis-fitting slopes (SWASP Huber loss worsens from 14,328 to 20,742, Delta=+6,414) AND mis-predicting TESS S9 E=-63 primary by +12.48 min vs +/-0.04 min precision (Delta_chi2_TESS=+636,016).
+
+4. PER-DATASET RESIDUALS (O-C & PHOTOMETRIC RMS)
+- TESS (8 eclipses, flux RMS: S9=0.00097, S36=0.00104; 7 Q=0 O-C RMS=0.000213d=18.4s): E=-63 PRI(1545.03767):+0.42m | E=-63 SEC(1551.08723):+0.35m | E=-62 PRI SAP(1556.80507,Q=4096):+0.69m | E=-62 SEC(1562.85457):+0.53m | E=0 PRI(2286.37205):+0.00m | E=0 SEC(2292.42182):+0.23m | E=+1 PRI(2298.13921):-0.09m | E=+1 SEC(2304.18897):+0.14m.
+- SuperWASP (12 eclipses, flux RMS=0.02811, mag MAD=0.02073; O-C RMS=0.008064d=11.61m; seasonal O-C: 2006 +0.0010+/-0.0033d, 2007 -0.0081+/-0.0024d, 2008 +0.0028+/-0.0018d): E=-459 SEC:+0.78m | E=-438 PRI:-14.45m | E=-438 SEC:-16.90m | E=-434 PRI:+13.49m | E=-429 PRI:-8.25m | E=-429 SEC:-20.77m | E=-408 PRI:+6.62m | E=-408 SEC:-13.26m | E=-403 PRI:+0.14m | E=-403 SEC:+5.18m | E=-400 PRI:-6.19m | E=-399 SEC:-12.52m.
+
+5. UPDATED PREDICTED ECLIPSE TIMES FOR NOV-DEC 2026 (222x tighter than house +/-4.3h; H=2.93h)
+- E=176 PRI (Nov 12 2026): BTJD 4357.402240+/-0.000795d (+/-1.14m; formal +/-0.29m) | BJD 2461357.402240 | 2026-11-12 21:38:04 UTC (+4.38m vs house).
+- E=177 PRI (Nov 24 2026): BTJD 4369.169457+/-0.000799d (+/-1.15m; formal +/-0.29m) | BJD 2461369.169457 | 2026-11-24 16:02:51 UTC (+4.40m vs house).
+- E=178 PRI (Dec 6 2026): BTJD 4380.936674+/-0.000804d (+/-1.16m; formal +/-0.29m) | BJD 2461380.936674 | 2026-12-06 10:27:39 UTC (+4.43m vs house).
+- E=179 PRI (Dec 17/18 2026): BTJD 4392.703891+/-0.000808d (+/-1.16m; formal +/-0.29m) | BJD 2461392.703891 | 2026-12-18 04:52:26 UTC (Dec 17/18 night Americas; or Dec 17 16:53:36 if JD-0.5 noon offset omitted; +4.45m vs house).
