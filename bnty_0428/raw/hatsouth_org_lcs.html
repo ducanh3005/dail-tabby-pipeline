@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="The HATSouth Exoplanet Survey" />
+    <meta name="author" content="HATSouth Exoplanet Survey, Princeton University" />
+
+    <title>HATSouth / Planet Lightcurves</title>
+
+    <link href="/static/css/normalize.css"
+          type="text/css" rel="stylesheet">
+
+    <link href="/static/css/foundation.css"
+          type="text/css" rel="stylesheet">
+
+    <link href="/static/css/hatweb.css"
+          type="text/css" rel="stylesheet">
+
+    <script src="/static/js/vendor/modernizr.js"></script>
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1><a href="/">The HATSouth Exoplanet Survey</a></h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="small-12 medium-9 large-9 columns">
+
+      <nav class="breadcrumbs">
+
+        <a href="/">HATSouth</a>
+        <a href="/planets">Planets</a>
+        <a href="/planets/discovery-hatlcs.html" class="current">
+          HATSouth Lightcurves
+        </a>
+
+      </nav>
+
+      <p>The HATSouth survey has discovered 73 exoplanets to date. The
+      table below lists these planets, their orbital periods, masses, and radii,
+      and provides links to HATSouth light curves from which they were
+      discovered. Click on any table column header to sort by that
+      column. A <a href="#lightcurve-schema">description of the light curve
+      file format and Python modules to read these light curves</a> are discussed below.</p>
+
+      <ul class="no-bullet">
+        <li>
+          <a href="/data/hatlcs/all-discovery-hatlcs.tar.gz">
+            Download all HATSouth light curves.
+          </a>
+        </li>
+      </ul>
+
+      <table data-sortable>
+
+        <thead>
+          <tr>
+            <th>Planet name</th>
+            <th>Period [days]</th>
+            <th width="80">Mass [M<sub>Jupiter</sub>]</th>
+            <th width="80">Radius [R<sub>Jupiter</sub>]</th>
+            <th data-sortable="false">HATSouth light curve</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+         <tr>
+            <td data-value="72">HATS-72b</td>
+            <td>7.3279474</td>
+            <td>0.1254</td>
+            <td>0.7224</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-72b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+         <tr>
+            <td data-value="71">HATS-71b</td>
+            <td>3.7955202</td>
+            <td>0.37</td>
+            <td>1.024</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-71b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+         <tr>
+            <td data-value="70">HATS-70b</td>
+            <td>1.8882378</td>
+            <td>12.9</td>
+            <td>1.384</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-70b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+         <tr>
+            <td data-value="69">HATS-69b</td>
+            <td>2.2252577</td>
+            <td>&lt; 0.577</td>
+            <td>0.945</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-69b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="68">HATS-68b</td>
+            <td>3.5862234</td>
+            <td>1.286</td>
+            <td>1.284</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-68b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="67">HATS-67b</td>
+            <td>1.6091789</td>
+            <td>1.477</td>
+            <td>1.694</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-67b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="66">HATS-66b</td>
+            <td>3.141439</td>
+            <td>5.5</td>
+            <td>1.50</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-66b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="65">HATS-65b</td>
+            <td>3.1051602</td>
+            <td>0.793</td>
+            <td>1.479</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-65b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="64">HATS-64b</td>
+            <td>4.908896</td>
+            <td>0.93</td>
+            <td>1.674</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-64b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="63">HATS-63b</td>
+            <td>3.0566528</td>
+            <td>0.96</td>
+            <td>1.207</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-63b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="62">HATS-62b</td>
+            <td>3.2768838</td>
+            <td>&lt; 0.191</td>
+            <td>1.032</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-62b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="61">HATS-61b</td>
+            <td>7.817954</td>
+            <td>3.40</td>
+            <td>1.201</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-61b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="60">HATS-60b</td>
+            <td>3.560827</td>
+            <td>0.650</td>
+            <td>1.194</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-60b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="59">HATS-59c</td>
+            <td>1422</td>
+            <td>&gt; 12.70</td>
+            <td>Unavailable</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-59b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="59">HATS-59b</td>
+            <td>5.416081</td>
+            <td>0.806</td>
+            <td>1.126</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-59b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="58">HATS-58Ab</td>
+            <td>4.2180896</td>
+            <td>1.03</td>
+            <td>1.095</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-58b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="57">HATS-57b</td>
+            <td>2.3506210</td>
+            <td>3.147</td>
+            <td>1.139</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-57b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="56">HATS-56b</td>
+            <td>4.324799</td>
+            <td>0.602</td>
+            <td>1.688</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-56b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="55">HATS-55b</td>
+            <td>4.2042001</td>
+            <td>0.921</td>
+            <td>1.251</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-55b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="54">HATS-54b</td>
+            <td>2.5441828</td>
+            <td>0.76</td>
+            <td>1.067</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-54b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="53">HATS-53b</td>
+            <td>3.85378</td>
+            <td>0.595</td>
+            <td>1.340</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-53b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="52">HATS-52b</td>
+            <td>1.36665</td>
+            <td>2.24</td>
+            <td>1.382</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-52b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="51">HATS-51b</td>
+            <td>3.34887</td>
+            <td>0.768</td>
+            <td>1.41</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-51b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="50">HATS-50b</td>
+            <td>3.82970</td>
+            <td>0.39</td>
+            <td>1.130</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-50b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="49">HATS-49b</td>
+            <td>4.1480467</td>
+            <td>0.353</td>
+            <td>0.765</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-49b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="48">HATS-48Ab</td>
+            <td>3.1316666</td>
+            <td>0.243</td>
+            <td>0.800</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-48b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="47">HATS-47b</td>
+            <td>3.9228038</td>
+            <td>0.369</td>
+            <td>1.117</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-47b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="46">HATS-46b</td>
+            <td>4.74237</td>
+            <td>0.173</td>
+            <td>0.903</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-46b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="45">HATS-45b</td>
+            <td>4.18762</td>
+            <td>0.70</td>
+            <td>1.286</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-45b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="44">HATS-44b</td>
+            <td>2.74390</td>
+            <td>0.56</td>
+            <td>1.067</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-44b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="43">HATS-43b</td>
+            <td>4.38888</td>
+            <td>0.261</td>
+            <td>1.180</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-43b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="42">HATS-42b</td>
+            <td>2.29210</td>
+            <td>1.88</td>
+            <td>1.40</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-42b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="41">HATS-41b</td>
+            <td>4.19365</td>
+            <td>9.7</td>
+            <td>1.33</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-41b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="40">HATS-40b</td>
+            <td>3.26427</td>
+            <td>1.59</td>
+            <td>1.58</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-40b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="39">HATS-39b</td>
+            <td>4.57763</td>
+            <td>0.63</td>
+            <td>1.57</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-39b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="38">HATS-38b</td>
+            <td>4.375021</td>
+            <td>0.074</td>
+            <td>0.614</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-38b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="37">HATS-37Ab</td>
+            <td>4.331537</td>
+            <td>0.099</td>
+            <td>0.606</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-37b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="36">HATS-36b</td>
+            <td>4.17524</td>
+            <td>2.79</td>
+            <td>1.263</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-36b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="35">HATS-35b</td>
+            <td>1.82099</td>
+            <td>1.222</td>
+            <td>1.464</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-35b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="34">HATS-34b</td>
+            <td>2.10616</td>
+            <td>0.941</td>
+            <td>1.43</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-34b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="33">HATS-33b</td>
+            <td>2.54955</td>
+            <td>1.192</td>
+            <td>1.230</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-33b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="32">HATS-32b</td>
+            <td>2.81265</td>
+            <td>0.92</td>
+            <td>1.249</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-32b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="31">HATS-31b</td>
+            <td>3.37796</td>
+            <td>0.88</td>
+            <td>1.64</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-31b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="30">HATS-30b</td>
+            <td>3.17435</td>
+            <td>0.706</td>
+            <td>1.175</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-30b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="29">HATS-29b</td>
+            <td>4.60587</td>
+            <td>0.653</td>
+            <td>1.251</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-29b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="28">HATS-28b</td>
+            <td>3.18108</td>
+            <td>0.672</td>
+            <td>1.194</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-28b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="27">HATS-27b</td>
+            <td>4.63704</td>
+            <td>0.53</td>
+            <td>1.50</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-27b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="26">HATS-26b</td>
+            <td>3.30238</td>
+            <td>0.650</td>
+            <td>1.75</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-26b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="25">HATS-25b</td>
+            <td>4.29864</td>
+            <td>0.613</td>
+            <td>1.26</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-25b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="24">HATS-24b</td>
+            <td>1.34849</td>
+            <td>2.44</td>
+            <td>1.487</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-24b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="23">HATS-23b</td>
+            <td>2.16052</td>
+            <td>1.470</td>
+            <td>1.86</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-23b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="22">HATS-22b</td>
+            <td>4.72281</td>
+            <td>2.74</td>
+            <td>0.953</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-22b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="21">HATS-21b</td>
+            <td>3.55440</td>
+            <td>0.332</td>
+            <td>1.123</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-21b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="20">HATS-20b</td>
+            <td>3.79930</td>
+            <td>0.273</td>
+            <td>0.776</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-20b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="19">HATS-19b</td>
+            <td>4.56967</td>
+            <td>0.427</td>
+            <td>1.66</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-19b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="18">HATS-18b</td>
+            <td>0.83784</td>
+            <td>1.980</td>
+            <td>1.337</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-18b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="17">HATS-17b</td>
+            <td>16.25461</td>
+            <td>1.338</td>
+            <td>0.777</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-17b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="16">HATS-16b</td>
+            <td>2.68650</td>
+            <td>3.27</td>
+            <td>1.30</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-16b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="15">HATS-15b</td>
+            <td>1.74749</td>
+            <td>2.17</td>
+            <td>1.105</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-15b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="14">HATS-14b</td>
+            <td>2.76676</td>
+            <td>1.071</td>
+            <td>1.039</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-14b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="13">HATS-13b</td>
+            <td>3.04405</td>
+            <td>0.543</td>
+            <td>1.212</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-13b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="12">HATS-12b</td>
+            <td>3.14283</td>
+            <td>2.38</td>
+            <td>1.35</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-12b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="11">HATS-11b</td>
+            <td>3.61916</td>
+            <td>0.85</td>
+            <td>1.510</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-11b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="10">HATS-10b</td>
+            <td>3.31285</td>
+            <td>0.526</td>
+            <td>0.969</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-10b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="09">HATS-9b</td>
+            <td>1.91531</td>
+            <td>0.837</td>
+            <td>1.065</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-9b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="08">HATS-8b</td>
+            <td>3.58389</td>
+            <td>0.138</td>
+            <td>0.873</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-8b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="07">HATS-7b</td>
+            <td>3.18532</td>
+            <td>0.120</td>
+            <td>0.563</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-7b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="06">HATS-6b</td>
+            <td>3.32527</td>
+            <td>0.333</td>
+            <td>1.000</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-6b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="05">HATS-5b</td>
+            <td>4.76339</td>
+            <td>0.237</td>
+            <td>0.912</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-5b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="04">HATS-4b</td>
+            <td>2.51673</td>
+            <td>1.323</td>
+            <td>1.020</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-4b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="03">HATS-3b</td>
+            <td>3.54785</td>
+            <td>1.071</td>
+            <td>1.381</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-3b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="02">HATS-2b</td>
+            <td>1.35413</td>
+            <td>1.345</td>
+            <td>1.168</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-2b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+          <tr>
+            <td data-value="01">HATS-1b</td>
+            <td>3.44646</td>
+            <td>1.855</td>
+            <td>1.302</td>
+            <td class="text-center"><a href="/data/hatlcs/HATS-1b-hatlc.csv.gz">download</a></td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <h3 id="lightcurve-schema">Light curve format and software</h3>
+
+      <p>The HATSouth light curves are provided as gzipped CSV files. You can
+      read these with a small Python module
+      (<a href="https://github.com/waqasbhatti/astrobase/blob/master/astrobase/hatsurveys/hatlc.py">hatlc.py</a>),
+      which is self-contained and requires only
+      the <a href="http://numpy.scipy.org">numpy</a> package. To use this, you
+      can download
+      the <a href="https://raw.githubusercontent.com/waqasbhatti/astrobase/master/astrobase/hatsurveys/hatlc.py">Python
+      file</a> directly into your work directory, or install the
+      <a href="https://github.com/waqasbhatti/astrobase">astrobase</a> package,
+      which comes with additional light curve tools.</p>
+
+      <p>To read the light curve:</p>
+
+      <pre>
+# if you have the hatlc.py module in your current directory or PYTHONPATH
+>>> import hatlc
+
+# or if you're using astrobase
+>>> from astrobase.hatsurveys import hatlc
+
+# read in a light curve file to a Python dict
+>>> lcd = hatlc.read_csvlc('/path/to/HATS-XXb-hatlc.csv.gz')
+
+# look at the columns, object information, and metadata
+>>> hatlc.describe(lcd)
+
+# get times, mags, and errs from columns and read into numpy arrays
+>>> times, mags, errs = lcd['rjd'], lcd['atf_000'], lcd['aie_000']
+
+</pre>
+
+    <p>Each light curve file has a header describing its contents. Here's an
+      example header for the light curve file for HATS-23b:</p>
+
+    <pre>
+# OBJECT
+# objectid = HAT-747-0017326
+# hatid = HAT-747-0017326; twomassid = 19052800-5004024; ucac4id = 31320722
+# network = HS; stations = HS01,HS02,HS03,HS04,HS05,HS06; ndet = 34651
+# ra = 286.3667; decl = -50.067352
+# pmra = 3.3; pmra_err = 1.4
+# pmdecl = -1.1; pmdecl_err = 1.5
+# jmag = 12.636; hmag = 12.293; kmag = 12.262; bmag = 14.625; vmag = 13.901
+# sdssg = 14.246; sdssr = 13.735; sdssi = 13.427
+#
+# METADATA
+# datarelease = 0; lcversion = 0
+# lastupdated = 1519772657.547; lcserver = dd1a800
+# comment = initial HS light curve creation
+# lcbestaperture = {"ap": ["002"], "ism": ["002"]}
+# lcsortcol = rjd
+# lcfiltersql =
+# lcnormcols =
+#
+# CAMFILTERS
+# 2 - r - Sloan r AST0285
+# 6 - r - Sloan r AST0285
+# 7 - r - Sloan r AST0285
+# 10 - r - Sloan r SN068 AST0285
+# 14 - r - Sloan r SN072 AST0285
+# 15 - r - Sloan r SN073 AST0285
+# 18 - r - Sloan r SN076 AST0285
+# 22 - r - Sloan r SN079 AST0285
+# 23 - r - Sloan r SN081 AST0285
+#
+# PHOTAPERTURES
+# 000 - 2.05 px
+# 001 - 3.00 px
+# 002 - 4.00 px
+#
+# COLUMNS
+[ ... column descriptions follow here ...]
+#
+# LIGHTCURVE
+[... light curve columns follow here, separated by commas ...]
+
+</pre>
+
+<p>The columns present in each file are described below:</p>
+
+<pre>
+# 000 - rjd - time of observation in Reduced Julian date
+              (JD is RJD + 2400000.0)
+
+# 001 - bjd - time of observation in Baryocentric Julian date
+              (this is BJD_TDB: JD_UTC + JD_to_TDB_corr + romer_delay)
+
+# 002 - net - network of telescopes observing this target
+
+# 003 - stf - station ID of the telescope observing this target
+
+# 004 - cfn - camera frame serial number
+
+# 005 - cfs - camera subframe id
+
+# 006 - ccd - camera CCD position number
+
+# 007 - prj - project ID of this observation
+
+# 008 - fld - observed field name
+
+# 009 - frt - image frame type (flat, object, etc.)
+
+# 010 - flt - filter ID from the filters table
+
+# 011 - exp - exposure time for this observation in seconds
+
+# 012 - tfs - telescope focus setting
+
+# 013 - ttt - telescope tube temperature [deg]
+
+# 014 - tms - telescope mount state (tracking, drizzling, etc.)
+
+# 015 - mph - moon phase at this observation
+
+# 016 - iha - hour angle of object at this observation
+
+# 017 - izd - zenith distance of object at this observation
+
+# 018 - xcc - x coordinate on CCD chip
+
+# 019 - ycc - y coordinate on CCD chip
+
+# 020 - bgv - sky background measurement around object in ADU
+
+# 021 - bge - error in sky background measurement in ADU
+
+# 022 - fsv - S parameter (the PSF spatial 1/RMS^2)
+
+# 023 - fdv - D parameter (the PSF spatial ellipticity in xy)
+
+# 024 - fkv - K parameter (the PSF spatial diagonal ellipticity)
+
+# 025 - aim_000 - aperture photometry raw instrumental magnitude in
+                  aperture 000
+
+# 026 - aie_000 - aperture photometry raw instrumental mag error in
+                  aperture 000
+
+# 027 - aiq_000 - aperture photometry raw instrumental mag
+                  quality flag for aperture 000
+
+# 028 - aim_001 - aperture photometry raw instrumental magnitude in
+                  aperture 001
+
+# 029 - aie_001 - aperture photometry raw instrumental mag error in
+                  aperture 001
+
+# 030 - aiq_001 - aperture photometry raw instrumental mag
+                  quality flag for aperture 001
+
+# 031 - aim_002 - aperture photometry raw instrumental magnitude in
+                  aperture 002
+
+# 032 - aie_002 - aperture photometry raw instrumental mag error in
+                  aperture 002
+
+# 033 - aiq_002 - aperture photometry raw instrumental mag
+                  quality flag for aperture 002
+
+# 034 - arm_000 - aperture photometry fit magnitude in aperture 000
+
+# 035 - arm_001 - aperture photometry fit magnitude in aperture 001
+
+# 036 - arm_002 - aperture photometry fit magnitude in aperture 002
+
+# 037 - aep_000 - aperture photometry EPD magnitude in aperture 000
+
+# 038 - aep_001 - aperture photometry EPD magnitude in aperture 001
+
+# 039 - aep_002 - aperture photometry EPD magnitude in aperture 002
+
+# 040 - atf_000 - aperture photometry TFA magnitude in aperture 000
+
+# 041 - atf_001 - aperture photometry TFA magnitude in aperture 001
+
+# 042 - atf_002 - aperture photometry TFA magnitude in aperture 002
+
+</pre>
+
+    </div>
+
+    <div class="small-12 medium-3 large-3 columns" id="hatweb-navbar">
+
+      <nav>
+        <ul class="side-nav">
+
+          <li class="heading">Survey</li>
+
+          <li>
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/operations.html">
+              Operations
+            </a>
+          </li>
+          <li>
+            <a href="/contact.html">
+              Contact the team
+            </a>
+          </li>
+
+          <li class="divider"></li>
+
+          <li class="heading">Planets</li>
+
+          <li>
+            <a href="/planets">
+              All discovered planets
+            </a>
+          </li>
+
+          <li>
+            <a href="/planets/lightcurves.html">
+              HATSouth light curves
+            </a>
+          </li>
+
+          <li>
+            <a href="/planets/followup-data.html">
+              Planet follow-up data
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+
+  <footer class="row">
+
+    <div class="large-12 columns">
+
+      <hr />
+
+      <div class="small-12 large-8 columns">
+        <ul class="no-bullet left">
+          <li>&copy; 2018, The Trustees of Princeton University</li>
+          <li>
+            HATSouth development was supported by NSF MRI grant AST-0723074.
+          </li>
+          <li>
+            HATSouth operations are supported by NASA grant NNX09AB29G.
+          </li>
+          <li>
+            HATSouth follow-up campaigns are partially supported by NSF grant
+            AST-1108686.
+          </li>
+          <li class="nsf-boilerplate">
+            Any opinions, findings, and conclusions or recommendations expressed
+            in this material are those of the author(s) and do not necessarily
+            reflect the views of the National Science Foundation, NASA, or any other funding agency.
+          </li>
+        </ul>
+      </div>
+
+      <div class="small-12 large-4 columns">
+        <ul class="no-bullet right">
+          <li>
+            <a href="http://hatsurveys.org">HAT Surveys</a> &mdash;
+            <a href="http://hatnet.org">HATNet</a> &mdash;
+            <a href="http://hatsouth.org">HATSouth</a>
+          </li>
+
+          <li>
+            <a href="http://www.princeton.edu">
+              <img src="/static/images/PUsig1-size-web-300.jpg">
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.uc.cl">
+              <img src="/static/images/UCcolor.jpg"
+                   class="institute-logo-medium">
+            </a>
+            <a href="http://www.mpia.de">
+              <img src="/static/images/MPIA-Logo2005-336699.jpg"
+                   class="institute-logo-small">
+            </a>
+            <a href="http://www.anu.edu.au">
+              <img src="/static/images/anu_logo_320.jpg"
+                   class="institute-logo-large">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="/static/js/vendor/jquery.js"></script>
+  <script src="/static/js/vendor/fastclick.js"></script>
+  <script src="/static/js/vendor/sortable.min.js"></script>
+  <script src="/static/js/foundation.min.js"></script>
+
+  <script>
+    Sortable.init()
+    $(document).foundation();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,911 @@
+{
+  "bounty_id": "bnty_0428",
+  "target": "TIC 158499577 (HD 94871)",
+  "coordinates_icrs": {
+    "ra_deg": 164.1597484,
+    "dec_deg": -36.5803139
+  },
+  "house_ephemeris": {
+    "P_d": 11.7672,
+    "T0_btjd": 2286.372,
+    "phi_sec_eccentric": 0.514107
+  },
+  "method_version": "1.0.0",
+  "execution_utc": "2026-11-04T17:14:30Z",
+  "mandatory_widefield_surveys": {
+    "ATLAS": {
+      "survey_name": "ATLAS (Asteroid Terrestrial-impact Last Alert System - Sutherland & El Sauce southern nodes)",
+      "covers_dec_minus36p6": true,
+      "coverage_statement": "YES - Dec = -36.5803 deg is covered at high elevation (zenith distance 4-6 deg) by both ATLAS southern stations (Sutherland, South Africa lat=-32.38 deg; El Sauce, Chile lat=-30.47 deg; operational since 2022 over Dec -90 to +30 deg) and near the southern horizon (Dec > -40 deg, airmass ~1.85) from Haleakala/Mauna Loa.",
+      "data_retrieved": false,
+      "retrieval_status_and_reason": "0 light curves retrieved. (1) Public MAST hlsp_atlas-var (Heinze et al. 2018) covers only Dec > -30 deg and stars fainter than m ~ 11.5 (0 ATLAS rows in raw/mast_caom_cone_all.json). (2) Official ATLAS Forced Photometry Server (https://fallingstar-data.com/forcedphot/, saved in raw/atlas_forcedphot_index.html, HTTP 200, login_wall=True) requires creating a user account and API token, which is forbidden by bounty rules ('do not create accounts in DAiL's name'). (3) VizieR mirrors (cds.unistra.fr, cfa.harvard.edu, nao.ac.jp) timed out (WinError 10060, logged in raw/probe_summary.json).",
+      "saturation_and_blending_caveats_V8p8": {
+        "instrument_specs": "0.5m f/2.0 Wright-Schmidt, STA1600 10560x10560 CCD, 1.86 arcsec/px, 30s exposures, cyan (c: 420-650nm) & orange (o: 560-820nm)",
+        "target_mag_est": {
+          "c_mag": 8.98,
+          "o_mag": 8.58,
+          "V_mag": 8.81
+        },
+        "saturation_limit_mag": 12.7,
+        "brighter_than_saturation_dmag": {
+          "c_band": -3.72,
+          "o_band": -4.12
+        },
+        "flux_over_saturation_ratio": {
+          "c_band": 30.8,
+          "o_band": 44.5
+        },
+        "saturation_assessment": "SEVERE CORE SATURATION: Target (c~8.98, o~8.58) is 3.7 to 4.1 mag (30.8x to 44.5x in flux) brighter than the ATLAS 30s saturation limit (m_sat ~ 12.5-13.0 mag), producing saturated PSF cores and CCD bleeding spikes.",
+        "blending_assessment": "At 1.86 arcsec/px (FWHM ~ 3.8 arcsec = 2.0 px), neighbours TIC 942348495 (9.29 arcsec = 5.00 px) and TIC 942348496 (9.54 arcsec = 5.13 px) lie outside an unsaturated core PSF but within a 10 arcsec forced/wing aperture or saturation bleed column (contributing eps_c ~ 2.38%, eps_o ~ 2.65% flux dilution if blended)."
+      },
+      "folded_depths_P11p7672_T0_2286p3720": {
+        "status": "UNVERIFIED",
+        "primary_depth": "UNVERIFIED",
+        "secondary_depth": "UNVERIFIED",
+        "uncertainty": "UNVERIFIED"
+      }
+    },
+    "KELT-South": {
+      "survey_name": "KELT-South (Kilodegree Extremely Little Telescope - South, Sutherland, South Africa)",
+      "covers_dec_minus36p6": true,
+      "covers_target_in_public_dr": false,
+      "coverage_statement": "Survey Declination Zone: YES (Sutherland lat=-32.38 deg survey covers Dec -84 to +5 deg in 26x26 deg fields). Target Coordinate (164.15975, -36.58031) in Public KELT DR (NASA Exoplanet Archive kelttimeseries): NO - falls in a 3.34 deg (Dec) x 2.74 deg (RA) inter-field cutout / unscheduled gap between KELT_S23 and KELT_S24.",
+      "data_retrieved": false,
+      "retrieval_status_and_reason": "Queried live NASA Exoplanet Archive TAP table kelttimeseries (28 released fields: 6 North + 22 South, saved in raw/nea_kelt_box1deg.json [rows=0], raw/nea_kelt_box2p5deg.json [rows=0], raw/nea_kelttimeseries_grid_140_190.json [1,220 1x1 deg sky cells]). Exact field boundary audit around (164.16, -36.58): (a) Field S23 spans RA 146..175 deg, Dec -33.24..-20 deg; its southernmost star at target RA is KELT_S23_lc_041816_V01_east at (RA=164.70363, Dec=-32.41364, n=1874), ending 4.17 deg north of target. (b) Field S24 spans RA 166.9..190 deg, Dec -43..-20 deg; its westernmost star at target Dec is KELT_S24_lc_038382_V01_east at (RA=169.25666, Dec=-36.9984, n=2039), starting 5.10 deg in RA (4.09 deg on-sky) east of target. (c) S22 ends at RA<=152 deg, S34 ends at RA<=144 deg, and S38 starts at RA>=173 deg.",
+      "kelt_grid_bounds_140_190": {
+        "S34": {
+          "ra_min": 140.0,
+          "ra_max": 144.0,
+          "dec_min": -50.0,
+          "dec_max": -40.0,
+          "n_cells": 38
+        },
+        "S22": {
+          "ra_min": 140.0,
+          "ra_max": 152.0,
+          "dec_min": -33.0,
+          "dec_max": -20.0,
+          "n_cells": 155
+        },
+        "S38": {
+          "ra_min": 173.0,
+          "ra_max": 190.0,
+          "dec_min": -50.0,
+          "dec_max": -40.0,
+          "n_cells": 159
+        },
+        "S23": {
+          "ra_min": 146.0,
+          "ra_max": 175.0,
+          "dec_min": -33.0,
+          "dec_max": -20.0,
+          "n_cells": 362
+        },
+        "S24": {
+          "ra_min": 167.0,
+          "ra_max": 190.0,
+          "dec_min": -43.0,
+          "dec_max": -20.0,
+          "n_cells": 504
+        },
+        "S17": {
+          "ra_min": 180.0,
+          "ra_max": 180.0,
+          "dec_min": -49.0,
+          "dec_max": -45.0,
+          "n_cells": 2
+        }
+      },
+      "saturation_and_blending_caveats_V8p8": {
+        "instrument_specs": "Mamiya 645 42mm f/1.9 lens, Apogee AP16E 4096x4096 CCD, 23.0 arcsec/px, 26x26 deg FOV, 150s exposures, broadband R_KELT (490-900nm)",
+        "target_mag_est": {
+          "R_KELT_mag": 8.52,
+          "V_mag": 8.81,
+          "T_mag": 8.262
+        },
+        "saturation_limit_mag": 7.8,
+        "brighter_than_saturation_dmag": 0.72,
+        "flux_over_saturation_ratio": 0.52,
+        "saturation_assessment": "UNSATURATED (IDEAL LINEAR REGIME): KELT-South saturates at V_sat ~ 7.5-8.0 (R_KELT ~ 7.5-7.8) in 150s exposures and targets 8 < V < 11. At V=8.81 (R_KELT~8.52, 0.52x saturation flux), HD 94871 would be unsaturated with ~3-5 mmag precision if covered.",
+        "blending_assessment": "100% SUB-PIXEL BLENDED: At 23.0 arcsec/px and a standard 3 px (69 arcsec radius) aperture, both TIC 942348495 (9.29 arcsec = 0.40 px) and TIC 942348496 (9.54 arcsec = 0.41 px) fall inside the target's central pixel, contributing eps_R = 2.681% +/- 0.055% flux dilution (diluting the 0.3357 primary depth by -0.0090 in flux / -0.012 mag), plus minor dilution from 8 fainter Gaia DR3 sources (G=16.5-20.7) within 69 arcsec."
+      },
+      "folded_depths_P11p7672_T0_2286p3720": {
+        "status": "UNVERIFIED",
+        "primary_depth": "UNVERIFIED",
+        "secondary_depth": "UNVERIFIED",
+        "uncertainty": "UNVERIFIED"
+      }
+    },
+    "HATSouth": {
+      "survey_name": "HATSouth (Hungarian-made Automated Telescope Network - South: LCO, SSO, HESS)",
+      "covers_dec_minus36p6": true,
+      "coverage_statement": "YES - Dec = -36.5803 deg transits within 5-13 deg of zenith at all three longitudinal HATSouth stations (Las Campanas lat=-29.01 deg, Siding Spring lat=-31.27 deg, HESS Namibia lat=-23.27 deg), which tile the southern sky in 8.2x8.2 deg fields (including the Dec = -33 deg and -41 deg strips).",
+      "data_retrieved": false,
+      "retrieval_status_and_reason": "0 light curves retrieved. (1) Audited the official public HATSouth light curve archive (https://hatsouth.org/planets/ and https://hatsouth.org/planets/lightcurves.html, saved in raw/hatsouth_org_planets.html and raw/hatsouth_org_lcs.html, HTTP 200): only 72 confirmed exoplanet hosts (HATS-1b through HATS-77b) have publicly released light curves on hatsouth.org; there is no public general-star light-curve server on hatsouth.org, MAST (0 HATSouth rows in raw/mast_caom_cone_all.json), or NASA Exoplanet Archive. (2) VizieR mirrors timed out (WinError 10060).",
+      "saturation_and_blending_caveats_V8p8": {
+        "instrument_specs": "4x 18cm f/2.8 Takahashi epsilon-180 reflectors per mount, Apogee U16M 4096x4096 CCD, 3.7 arcsec/px, 8.2x8.2 deg FOV, 240s exposures, Sloan r band",
+        "target_mag_est": {
+          "r_mag": 8.65,
+          "V_mag": 8.81
+        },
+        "saturation_limit_mag": 9.75,
+        "brighter_than_saturation_dmag": -1.1,
+        "flux_over_saturation_ratio": 2.75,
+        "saturation_assessment": "CORE SATURATED: HATSouth 240s Sloan-r exposures saturate at r_sat ~ 9.5-10.0 mag (Bakos et al. 2013, design range 10 < r < 16). At r ~ 8.65 mag (V=8.81), HD 94871 is ~0.85 to 1.35 mag (2.2x to 3.5x in flux) brighter than the CCD saturation threshold.",
+        "blending_assessment": "BLENDED IN APERTURE: At 3.7 arcsec/px and a typical 3-4 px (11.1-14.8 arcsec radius) aperture, both TIC 942348495 (9.29 arcsec = 2.51 px) and TIC 942348496 (9.54 arcsec = 2.58 px) fall inside the photometric aperture, contributing eps_r ~ 2.60% flux dilution."
+      },
+      "folded_depths_P11p7672_T0_2286p3720": {
+        "status": "UNVERIFIED",
+        "primary_depth": "UNVERIFIED",
+        "secondary_depth": "UNVERIFIED",
+        "uncertainty": "UNVERIFIED"
+      }
+    },
+    "Evryscope": {
+      "survey_name": "Evryscope-South (CTIO, Chile, 22-camera 8,150 sq.deg all-sky array)",
+      "covers_dec_minus36p6": true,
+      "coverage_statement": "YES - Evryscope-South at CTIO (lat=-30.17 deg) continuously monitors Dec -90 to +10 deg at 120s cadence; Dec = -36.5803 deg transits 6.4 deg south of the CTIO zenith.",
+      "data_retrieved": false,
+      "retrieval_status_and_reason": "0 light curves retrieved. (1) Evryscope does not provide an unauthenticated public light-curve portal for general field stars on MAST (0 Evryscope records in raw/mast_caom_cone_all.json) or NASA Exoplanet Archive. (2) VizieR queries to published Evryscope catalogs (J/ApJ/889/117, J/ApJ/890/115) timed out across all mirrors (WinError 10060, logged in raw/probe_summary.json).",
+      "saturation_and_blending_caveats_V8p8": {
+        "instrument_specs": "22x 61mm f/1.4 Rokinon lenses, 28.8MP KAI-29050 CCDs, 13.2 arcsec/px, 120s exposures, Sloan g' band",
+        "target_mag_est": {
+          "g_prime_mag": 9.05,
+          "V_mag": 8.81,
+          "B_mag": 9.354
+        },
+        "saturation_limit_mag": 9.0,
+        "brighter_than_saturation_dmag": 0.05,
+        "flux_over_saturation_ratio": 0.95,
+        "saturation_assessment": "ON BRIGHT SATURATION / NONLINEARITY BOUNDARY: Evryscope-South 120s g' exposures reach full-well / nonlinearity at g'_sat ~ 8.5-9.2 mag (Law et al. 2015, Ratzloff et al. 2019). At g' ~ 9.05 mag (V=8.81, B=9.354), HD 94871 sits right at the bright saturation boundary (~0.95x saturation flux).",
+        "blending_assessment": "100% SUB-PIXEL BLENDED: At 13.2 arcsec/px (2-3 px = 26.4-39.6 arcsec aperture), both TIC 942348495 (9.29 arcsec = 0.70 px) and TIC 942348496 (9.54 arcsec = 0.72 px) lie within <0.75 px of the target center, contributing eps_g' ~ 2.36% flux dilution."
+      },
+      "folded_depths_P11p7672_T0_2286p3720": {
+        "status": "UNVERIFIED",
+        "primary_depth": "UNVERIFIED",
+        "secondary_depth": "UNVERIFIED",
+        "uncertainty": "UNVERIFIED"
+      }
+    }
+  },
+  "supplementary_public_widefield_hlsp_folds": {
+    "MIT_QLP_S9_S36_S63_S90_S99_S100": {
+      "n_pts_total_q0": 38075,
+      "combined_SAP_core_hw0010": {
+        "primary_phi0000": {
+          "n_pts": 49,
+          "biweight_depth": 0.33883,
+          "median_depth": 0.33844,
+          "err_depth": 0.00066,
+          "scatter_mad": 0.00464,
+          "max_depth": 0.34741
+        },
+        "secondary_ecc_phi05141": {
+          "n_pts": 45,
+          "biweight_depth": 0.29902,
+          "median_depth": 0.29901,
+          "err_depth": 0.0007,
+          "scatter_mad": 0.00468,
+          "max_depth": 0.30793
+        },
+        "secondary_circ_phi05000": {
+          "n_pts": 61,
+          "biweight_depth": 1e-05,
+          "median_depth": 0.00013,
+          "err_depth": 0.00019,
+          "scatter_mad": 0.00146,
+          "max_depth": 0.27837
+        }
+      },
+      "combined_SAP_box_hw0017": {
+        "primary_phi0000": {
+          "n_pts": 83,
+          "biweight_depth": 0.33397,
+          "median_depth": 0.33468,
+          "err_depth": 0.00096,
+          "scatter_mad": 0.00873,
+          "max_depth": 0.34741
+        },
+        "secondary_ecc_phi05141": {
+          "n_pts": 75,
+          "biweight_depth": 0.29523,
+          "median_depth": 0.29674,
+          "err_depth": 0.00081,
+          "scatter_mad": 0.00703,
+          "max_depth": 0.30793
+        },
+        "secondary_circ_phi05000": {
+          "n_pts": 103,
+          "biweight_depth": 2e-05,
+          "median_depth": 0.00015,
+          "err_depth": 0.00017,
+          "scatter_mad": 0.00168,
+          "max_depth": 0.27837
+        },
+        "control_phi0250": {
+          "n_pts": 134,
+          "biweight_depth": 0.00012,
+          "median_depth": 0.00013,
+          "err_depth": 0.00016,
+          "scatter_mad": 0.00183,
+          "max_depth": 0.60358
+        },
+        "control_phi0750": {
+          "n_pts": 131,
+          "biweight_depth": -0.00015,
+          "median_depth": 1e-05,
+          "err_depth": 0.00012,
+          "scatter_mad": 0.00135,
+          "max_depth": 0.30361
+        }
+      },
+      "combined_DET_FLUX_spline_attenuated_box_hw0017": {
+        "primary_phi0000": {
+          "n_pts": 83,
+          "biweight_depth": 0.33401,
+          "median_depth": 0.33483,
+          "err_depth": 0.00091,
+          "scatter_mad": 0.00832,
+          "max_depth": 0.34745
+        },
+        "secondary_ecc_phi05141": {
+          "n_pts": 75,
+          "biweight_depth": 0.29534,
+          "median_depth": 0.2969,
+          "err_depth": 0.00077,
+          "scatter_mad": 0.00671,
+          "max_depth": 0.30747
+        }
+      },
+      "per_sector": {
+        "9": {
+          "n_pts_q0": 940,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 2,
+            "biweight_depth": 0.31921,
+            "median_depth": 0.31921,
+            "err_depth": 0.00668,
+            "scatter_mad": 0.00944,
+            "max_depth": 0.32865
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 4,
+            "biweight_depth": 0.28613,
+            "median_depth": 0.28613,
+            "err_depth": 0.00189,
+            "scatter_mad": 0.00377,
+            "max_depth": 0.29035
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 1,
+            "biweight_depth": 0.32865,
+            "median_depth": 0.32865,
+            "err_depth": 0.0,
+            "scatter_mad": 0.0,
+            "max_depth": 0.32865
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 3,
+            "biweight_depth": 0.28701,
+            "median_depth": 0.28701,
+            "err_depth": 0.00149,
+            "scatter_mad": 0.00259,
+            "max_depth": 0.29035
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 2,
+            "biweight_depth": 0.31996,
+            "median_depth": 0.31996,
+            "err_depth": 0.00668,
+            "scatter_mad": 0.00944,
+            "max_depth": 0.3294
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 4,
+            "biweight_depth": 0.28629,
+            "median_depth": 0.28629,
+            "err_depth": 0.00163,
+            "scatter_mad": 0.00325,
+            "max_depth": 0.28981
+          }
+        },
+        "36": {
+          "n_pts_q0": 2662,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 12,
+            "biweight_depth": 0.33923,
+            "median_depth": 0.34119,
+            "err_depth": 0.00235,
+            "scatter_mad": 0.00816,
+            "max_depth": 0.34741
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 5,
+            "biweight_depth": 0.30282,
+            "median_depth": 0.30502,
+            "err_depth": 0.00193,
+            "scatter_mad": 0.00432,
+            "max_depth": 0.30793
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 7,
+            "biweight_depth": 0.34456,
+            "median_depth": 0.3448,
+            "err_depth": 0.0011,
+            "scatter_mad": 0.00291,
+            "max_depth": 0.34741
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 3,
+            "biweight_depth": 0.30509,
+            "median_depth": 0.30509,
+            "err_depth": 6e-05,
+            "scatter_mad": 0.0001,
+            "max_depth": 0.30793
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 12,
+            "biweight_depth": 0.33924,
+            "median_depth": 0.34123,
+            "err_depth": 0.00234,
+            "scatter_mad": 0.00812,
+            "max_depth": 0.34745
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 5,
+            "biweight_depth": 0.30236,
+            "median_depth": 0.30456,
+            "err_depth": 0.00194,
+            "scatter_mad": 0.00433,
+            "max_depth": 0.30747
+          }
+        },
+        "63": {
+          "n_pts_q0": 10329,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 35,
+            "biweight_depth": 0.33555,
+            "median_depth": 0.33764,
+            "err_depth": 0.00115,
+            "scatter_mad": 0.00678,
+            "max_depth": 0.34416
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 32,
+            "biweight_depth": 0.29784,
+            "median_depth": 0.29922,
+            "err_depth": 0.00104,
+            "scatter_mad": 0.00586,
+            "max_depth": 0.30462
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 21,
+            "biweight_depth": 0.34042,
+            "median_depth": 0.341,
+            "err_depth": 0.0005,
+            "scatter_mad": 0.00231,
+            "max_depth": 0.34416
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 19,
+            "biweight_depth": 0.3018,
+            "median_depth": 0.3023,
+            "err_depth": 0.00054,
+            "scatter_mad": 0.00233,
+            "max_depth": 0.30462
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 35,
+            "biweight_depth": 0.33591,
+            "median_depth": 0.3376,
+            "err_depth": 0.00135,
+            "scatter_mad": 0.00796,
+            "max_depth": 0.344
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 32,
+            "biweight_depth": 0.29742,
+            "median_depth": 0.29862,
+            "err_depth": 0.00103,
+            "scatter_mad": 0.00582,
+            "max_depth": 0.30382
+          }
+        },
+        "90": {
+          "n_pts_q0": 11128,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 34,
+            "biweight_depth": 0.33122,
+            "median_depth": 0.33286,
+            "err_depth": 0.0012,
+            "scatter_mad": 0.00697,
+            "max_depth": 0.3389
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 34,
+            "biweight_depth": 0.29275,
+            "median_depth": 0.29437,
+            "err_depth": 0.00097,
+            "scatter_mad": 0.00568,
+            "max_depth": 0.29983
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 20,
+            "biweight_depth": 0.33577,
+            "median_depth": 0.33634,
+            "err_depth": 0.00054,
+            "scatter_mad": 0.0024,
+            "max_depth": 0.3389
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 20,
+            "biweight_depth": 0.2968,
+            "median_depth": 0.29765,
+            "err_depth": 0.00049,
+            "scatter_mad": 0.00217,
+            "max_depth": 0.29983
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 34,
+            "biweight_depth": 0.33093,
+            "median_depth": 0.33261,
+            "err_depth": 0.00118,
+            "scatter_mad": 0.0069,
+            "max_depth": 0.33855
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 34,
+            "biweight_depth": 0.29348,
+            "median_depth": 0.29514,
+            "err_depth": 0.00102,
+            "scatter_mad": 0.00594,
+            "max_depth": 0.29997
+          }
+        },
+        "99": {
+          "n_pts_q0": 5316,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          }
+        },
+        "100": {
+          "n_pts_q0": 7700,
+          "SAP_box_hw0017_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_box_hw0017_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_core_hw0010_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "SAP_core_hw0010_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "DET_FLUX_spline_attenuated_box_PRI": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          },
+          "DET_FLUX_spline_attenuated_box_SEC_ecc": {
+            "n_pts": 0,
+            "biweight_depth": null,
+            "median_depth": null,
+            "err_depth": null,
+            "max_depth": null
+          }
+        }
+      }
+    },
+    "MIT_QLP_S63_Blended_Neighbour_TIC_942348495": {
+      "n_pts_q0": 9951,
+      "note": "Demonstrates 21 arcsec/px wide-field blending: neighbour aperture captures target PSF wings and shows ~32%/28% apparent eclipse!",
+      "SAP_core_hw0010_PRI": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_core_hw0010_SEC_ecc": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_box_hw0017_PRI": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_box_hw0017_SEC_ecc": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      }
+    },
+    "MIT_QLP_S63_Blended_Neighbour_TIC_942348496": {
+      "n_pts_q0": 9958,
+      "note": "Demonstrates 21 arcsec/px wide-field blending: neighbour aperture captures target PSF wings and shows ~32%/28% apparent eclipse!",
+      "SAP_core_hw0010_PRI": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_core_hw0010_SEC_ecc": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_box_hw0017_PRI": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      },
+      "SAP_box_hw0017_SEC_ecc": {
+        "n_pts": 0,
+        "biweight_depth": null,
+        "median_depth": null,
+        "err_depth": null,
+        "max_depth": null
+      }
+    },
+    "TGLC_Gaia_ePSF_Deblended_S9": {
+      "n_pts_clean": 1084,
+      "note": "For T=8.262 (<9.0), TGLC disables psf_flux (all NaN) and provides Gaia-prior field-subtracted aperture_flux & cal_aper_flux.",
+      "aperture_flux_core_hw0010_PRI": {
+        "n_pts": 1,
+        "biweight_depth": 0.44764,
+        "median_depth": 0.44764,
+        "err_depth": 0.0,
+        "scatter_mad": 0.0,
+        "max_depth": 0.44764
+      },
+      "aperture_flux_core_hw0010_SEC_ecc": {
+        "n_pts": 3,
+        "biweight_depth": 0.39218,
+        "median_depth": 0.39218,
+        "err_depth": 0.00194,
+        "scatter_mad": 0.00336,
+        "max_depth": 0.39728
+      },
+      "aperture_flux_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.43488,
+        "median_depth": 0.43488,
+        "err_depth": 0.00903,
+        "scatter_mad": 0.01277,
+        "max_depth": 0.44764
+      },
+      "aperture_flux_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.39105,
+        "median_depth": 0.39105,
+        "err_depth": 0.00273,
+        "scatter_mad": 0.00546,
+        "max_depth": 0.39728
+      },
+      "aperture_flux_mid_hw0025_PRI": {
+        "n_pts": 3,
+        "biweight_depth": 0.42211,
+        "median_depth": 0.42211,
+        "err_depth": 0.0086,
+        "scatter_mad": 0.0149,
+        "max_depth": 0.44764
+      },
+      "aperture_flux_mid_hw0025_SEC_ecc": {
+        "n_pts": 5,
+        "biweight_depth": 0.38845,
+        "median_depth": 0.38991,
+        "err_depth": 0.0035,
+        "scatter_mad": 0.00782,
+        "max_depth": 0.39728
+      },
+      "cal_aper_wotan_detrended_box_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.43538,
+        "median_depth": 0.43538,
+        "err_depth": 0.00903,
+        "scatter_mad": 0.01277,
+        "max_depth": 0.44815
+      },
+      "cal_aper_wotan_detrended_box_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.391,
+        "median_depth": 0.391,
+        "err_depth": 0.00234,
+        "scatter_mad": 0.00468,
+        "max_depth": 0.39621
+      },
+      "control_phi0250": {
+        "n_pts": 6,
+        "biweight_depth": 0.00154,
+        "median_depth": 0.00165,
+        "err_depth": 0.00085,
+        "scatter_mad": 0.00207,
+        "max_depth": 0.00312
+      },
+      "control_phi0750": {
+        "n_pts": 5,
+        "biweight_depth": -0.00166,
+        "median_depth": -0.00166,
+        "err_depth": 0.0,
+        "scatter_mad": 1e-05,
+        "max_depth": -0.00035
+      }
+    },
+    "T16_HATSouth_fitsh_Pipeline_S9": {
+      "n_pts_clean": 1106,
+      "btjd_range": [
+        1543.7859,
+        1568.4529
+      ],
+      "IFL1_flux_core_hw0010_PRI": {
+        "n_pts": 1,
+        "biweight_depth": 0.32601,
+        "median_depth": 0.32601,
+        "err_depth": 0.0,
+        "scatter_mad": 0.0,
+        "max_depth": 0.32601
+      },
+      "IFL1_flux_core_hw0010_SEC_ecc": {
+        "n_pts": 3,
+        "biweight_depth": 0.28206,
+        "median_depth": 0.28206,
+        "err_depth": 0.0019,
+        "scatter_mad": 0.0033,
+        "max_depth": 0.28428
+      },
+      "IFL1_flux_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.31657,
+        "median_depth": 0.31657,
+        "err_depth": 0.00667,
+        "scatter_mad": 0.00944,
+        "max_depth": 0.32601
+      },
+      "IFL1_flux_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.28093,
+        "median_depth": 0.28093,
+        "err_depth": 0.00166,
+        "scatter_mad": 0.00332,
+        "max_depth": 0.28428
+      },
+      "IRM1_dmag_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.41336,
+        "median_depth": 0.41336,
+        "err_depth": 0.0106,
+        "scatter_mad": 0.01499,
+        "max_depth": 0.42836
+      },
+      "IRM1_dmag_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.35807,
+        "median_depth": 0.35807,
+        "err_depth": 0.00251,
+        "scatter_mad": 0.00503,
+        "max_depth": 0.36315
+      },
+      "EPD1_dmag_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.40548,
+        "median_depth": 0.40548,
+        "err_depth": 0.0107,
+        "scatter_mad": 0.01513,
+        "max_depth": 0.42062
+      },
+      "EPD1_dmag_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.35423,
+        "median_depth": 0.35423,
+        "err_depth": 0.00218,
+        "scatter_mad": 0.00437,
+        "max_depth": 0.35855
+      },
+      "TFA1_dmag_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.40524,
+        "median_depth": 0.40524,
+        "err_depth": 0.00833,
+        "scatter_mad": 0.01177,
+        "max_depth": 0.41701
+      },
+      "TFA1_dmag_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.35267,
+        "median_depth": 0.35267,
+        "err_depth": 0.00266,
+        "scatter_mad": 0.00532,
+        "max_depth": 0.35875
+      },
+      "control_phi0250_flux": {
+        "n_pts": 6,
+        "biweight_depth": 6e-05,
+        "median_depth": 0.00015,
+        "err_depth": 0.00058,
+        "scatter_mad": 0.00142,
+        "max_depth": 0.00115
+      },
+      "control_phi0750_flux": {
+        "n_pts": 5,
+        "biweight_depth": -0.00023,
+        "median_depth": -0.00024,
+        "err_depth": 4e-05,
+        "scatter_mad": 9e-05,
+        "max_depth": -0.00012
+      }
+    },
+    "GSFC_ELEANOR_LITE_S9": {
+      "n_pts_q0": 1061,
+      "RAW_FLUX_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.31338,
+        "median_depth": 0.31338,
+        "err_depth": 0.00657,
+        "scatter_mad": 0.0093,
+        "max_depth": 0.32268
+      },
+      "RAW_FLUX_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.28289,
+        "median_depth": 0.28289,
+        "err_depth": 0.00111,
+        "scatter_mad": 0.00221,
+        "max_depth": 0.28996
+      },
+      "CORR_FLUX_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.31409,
+        "median_depth": 0.31409,
+        "err_depth": 0.00665,
+        "scatter_mad": 0.0094,
+        "max_depth": 0.32349
+      },
+      "CORR_FLUX_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.28283,
+        "median_depth": 0.28283,
+        "err_depth": 0.00134,
+        "scatter_mad": 0.00269,
+        "max_depth": 0.28562
+      },
+      "PCA_FLUX_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.31486,
+        "median_depth": 0.31486,
+        "err_depth": 0.00666,
+        "scatter_mad": 0.00941,
+        "max_depth": 0.32427
+      },
+      "PCA_FLUX_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.28338,
+        "median_depth": 0.28338,
+        "err_depth": 0.00162,
+        "scatter_mad": 0.00324,
+        "max_depth": 0.28677
+      },
+      "control_phi0250": {
+        "n_pts": 6,
+        "biweight_depth": 0.00062,
+        "median_depth": 0.0006,
+        "err_depth": 8e-05,
+        "scatter_mad": 0.00018,
+        "max_depth": 0.00075
+      },
+      "control_phi0750": {
+        "n_pts": 5,
+        "biweight_depth": -2e-05,
+        "median_depth": 0.00012,
+        "err_depth": 0.00011,
+        "scatter_mad": 0.00025,
+        "max_depth": 0.00029
+      }
+    },
+    "TARS_S9": {
+      "n_pts_clean": 1084,
+      "FLUX_box_hw0017_PRI": {
+        "n_pts": 2,
+        "biweight_depth": 0.30359,
+        "median_depth": 0.30359,
+        "err_depth": 0.00651,
+        "scatter_mad": 0.0092,
+        "max_depth": 0.31279
+      },
+      "FLUX_box_hw0017_SEC_ecc": {
+        "n_pts": 4,
+        "biweight_depth": 0.27893,
+        "median_depth": 0.27893,
+        "err_depth": 0.00132,
+        "scatter_mad": 0.00264,
+        "max_depth": 0.28923
+      },
+      "control_phi0250": {
+        "n_pts": 6,
+        "biweight_depth": -0.0098,
+        "median_depth": -0.0091,
+        "err_depth": 0.00082,
+        "scatter_mad": 0.002,
+        "max_depth": -0.00724
+      },
+      "control_phi0750": {
+        "n_pts": 5,
+        "biweight_depth": -0.00319,
+        "median_depth": -0.00371,
+        "err_depth": 0.00108,
+        "scatter_mad": 0.00241,
+        "max_depth": -0.001
+      }
+    }
+  }
+}

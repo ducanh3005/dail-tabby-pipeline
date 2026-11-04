@@ -1,0 +1,94 @@
+{
+  "kelt_cone_1deg": {
+    "ok": true,
+    "status": 200,
+    "len": 4,
+    "file": "nea_kelt_box1deg.json",
+    "preview": "[\n]\n"
+  },
+  "kelt_cone_2p5deg": {
+    "ok": true,
+    "status": 200,
+    "len": 4,
+    "file": "nea_kelt_box2p5deg.json",
+    "preview": "[\n]\n"
+  },
+  "kelt_S23_southern_edge": {
+    "ok": false,
+    "error": "HTTP Error 525: <none>",
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select%20top%2010%20kelt_sourceid%2Ckelt_field%2Ckelt_orientation%2Cproc_type%2Cra%2Cdec%2Ckelt_mag%2Cbjdstart%2Cbjdstop%2Cnpts%20from%20kelttimeseries%20where%20kelt_field%3D%27S23%27%20and%20ra%20between%20163.5%20and%20164.8%20order%20by%20dec%20asc&format=json"
+  },
+  "kelt_S24_western_edge": {
+    "ok": true,
+    "status": 200,
+    "len": 2433,
+    "file": "nea_kelt_S24_western_edge.json",
+    "preview": "[\n{\"kelt_sourceid\": \"KELT_S24_lc_038382_V01_east\",\n\"kelt_field\": \"S24\",\n\"kelt_orientation\": \"east\",\n\"proc_type\": \"raw\",\n\"ra\": 169.25666,\n\"dec\": -36.99840,\n\"kelt_mag\": 14.919,\n\"bjdstart\": 2455268.336615,\n\"bjdstop\": 2456456.227655,\n\"npts\": 2039},\n{\"kelt_sourceid\": \"KELT_S24_lc_038382_V01_east\",\n\"kelt_"
+  },
+  "atlas_refcat2_vizier": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/ApJ/867/105/refcat2&-c=164.159748-36.580314&-c.rs=30&-out.max=50&-out.all=1"
+  },
+  "atlas_var_vizier": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/AJ/156/241&-c=164.159748-36.580314&-c.rs=120&-out.max=50&-out.all=1"
+  },
+  "atlas_forcedphot_web": {
+    "ok": true,
+    "status": 200,
+    "len": 17840,
+    "file": "atlas_forcedphot_index.html",
+    "preview": "\n\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    \n\n      \n        <meta charset=\"utf-8\" />\n        \n        \n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n        <meta name=\"robots\" content=\"NONE,NOARCHIVE\" />\n\n        \n        \n        \n        \n        <meta n"
+  },
+  "hatsouth_vizier_meta": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-words=HATSouth&-meta=1"
+  },
+  "hatsouth_org_planets": {
+    "ok": true,
+    "status": 200,
+    "len": 27742,
+    "file": "hatsouth_org_planets.html",
+    "preview": "<!DOCTYPE html>\n\n<!--[if IE 9]><html class=\"lt-ie10\" lang=\"en\" > <![endif]-->\n<html class=\"no-js\" lang=\"en\" >\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\"\n          content=\"The HATSouth Exoplanet Survey\" "
+  },
+  "hatsouth_org_lcs": {
+    "ok": true,
+    "status": 200,
+    "len": 30198,
+    "file": "hatsouth_org_lcs.html",
+    "preview": "<!DOCTYPE html>\n\n<!--[if IE 9]><html class=\"lt-ie10\" lang=\"en\" > <![endif]-->\n<html class=\"no-js\" lang=\"en\" >\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\"\n          content=\"The HATSouth Exoplanet Survey\" "
+  },
+  "evryscope_vizier_meta": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-words=Evryscope&-meta=1"
+  },
+  "evryscope_south_crests": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/ApJ/889/117&-c=164.159748-36.580314&-c.rs=300&-out.max=50"
+  },
+  "evryscope_mdwarfs": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/ApJ/890/115&-c=164.159748-36.580314&-c.rs=300&-out.max=50"
+  },
+  "mast_caom_collections": {
+    "TESS": 9,
+    "HLSP": 189,
+    "GALEX": 2
+  },
+  "vizier_asas3": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=II/264&-c=164.159748-36.580314&-c.rs=60&-out.max=50&-out.all=1"
+  },
+  "vizier_hipparcos": {
+    "ok": false,
+    "error": "<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I/239&-c=164.159748-36.580314&-c.rs=60&-out.max=50&-out.all=1"
+  }
+}

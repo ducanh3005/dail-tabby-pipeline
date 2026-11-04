@@ -1,0 +1,6102 @@
+[
+  {
+    "kelt_field": "S34",
+    "ra0": 143,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 144,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 143,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 173,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 146,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 174,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 174,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 173,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 174,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 152,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 173,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 184,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 175,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S17",
+    "ra0": 180,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 144,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 143,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 176,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 167,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 174,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S17",
+    "ra0": 180,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 143,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 143,
+    "dec0": -48
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 140,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 141,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 151,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 147,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 181,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -47
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 177,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 188,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 146,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 167,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 157,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 152,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 162,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 164,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 154,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 171,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 150,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 167,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 175,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 174,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 172,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 144,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S34",
+    "ra0": 142,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 146,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 150,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 141,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 149,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 148,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 142,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 145,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 144,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 140,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S22",
+    "ra0": 143,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 174,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 189,
+    "dec0": -50
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 180,
+    "dec0": -49
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 185,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 187,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -46
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 186,
+    "dec0": -45
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 178,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 183,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 175,
+    "dec0": -44
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 190,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 179,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S38",
+    "ra0": 182,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 168,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 167,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 163,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 169,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -29
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 165,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 147,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -40
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 168,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -37
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -39
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 185,
+    "dec0": -41
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -42
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -38
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 161,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 160,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 155,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 156,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 159,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 158,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 166,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 153,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 149,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 173,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 151,
+    "dec0": -25
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 170,
+    "dec0": -28
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 172,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S23",
+    "ra0": 148,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 189,
+    "dec0": -43
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 183,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -36
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 184,
+    "dec0": -35
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -34
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -33
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -32
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -22
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 180,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 182,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 190,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -26
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 179,
+    "dec0": -23
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 176,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 181,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -24
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 187,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 186,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 177,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 188,
+    "dec0": -20
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 178,
+    "dec0": -21
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 171,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -30
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 173,
+    "dec0": -27
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 169,
+    "dec0": -31
+  },
+  {
+    "kelt_field": "S24",
+    "ra0": 170,
+    "dec0": -26
+  }
+]

@@ -1,0 +1,371 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+      
+        <meta charset="utf-8" />
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="NONE,NOARCHIVE" />
+
+        
+        
+        
+        
+        <meta name="atlas-runnerstatus-url" content="/forcedphot/taskrunnerstatus.json" />
+
+        
+        
+        
+        
+        
+        <meta name="atlas-reader" content="" />
+      
+
+      <title>ATLAS Forced Photometry</title>
+
+      <link rel="icon" href="/forcedphot/static/images/logos/atlas_logo.svg" />
+
+      
+      
+      
+      
+      
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK29QMXSZ9"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CK29QMXSZ9');
+      </script>
+      
+
+      
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        
+        
+        <link rel="stylesheet" type="text/css" href="/forcedphot/static/main.css?ver=1793790716622203122"/>
+
+        
+        
+        
+        <script src="/forcedphot/static/js/theme.js?ver=1793790716622203122"></script>
+      
+
+      
+      
+      
+      
+      
+      
+
+    
+  </head>
+
+  
+  <body>
+
+    <div class="wrapper">
+      
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg" aria-label="navbar">
+  <div class="container">
+    
+    
+    
+    <a class="navbar-brand" rel="nofollow" href="/forcedphot/">
+      
+
+
+
+
+
+
+
+<svg class="atlaslogo" viewBox="0 0 246 214" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  
+  <path class="logo-disc" d="M185.7,135.2c0,40.5,-32.8,73.3,-73.3,73.3C72,208.5,39.2,175.7,39.2,135.2C39.2,94.8,72,62,112.4,62c40.5,0,73.3,32.8,73.3,73.2Z" fill="#2F4B9F" />
+  
+  
+  <path class="logo-lettera" d="M29,153.3v-8.1C27.1,145,23.5,145,22,145c-7.6,0,-14.4,0,-14.4,6.9c0,5.2,2.8,7.7,8.6,7.8c5.7,0,9.7,-2.8,12.8,-6.4M17.4,124.5c9.8,0,16.2,3.2,16.2,13.9v22.8c0,1.2,-1,2.3,-2.3,2.3c-1.2,0,-2.3,-1.1,-2.3,-2.3v-2.8c-3.9,4.9,-8.2,5.6,-12.7,5.6C7.1,164,3,161,3,152.1c0,-8.5,7.7,-11.4,15.1,-11.4c3.3,0,7.6,.7,10.2,1.8H29v-4.2c0,-7.2,-5.8,-9.5,-12.5,-9.5c-2.6,0,-4.9,.2,-7.2,.7c-.2,.1,-.5,.1,-.7,.1c-1.2,0,-2,-.9,-2,-2c0,-1.1,.7,-1.8,1.7,-2c3.1,-.7,6.3,-1.1,9.1,-1.1Z" fill="#2F4B9F" />
+  
+  <path d="M51.2,115.8c0,-1.2,1,-2.3,2.3,-2.3c1.2,0,2.3,1.1,2.3,2.3V125h7.5c1.3,0,2.1,.9,2.1,2.2c0,1.3,-.8,2.1,-2.1,2.1H55.8v23c0,5.1,.4,6.9,6.5,6.9h1.1c1.2,0,2.1,.9,2.1,2.1c0,1.1,-.9,2.2,-2.1,2.2h-1c-8.4,0,-11.2,-2.4,-11.2,-11.2v-23H45.5c-1.2,0,-2.1,-.8,-2.1,-2.1c0,-1.3,.9,-2.2,2.1,-2.2h5.7Z" fill="#FFFFFF" />
+  <path d="M73.4,114.2c0,-1.3,1.1,-2.3,2.3,-2.3c1.3,0,2.4,1,2.4,2.3v47c0,1.2,-1.1,2.3,-2.4,2.3c-1.2,0,-2.3,-1.1,-2.3,-2.3Z" fill="#FFFFFF" />
+  <path d="M113.2,153.3v-8.1c-1.9,-.2,-5.5,-.2,-7,-.2c-7.6,0,-14.4,0,-14.4,6.9c0,5.2,2.8,7.7,8.6,7.8c5.7,0,9.7,-2.8,12.8,-6.4M101.5,124.5c9.9,0,16.3,3.2,16.3,13.9v22.8c0,1.2,-1,2.3,-2.3,2.3c-1.2,0,-2.3,-1.1,-2.3,-2.3v-2.8c-3.9,4.9,-8.2,5.6,-12.7,5.6c-9.3,0,-13.3,-3,-13.3,-11.9c0,-8.5,7.7,-11.4,15.1,-11.4c3.3,0,7.5,.7,10.2,1.8h.7v-4.2c0,-7.2,-5.8,-9.5,-12.5,-9.5c-2.6,0,-4.9,.2,-7.2,.7c-.2,.1,-.5,.1,-.7,.1c-1.2,0,-2,-.9,-2,-2c0,-1.1,.7,-1.8,1.7,-2c3.1,-.7,6.3,-1.1,9,-1.1Z" fill="#FFFFFF" />
+  <path d="M140,159.7c7.9,0,9.4,-1.9,9.4,-6.8c0,-8.5,-23.9,-6.1,-23.9,-18.3c0,-7.6,5.8,-10.1,14.7,-10.1c3,0,7.2,.3,10.4,1c.8,.3,1.5,1,1.5,2c0,1.1,-1,2.1,-2.1,2.1c-2.7,-.5,-6.5,-.8,-9.6,-.8c-7.9,0,-10.3,1.5,-10.3,5.8c0,7.8,23.9,5.8,23.9,18.3c0,8.2,-3.8,11.1,-14,11.1c-3.4,0,-8.2,-.5,-11.8,-1.3c-.9,-.3,-1.6,-1.1,-1.6,-2.2c0,-1.1,.9,-2.2,2.2,-2.2c3.6,1,8.7,1.4,11.2,1.4Z" fill="#FFFFFF" />
+  
+  <path d="M161.7,91.2C166,81.8,190.8,74.9,190.8,74.9c0,0,-7.7,-4.4,-12.6,-3.2c4.2,-9.5,19.1,-6.6,22.1,-6.7c4.8,-.2,6.2,-6.7,6.2,-6.7c0,0,.9,-2.3,5.3,-3c-3.4,-2.4,-6.5,1,-8.1,1.6c-1.6,.6,-4.2,-.7,-3.8,-2.7c.4,-2,2,-1.5,2,-1.5c3.3,0,8,2.7,13.9,-5.4C220.7,40.5,226.1,40,226.1,40C240,38.6,244,23.7,244,23.7c-2.2,5.5,-9,6.8,-9,6.8c-9.6,0,-13.5,3.6,-13.5,3.6C234.4,23.5,232.7,21.7,232.7,21.7c0,0,-6.1,7.4,-24.6,6.1c21.1,-1.3,19.7,-13.3,19.7,-13.3c0,0,-.8,-4.4,6.9,-10.8c-5,0,-12,.7,-12.1,7.6c-1.4,8.7,-13,3,-13,3c0,0,-15,-6.1,-17.9,6.5c-2.9,12.7,-9.5,18,-12.9,14.1c-3.4,-3.9,.9,-8.5,.9,-8.5c0,0,-12.8,-.3,-17.6,9.1c-8.1,16,-28.5,24.3,-28.5,24.3c0,0,-44.4,15.2,-34.2,45.9c11,19.5,36,10.8,36,10.8c0,0,17,-4.7,26.3,-25.3Z" fill="#CD4B27" />
+  <path d="M161.7,91.2C166,81.8,190.8,74.9,190.8,74.9c0,0,-7.7,-4.4,-12.6,-3.2c4.2,-9.5,19.1,-6.6,22.1,-6.7c4.8,-.2,6.2,-6.7,6.2,-6.7c0,0,.9,-2.3,5.3,-3c-3.4,-2.4,-6.5,1,-8.1,1.6c-1.6,.6,-4.2,-.7,-3.8,-2.7c.4,-2,2,-1.5,2,-1.5c3.3,0,8,2.7,13.9,-5.4C220.7,40.5,226.1,40,226.1,40C240,38.6,244,23.7,244,23.7c-2.2,5.5,-9,6.8,-9,6.8c-9.6,0,-13.5,3.6,-13.5,3.6C234.4,23.5,232.7,21.7,232.7,21.7c0,0,-6.1,7.4,-24.6,6.1c21.1,-1.3,19.7,-13.3,19.7,-13.3c0,0,-.8,-4.4,6.9,-10.8c-5,0,-12,.7,-12.1,7.6c-1.4,8.7,-13,3,-13,3c0,0,-15,-6.1,-17.9,6.5c-2.9,12.7,-9.5,18,-12.9,14.1c-3.4,-3.9,.9,-8.5,.9,-8.5c0,0,-12.8,-.3,-17.6,9.1c-8.1,16,-28.5,24.3,-28.5,24.3c0,0,-44.4,15.2,-34.2,45.9c11,19.5,36,10.8,36,10.8c0,0,17,-4.7,26.3,-25.3Z" fill="none" stroke="#FFFFFF" stroke-width="1.5277778" />
+  <path d="M192.5,40.6C182.6,43.3,103,76.5,105.7,97.3c1,14.4,12.4,15.1,12.4,15.1c0,0,14.2,2.7,21.6,-13.3c6.2,-13.7,11.1,-17,17.2,-18.7c6.1,-1.7,6.4,-4.2,6.4,-4.2c0,0,-8.6,1.5,0,-6.3c5.8,-5.3,23.9,-15.1,23.9,-15.1c0,0,-6.9,-1.2,5.3,-9.9c12.3,-8.7,26.8,-13.7,26.8,-13.7Z" fill="#F08521" />
+</svg>
+
+      <span class="visually-hidden">ATLAS Forced Photometry home</span>
+    </a>
+
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarmain">
+      
+      
+      
+      
+      
+      
+      
+      
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="/forcedphot/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/resultdesc/">Output</a></li>
+          
+          
+          
+          
+          
+          <li class="nav-item"><a class="nav-link loginrequired" href="/forcedphot/queue/" rel="nofollow" title="Sign in to use the task queue">Queue
+
+
+
+
+
+
+<svg class="navlock" width="12" height="12" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M5 6.5V4.5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="3.2" y="6.5" width="9.6" height="7.3" rx="1.2" fill="currentColor"/>
+</svg>
+<span class="visually-hidden">(sign in required)</span>
+
+            
+            
+            
+            
+            
+            </a></li>
+          <li class="nav-item"><a class="nav-link loginrequired" href="/forcedphot/queue/?format=api" rel="nofollow" title="Sign in to use the browsable API">API
+
+
+
+
+
+
+<svg class="navlock" width="12" height="12" viewBox="0 0 16 16" aria-hidden="true">
+  <path d="M5 6.5V4.5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="3.2" y="6.5" width="9.6" height="7.3" rx="1.2" fill="currentColor"/>
+</svg>
+<span class="visually-hidden">(sign in required)</span>
+</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/apiguide/">API Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/faq/">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/stats/">Stats &amp; Issues</a></li>
+      </ul>
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/register/">Register</a></li>
+          
+          
+          <li class="nav-item"><a class="nav-link" href="/forcedphot/login/?next=/forcedphot/">Log in</a></li>
+        
+
+        
+        
+        
+        
+        <li class="nav-item dropdown themeswitch d-none">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Colour theme">
+            
+            
+            
+            
+            
+            <span class="themeicon-stack">
+              <svg class="themeicon themeicon-light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <circle cx="8" cy="8" r="3.4"/>
+                <path d="M8 0v2.1M8 13.9V16M0 8h2.1M13.9 8H16M2.34 2.34l1.5 1.5M12.16 12.16l1.5 1.5M13.66 2.34l-1.5 1.5M3.84 12.16l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              <svg class="themeicon themeicon-dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 1A7 7 0 1 0 8 15A9 9 0 0 1 8 1Z" transform="rotate(-25 8 8)"/>
+              </svg>
+              <svg class="themeicon themeicon-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M8 1.6A6.4 6.4 0 0 0 8 14.4Z"/>
+              </svg>
+            </span>
+            
+            
+            
+            <span class="themeswitch-label">Colour theme</span>
+          </button>
+
+          
+          
+          
+          <ul class="dropdown-menu dropdown-menu-end" role="menu" aria-label="Colour theme">
+            <li><button type="button" class="dropdown-item" data-theme-value="light" role="menuitemradio" aria-checked="false">Light</button></li>
+            <li><button type="button" class="dropdown-item" data-theme-value="dark" role="menuitemradio" aria-checked="false">Dark</button></li>
+            <li><button type="button" class="dropdown-item" data-theme-value="auto" role="menuitemradio" aria-checked="false">Auto</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sitenotice sitenotice-noline" id="sitenotice">
+
+  
+  
+  
+  
+  <p class="sitenotice-note"><strong>2026-09-09 07:45 UTC:</strong> Normal operations have resumed. Apologies for the delay!</p>
+
+
+  
+  
+  
+  
+  
+  <p class="sitenotice-runner" id="runnerstatus" role="status" aria-live="off"><svg class="sitenotice-warnmark" viewBox="0 0 16 16" aria-hidden="true" focusable="false" hidden><path d="M8 2.4 14.8 13.8H1.2z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 6.4v3.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11.7" r="0.8" fill="currentColor"/></svg><span class="sitenotice-runnertext"></span></p>
+</div>
+
+
+        <div id="content" role="main" aria-label="content">
+          
+<div class="content-main" role="main" aria-label="main content">
+    <div class="page-header">
+    <h1>ATLAS Forced Photometry</h1>
+    
+    <p class="tagline">Four telescopes, the whole sky every night or two, and a light curve at any position you name.</p>
+    </div>
+    <p>This is the <a href="https://fallingstar.com/">ATLAS</a> forced photometry server, which provides full public
+    access to photometric measurements over the full history of ATLAS
+    survey. After registration, a user can request forced photometry at
+    any position on the sky either for a single position, a list of
+    positions, or moving objects (by MPC name).</p>
+
+    <p>ATLAS is a quadruple 0.5m telescope system with two units in Hawaii (Haleakala and Mauna Loa), and one each in Chile (El Sauce) and South Africa (Sutherland). With the installation of the two southern units, we are robotically surveying the whole sky with a cadence of 1 day between -50 and +50 and 2 days in the polar regions, weather permitting. Two filters are used, cyan and orange (denoted c and o; all mags quoted are in the AB system).</p>
+
+    <p>As described in <a href="https://ui.adsabs.harvard.edu/abs/2018PASP..130f4505T/abstract">Tonry et al. (2018)</a>, ATLAS surveys the whole
+    visible sky. On each night, a sequence of 4 x 30 second exposures are taken, spaced
+    over a period of about one hour to provide identification and orbit
+    constraints for near-earth objects (NEOs). Discovery of NEOs and
+    potentially hazardous objects is the main purpose of ATLAS. However
+    the all-sky, frequent coverage, to o ~ 19.5 makes it treasure trove
+    for time domain science. A full description is on the ATLAS homepage at <a href="https://fallingstar.com/">fallingstar.com</a></p>
+
+    
+    
+    
+    
+    <div class="examplefigures">
+        <figure>
+            <img class="examplelightcurve" src="/forcedphot/static/images/example_supernova_small.png" alt="Example ATLAS forced photometry lightcurve of a supernova, showing a rise and decline in cyan and orange difference flux"/>
+            <figcaption>A supernova: a fast rise, then months of decline.</figcaption>
+        </figure>
+        <figure>
+            <img class="examplelightcurve" src="/forcedphot/static/images/example_varstar_small.png" alt="Example ATLAS forced photometry lightcurve of a variable star, showing repeated brightness variations in cyan and orange"/>
+            <figcaption>A variable star: the same brightening, over and over.</figcaption>
+        </figure>
+    </div>
+
+    <p>A forced photometry means that a point-spread-function is calculated
+    for each image based on high signal to noise stars, and a profile fit
+    is forced at the user's input coordinates. The forced measurement
+    can be made on either a target image (e.g. for the measurement of
+    flux of a variable star), or on a difference image (e.g. for a
+    lightcurve point for a transient). Data processing and photometry
+    are described in more detail in <a href="https://ui.adsabs.harvard.edu/abs/2018PASP..130f4505T/abstract">Tonry et al. (2018)</a> and <a href="https://ui.adsabs.harvard.edu/abs/2020PASP..132h5002S/abstract">Smith et al. (2020)</a>.</p>
+
+    <p>The data returned are described on the <a href="/forcedphot/resultdesc/">Output</a> page and if you encounter problems, bugs, or would like to make suggestions, please do it through our <a href="https://github.com/lukeshingles/atlasserver/issues">GitHub issues page</a>.</p>
+
+    <p>The potential for transient object science and variable star science
+    has been described in <a href="https://ui.adsabs.harvard.edu/abs/2020PASP..132h5002S/abstract">Smith et al. (2020)</a> and <a href="https://ui.adsabs.harvard.edu/abs/2018AJ....156..241H/abstract">Heinze et al. (2018)</a>,
+    respectively. We release all our transient discoveries to the
+    <a href="https://wis-tns.weizmann.ac.il/">IAU's Transient Name Server</a>.</p>
+
+    <p>If you use these data in a publication you must cite <a href="https://ui.adsabs.harvard.edu/abs/2018PASP..130f4505T/abstract">Tonry et al.
+    (2018)</a>, If you use data for transient time-domain science you must
+    also cite <a href="https://ui.adsabs.harvard.edu/abs/2020PASP..132h5002S/abstract">Smith et al. (2020)</a>, and if you use it for variable object
+    science, you must cite the <a href="https://ui.adsabs.harvard.edu/abs/2018AJ....156..241H/abstract">Heinze et al. (2018)</a>. This web service can be cited as <a href="https://ui.adsabs.harvard.edu/abs/2021TNSAN...7....1S/abstract">Shingles et al. (2021)</a>.</p>
+
+    <p>Please also add the acknowledgement:</p>
+
+    <p>This work has made use of data from the Asteroid Terrestrial-impact
+    Last Alert System (ATLAS) project. The Asteroid Terrestrial-impact Last Alert System (ATLAS) project is primarily funded to search for near earth asteroids through NASA grants NN12AR55G, 80NSSC18K0284, and 80NSSC18K1575; byproducts of the NEO search include images and catalogs from the survey area. This work was partially funded by Kepler/K2 grant J1944/80NSSC19K0112 and HST GO-15889, and STFC grants ST/T000198/1 and ST/S006109/1. The ATLAS science products have been made possible through the contributions of the University of Hawaii Institute for Astronomy, the Queen’s University Belfast, the Space Telescope Science Institute, the South African Astronomical Observatory, and The Millennium Institute of Astrophysics (MAS), Chile.</p>
+
+    <ul class="logos">
+        <li><img src="/forcedphot/static/images/logos/LogoMAS.png" alt="Millennium Institute of Astrophysics" /></li>
+        <li><img src="/forcedphot/static/images/logos/qubredlandscape.png" alt="Queen's University Belfast" /></li>
+        <li><img src="/forcedphot/static/images/logos/STScI.jpg" alt="Space Telescope Science Institute" /></li>
+        <li><img src="/forcedphot/static/images/logos/ifalogo140-240.png" alt="University of Hawaii Institute for Astronomy" /></li>
+        <li><img src="/forcedphot/static/images/logos/logo-saao-2020.png" alt="South African Astronomical Observatory" /></li>
+    </ul>
+</div>
+
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+      
+      
+      <script src="/forcedphot/static/js/navbar.js?ver=1793790716622203122"></script>
+
+      
+      
+      
+      <script type="module" src="/forcedphot/static/js/runnerstatus.min.js?ver=1793790716622203122"></script>
+    
+
+  </body>
+  
+</html>
