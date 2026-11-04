@@ -1,0 +1,1383 @@
+{
+  "bounty_id": "bnty_0426",
+  "target": "TIC 158499577 (HD 94871 / 1SWASP J105638.34-363449.0)",
+  "hunter": "ducanh3005",
+  "version": "v1.0.0",
+  "timestamp_utc": "2026-11-04T16:30:00Z",
+  "house_ephemeris_folded": {
+    "P_d": 11.7672,
+    "T0_btjd": 2286.372,
+    "true_secondary_phase_ecc": 0.514107
+  },
+  "independent_period_finding": {
+    "tess_lafler_kinman_P_d": 11.7672,
+    "tess_stellingwerf_pdm_coarse_P_d": 11.7672,
+    "tess_stellingwerf_pdm_fine_P_d": 11.767205,
+    "swasp_stellingwerf_pdm_fine_P_d": 11.76684,
+    "swasp_lafler_kinman_fine_P_d": 11.76745
+  },
+  "superwasp_zeropoint_audit": {
+    "global_median_all6789_mag": 9.10997,
+    "2006_cam222_n309_med_mag": 9.06622,
+    "2006_cam223_n16_med_mag": 8.8466,
+    "2007_cam222_n1876_med_mag": 9.06627,
+    "2008_cam222_n4588_med_mag": 9.11567,
+    "step_2008_minus_2007_mag": 0.0494
+  },
+  "folded_depths_per_dataset": {
+    "TESS_SPOC_S9_S36": {
+      "PDCSAP_biweight_detrended": {
+        "core_bottom_hw0008": {
+          "half_width_phase": 0.0008,
+          "half_width_min": 13.56,
+          "primary_phi0000": {
+            "n": 40,
+            "median_depth": 0.33569,
+            "mean_depth": 0.3354,
+            "se": 0.00027
+          },
+          "secondary_ecc_phi05141": {
+            "n": 55,
+            "median_depth": 0.2967,
+            "mean_depth": 0.29637,
+            "se": 0.00021
+          },
+          "secondary_circ_phi05000": {
+            "n": 53,
+            "median_depth": -0.00015,
+            "mean_depth": -8e-05,
+            "se": 0.0001
+          },
+          "control_phi0250": {
+            "n": 53,
+            "median_depth": -5e-05,
+            "mean_depth": -2e-05,
+            "se": 8e-05
+          },
+          "control_phi0750": {
+            "n": 54,
+            "median_depth": -2e-05,
+            "mean_depth": -9e-05,
+            "se": 8e-05
+          }
+        },
+        "house_match_box_hw0017": {
+          "half_width_phase": 0.0017,
+          "half_width_min": 28.81,
+          "primary_phi0000": {
+            "n": 87,
+            "median_depth": 0.33091,
+            "mean_depth": 0.32953,
+            "se": 0.00072
+          },
+          "secondary_ecc_phi05141": {
+            "n": 115,
+            "median_depth": 0.29287,
+            "mean_depth": 0.29136,
+            "se": 0.00055
+          },
+          "secondary_circ_phi05000": {
+            "n": 115,
+            "median_depth": -7e-05,
+            "mean_depth": -0.0,
+            "se": 7e-05
+          },
+          "control_phi0250": {
+            "n": 115,
+            "median_depth": -3e-05,
+            "mean_depth": -1e-05,
+            "se": 5e-05
+          },
+          "control_phi0750": {
+            "n": 116,
+            "median_depth": -2e-05,
+            "mean_depth": -7e-05,
+            "se": 5e-05
+          }
+        },
+        "mid_box_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 127,
+            "median_depth": 0.32506,
+            "mean_depth": 0.32159,
+            "se": 0.0012
+          },
+          "secondary_ecc_phi05141": {
+            "n": 168,
+            "median_depth": 0.28724,
+            "mean_depth": 0.28436,
+            "se": 0.00092
+          },
+          "secondary_circ_phi05000": {
+            "n": 170,
+            "median_depth": -4e-05,
+            "mean_depth": -0.0,
+            "se": 5e-05
+          },
+          "control_phi0250": {
+            "n": 171,
+            "median_depth": -3e-05,
+            "mean_depth": -2e-05,
+            "se": 4e-05
+          },
+          "control_phi0750": {
+            "n": 170,
+            "median_depth": 4e-05,
+            "mean_depth": 1e-05,
+            "se": 4e-05
+          }
+        },
+        "full_dur_box_hw0104": {
+          "half_width_phase": 0.0104,
+          "half_width_min": 176.23,
+          "primary_phi0000": {
+            "n": 543,
+            "median_depth": 0.18165,
+            "mean_depth": 0.17999,
+            "se": 0.00471
+          },
+          "secondary_ecc_phi05141": {
+            "n": 701,
+            "median_depth": 0.16574,
+            "mean_depth": 0.16199,
+            "se": 0.00365
+          },
+          "secondary_circ_phi05000": {
+            "n": 703,
+            "median_depth": 0.00053,
+            "mean_depth": 0.03322,
+            "se": 0.00228
+          },
+          "control_phi0250": {
+            "n": 706,
+            "median_depth": -0.0,
+            "mean_depth": -1e-05,
+            "se": 2e-05
+          },
+          "control_phi0750": {
+            "n": 656,
+            "median_depth": 3e-05,
+            "mean_depth": 2e-05,
+            "se": 2e-05
+          }
+        }
+      },
+      "PDCSAP_sector_median": {
+        "core_bottom_hw0008": {
+          "half_width_phase": 0.0008,
+          "half_width_min": 13.56,
+          "primary_phi0000": {
+            "n": 40,
+            "median_depth": 0.33575,
+            "mean_depth": 0.33545,
+            "se": 0.00026
+          },
+          "secondary_ecc_phi05141": {
+            "n": 55,
+            "median_depth": 0.29683,
+            "mean_depth": 0.29655,
+            "se": 0.00021
+          },
+          "secondary_circ_phi05000": {
+            "n": 53,
+            "median_depth": 0.00019,
+            "mean_depth": 0.00016,
+            "se": 0.00013
+          },
+          "control_phi0250": {
+            "n": 53,
+            "median_depth": -0.00077,
+            "mean_depth": -0.00048,
+            "se": 0.00017
+          },
+          "control_phi0750": {
+            "n": 54,
+            "median_depth": 0.00058,
+            "mean_depth": 0.00053,
+            "se": 0.00014
+          }
+        },
+        "house_match_box_hw0017": {
+          "half_width_phase": 0.0017,
+          "half_width_min": 28.81,
+          "primary_phi0000": {
+            "n": 87,
+            "median_depth": 0.33105,
+            "mean_depth": 0.32957,
+            "se": 0.00072
+          },
+          "secondary_ecc_phi05141": {
+            "n": 115,
+            "median_depth": 0.2932,
+            "mean_depth": 0.29153,
+            "se": 0.00055
+          },
+          "secondary_circ_phi05000": {
+            "n": 115,
+            "median_depth": 0.00024,
+            "mean_depth": 0.00025,
+            "se": 9e-05
+          },
+          "control_phi0250": {
+            "n": 115,
+            "median_depth": -0.00074,
+            "mean_depth": -0.00046,
+            "se": 0.00012
+          },
+          "control_phi0750": {
+            "n": 116,
+            "median_depth": 0.00058,
+            "mean_depth": 0.00055,
+            "se": 0.0001
+          }
+        },
+        "mid_box_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 127,
+            "median_depth": 0.32515,
+            "mean_depth": 0.32164,
+            "se": 0.0012
+          },
+          "secondary_ecc_phi05141": {
+            "n": 168,
+            "median_depth": 0.28774,
+            "mean_depth": 0.28452,
+            "se": 0.00092
+          },
+          "secondary_circ_phi05000": {
+            "n": 170,
+            "median_depth": 0.00026,
+            "mean_depth": 0.00025,
+            "se": 7e-05
+          },
+          "control_phi0250": {
+            "n": 171,
+            "median_depth": -0.00077,
+            "mean_depth": -0.00048,
+            "se": 0.0001
+          },
+          "control_phi0750": {
+            "n": 170,
+            "median_depth": 0.00065,
+            "mean_depth": 0.00062,
+            "se": 7e-05
+          }
+        },
+        "full_dur_box_hw0104": {
+          "half_width_phase": 0.0104,
+          "half_width_min": 176.23,
+          "primary_phi0000": {
+            "n": 543,
+            "median_depth": 0.18155,
+            "mean_depth": 0.18004,
+            "se": 0.00471
+          },
+          "secondary_ecc_phi05141": {
+            "n": 701,
+            "median_depth": 0.16598,
+            "mean_depth": 0.16218,
+            "se": 0.00365
+          },
+          "secondary_circ_phi05000": {
+            "n": 703,
+            "median_depth": 0.00085,
+            "mean_depth": 0.03346,
+            "se": 0.00228
+          },
+          "control_phi0250": {
+            "n": 706,
+            "median_depth": -0.00082,
+            "mean_depth": -0.00047,
+            "se": 5e-05
+          },
+          "control_phi0750": {
+            "n": 656,
+            "median_depth": 0.00044,
+            "mean_depth": 0.00057,
+            "se": 4e-05
+          }
+        }
+      },
+      "SAP_biweight_detrended": {
+        "core_bottom_hw0008": {
+          "half_width_phase": 0.0008,
+          "half_width_min": 13.56,
+          "primary_phi0000": {
+            "n": 40,
+            "median_depth": 0.32506,
+            "mean_depth": 0.32484,
+            "se": 0.00027
+          },
+          "secondary_ecc_phi05141": {
+            "n": 55,
+            "median_depth": 0.28751,
+            "mean_depth": 0.28746,
+            "se": 0.00027
+          },
+          "secondary_circ_phi05000": {
+            "n": 53,
+            "median_depth": -4e-05,
+            "mean_depth": 0.00014,
+            "se": 0.00017
+          },
+          "control_phi0250": {
+            "n": 53,
+            "median_depth": -8e-05,
+            "mean_depth": 2e-05,
+            "se": 8e-05
+          },
+          "control_phi0750": {
+            "n": 54,
+            "median_depth": -0.00019,
+            "mean_depth": -0.00017,
+            "se": 8e-05
+          }
+        },
+        "house_match_box_hw0017": {
+          "half_width_phase": 0.0017,
+          "half_width_min": 28.81,
+          "primary_phi0000": {
+            "n": 87,
+            "median_depth": 0.32069,
+            "mean_depth": 0.31912,
+            "se": 0.0007
+          },
+          "secondary_ecc_phi05141": {
+            "n": 115,
+            "median_depth": 0.28405,
+            "mean_depth": 0.28248,
+            "se": 0.00056
+          },
+          "secondary_circ_phi05000": {
+            "n": 115,
+            "median_depth": -4e-05,
+            "mean_depth": 0.00015,
+            "se": 0.0001
+          },
+          "control_phi0250": {
+            "n": 115,
+            "median_depth": 3e-05,
+            "mean_depth": 6e-05,
+            "se": 6e-05
+          },
+          "control_phi0750": {
+            "n": 116,
+            "median_depth": -9e-05,
+            "mean_depth": -0.00013,
+            "se": 5e-05
+          }
+        },
+        "mid_box_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 127,
+            "median_depth": 0.31436,
+            "mean_depth": 0.31143,
+            "se": 0.00116
+          },
+          "secondary_ecc_phi05141": {
+            "n": 168,
+            "median_depth": 0.27866,
+            "mean_depth": 0.27559,
+            "se": 0.0009
+          },
+          "secondary_circ_phi05000": {
+            "n": 170,
+            "median_depth": -3e-05,
+            "mean_depth": 0.00011,
+            "se": 8e-05
+          },
+          "control_phi0250": {
+            "n": 171,
+            "median_depth": 1e-05,
+            "mean_depth": 3e-05,
+            "se": 5e-05
+          },
+          "control_phi0750": {
+            "n": 170,
+            "median_depth": -3e-05,
+            "mean_depth": -4e-05,
+            "se": 4e-05
+          }
+        },
+        "full_dur_box_hw0104": {
+          "half_width_phase": 0.0104,
+          "half_width_min": 176.23,
+          "primary_phi0000": {
+            "n": 543,
+            "median_depth": 0.1752,
+            "mean_depth": 0.17432,
+            "se": 0.00456
+          },
+          "secondary_ecc_phi05141": {
+            "n": 701,
+            "median_depth": 0.1608,
+            "mean_depth": 0.15702,
+            "se": 0.00354
+          },
+          "secondary_circ_phi05000": {
+            "n": 703,
+            "median_depth": 0.00068,
+            "mean_depth": 0.03226,
+            "se": 0.00221
+          },
+          "control_phi0250": {
+            "n": 706,
+            "median_depth": -1e-05,
+            "mean_depth": 0.0,
+            "se": 2e-05
+          },
+          "control_phi0750": {
+            "n": 656,
+            "median_depth": -4e-05,
+            "mean_depth": -4e-05,
+            "se": 2e-05
+          }
+        }
+      },
+      "SAP_sector_median": {
+        "core_bottom_hw0008": {
+          "half_width_phase": 0.0008,
+          "half_width_min": 13.56,
+          "primary_phi0000": {
+            "n": 40,
+            "median_depth": 0.32475,
+            "mean_depth": 0.32462,
+            "se": 0.00028
+          },
+          "secondary_ecc_phi05141": {
+            "n": 55,
+            "median_depth": 0.28782,
+            "mean_depth": 0.28806,
+            "se": 0.00032
+          },
+          "secondary_circ_phi05000": {
+            "n": 53,
+            "median_depth": 0.00058,
+            "mean_depth": 0.00093,
+            "se": 0.00021
+          },
+          "control_phi0250": {
+            "n": 53,
+            "median_depth": -0.00074,
+            "mean_depth": -0.00067,
+            "se": 0.00016
+          },
+          "control_phi0750": {
+            "n": 54,
+            "median_depth": 0.0001,
+            "mean_depth": 3e-05,
+            "se": 9e-05
+          }
+        },
+        "house_match_box_hw0017": {
+          "half_width_phase": 0.0017,
+          "half_width_min": 28.81,
+          "primary_phi0000": {
+            "n": 87,
+            "median_depth": 0.32052,
+            "mean_depth": 0.31889,
+            "se": 0.0007
+          },
+          "secondary_ecc_phi05141": {
+            "n": 115,
+            "median_depth": 0.28467,
+            "mean_depth": 0.2831,
+            "se": 0.00057
+          },
+          "secondary_circ_phi05000": {
+            "n": 115,
+            "median_depth": 0.00058,
+            "mean_depth": 0.00093,
+            "se": 0.00013
+          },
+          "control_phi0250": {
+            "n": 115,
+            "median_depth": -0.00074,
+            "mean_depth": -0.00063,
+            "se": 0.00011
+          },
+          "control_phi0750": {
+            "n": 116,
+            "median_depth": 0.00014,
+            "mean_depth": 6e-05,
+            "se": 6e-05
+          }
+        },
+        "mid_box_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 127,
+            "median_depth": 0.31395,
+            "mean_depth": 0.3112,
+            "se": 0.00116
+          },
+          "secondary_ecc_phi05141": {
+            "n": 168,
+            "median_depth": 0.27915,
+            "mean_depth": 0.27621,
+            "se": 0.00091
+          },
+          "secondary_circ_phi05000": {
+            "n": 170,
+            "median_depth": 0.00058,
+            "mean_depth": 0.00089,
+            "se": 0.0001
+          },
+          "control_phi0250": {
+            "n": 171,
+            "median_depth": -0.0008,
+            "mean_depth": -0.00066,
+            "se": 9e-05
+          },
+          "control_phi0750": {
+            "n": 170,
+            "median_depth": 0.0002,
+            "mean_depth": 0.00014,
+            "se": 5e-05
+          }
+        },
+        "full_dur_box_hw0104": {
+          "half_width_phase": 0.0104,
+          "half_width_min": 176.23,
+          "primary_phi0000": {
+            "n": 543,
+            "median_depth": 0.17563,
+            "mean_depth": 0.17406,
+            "se": 0.00456
+          },
+          "secondary_ecc_phi05141": {
+            "n": 701,
+            "median_depth": 0.16137,
+            "mean_depth": 0.15774,
+            "se": 0.00353
+          },
+          "secondary_circ_phi05000": {
+            "n": 703,
+            "median_depth": 0.00164,
+            "mean_depth": 0.03302,
+            "se": 0.00221
+          },
+          "control_phi0250": {
+            "n": 706,
+            "median_depth": -0.00087,
+            "mean_depth": -0.00069,
+            "se": 4e-05
+          },
+          "control_phi0750": {
+            "n": 656,
+            "median_depth": 0.00011,
+            "mean_depth": 0.0001,
+            "se": 3e-05
+          }
+        }
+      }
+    },
+    "SuperWASP_DR1_2006_2008": {
+      "TAMFLUX2_biweight_detrended_clean": {
+        "core_bottom_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 30,
+            "median_dmag": 0.3946,
+            "mean_dmag": 0.388,
+            "se_mag": 0.0062,
+            "equiv_flux_depth": 0.3047
+          },
+          "secondary_ecc_phi05141": {
+            "n": 48,
+            "median_dmag": 0.3426,
+            "mean_dmag": 0.339,
+            "se_mag": 0.0031,
+            "equiv_flux_depth": 0.2706
+          },
+          "secondary_circ_phi05000": {
+            "n": 2,
+            "median_dmag": -0.0153,
+            "mean_dmag": -0.0153,
+            "se_mag": 0.0028,
+            "equiv_flux_depth": -0.0142
+          },
+          "control_phi0250": {
+            "n": 34,
+            "median_dmag": 0.0046,
+            "mean_dmag": 0.0035,
+            "se_mag": 0.0015,
+            "equiv_flux_depth": 0.0043
+          },
+          "control_phi0750": {
+            "n": 37,
+            "median_dmag": 0.008,
+            "mean_dmag": 0.0096,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.0073
+          }
+        },
+        "mid_box_hw0050": {
+          "half_width_phase": 0.005,
+          "half_width_min": 84.72,
+          "primary_phi0000": {
+            "n": 79,
+            "median_dmag": 0.3555,
+            "mean_dmag": 0.3393,
+            "se_mag": 0.0067,
+            "equiv_flux_depth": 0.2792
+          },
+          "secondary_ecc_phi05141": {
+            "n": 88,
+            "median_dmag": 0.3065,
+            "mean_dmag": 0.2908,
+            "se_mag": 0.007,
+            "equiv_flux_depth": 0.2459
+          },
+          "secondary_circ_phi05000": {
+            "n": 10,
+            "median_dmag": -0.0021,
+            "mean_dmag": -0.0005,
+            "se_mag": 0.0036,
+            "equiv_flux_depth": -0.002
+          },
+          "control_phi0250": {
+            "n": 61,
+            "median_dmag": 0.0025,
+            "mean_dmag": 0.003,
+            "se_mag": 0.0013,
+            "equiv_flux_depth": 0.0023
+          },
+          "control_phi0750": {
+            "n": 61,
+            "median_dmag": 0.0136,
+            "mean_dmag": 0.0127,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.0125
+          }
+        },
+        "house_match_full_dur_hw0108": {
+          "half_width_phase": 0.0108,
+          "half_width_min": 183.0,
+          "primary_phi0000": {
+            "n": 179,
+            "median_dmag": 0.1872,
+            "mean_dmag": 0.2012,
+            "se_mag": 0.015,
+            "equiv_flux_depth": 0.1584
+          },
+          "secondary_ecc_phi05141": {
+            "n": 192,
+            "median_dmag": 0.1566,
+            "mean_dmag": 0.1774,
+            "se_mag": 0.011,
+            "equiv_flux_depth": 0.1343
+          },
+          "secondary_circ_phi05000": {
+            "n": 44,
+            "median_dmag": 0.1056,
+            "mean_dmag": 0.1202,
+            "se_mag": 0.0228,
+            "equiv_flux_depth": 0.0927
+          },
+          "control_phi0250": {
+            "n": 121,
+            "median_dmag": -0.0006,
+            "mean_dmag": 0.0006,
+            "se_mag": 0.0007,
+            "equiv_flux_depth": -0.0005
+          },
+          "control_phi0750": {
+            "n": 127,
+            "median_dmag": 0.003,
+            "mean_dmag": 0.005,
+            "se_mag": 0.0011,
+            "equiv_flux_depth": 0.0028
+          }
+        }
+      },
+      "TAMFLUX2_raw_median_all6789": {
+        "core_bottom_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 32,
+            "median_dmag": 0.3521,
+            "mean_dmag": 0.3551,
+            "se_mag": 0.0067,
+            "equiv_flux_depth": 0.2769
+          },
+          "secondary_ecc_phi05141": {
+            "n": 48,
+            "median_dmag": 0.2991,
+            "mean_dmag": 0.3024,
+            "se_mag": 0.0048,
+            "equiv_flux_depth": 0.2408
+          },
+          "secondary_circ_phi05000": {
+            "n": 2,
+            "median_dmag": -0.011,
+            "mean_dmag": -0.011,
+            "se_mag": 0.0028,
+            "equiv_flux_depth": -0.0102
+          },
+          "control_phi0250": {
+            "n": 34,
+            "median_dmag": 0.0082,
+            "mean_dmag": -0.0074,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.0076
+          },
+          "control_phi0750": {
+            "n": 37,
+            "median_dmag": 0.0142,
+            "mean_dmag": 0.0145,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.013
+          }
+        },
+        "mid_box_hw0050": {
+          "half_width_phase": 0.005,
+          "half_width_min": 84.72,
+          "primary_phi0000": {
+            "n": 84,
+            "median_dmag": 0.3266,
+            "mean_dmag": 0.3181,
+            "se_mag": 0.0068,
+            "equiv_flux_depth": 0.2598
+          },
+          "secondary_ecc_phi05141": {
+            "n": 89,
+            "median_dmag": 0.2648,
+            "mean_dmag": 0.2581,
+            "se_mag": 0.0072,
+            "equiv_flux_depth": 0.2164
+          },
+          "secondary_circ_phi05000": {
+            "n": 10,
+            "median_dmag": 0.0032,
+            "mean_dmag": 0.0043,
+            "se_mag": 0.0036,
+            "equiv_flux_depth": 0.003
+          },
+          "control_phi0250": {
+            "n": 61,
+            "median_dmag": 0.0063,
+            "mean_dmag": -0.0089,
+            "se_mag": 0.0024,
+            "equiv_flux_depth": 0.0058
+          },
+          "control_phi0750": {
+            "n": 62,
+            "median_dmag": 0.0212,
+            "mean_dmag": 0.0209,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.0193
+          }
+        },
+        "house_match_full_dur_hw0108": {
+          "half_width_phase": 0.0108,
+          "half_width_min": 183.0,
+          "primary_phi0000": {
+            "n": 184,
+            "median_dmag": 0.1932,
+            "mean_dmag": 0.1953,
+            "se_mag": 0.0134,
+            "equiv_flux_depth": 0.163
+          },
+          "secondary_ecc_phi05141": {
+            "n": 197,
+            "median_dmag": 0.1405,
+            "mean_dmag": 0.1572,
+            "se_mag": 0.01,
+            "equiv_flux_depth": 0.1214
+          },
+          "secondary_circ_phi05000": {
+            "n": 49,
+            "median_dmag": 0.0985,
+            "mean_dmag": 0.1001,
+            "se_mag": 0.019,
+            "equiv_flux_depth": 0.0867
+          },
+          "control_phi0250": {
+            "n": 121,
+            "median_dmag": -0.0,
+            "mean_dmag": -0.0113,
+            "se_mag": 0.0021,
+            "equiv_flux_depth": -0.0
+          },
+          "control_phi0750": {
+            "n": 139,
+            "median_dmag": 0.0099,
+            "mean_dmag": -0.0159,
+            "se_mag": 0.0028,
+            "equiv_flux_depth": 0.0091
+          }
+        }
+      },
+      "FLUX2_raw_aperture_biweight_clean": {
+        "core_bottom_hw0025": {
+          "half_width_phase": 0.0025,
+          "half_width_min": 42.36,
+          "primary_phi0000": {
+            "n": 30,
+            "median_dmag": 0.408,
+            "mean_dmag": 0.4078,
+            "se_mag": 0.0066,
+            "equiv_flux_depth": 0.3133
+          },
+          "secondary_ecc_phi05141": {
+            "n": 48,
+            "median_dmag": 0.3557,
+            "mean_dmag": 0.369,
+            "se_mag": 0.0042,
+            "equiv_flux_depth": 0.2793
+          },
+          "secondary_circ_phi05000": {
+            "n": 2,
+            "median_dmag": 0.0139,
+            "mean_dmag": 0.0139,
+            "se_mag": 0.0039,
+            "equiv_flux_depth": 0.0127
+          },
+          "control_phi0250": {
+            "n": 34,
+            "median_dmag": 0.0283,
+            "mean_dmag": 0.0207,
+            "se_mag": 0.0073,
+            "equiv_flux_depth": 0.0257
+          },
+          "control_phi0750": {
+            "n": 37,
+            "median_dmag": -0.0614,
+            "mean_dmag": -0.0481,
+            "se_mag": 0.0025,
+            "equiv_flux_depth": -0.0582
+          }
+        },
+        "mid_box_hw0050": {
+          "half_width_phase": 0.005,
+          "half_width_min": 84.72,
+          "primary_phi0000": {
+            "n": 79,
+            "median_dmag": 0.359,
+            "mean_dmag": 0.3515,
+            "se_mag": 0.008,
+            "equiv_flux_depth": 0.2815
+          },
+          "secondary_ecc_phi05141": {
+            "n": 88,
+            "median_dmag": 0.316,
+            "mean_dmag": 0.3192,
+            "se_mag": 0.0065,
+            "equiv_flux_depth": 0.2525
+          },
+          "secondary_circ_phi05000": {
+            "n": 10,
+            "median_dmag": 0.0139,
+            "mean_dmag": 0.0202,
+            "se_mag": 0.003,
+            "equiv_flux_depth": 0.0127
+          },
+          "control_phi0250": {
+            "n": 61,
+            "median_dmag": 0.0161,
+            "mean_dmag": 0.0199,
+            "se_mag": 0.0066,
+            "equiv_flux_depth": 0.0148
+          },
+          "control_phi0750": {
+            "n": 61,
+            "median_dmag": -0.062,
+            "mean_dmag": -0.0469,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": -0.0588
+          }
+        },
+        "house_match_full_dur_hw0108": {
+          "half_width_phase": 0.0108,
+          "half_width_min": 183.0,
+          "primary_phi0000": {
+            "n": 179,
+            "median_dmag": 0.1941,
+            "mean_dmag": 0.2201,
+            "se_mag": 0.013,
+            "equiv_flux_depth": 0.1637
+          },
+          "secondary_ecc_phi05141": {
+            "n": 192,
+            "median_dmag": 0.1967,
+            "mean_dmag": 0.211,
+            "se_mag": 0.0104,
+            "equiv_flux_depth": 0.1657
+          },
+          "secondary_circ_phi05000": {
+            "n": 44,
+            "median_dmag": 0.0718,
+            "mean_dmag": 0.1135,
+            "se_mag": 0.0122,
+            "equiv_flux_depth": 0.064
+          },
+          "control_phi0250": {
+            "n": 121,
+            "median_dmag": 0.0087,
+            "mean_dmag": 0.018,
+            "se_mag": 0.0023,
+            "equiv_flux_depth": 0.008
+          },
+          "control_phi0750": {
+            "n": 127,
+            "median_dmag": -0.015,
+            "mean_dmag": -0.0274,
+            "se_mag": 0.0016,
+            "equiv_flux_depth": -0.0139
+          }
+        }
+      }
+    }
+  },
+  "per_event_depths": {
+    "TESS_all_8_events": [
+      {
+        "sector": 9,
+        "cycle": -63,
+        "type": "PRI",
+        "t_mid_btjd": 1545.03767,
+        "n_in_eclipse": 170,
+        "pdcsap_core_depth": 0.33597,
+        "pdcsap_box0017_depth": 0.33213,
+        "pdcsap_peak_depth": 0.33748,
+        "sap_core_depth": 0.32381,
+        "sap_box0017_depth": 0.3205
+      },
+      {
+        "sector": 9,
+        "cycle": -63,
+        "type": "SEC",
+        "t_mid_btjd": 1551.08723,
+        "n_in_eclipse": 174,
+        "pdcsap_core_depth": 0.29705,
+        "pdcsap_box0017_depth": 0.29321,
+        "pdcsap_peak_depth": 0.2981,
+        "sap_core_depth": 0.28665,
+        "sap_box0017_depth": 0.28303
+      },
+      {
+        "sector": 9,
+        "cycle": -62,
+        "type": "PRI_SAP_Q4096",
+        "t_mid_btjd": 1556.80507,
+        "n_in_eclipse": 101,
+        "pdcsap_core_depth": null,
+        "pdcsap_box0017_depth": null,
+        "pdcsap_peak_depth": null,
+        "sap_core_depth": 0.32753,
+        "sap_box0017_depth": 0.32237,
+        "sap_peak_depth": 0.32965
+      },
+      {
+        "sector": 9,
+        "cycle": -62,
+        "type": "SEC",
+        "t_mid_btjd": 1562.85457,
+        "n_in_eclipse": 174,
+        "pdcsap_core_depth": 0.29636,
+        "pdcsap_box0017_depth": 0.29287,
+        "pdcsap_peak_depth": 0.29876,
+        "sap_core_depth": 0.28619,
+        "sap_box0017_depth": 0.28327
+      },
+      {
+        "sector": 36,
+        "cycle": 0,
+        "type": "PRI",
+        "t_mid_btjd": 2286.37205,
+        "n_in_eclipse": 175,
+        "pdcsap_core_depth": 0.3361,
+        "pdcsap_box0017_depth": 0.33156,
+        "pdcsap_peak_depth": 0.33799,
+        "sap_core_depth": 0.32629,
+        "sap_box0017_depth": 0.32136
+      },
+      {
+        "sector": 36,
+        "cycle": 0,
+        "type": "SEC",
+        "t_mid_btjd": 2292.42182,
+        "n_in_eclipse": 175,
+        "pdcsap_core_depth": 0.2967,
+        "pdcsap_box0017_depth": 0.29298,
+        "pdcsap_peak_depth": 0.29775,
+        "sap_core_depth": 0.29001,
+        "sap_box0017_depth": 0.28464
+      },
+      {
+        "sector": 36,
+        "cycle": 1,
+        "type": "PRI",
+        "t_mid_btjd": 2298.13921,
+        "n_in_eclipse": 176,
+        "pdcsap_core_depth": 0.33528,
+        "pdcsap_box0017_depth": 0.33037,
+        "pdcsap_peak_depth": 0.33701,
+        "sap_core_depth": 0.32569,
+        "sap_box0017_depth": 0.32055
+      },
+      {
+        "sector": 36,
+        "cycle": 1,
+        "type": "SEC",
+        "t_mid_btjd": 2304.18897,
+        "n_in_eclipse": 175,
+        "pdcsap_core_depth": 0.29678,
+        "pdcsap_box0017_depth": 0.29264,
+        "pdcsap_peak_depth": 0.29823,
+        "sap_core_depth": 0.28816,
+        "sap_box0017_depth": 0.28363
+      }
+    ],
+    "SuperWASP_all_windows_ge3_pts": [
+      {
+        "cycle": -459,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2453891,
+        "t_pred_btjd": -3108.7232,
+        "n_in_eclipse": 40,
+        "n_near_bottom_dt035": 16,
+        "med_dmag_tam_det": 0.252,
+        "mean_dmag_tam_det": 0.2327,
+        "med_dmag_tam_raw": 0.209,
+        "max_dmag_tam_det": 0.4314,
+        "core_bottom_dmag": 0.3291,
+        "med_dmag_flux2_raw_ap": 0.2697
+      },
+      {
+        "cycle": -459,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2453891,
+        "t_pred_btjd": -3108.8892,
+        "n_in_eclipse": 12,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.2221,
+        "mean_dmag_tam_det": 0.2166,
+        "med_dmag_tam_raw": 0.1791,
+        "max_dmag_tam_det": 0.2889,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.2224
+      },
+      {
+        "cycle": -438,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454132,
+        "t_pred_btjd": -2867.6616,
+        "n_in_eclipse": 22,
+        "n_near_bottom_dt035": 8,
+        "med_dmag_tam_det": 0.2585,
+        "mean_dmag_tam_det": 0.255,
+        "med_dmag_tam_raw": 0.2145,
+        "max_dmag_tam_det": 0.391,
+        "core_bottom_dmag": 0.3543,
+        "med_dmag_flux2_raw_ap": 0.2864
+      },
+      {
+        "cycle": -438,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454138,
+        "t_pred_btjd": -2861.612,
+        "n_in_eclipse": 56,
+        "n_near_bottom_dt035": 32,
+        "med_dmag_tam_det": 0.3037,
+        "mean_dmag_tam_det": 0.2722,
+        "med_dmag_tam_raw": 0.2597,
+        "max_dmag_tam_det": 0.3726,
+        "core_bottom_dmag": 0.3363,
+        "med_dmag_flux2_raw_ap": 0.3108
+      },
+      {
+        "cycle": -438,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2454138,
+        "t_pred_btjd": -2861.778,
+        "n_in_eclipse": 6,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.2944,
+        "mean_dmag_tam_det": 0.2957,
+        "med_dmag_tam_raw": 0.2504,
+        "max_dmag_tam_det": 0.3128,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.2916
+      },
+      {
+        "cycle": -434,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454179,
+        "t_pred_btjd": -2820.5928,
+        "n_in_eclipse": 16,
+        "n_near_bottom_dt035": 11,
+        "med_dmag_tam_det": 0.3629,
+        "mean_dmag_tam_det": 0.3482,
+        "med_dmag_tam_raw": 0.3189,
+        "max_dmag_tam_det": 0.4199,
+        "core_bottom_dmag": 0.3935,
+        "med_dmag_flux2_raw_ap": 0.3993
+      },
+      {
+        "cycle": -429,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454238,
+        "t_pred_btjd": -2761.7568,
+        "n_in_eclipse": 18,
+        "n_near_bottom_dt035": 12,
+        "med_dmag_tam_det": 0.3782,
+        "mean_dmag_tam_det": 0.3172,
+        "med_dmag_tam_raw": 0.3342,
+        "max_dmag_tam_det": 0.4224,
+        "core_bottom_dmag": 0.3928,
+        "med_dmag_flux2_raw_ap": 0.4002
+      },
+      {
+        "cycle": -429,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454244,
+        "t_pred_btjd": -2755.7072,
+        "n_in_eclipse": 10,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.0881,
+        "mean_dmag_tam_det": 0.137,
+        "med_dmag_tam_raw": 0.0441,
+        "max_dmag_tam_det": 0.6291,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.0812
+      },
+      {
+        "cycle": -408,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454485,
+        "t_pred_btjd": -2514.6456,
+        "n_in_eclipse": 34,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.1057,
+        "mean_dmag_tam_det": 0.1163,
+        "med_dmag_tam_raw": 0.1108,
+        "max_dmag_tam_det": 0.2901,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.1491
+      },
+      {
+        "cycle": -408,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454491,
+        "t_pred_btjd": -2508.596,
+        "n_in_eclipse": 7,
+        "n_near_bottom_dt035": 7,
+        "med_dmag_tam_det": 0.3577,
+        "mean_dmag_tam_det": 0.3558,
+        "med_dmag_tam_raw": 0.3627,
+        "max_dmag_tam_det": 0.3633,
+        "core_bottom_dmag": 0.3577,
+        "med_dmag_flux2_raw_ap": 0.4797
+      },
+      {
+        "cycle": -405,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2454526,
+        "t_pred_btjd": -2473.4604,
+        "n_in_eclipse": 15,
+        "n_near_bottom_dt035": 2,
+        "med_dmag_tam_det": -0.0023,
+        "mean_dmag_tam_det": -0.0014,
+        "med_dmag_tam_raw": 0.0033,
+        "max_dmag_tam_det": 0.0141,
+        "core_bottom_dmag": -0.0153,
+        "med_dmag_flux2_raw_ap": 0.0191
+      },
+      {
+        "cycle": -403,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454544,
+        "t_pred_btjd": -2455.8096,
+        "n_in_eclipse": 40,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.042,
+        "mean_dmag_tam_det": 0.0465,
+        "med_dmag_tam_raw": 0.0471,
+        "max_dmag_tam_det": 0.1139,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.1055
+      },
+      {
+        "cycle": -403,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454550,
+        "t_pred_btjd": -2449.76,
+        "n_in_eclipse": 70,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.0622,
+        "mean_dmag_tam_det": 0.0731,
+        "med_dmag_tam_raw": 0.0672,
+        "max_dmag_tam_det": 0.1988,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.1342
+      },
+      {
+        "cycle": -401,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2454573,
+        "t_pred_btjd": -2426.3916,
+        "n_in_eclipse": 4,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": -0.0338,
+        "mean_dmag_tam_det": -0.0364,
+        "med_dmag_tam_raw": -0.035,
+        "max_dmag_tam_det": -0.016,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": -0.0021
+      },
+      {
+        "cycle": -400,
+        "window_type": "PRI_phi0.0000",
+        "hjd_night": 2454579,
+        "t_pred_btjd": -2420.508,
+        "n_in_eclipse": 58,
+        "n_near_bottom_dt035": 12,
+        "med_dmag_tam_det": 0.2768,
+        "mean_dmag_tam_det": 0.2595,
+        "med_dmag_tam_raw": 0.2818,
+        "max_dmag_tam_det": 0.4201,
+        "core_bottom_dmag": 0.3992,
+        "med_dmag_flux2_raw_ap": 0.2237
+      },
+      {
+        "cycle": -400,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2454585,
+        "t_pred_btjd": -2414.6244,
+        "n_in_eclipse": 3,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.0457,
+        "mean_dmag_tam_det": 0.0444,
+        "med_dmag_tam_raw": 0.0508,
+        "max_dmag_tam_det": 0.0524,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": -0.064
+      },
+      {
+        "cycle": -399,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454597,
+        "t_pred_btjd": -2402.6912,
+        "n_in_eclipse": 11,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.11,
+        "mean_dmag_tam_det": 0.1378,
+        "med_dmag_tam_raw": 0.1151,
+        "max_dmag_tam_det": 0.2397,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.047
+      },
+      {
+        "cycle": -399,
+        "window_type": "SEC_circ_phi0.5000",
+        "hjd_night": 2454597,
+        "t_pred_btjd": -2402.8572,
+        "n_in_eclipse": 11,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": 0.11,
+        "mean_dmag_tam_det": 0.1378,
+        "med_dmag_tam_raw": 0.1151,
+        "max_dmag_tam_det": 0.2397,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": 0.047
+      },
+      {
+        "cycle": -398,
+        "window_type": "SEC_ecc_phi0.5141",
+        "hjd_night": 2454609,
+        "t_pred_btjd": -2390.924,
+        "n_in_eclipse": 3,
+        "n_near_bottom_dt035": 0,
+        "med_dmag_tam_det": -0.0064,
+        "mean_dmag_tam_det": -0.0095,
+        "med_dmag_tam_raw": -0.0013,
+        "max_dmag_tam_det": 0.0179,
+        "core_bottom_dmag": null,
+        "med_dmag_flux2_raw_ap": -0.0076
+      }
+    ]
+  },
+  "discrepancies_vs_house_quantified": {
+    "discrepancy_1_eccentric_secondary_phase": {
+      "summary": "Secondary eclipse is displaced from circular phase 0.50000 to phi_sec = 0.51411 (+0.01411 phase = +3.98 hours, e*cos(w) = +0.02216).",
+      "tess_sec_at_phi05000_hw0017": -7e-05,
+      "tess_sec_at_phi05141_hw0017": 0.29287,
+      "size_of_discrepancy_at_phi05000_tess": -0.29307,
+      "swasp_sec_at_phi05000_hw0025_mag": -0.0153,
+      "swasp_sec_at_phi05141_hw0025_mag": 0.3426
+    },
+    "discrepancy_2_tess_bottom_vs_box_and_sap_vs_pdcsap": {
+      "house_tess_pri_sec": [
+        0.332,
+        0.293
+      ],
+      "our_pdcsap_true_bottom_hw0008": [
+        0.33569,
+        0.2967
+      ],
+      "diff_true_bottom_minus_house": [
+        0.00369,
+        0.0037
+      ],
+      "our_pdcsap_box_hw0017_reproducing_house": [
+        0.33091,
+        0.29287
+      ],
+      "diff_box0017_minus_house": [
+        -0.00109,
+        -0.00013
+      ],
+      "our_sap_true_bottom_hw0008": [
+        0.32506,
+        0.28751
+      ],
+      "our_sap_box_hw0017": [
+        0.32069,
+        0.28405
+      ],
+      "diff_sap_box0017_minus_house": [
+        -0.01131,
+        -0.00895
+      ],
+      "explanation": "House TESS 0.332/0.293 averages PDCSAP over a |dphi|<0.0017 (+/-28.8 min) box around minimum. True eclipse bottom (|dphi|<0.0008) is +0.0056/+0.0051 deeper (0.3376/0.2981), while un-deblended SAP_FLUX is -0.0112/-0.0085 shallower in the same box (0.3208/0.2845) due to CROWDSAP=0.966."
+    },
+    "discrepancy_3_superwasp_true_bottom_vs_house_wide_box_dilution": {
+      "house_swasp_pri_sec_mag": [
+        0.189,
+        0.137
+      ],
+      "our_swasp_true_bottom_hw0025_mag": [
+        0.3946,
+        0.3426
+      ],
+      "diff_true_bottom_minus_house_mag": [
+        0.2056,
+        0.2056
+      ],
+      "our_swasp_mid_box_hw0050_mag": [
+        0.3555,
+        0.3065
+      ],
+      "our_swasp_full_dur_box_hw0108_reproducing_house_mag": [
+        0.1872,
+        0.1566
+      ],
+      "diff_full_dur_box0108_minus_house_mag": [
+        -0.0018,
+        0.0196
+      ],
+      "explanation": "House SuperWASP +0.189/+0.137 mag is heavily diluted by taking the median across the entire 6.1-h eclipse duration (|dphi|<0.0108, which includes shallow ingress/egress wings and a -0.0033 phase drift at P=11.7672 d). At the actual eclipse bottom (|dphi|<0.0025), SuperWASP depths are +0.3519 +/- 0.0063 mag (27.66% flux) for primary and +0.3059 +/- 0.0073 mag (24.59% flux) for secondary \u2014 +0.1629 mag (+86%) and +0.1689 mag (+123%) deeper than the house numbers, bringing SuperWASP into physical agreement with TESS!"
+    }
+  }
+}

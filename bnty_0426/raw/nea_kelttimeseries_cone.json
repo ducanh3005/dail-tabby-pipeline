@@ -1,0 +1,3 @@
+ERROR<br>
+Error Type: UserError - "kelttimeseries" parameter<br>
+Message:    Queries against the KELT Time Series table require that a kelt_field be specified, eg. "&kelt_field=N02"
