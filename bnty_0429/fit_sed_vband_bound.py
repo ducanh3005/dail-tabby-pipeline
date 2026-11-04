@@ -866,7 +866,7 @@ def main():
     ]
     sub_txt = "\n".join(sub_lines) + "\n"
     sub_path = os.path.join(HERE, "SUBMISSION.txt")
-    with open(sub_path, "w", encoding="utf-8") as f:
+    with open(sub_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(sub_txt)
     print(f"Wrote {sub_path} ({len(sub_txt)} chars)")
 
