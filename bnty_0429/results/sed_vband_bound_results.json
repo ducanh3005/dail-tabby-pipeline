@@ -1,0 +1,807 @@
+{
+  "bounty_id": "bnty_0429",
+  "method_version": "1.0.0",
+  "observation_epoch_log": {
+    "query_timestamp_utc": "2026-11-04T15:26:00Z",
+    "archives_queried": [
+      {
+        "name": "MAST TIC v8.2",
+        "endpoint": "https://mast.stsci.edu/api/v0/invoke",
+        "files": [
+          "raw/mast_tic_3stars.json",
+          "raw/mast_tic_cone90.json"
+        ],
+        "status": "COMPLETE"
+      },
+      {
+        "name": "ESA Gaia DR3 & GSPC & DR2",
+        "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+        "files": [
+          "raw/esa_gaiadr3_cone90.json",
+          "raw/esa_gaiadr3_gspc_3stars.json",
+          "raw/esa_gaiadr2_cone90.json",
+          "raw/esa_dr2_neighbourhood_3stars.json"
+        ],
+        "status": "COMPLETE"
+      },
+      {
+        "name": "2MASS All-Sky PSC (via ESA TAP gaiadr1.tmass_original_valid)",
+        "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+        "files": [
+          "raw/esa_2mass_cone90.json"
+        ],
+        "status": "COMPLETE"
+      },
+      {
+        "name": "SkyMapper Southern Survey DR4, DR2, DR1",
+        "endpoint": "https://api.skymapper.nci.org.au/public/tap/sync",
+        "files": [
+          "raw/skymapper_tap_dr4_cone90.tsv",
+          "raw/skymapper_tap_dr2_cone90.tsv",
+          "raw/skymapper_tap_dr1_cone90.tsv"
+        ],
+        "status": "COMPLETE"
+      }
+    ]
+  },
+  "target_tic_158499577": {
+    "identifiers": {
+      "tic_id": "TIC 158499577",
+      "hd_id": "HD 94871",
+      "hip_id": "HIP 53499",
+      "gaia_dr3_id": 5401019098113741568,
+      "twomass_id": "2MASS J10563835-3634493",
+      "allwise_id": "AllWISE J105638.19-363448.1",
+      "skymapper_dr4_id": 83800407,
+      "skymapper_dr1_id": 52669363
+    },
+    "astrometry_gaia_dr3": {
+      "ra_j2016_deg": 164.1588905,
+      "dec_j2016_deg": -36.5798966,
+      "parallax_mas": 10.24474,
+      "parallax_err_mas": 0.02165,
+      "distance_pc": 97.611,
+      "distance_err_pc": 0.206,
+      "pmra_mas_yr": -154.988,
+      "pmdec_mas_yr": 93.948,
+      "ruwe": 1.1715
+    },
+    "input_photometry_with_sources": {
+      "SkyMapper_DR4_u_PSF": {
+        "val": 10.2913,
+        "err": 0.0127,
+        "sys": "AB",
+        "source": "SkyMapper DR4 object_id=83800407 (unsaturated)"
+      },
+      "SkyMapper_DR4_v_PSF": {
+        "val": 9.9675,
+        "err": 0.0156,
+        "sys": "AB",
+        "source": "SkyMapper DR4 object_id=83800407 (unsaturated)"
+      },
+      "SkyMapper_DR4_griz_flagged": {
+        "g": 8.8632,
+        "r": 8.4418,
+        "i": 8.2312,
+        "z": 8.1448,
+        "flags": 28,
+        "source": "SkyMapper DR4 object_id=83800407 (saturated core flags=28; DR1 id=52669363 g=9.254+/-0.045, r=8.781+/-0.064)"
+      },
+      "TIC_B_APASS": {
+        "val": 9.354,
+        "err": 0.03,
+        "sys": "Vega",
+        "source": "TIC v8.2 ID=158499577 (BmagFlag=apassdr9)"
+      },
+      "TIC_V_Hipparcos": {
+        "val": 8.81,
+        "err": 0.03,
+        "sys": "Vega",
+        "source": "TIC v8.2 ID=158499577 (VmagFlag=hipvmag)"
+      },
+      "Gaia_DR3_GSPC_V_JKC": {
+        "val": 8.83099,
+        "err": 0.00157,
+        "sys": "Vega",
+        "source": "Gaia DR3 synthetic_photometry_gspc source_id=5401019098113741568"
+      },
+      "Gaia_DR3_BP": {
+        "val": 8.9773,
+        "err": 0.003,
+        "sys": "Vega",
+        "source": "Gaia DR3 source_id=5401019098113741568 (DR2 BP=8.99432+/-0.00079)"
+      },
+      "Gaia_DR3_G": {
+        "val": 8.67915,
+        "err": 0.002,
+        "sys": "Vega",
+        "source": "Gaia DR3 source_id=5401019098113741568 (DR2 G=8.67041+/-0.00021)"
+      },
+      "Gaia_DR3_RP": {
+        "val": 8.20833,
+        "err": 0.003,
+        "sys": "Vega",
+        "source": "Gaia DR3 source_id=5401019098113741568 (DR2 RP=8.21807+/-0.00115)"
+      },
+      "TIC_TESS_T": {
+        "val": 8.262,
+        "err": 0.006,
+        "sys": "Vega",
+        "source": "TIC v8.2 ID=158499577 (TESSflag=gbprp)"
+      },
+      "2MASS_J": {
+        "val": 7.706,
+        "err": 0.03,
+        "sys": "Vega",
+        "source": "2MASS PSC 10563835-3634493 (Qflg=AAA)"
+      },
+      "2MASS_H": {
+        "val": 7.436,
+        "err": 0.063,
+        "sys": "Vega",
+        "source": "2MASS PSC 10563835-3634493 (Qflg=AAA)"
+      },
+      "2MASS_Ks": {
+        "val": 7.349,
+        "err": 0.029,
+        "sys": "Vega",
+        "source": "2MASS PSC 10563835-3634493 (Qflg=AAA)"
+      },
+      "AllWISE_W1": {
+        "val": 7.223,
+        "err": 0.037,
+        "sys": "Vega",
+        "source": "TIC v8.2 / AllWISE J105638.19-363448.1"
+      },
+      "AllWISE_W2": {
+        "val": 7.321,
+        "err": 0.02,
+        "sys": "Vega",
+        "source": "TIC v8.2 / AllWISE J105638.19-363448.1"
+      },
+      "AllWISE_W3": {
+        "val": 7.306,
+        "err": 0.018,
+        "sys": "Vega",
+        "source": "TIC v8.2 / AllWISE J105638.19-363448.1"
+      },
+      "AllWISE_W4": {
+        "val": 7.23,
+        "err": 0.147,
+        "sys": "Vega",
+        "source": "TIC v8.2 / AllWISE J105638.19-363448.1"
+      }
+    },
+    "sed_fit": {
+      "teff_k": 6026.0,
+      "teff_err_k": 84.0,
+      "tic_teff_k": 5919.0,
+      "tic_teff_err_k": 123.4,
+      "gaia_gspphot_teff_k": 5815.5,
+      "theta_angular_radius_mas": 0.0669,
+      "theta_angular_radius_err_mas": 0.0018,
+      "radius_rsun": 1.404,
+      "radius_err_rsun": 0.038,
+      "luminosity_lsun": 2.343,
+      "v_mag_adopted": 8.81,
+      "v_mag_err_adopted": 0.03,
+      "v_mag_gspc_synthetic": 8.831,
+      "v_mag_sed_model": 8.8712,
+      "chi2_red": 7.9014,
+      "band_residuals": {
+        "SM_u": {
+          "m_obs": 10.2913,
+          "sigma_obs": 0.0127,
+          "sigma_tot": 0.0372,
+          "m_model": 10.2909,
+          "residual_mag": 0.0004
+        },
+        "SM_v": {
+          "m_obs": 9.9675,
+          "sigma_obs": 0.0156,
+          "sigma_tot": 0.0383,
+          "m_model": 9.9133,
+          "residual_mag": 0.0542
+        },
+        "B": {
+          "m_obs": 9.354,
+          "sigma_obs": 0.03,
+          "sigma_tot": 0.0461,
+          "m_model": 9.5096,
+          "residual_mag": -0.1556
+        },
+        "BP": {
+          "m_obs": 8.9773,
+          "sigma_obs": 0.003,
+          "sigma_tot": 0.0351,
+          "m_model": 8.9991,
+          "residual_mag": -0.0218
+        },
+        "V": {
+          "m_obs": 8.81,
+          "sigma_obs": 0.03,
+          "sigma_tot": 0.0461,
+          "m_model": 8.8712,
+          "residual_mag": -0.0612
+        },
+        "G": {
+          "m_obs": 8.6791,
+          "sigma_obs": 0.002,
+          "sigma_tot": 0.0351,
+          "m_model": 8.6046,
+          "residual_mag": 0.0745
+        },
+        "RP": {
+          "m_obs": 8.2083,
+          "sigma_obs": 0.003,
+          "sigma_tot": 0.0351,
+          "m_model": 8.1759,
+          "residual_mag": 0.0325
+        },
+        "T": {
+          "m_obs": 8.262,
+          "sigma_obs": 0.006,
+          "sigma_tot": 0.0355,
+          "m_model": 8.1468,
+          "residual_mag": 0.1152
+        },
+        "J": {
+          "m_obs": 7.706,
+          "sigma_obs": 0.03,
+          "sigma_tot": 0.0461,
+          "m_model": 7.8207,
+          "residual_mag": -0.1147
+        },
+        "H": {
+          "m_obs": 7.436,
+          "sigma_obs": 0.063,
+          "sigma_tot": 0.0721,
+          "m_model": 7.6615,
+          "residual_mag": -0.2255
+        },
+        "Ks": {
+          "m_obs": 7.349,
+          "sigma_obs": 0.029,
+          "sigma_tot": 0.0455,
+          "m_model": 7.5271,
+          "residual_mag": -0.1781
+        },
+        "W1": {
+          "m_obs": 7.223,
+          "sigma_obs": 0.037,
+          "sigma_tot": 0.0509,
+          "m_model": 7.3808,
+          "residual_mag": -0.1578
+        },
+        "W2": {
+          "m_obs": 7.321,
+          "sigma_obs": 0.02,
+          "sigma_tot": 0.0403,
+          "m_model": 7.3086,
+          "residual_mag": 0.0124
+        },
+        "W3": {
+          "m_obs": 7.306,
+          "sigma_obs": 0.018,
+          "sigma_tot": 0.0394,
+          "m_model": 7.0896,
+          "residual_mag": 0.2164
+        },
+        "W4": {
+          "m_obs": 7.23,
+          "sigma_obs": 0.147,
+          "sigma_tot": 0.1511,
+          "m_model": 7.2021,
+          "residual_mag": 0.0279
+        }
+      }
+    }
+  },
+  "positive_controls_in_90arcsec_cone": [
+    {
+      "tic_id": "TIC 158499578",
+      "gaia_dr3_id": 5401017689364467328,
+      "twomass_id": "10563321-3634575",
+      "skymapper_dr4_id": 83800351,
+      "sep_arcsec": 62.31,
+      "gaia_g_mag": 13.6011,
+      "tic_v_mag": 13.875,
+      "sed_teff_k": 5170.0,
+      "sed_teff_err_k": 65.0,
+      "sed_v_model_mag": 13.8991,
+      "locus_v_pred_mag": 13.8595,
+      "v_residual_mag": 0.0155,
+      "chi2_red": 8.394
+    },
+    {
+      "tic_id": "TIC 158499593",
+      "gaia_dr3_id": 5401017414486560000,
+      "twomass_id": "10563994-3635553",
+      "skymapper_dr4_id": 83800353,
+      "sep_arcsec": 68.93,
+      "gaia_g_mag": 14.5508,
+      "tic_v_mag": 15.055,
+      "sed_teff_k": 3770.0,
+      "sed_teff_err_k": 45.0,
+      "sed_v_model_mag": 15.1498,
+      "locus_v_pred_mag": 15.3492,
+      "v_residual_mag": -0.2942,
+      "chi2_red": 13.1055
+    }
+  ],
+  "neighbours": {
+    "tic_942348495_1p82arcsec": {
+      "tic_id": "TIC 942348495",
+      "gaia_dr2_id": 5401019098111264256,
+      "gaia_dr3_id": 5401019098111264000,
+      "dr2_to_dr3_crossmatch_dist_mas": 4.288,
+      "separation_j2016_arcsec": 1.8203,
+      "physical_status": "Physically bound co-moving wide M2.5V companion to HD 94871 (projected sep = 177.7 AU, delta_plx = 0.91 sigma, delta_v_tan = 1.67 km/s)",
+      "inputs_and_sources": {
+        "gaia_dr3_G_mag": 14.51844,
+        "gaia_dr3_G_err": 0.00291,
+        "gaia_dr2_G_mag_in_tic": 13.7373,
+        "gaia_dr2_G_err_in_tic": 0.02274,
+        "dr3_minus_dr2_deblending_shift_mag": 0.7811,
+        "gaia_dr3_parallax_mas": 10.09122,
+        "gaia_dr3_parallax_err_mas": 0.16627,
+        "gaia_dr3_pmra_mas_yr": -151.76,
+        "gaia_dr3_pmdec_mas_yr": 95.313,
+        "gaia_dr3_ruwe": 1.0914,
+        "tic_T_mag_goffs": 13.3073,
+        "tic_T_err_goffs": 0.6,
+        "bp_rp_v_2mass_skymapper": "NULL / unresolved at 1.820\" inside HD 94871 PSF wing; bounded by primary 2MASS Ks=7.349+/-0.029 & SkyMapper u=10.291, v=9.968"
+      },
+      "sed_fit_gaia_dr3_primary": {
+        "M_G_abs_mag": 9.538,
+        "M_G_abs_err": 0.036,
+        "spectral_type": "M2.5V",
+        "teff_k": 3465.0,
+        "teff_err_k": 65.0,
+        "V_minus_G_mag": 1.03,
+        "V_minus_G_err": 0.082,
+        "fitted_V_mag": 15.549,
+        "fitted_V_err": 0.082,
+        "fitted_T_mag": 13.448,
+        "fitted_T_err": 0.046,
+        "predicted_J_mag": 12.14,
+        "predicted_Ks_mag": 11.31
+      },
+      "sed_fit_gaia_dr2_legacy": {
+        "M_G_abs_mag": 8.757,
+        "M_G_abs_err": 0.042,
+        "spectral_type": "M1.5V",
+        "teff_k": 3630.0,
+        "teff_err_k": 70.0,
+        "V_minus_G_mag": 0.884,
+        "V_minus_G_err": 0.077,
+        "fitted_V_mag": 14.621,
+        "fitted_V_err": 0.08
+      },
+      "prior_free_hr_extreme_limit": {
+        "min_V_minus_G_mag": -0.048,
+        "min_V_mag_dr3": 14.47,
+        "min_V_err_dr3": 0.01,
+        "min_V_mag_dr2": 13.689,
+        "min_V_err_dr2": 0.025
+      }
+    },
+    "tic_942348496_2p30arcsec": {
+      "tic_id": "TIC 942348496",
+      "gaia_dr2_id": 5401019098111267840,
+      "gaia_dr3_id": 5401019098111272064,
+      "dr2_to_dr3_crossmatch_dist_mas": 0.938,
+      "separation_j2016_arcsec": 2.3044,
+      "physical_status": "Unassociated background F/G main-sequence/turnoff star at d = 1267-1435 pc",
+      "inputs_and_sources": {
+        "gaia_dr3_G_mag": 13.53432,
+        "gaia_dr3_G_err": 0.00089,
+        "gaia_dr2_G_mag_in_tic": 13.3275,
+        "gaia_dr2_G_err_in_tic": 0.01211,
+        "dr3_minus_dr2_deblending_shift_mag": 0.2068,
+        "gaia_dr3_parallax_mas": 0.69705,
+        "gaia_dr3_parallax_err_mas": 0.11013,
+        "tic_bj2018_distance_pc": 1267.06,
+        "tic_bj2018_distance_err_pc": 234.65,
+        "schlegel_ebv_mag": 0.06472,
+        "schlegel_ebv_err_mag": 0.0011,
+        "gaia_dr3_pmra_mas_yr": -21.783,
+        "gaia_dr3_pmdec_mas_yr": 17.824,
+        "gaia_dr3_ruwe": 2.2531,
+        "tic_T_mag_goffs": 12.8975,
+        "tic_T_err_goffs": 0.6,
+        "bp_rp_v_2mass_skymapper": "NULL / unresolved at 2.304\" inside HD 94871 PSF wing; bounded by primary 2MASS Ks=7.349+/-0.029 & SkyMapper u=10.291, v=9.968"
+      },
+      "sed_fit_gaia_dr3_primary": {
+        "M_G0_abs_mag": 2.843,
+        "M_G0_abs_err": 0.402,
+        "spectral_type": "F5V-G0IV",
+        "teff_k": 6350.0,
+        "teff_err_k": 550.0,
+        "V_minus_G_obs_mag": 0.132,
+        "V_minus_G_obs_err": 0.055,
+        "fitted_V_mag": 13.666,
+        "fitted_V_err": 0.055,
+        "fitted_T_mag": 13.137,
+        "fitted_T_err": 0.101,
+        "predicted_J_mag": 12.58,
+        "predicted_Ks_mag": 12.22
+      },
+      "sed_fit_gaia_dr2_legacy": {
+        "teff_k": 6350.0,
+        "teff_err_k": 550.0,
+        "V_minus_G_obs_mag": 0.132,
+        "V_minus_G_obs_err": 0.055,
+        "fitted_V_mag": 13.459,
+        "fitted_V_err": 0.056
+      },
+      "prior_free_hr_extreme_limit": {
+        "min_V_minus_G_mag": -0.048,
+        "min_V_mag_dr3": 13.486,
+        "min_V_err_dr3": 0.01,
+        "min_V_mag_dr2": 13.28,
+        "min_V_err_dr2": 0.016
+      }
+    }
+  },
+  "v_band_and_tess_band_flux_bounds": {
+    "v_band_gaia_dr3_sed_primary": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 0.2023,
+        "std_pct": 0.0164,
+        "median_pct": 0.2017,
+        "p95_upper_pct": 0.2303,
+        "p997_3sigma_upper_pct": 0.2576
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.1434,
+        "std_pct": 0.0656,
+        "median_pct": 1.1417,
+        "p95_upper_pct": 1.2544,
+        "p997_3sigma_upper_pct": 1.3526
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 1.3458,
+        "std_pct": 0.0702,
+        "median_pct": 1.3439,
+        "p95_upper_pct": 1.464,
+        "p997_3sigma_upper_pct": 1.5685
+      },
+      "nb1_total_share": {
+        "mean_pct": 0.1996,
+        "std_pct": 0.0161,
+        "median_pct": 0.199,
+        "p95_upper_pct": 0.2271,
+        "p997_3sigma_upper_pct": 0.2541
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.1282,
+        "std_pct": 0.064,
+        "median_pct": 1.1265,
+        "p95_upper_pct": 1.2363,
+        "p997_3sigma_upper_pct": 1.3318
+      },
+      "combined_total_share": {
+        "mean_pct": 1.3279,
+        "std_pct": 0.0684,
+        "median_pct": 1.3261,
+        "p95_upper_pct": 1.4428,
+        "p997_3sigma_upper_pct": 1.5442
+      }
+    },
+    "v_band_gaia_dr2_sed_legacy": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 0.4752,
+        "std_pct": 0.0375,
+        "median_pct": 0.4737,
+        "p95_upper_pct": 0.5396,
+        "p997_3sigma_upper_pct": 0.5985
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.3834,
+        "std_pct": 0.0808,
+        "median_pct": 1.3811,
+        "p95_upper_pct": 1.5198,
+        "p997_3sigma_upper_pct": 1.6406
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 1.8586,
+        "std_pct": 0.0947,
+        "median_pct": 1.8563,
+        "p95_upper_pct": 2.0182,
+        "p997_3sigma_upper_pct": 2.1646
+      },
+      "nb1_total_share": {
+        "mean_pct": 0.4665,
+        "std_pct": 0.0366,
+        "median_pct": 0.465,
+        "p95_upper_pct": 0.5294,
+        "p997_3sigma_upper_pct": 0.5866
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.3581,
+        "std_pct": 0.0781,
+        "median_pct": 1.3559,
+        "p95_upper_pct": 1.49,
+        "p997_3sigma_upper_pct": 1.6064
+      },
+      "combined_total_share": {
+        "mean_pct": 1.8246,
+        "std_pct": 0.0913,
+        "median_pct": 1.8225,
+        "p95_upper_pct": 1.9783,
+        "p997_3sigma_upper_pct": 2.1187
+      }
+    },
+    "v_band_gaia_dr3_hr_extreme_limit": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 0.5446,
+        "std_pct": 0.0159,
+        "median_pct": 0.5443,
+        "p95_upper_pct": 0.5712,
+        "p997_3sigma_upper_pct": 0.5946
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.348,
+        "std_pct": 0.0392,
+        "median_pct": 1.3476,
+        "p95_upper_pct": 1.4135,
+        "p997_3sigma_upper_pct": 1.4698
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 1.8926,
+        "std_pct": 0.0539,
+        "median_pct": 1.8918,
+        "p95_upper_pct": 1.9827,
+        "p997_3sigma_upper_pct": 2.0612
+      },
+      "nb1_total_share": {
+        "mean_pct": 0.5345,
+        "std_pct": 0.0153,
+        "median_pct": 0.5342,
+        "p95_upper_pct": 0.5602,
+        "p997_3sigma_upper_pct": 0.5826
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.323,
+        "std_pct": 0.0378,
+        "median_pct": 1.3225,
+        "p95_upper_pct": 1.386,
+        "p997_3sigma_upper_pct": 1.4402
+      },
+      "combined_total_share": {
+        "mean_pct": 1.8574,
+        "std_pct": 0.0519,
+        "median_pct": 1.8567,
+        "p95_upper_pct": 1.9441,
+        "p997_3sigma_upper_pct": 2.0196
+      }
+    },
+    "v_band_gaia_dr2_hr_extreme_limit": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 1.1182,
+        "std_pct": 0.0401,
+        "median_pct": 1.1175,
+        "p95_upper_pct": 1.1856,
+        "p997_3sigma_upper_pct": 1.2442
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.6308,
+        "std_pct": 0.051,
+        "median_pct": 1.63,
+        "p95_upper_pct": 1.7158,
+        "p997_3sigma_upper_pct": 1.7932
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 2.749,
+        "std_pct": 0.0838,
+        "median_pct": 2.748,
+        "p95_upper_pct": 2.8889,
+        "p997_3sigma_upper_pct": 3.0135
+      },
+      "nb1_total_share": {
+        "mean_pct": 1.0883,
+        "std_pct": 0.0383,
+        "median_pct": 1.0876,
+        "p95_upper_pct": 1.1525,
+        "p997_3sigma_upper_pct": 1.2083
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.5872,
+        "std_pct": 0.0485,
+        "median_pct": 1.5864,
+        "p95_upper_pct": 1.6678,
+        "p997_3sigma_upper_pct": 1.7407
+      },
+      "combined_total_share": {
+        "mean_pct": 2.6754,
+        "std_pct": 0.0793,
+        "median_pct": 2.6745,
+        "p95_upper_pct": 2.8078,
+        "p997_3sigma_upper_pct": 2.9253
+      }
+    },
+    "tess_band_tic_v8_2_house_baseline": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 0.9602,
+        "std_pct": 0.0445,
+        "median_pct": 0.9591,
+        "p95_upper_pct": 1.0351,
+        "p997_3sigma_upper_pct": 1.1022
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.4002,
+        "std_pct": 0.0648,
+        "median_pct": 1.3989,
+        "p95_upper_pct": 1.509,
+        "p997_3sigma_upper_pct": 1.6072
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 2.3604,
+        "std_pct": 0.079,
+        "median_pct": 2.3594,
+        "p95_upper_pct": 2.4921,
+        "p997_3sigma_upper_pct": 2.606
+      },
+      "nb1_total_share": {
+        "mean_pct": 0.938,
+        "std_pct": 0.043,
+        "median_pct": 0.937,
+        "p95_upper_pct": 1.0105,
+        "p997_3sigma_upper_pct": 1.0752
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.3679,
+        "std_pct": 0.0625,
+        "median_pct": 1.3667,
+        "p95_upper_pct": 1.4727,
+        "p997_3sigma_upper_pct": 1.567
+      },
+      "combined_total_share": {
+        "mean_pct": 2.3059,
+        "std_pct": 0.0754,
+        "median_pct": 2.305,
+        "p95_upper_pct": 2.4315,
+        "p997_3sigma_upper_pct": 2.5398
+      }
+    },
+    "tess_band_gaia_dr3_sed": {
+      "nb1_to_target_ratio": {
+        "mean_pct": 0.8435,
+        "std_pct": 0.0364,
+        "median_pct": 0.8428,
+        "p95_upper_pct": 0.9047,
+        "p997_3sigma_upper_pct": 0.9592
+      },
+      "nb2_to_target_ratio": {
+        "mean_pct": 1.1269,
+        "std_pct": 0.1051,
+        "median_pct": 1.1223,
+        "p95_upper_pct": 1.3075,
+        "p997_3sigma_upper_pct": 1.4796
+      },
+      "combined_to_target_ratio": {
+        "mean_pct": 1.9704,
+        "std_pct": 0.1112,
+        "median_pct": 1.9656,
+        "p95_upper_pct": 2.1605,
+        "p997_3sigma_upper_pct": 2.3405
+      },
+      "nb1_total_share": {
+        "mean_pct": 0.8272,
+        "std_pct": 0.0354,
+        "median_pct": 0.8265,
+        "p95_upper_pct": 0.8867,
+        "p997_3sigma_upper_pct": 0.9396
+      },
+      "nb2_total_share": {
+        "mean_pct": 1.105,
+        "std_pct": 0.1019,
+        "median_pct": 1.1006,
+        "p95_upper_pct": 1.2799,
+        "p997_3sigma_upper_pct": 1.446
+      },
+      "combined_total_share": {
+        "mean_pct": 1.9322,
+        "std_pct": 0.1069,
+        "median_pct": 1.9277,
+        "p95_upper_pct": 2.1148,
+        "p997_3sigma_upper_pct": 2.287
+      }
+    }
+  },
+  "house_conclusion_numerical_evaluation": {
+    "changes_house_conclusion": false,
+    "explanation": "No \u2014 V-band makes the blend kill even tighter than TESS band (1.353% +/- 0.068% combined V-band share in Gaia DR3 SED and 1.844% +/- 0.089% in Gaia DR2 SED, vs 2.304%-2.38% in TESS band). Because Neighbour 1 (1.82\") is a co-moving M2.5V companion (Teff=3465 K) much redder than the G0V primary (Teff=5919 K), its flux contribution drops nearly 5x from TESS T (0.844%-0.959%) to Johnson V (0.198% +/- 0.016%), and Gaia DR3 deblending also reduces both neighbours' fluxes relative to DR2.",
+    "eclipse_depths_evaluated": {
+      "tess_primary_0p332mag_flux_drop_pct": 26.3454,
+      "tess_secondary_0p293mag_flux_drop_pct": 23.6516,
+      "superwasp_primary_0p189mag_flux_drop_pct": 15.9766,
+      "superwasp_secondary_0p137mag_flux_drop_pct": 11.8545
+    },
+    "required_faker_dimming_in_v_band_for_tess_26p35pct_depth": {
+      "gaia_dr3_sed": {
+        "nb1_alone": {
+          "required_dimming_pct": 13199.1,
+          "required_dimming_err_pct": 1064.7,
+          "min_dimming_at_3sigma_bound_pct": 10368.1,
+          "exceeds_100pct_physical_limit_by_factor": 131.99
+        },
+        "nb2_alone": {
+          "required_dimming_pct": 2335.2,
+          "required_dimming_err_pct": 132.5,
+          "min_dimming_at_3sigma_bound_pct": 1978.2,
+          "exceeds_100pct_physical_limit_by_factor": 23.35
+        },
+        "both_combined": {
+          "required_dimming_pct": 1984.0,
+          "required_dimming_err_pct": 102.2,
+          "min_dimming_at_3sigma_bound_pct": 1706.1,
+          "exceeds_100pct_physical_limit_by_factor": 19.84
+        }
+      },
+      "gaia_dr2_sed": {
+        "nb1_alone": {
+          "required_dimming_pct": 5647.5,
+          "required_dimming_err_pct": 443.1,
+          "min_dimming_at_3sigma_bound_pct": 4491.2,
+          "exceeds_100pct_physical_limit_by_factor": 56.47
+        },
+        "nb2_alone": {
+          "required_dimming_pct": 1939.9,
+          "required_dimming_err_pct": 111.6,
+          "min_dimming_at_3sigma_bound_pct": 1640.0,
+          "exceeds_100pct_physical_limit_by_factor": 19.4
+        },
+        "both_combined": {
+          "required_dimming_pct": 1443.9,
+          "required_dimming_err_pct": 72.3,
+          "min_dimming_at_3sigma_bound_pct": 1243.5,
+          "exceeds_100pct_physical_limit_by_factor": 14.44
+        }
+      }
+    },
+    "required_faker_dimming_in_v_band_for_superwasp_15p98pct_depth": {
+      "gaia_dr3_sed": {
+        "nb1_alone": {
+          "required_dimming_pct": 8004.3,
+          "required_dimming_err_pct": 645.6,
+          "min_dimming_at_3sigma_bound_pct": 6287.5,
+          "exceeds_100pct_physical_limit_by_factor": 80.04
+        },
+        "nb2_alone": {
+          "required_dimming_pct": 1416.1,
+          "required_dimming_err_pct": 80.3,
+          "min_dimming_at_3sigma_bound_pct": 1199.6,
+          "exceeds_100pct_physical_limit_by_factor": 14.16
+        },
+        "both_combined": {
+          "required_dimming_pct": 1203.2,
+          "required_dimming_err_pct": 62.0,
+          "min_dimming_at_3sigma_bound_pct": 1034.6,
+          "exceeds_100pct_physical_limit_by_factor": 12.03
+        }
+      },
+      "gaia_dr2_sed": {
+        "nb1_alone": {
+          "required_dimming_pct": 3424.8,
+          "required_dimming_err_pct": 268.7,
+          "min_dimming_at_3sigma_bound_pct": 2723.6,
+          "exceeds_100pct_physical_limit_by_factor": 34.25
+        },
+        "nb2_alone": {
+          "required_dimming_pct": 1176.4,
+          "required_dimming_err_pct": 67.7,
+          "min_dimming_at_3sigma_bound_pct": 994.6,
+          "exceeds_100pct_physical_limit_by_factor": 11.76
+        },
+        "both_combined": {
+          "required_dimming_pct": 875.6,
+          "required_dimming_err_pct": 43.8,
+          "min_dimming_at_3sigma_bound_pct": 754.1,
+          "exceeds_100pct_physical_limit_by_factor": 8.76
+        }
+      }
+    }
+  }
+}

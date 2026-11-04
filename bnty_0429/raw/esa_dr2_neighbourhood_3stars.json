@@ -1,0 +1,17 @@
+{"metadata":
+[
+{"name": "dr2_source_id", "datatype": "long", "xtype": null, "arraysize": null, "description": "Source identifier in Gaia DR2", "unit": null, "ucd": "meta.id.cross", "utype": null},
+{"name": "dr3_source_id", "datatype": "long", "xtype": null, "arraysize": null, "description": "Source identifier in Gaia E\/DR3", "unit": null, "ucd": "meta.id.cross;meta.main", "utype": null},
+{"name": "angular_distance", "datatype": "float", "xtype": null, "arraysize": null, "description": "Angular distance between the two sources", "unit": "mas", "ucd": "pos.angDistance", "utype": null},
+{"name": "magnitude_difference", "datatype": "float", "xtype": null, "arraysize": null, "description": "G band magnitude difference between the sources", "unit": "mag", "ucd": "phot.mag;arith.diff", "utype": null},
+{"name": "proper_motion_propagation", "datatype": "boolean", "xtype": null, "arraysize": null, "description": "Flag indicating whether E\/DR3 coordinates were proper motion corrected", "unit": null, "ucd": "meta.code.status", "utype": null}
+],
+"data":
+[
+[5401019098111264256,5401019098111264000,4.288384,0.7811327,true],
+[5401019098113741568,5401019098111264000,1822.0797,5.848034,true],
+[5401019098111267840,5401019098111272064,0.9380442,0.20685863,true],
+[5401019098111264256,5401019098113741568,1817.8792,-5.0581627,true],
+[5401019098113741568,5401019098113741568,0.16709392,0.008738518,true]
+]
+}
