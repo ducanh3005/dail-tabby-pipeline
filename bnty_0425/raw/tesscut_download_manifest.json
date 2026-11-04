@@ -1,0 +1,50 @@
+{
+  "9": {
+    "sector": 9,
+    "sectorName": "tess-s0009-2-3",
+    "camera": "2",
+    "ccd": "3",
+    "fits_file": "tesscut_s0009_tess-s0009-2-3_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 2903040
+  },
+  "36": {
+    "sector": 36,
+    "sectorName": "tess-s0036-2-3",
+    "camera": "2",
+    "ccd": "3",
+    "fits_file": "tesscut_s0036_tess-s0036-2-3_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 8677440
+  },
+  "63": {
+    "sector": 63,
+    "sectorName": "tess-s0063-2-4",
+    "camera": "2",
+    "ccd": "4",
+    "fits_file": "tesscut_s0063_tess-s0063-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 27852480
+  },
+  "90": {
+    "sector": 90,
+    "sectorName": "tess-s0090-2-4",
+    "camera": "2",
+    "ccd": "4",
+    "fits_file": "tesscut_s0090_tess-s0090-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 28805760
+  },
+  "99": {
+    "sector": 99,
+    "sectorName": "tess-s0099-2-2",
+    "camera": "2",
+    "ccd": "2",
+    "fits_file": "tesscut_s0099_tess-s0099-2-2_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 21484800
+  },
+  "100": {
+    "sector": 100,
+    "sectorName": "tess-s0100-2-4",
+    "camera": "2",
+    "ccd": "4",
+    "fits_file": "tesscut_s0100_tess-s0100-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 27812160
+  }
+}

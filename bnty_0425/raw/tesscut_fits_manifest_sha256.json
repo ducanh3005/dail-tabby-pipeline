@@ -1,0 +1,92 @@
+{
+  "9": {
+    "sector": 9,
+    "fits_file": "tesscut_s0009_tess-s0009-2-3_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 2903040,
+    "sha256": "e9a326235ec8ebbeed03fe3c636cb0e28086a006de1fb631c0b497d20e78f36e",
+    "camera": 2,
+    "ccd": 3,
+    "date_obs": "2019-02-28T17:35:52.136",
+    "date_end": "2019-03-25T23:06:18.624",
+    "n_frames_total": 1154,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  },
+  "36": {
+    "sector": 36,
+    "fits_file": "tesscut_s0036_tess-s0036-2-3_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 8677440,
+    "sha256": "3dc8a6606e0996b83a618017ed87bdc93c3252ee382b8a1c63b7f9765c85aa9c",
+    "camera": 2,
+    "ccd": 3,
+    "date_obs": "2021-03-07T09:45:27.128",
+    "date_end": "2021-04-01T11:45:53.692",
+    "n_frames_total": 3477,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  },
+  "63": {
+    "sector": 63,
+    "fits_file": "tesscut_s0063_tess-s0063-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 27852480,
+    "sha256": "759b329d5d3856a2b4f608d7d2a2636bc78ea10d8eb0ace6d34a3275e2b4ef61",
+    "camera": 2,
+    "ccd": 4,
+    "date_obs": "2023-03-10T20:48:34.699",
+    "date_end": "2023-04-06T09:38:15.257",
+    "n_frames_total": 11190,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  },
+  "90": {
+    "sector": 90,
+    "fits_file": "tesscut_s0090_tess-s0090-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 28805760,
+    "sha256": "d8b40b286ecfd81c66b762679b1e2d8791921279f7bcc068c27c708399dda024",
+    "camera": 2,
+    "ccd": 4,
+    "date_obs": "2025-03-12T15:46:04.427",
+    "date_end": "2025-04-09T13:55:43.551",
+    "n_frames_total": 11574,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  },
+  "99": {
+    "sector": 99,
+    "fits_file": "tesscut_s0099_tess-s0099-2-2_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 21484800,
+    "sha256": "3590d5abdc667d10643ad8a1dfa6b592ae5d6dc21a5d9c598788cd816c81e7ee",
+    "camera": 2,
+    "ccd": 2,
+    "date_obs": "2026-01-05T14:38:04.688",
+    "date_end": "2026-02-02T06:44:01.471",
+    "n_frames_total": 8629,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  },
+  "100": {
+    "sector": 100,
+    "fits_file": "tesscut_s0100_tess-s0100-2-4_164.159748_-36.580314_11x11_astrocut.fits",
+    "size_bytes": 27812160,
+    "sha256": "9f9763014b2ceb65b806c0f1a02a045ee92c0476d00c44121ad47c6d5a510244",
+    "camera": 2,
+    "ccd": 4,
+    "date_obs": "2026-02-02T11:46:43.818",
+    "date_end": "2026-02-28T23:14:59.823",
+    "n_frames_total": 11174,
+    "cutout_shape": [
+      11,
+      11
+    ]
+  }
+}
