@@ -1,0 +1,84 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-05T16:14:09 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-05T16:14:09	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=I%2F357%2Ftbosb1&-c=291.072322%2B47.487073&-c.rs=5&-out.all=1&-out.max=200	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=291.072322+47.487073,rs=5.	
+#Constraint -out.max=200
+
+#RESOURCE=yCat_1357
+#Name: I/357
+#Title: Gaia DR3 Part 3. Non-single stars (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/357	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/357	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1357....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/357	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1357	    Dataset identifier that can be used for citation
+#INFO	publication_date=2025-03-25	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_357_tbosb1:
+#Name: I/357/tbosb1
+#Title: Non-single-star orbital models for sources compatible with Single Lined Spectroscopic binary model (nss_two_body_orbit)
+#Column	_r	(F5.3)	Distance from center (291.07232200000+47.48707300000)[ICRS], at Epoch=J2016.0	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	SolID	(I19)	Solution Identifier (solution_id)	[ucd=meta.version]
+#Column	Source	(I19)	Source Identifier (source_id)	[ucd=meta.id;meta.main]
+#Column	NSSmodel	(A3)	[SB1] NSS model adopted (nss_solution_type)	[ucd=meta.record]
+#Column	RA_ICRS	(F15.11)	Right ascension (ICRS) at Ep=2016.0 (added by CDS) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	Declination (ICRS) at Ep=2016.0 (added by CDS) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	Per	(F22.17)	Orbital Period (period)	[ucd=time.period]
+#Column	e_Per	(D14.7)	Standard error of Orbital Period (period_error)	[ucd=stat.error;time.period]
+#Column	Tperi	(D22.15)	Periastron epoch relative to 2016.0 (t_periastron)	[ucd=time.epoch]
+#Column	e_Tperi	(F15.10)	Standard error of Periastron epoch (t_periastron_error)	[ucd=stat.error;time.epoch]
+#Column	ecc	(F22.19)	eccentricity (eccentricity)	[ucd=src.orbital.eccentricity]
+#Column	e_ecc	(F13.10)	Standard error of eccentricity (eccentricity_error)	[ucd=stat.error;src.orbital.eccentricity]
+#Column	Vcm	(D21.14)	The velocity of the center of mass (center_of_mass_velocity)	[ucd=phys.veloc]
+#Column	e_Vcm	(F12.9)	Standard error of The velocity of the center of mass (center_of_mass_velocity_error)	[ucd=stat.error;phys.veloc]
+#Column	K1	(F21.17)	Semi-amplitude of the center of mass (semi_amplitude_primary)	[ucd=phys.veloc]
+#Column	e_K1	(F12.9)	Standard error of Semi-amplitude of the center of mass (semi_amplitude_primary_error)	[ucd=stat.error;phys.veloc]
+#Column	omega	(D21.14)	Argument of periastron (arg_periastron)	[ucd=src.orbital.periastron]
+#Column	e_omega	(F12.8)	Standard error of Argument of periastron (arg_periastron_error)	[ucd=stat.error]
+#Column	NRVp	(I3)	Total number of radial velocities considered for the primary (rv_n_obs_primary)	[ucd=meta.number]
+#Column	NgRVp	(I3)	Total number of radial velocities actually used for the primary (rv_n_good_obs_primary)	[ucd=meta.number]
+#Column	NRVs	(I1)	[0/4] Total number of radial velocities considered for the secondary in the case of SB2 (rv_n_obs_secondary)	[ucd=meta.number]
+#Column	NgRVs	(I1)	[0] Total number of radial velocities actually used for the secondary in the case of SB2 (rv_n_good_obs_secondary)	[ucd=meta.number]
+#Column	bitIndex	(I3)	[127] boolean mask for the fields above in the corrVec matrix (bit_index) (1)	[ucd=meta.code.status]
+#Column	corvec0	(D14.7)	Parameter 0 of vector of the upper triangle of the correlation matrix (corr_vec[0])	[ucd=stat.correlation]
+#Column	corvec1	(D14.7)	Parameter 1 of vector of the upper triangle of the correlation matrix (corr_vec[1])	[ucd=stat.correlation]
+#Column	corvec2	(D14.7)	Parameter 2 of vector of the upper triangle of the correlation matrix (corr_vec[2])	[ucd=stat.correlation]
+#Column	corvec3	(D14.7)	Parameter 3 of vector of the upper triangle of the correlation matrix (corr_vec[3])	[ucd=stat.correlation]
+#Column	corvec4	(D14.7)	Parameter 4 of vector of the upper triangle of the correlation matrix (corr_vec[4])	[ucd=stat.correlation]
+#Column	corvec5	(D13.6)	Parameter 5 of vector of the upper triangle of the correlation matrix (corr_vec[5])	[ucd=stat.correlation]
+#Column	corvec6	(D14.7)	Parameter 6 of vector of the upper triangle of the correlation matrix (corr_vec[6])	[ucd=stat.correlation]
+#Column	corvec7	(D14.7)	Parameter 7 of vector of the upper triangle of the correlation matrix (corr_vec[7])	[ucd=stat.correlation]
+#Column	corvec8	(D14.7)	Parameter 8 of vector of the upper triangle of the correlation matrix (corr_vec[8])	[ucd=stat.correlation]
+#Column	corvec9	(D14.7)	Parameter 9 of vector of the upper triangle of the correlation matrix (corr_vec[9])	[ucd=stat.correlation]
+#Column	corvec10	(D14.7)	Parameter 10 of vector of the upper triangle of the correlation matrix (corr_vec[10])	[ucd=stat.correlation]
+#Column	corvec11	(D14.7)	Parameter 11 of vector of the upper triangle of the correlation matrix (corr_vec[11])	[ucd=stat.correlation]
+#Column	corvec12	(D14.7)	Parameter 12 of vector of the upper triangle of the correlation matrix (corr_vec[12])	[ucd=stat.correlation]
+#Column	corvec13	(D14.7)	Parameter 13 of vector of the upper triangle of the correlation matrix (corr_vec[13])	[ucd=stat.correlation]
+#Column	corvec14	(D13.6)	Parameter 14 of vector of the upper triangle of the correlation matrix (corr_vec[14])	[ucd=stat.correlation]
+#Column	ObjFunc	(F13.9)	value of the objective function at the solution (obj_func)	[ucd=stat.fit.param]
+#Column	goodness	(D14.7)	goodness of fit in the Hipparcos sense (goodness_of_fit)	[ucd=stat.fit.goodness]
+#Column	eff	(F12.9)	Efficiency of the solution (efficiency)	[ucd=stat.fit.param]
+#Column	Signi	(F11.7)	The significance of the solution (i.e. how worth keeping a model is) (significance)	[ucd=stat.fit.param]
+#Column	Flags	(I8)	Quality flag for the achieved NSS solution (flags) (G2)	[ucd=meta.code.error]
+#Column	ConfPersp	(F6.3)	The probability of the period for not being due to (gaussian white) noise. Relevant for SB1 (conf_spectro_period)	[ucd=stat.probability]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+_r	recno	SolID	Source	NSSmodel	RA_ICRS	DE_ICRS	Per	e_Per	Tperi	e_Tperi	ecc	e_ecc	Vcm	e_Vcm	K1	e_K1	omega	e_omega	NRVp	NgRVp	NRVs	NgRVs	bitIndex	corvec0	corvec1	corvec2	corvec3	corvec4	corvec5	corvec6	corvec7	corvec8	corvec9	corvec10	corvec11	corvec12	corvec13	corvec14	ObjFunc	goodness	eff	Signi	Flags	ConfPersp	Simbad
+arcsec	 	 	 	 	deg	deg	d	d	d	d	 	 	km/s	km/s	km/s	km/s	deg	deg	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+-----	--------	-------------------	-------------------	---	---------------	---------------	----------------------	--------------	----------------------	---------------	----------------------	-------------	---------------------	------------	---------------------	------------	---------------------	------------	---	---	-	-	---	--------------	--------------	--------------	--------------	--------------	-------------	--------------	--------------	--------------	--------------	--------------	--------------	--------------	--------------	-------------	-------------	--------------	------------	-----------	--------	------	------
+0.002	   37659	4338096422163308546	2129164276754246400	SB1	291.07232239308	+47.48707252003	   4.54979222688982343	 1.9927985e-04	 1.836165922060303e-01	   0.6946431000	 0.0215766015298724766	 0.0163380840	-1.75182175199076e+01	 0.483525600	 36.08891300240080824	 0.586544900	 1.19818861895112e+02	 54.75553000	 26	 26	0	0	127	-4.3119050e-02	 4.6850223e-02	-2.4419434e-02	 5.2170847e-03	-1.2316361e-01	-3.140049e-01	-1.1938228e-01	 4.7590053e-01	 2.8941655e-01	-1.0877083e-01	-1.1834978e-01	 4.7148353e-01	 2.8500545e-01	-1.0963229e-01	 9.997905e-01	 10.812497000	-1.6530770e+00	 0.242968320	 61.5279600	       0	 1.000	Simbad
+

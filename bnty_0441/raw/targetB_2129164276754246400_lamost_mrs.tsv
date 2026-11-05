@@ -1,0 +1,101 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-05T16:14:10 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-05T16:14:10	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J%2FApJS%2F258%2F26&-c=291.072322%2B47.487073&-c.rs=5&-out.all=1&-out.max=200	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=291.072322+47.487073,rs=5.	
+#Constraint -out.max=200
+
+#RESOURCE=yCat_22580026
+#Name: J/ApJS/258/26
+#Title: Spectroscopic binaries from LAMOST MRS. I. (Zhang+, 2022)
+#INFO	ivoid=ivo://cds.vizier/j/apjs/258/26	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/apjs/258/26	    IVOID of underlying data collection
+#INFO	creator=Zhang B.	    First author or institution
+#INFO	cites=bibcode:2022ApJS..258...26Z	    Article or Data origin sources
+#INFO	journal=ApJS	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/258/26	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.22580026	    Dataset identifier that can be used for citation
+#INFO	publication_date=2022-09-30	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_ApJS_258_26_table4:
+#Name: J/ApJS/258/26/table4
+#Title: The 5 million binary probabilities and RVs obtained from the LAMOST MRS DR8 (v1.0)
+#Column	_r	(F5.3)	Distance from center (291.072322+47.487073)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	ObsID	(I9)	LAMOST observational ID	[ucd=meta.id;meta.main]
+#Column	m_ObsID	(I3)	Number of measurements for this source	[ucd=meta.number]
+#Column	LMJM	(I8)	Local Modified Julian Minute	[ucd=time.epoch]
+#Column	BJDmid	(F13.5)	Barycentric Julian Date of the middle of exposure	[ucd=time.epoch]
+#Column	LMJD	(I5)	Local Modified Julian Day (only used for spectral naming)	[ucd=time.epoch;pos.lsr;pos.lg]
+#Column	planid	(a20)	Plan ID	[ucd=meta.id]
+#Column	spid	(I2)	Spectrograph ID	[ucd=meta.id;instr]
+#Column	fiber	(I3)	Fiber ID (fiberid)	[ucd=meta.id]
+#Column	RAJ2000	(F10.6)	Right ascension (J2000) (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination (J2000) (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	SNRB	(F10.6)	? S/N ratio of the blue arm (snr_B)	[ucd=stat.snr]
+#Column	SNRR	(F10.6)	? S/N ratio of the red arm (snr_R)	[ucd=stat.snr]
+#Column	RVobsB	(F10.4)	? RV measured from blue arm spectra (rv_obs_B)	[ucd=phys.veloc]
+#Column	e_RVobsB	(F9.4)	? RVobsB uncertainty (rv_obs_err_B)	[ucd=stat.error]
+#Column	RVabsB	(F10.4)	? RV calibrated to Gaia eDR3 (rv_abs_B)	[ucd=phys.veloc;arith.diff]
+#Column	e_RVabsB	(F9.4)	? Total error of absolute RV (rv_err_abs_B)	[ucd=stat.error]
+#Column	TeffB	(I5)	? Effective temperature of the best template (rv_teff_B)	[ucd=phys.temperature.effective;meta.modelled]
+#Column	CCFmaxB	(F9.6)	? CCF max value (ccfmax_B)	[ucd=meta.note]
+#Column	RVobsR	(F10.4)	? RV measured from red arm spectra (rv_obs_R)	[ucd=phys.veloc]
+#Column	e_RVobsR	(F9.4)	? RVobsR uncertainty (rv_obs_err_R)	[ucd=stat.error]
+#Column	RVabsR	(F10.4)	? RV calibrated to Gaia eDR3 (rv_abs_R)	[ucd=phys.veloc;arith.diff]
+#Column	e_RVabsR	(F9.4)	? Total error of absolute RV (rv_err_abs_R)	[ucd=stat.error]
+#Column	TeffR	(I5)	? Effective temperature of the best template (rv_teff_R)	[ucd=phys.temperature.effective;meta.modelled]
+#Column	CCFmaxR	(F9.6)	? CCF max value (ccfmax_R)	[ucd=meta.note]
+#Column	PbpB8-0	(F9.6)	? P_q_^{Lambda}^=8 with q=0 for the blue arm (pb_B_8_0)	[ucd=stat.fit.goodness]
+#Column	PbpB8-16	(F9.6)	? P_q_^{Lambda}^=8 with q=16 for the blue arm (pb_B_8_16)	[ucd=stat.fit.goodness]
+#Column	PbpB8-50	(F9.6)	? P_q_^{Lambda}^=8 with q=50 for the blue arm (pb_B_8_50)	[ucd=stat.fit.goodness]
+#Column	PbpB8-84	(F9.6)	? P_q_^{Lambda}^=8 with q=84 for the blue arm (pb_B_8_84)	[ucd=stat.fit.goodness]
+#Column	PbpB8-100	(F9.6)	? P_q_^{Lambda}^=8 with q=100 for the blue arm (pb_B_8_100)	[ucd=stat.fit.goodness]
+#Column	PbpB16-0	(F9.6)	? P_q_^{Lambda}^=16 with q=0 for the blue arm (pb_B_16_0)	[ucd=stat.fit.goodness]
+#Column	PbpB16-16	(F9.6)	? P_q_^{Lambda}^=16 with q=16 for the blue arm (pb_B_16_16)	[ucd=stat.fit.goodness]
+#Column	PbpB16-50	(F9.6)	? P_q_^{Lambda}^=16 with q=50 for the blue arm (pb_B_16_50)	[ucd=stat.fit.goodness]
+#Column	PbpB16-84	(F9.6)	? P_q_^{Lambda}^=16 with q=84 for the blue arm (pb_B_16_84)	[ucd=stat.fit.goodness]
+#Column	PbpB16-100	(F9.6)	? P_q_^{Lambda}^=16 with q=100 for the blue arm (pb_B_16_100)	[ucd=stat.fit.goodness]
+#Column	PbpB32-0	(F9.6)	? P_q_^{Lambda}^=32 with q=0 for the blue arm (pb_B_32_0)	[ucd=stat.fit.goodness]
+#Column	PbpB32-16	(F9.6)	? P_q_^{Lambda}^=32 with q=16 for the blue arm (pb_B_32_16)	[ucd=stat.fit.goodness]
+#Column	PbpB32-50	(F9.6)	? P_q_^{Lambda}^=32 with q=50 for the blue arm (pb_B_32_50)	[ucd=stat.fit.goodness]
+#Column	PbpB32-84	(F9.6)	? P_q_^{Lambda}^=32 with q=84 for the blue arm (pb_B_32_84)	[ucd=stat.fit.goodness]
+#Column	PbpB32-100	(F9.6)	? P_q_^{Lambda}^=32 with q=100 for the blue arm (pb_B_32_100)	[ucd=stat.fit.goodness]
+#Column	GoodB	(I1)	[0/1] True for good blue spectra (S/N>5) (pb_flag_B)	[ucd=meta.code]
+#Column	NbadB	(I4)	[0/9999] Number of bad pixels for the blue arm (npixbad_B)	[ucd=meta.number]
+#Column	PbpR8-0	(F9.6)	? P_q_^{Lambda}^=8 with q=0 for the red arm (pb_R_8_0)	[ucd=stat.fit.goodness]
+#Column	PbpR8-16	(F9.6)	? P_q_^{Lambda}^=8 with q=16 for the red arm (pb_R_8_16)	[ucd=stat.fit.goodness]
+#Column	PbpR8-50	(F9.6)	? P_q_^{Lambda}^=8 with q=50 for the red arm (pb_R_8_50)	[ucd=stat.fit.goodness]
+#Column	PbpR8-84	(F9.6)	? P_q_^{Lambda}^=8 with q=84 for the red arm (pb_R_8_84)	[ucd=stat.fit.goodness]
+#Column	PbpR8-100	(F9.6)	? P_q_^{Lambda}^=8 with q=100 for the red arm (pb_R_8_100)	[ucd=stat.fit.goodness]
+#Column	PbpR16-0	(F9.6)	? P_q_^{Lambda}^=16 with q=0 for the red arm (pb_R_16_0)	[ucd=stat.fit.goodness]
+#Column	PbpR16-16	(F9.6)	? P_q_^{Lambda}^=16 with q=16 for the red arm (pb_R_16_16)	[ucd=stat.fit.goodness]
+#Column	PbpR16-50	(F9.6)	? P_q_^{Lambda}^=16 with q=50 for the red arm (pb_R_16_50)	[ucd=stat.fit.goodness]
+#Column	PbpR16-84	(F9.6)	? P_q_^{Lambda}^=16 with q=84 for the red arm (pb_R_16_84)	[ucd=stat.fit.goodness]
+#Column	PbpR16-100	(F9.6)	? P_q_^{Lambda}^=16 with q=100 for the red arm (pb_R_16_100)	[ucd=stat.fit.goodness]
+#Column	PbpR32-0	(F9.6)	? P_q_^{Lambda}^=32 with q=0 for the red arm (pb_R_32_0)	[ucd=stat.fit.goodness]
+#Column	PbpR32-16	(F9.6)	? P_q_^{Lambda}^=32 with q=16 for the red arm (pb_R_32_16)	[ucd=stat.fit.goodness]
+#Column	PbpR32-50	(F9.6)	? P_q_^{Lambda}^=32 with q=50 for the red arm (pb_R_32_50)	[ucd=stat.fit.goodness]
+#Column	PbpR32-84	(F9.6)	? P_q_^{Lambda}^=32 with q=84 for the red arm (pb_R_32_84)	[ucd=stat.fit.goodness]
+#Column	PbpR32-100	(F9.6)	? P_q_^{Lambda}^=32 with q=100 for the red arm (pb_R_32_100)	[ucd=stat.fit.goodness]
+#Column	GoodR	(I1)	[0/1] True for good red spectra (S/N>5) (pb_flag_R)	[ucd=meta.code]
+#Column	NbadR	(I4)	[0/9999] Number of bad pixels for the red arm (npixbad_R)	[ucd=meta.number]
+#Column	Gbp-Grp	(F9.6)	[-0.75/7.7]? Intrinsic color (G_BP_-G_RP_)_0_ (bprp0)	[ucd=phot.color;em.opt.B;em.opt.R]
+#Column	Gaia	(A4)	Display the Gaia DR3 (I/355) data wihin 1.5"	[ucd=meta.ref.url]
+_r	recno	ObsID	m_ObsID	LMJM	BJDmid	LMJD	planid	spid	fiber	RAJ2000	DEJ2000	SNRB	SNRR	RVobsB	e_RVobsB	RVabsB	e_RVabsB	TeffB	CCFmaxB	RVobsR	e_RVobsR	RVabsR	e_RVabsR	TeffR	CCFmaxR	PbpB8-0	PbpB8-16	PbpB8-50	PbpB8-84	PbpB8-100	PbpB16-0	PbpB16-16	PbpB16-50	PbpB16-84	PbpB16-100	PbpB32-0	PbpB32-16	PbpB32-50	PbpB32-84	PbpB32-100	GoodB	NbadB	PbpR8-0	PbpR8-16	PbpR8-50	PbpR8-84	PbpR8-100	PbpR16-0	PbpR16-16	PbpR16-50	PbpR16-84	PbpR16-100	PbpR32-0	PbpR32-16	PbpR32-50	PbpR32-84	PbpR32-100	GoodR	NbadR	Gbp-Grp	Gaia
+arcsec	 	 	 	min	d	d	 	 	 	deg	deg	 	 	km/s	km/s	km/s	km/s	K	 	km/s	km/s	km/s	km/s	K	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	mag	
+-----	--------	---------	---	--------	-------------	-----	--------------------	--	---	----------	----------	----------	----------	----------	---------	----------	---------	-----	---------	----------	---------	----------	---------	-----	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	-	----	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	---------	-	----	---------	----
+0.038	  100415	591803219	  3	83564401	2458031.00549	58031	HIP9587901          	 3	219	291.072330	+47.487064	 10.960938	  9.046875	  -55.9688	   0.6865	  -47.8750	   0.7026	 6180	 0.540527	  -45.4688	   2.7988	  -41.2500	   2.8008	 6280	 0.468994	 0.000631	 0.002216	 0.025574	 0.143188	 0.314697	 0.000033	 0.000762	 0.011162	 0.067139	 0.165527	 0.000056	 0.000366	 0.006126	 0.036713	 0.097473	1	   0	 0.002316	 0.030579	 0.083069	 0.241211	 0.815918	 0.003513	 0.013504	 0.048676	 0.270020	 0.602539	 0.002354	 0.009766	 0.061951	 0.160645	 0.505859	1	   0	 0.590820	Gaia
+0.038	  100416	591803219	  3	83564414	2458031.01476	58031	HIP9587901          	 3	219	291.072330	+47.487064	  8.296875	  6.871094	  -58.5938	   1.0137	  -50.5000	   1.0244	 6180	 0.478271	  -51.0000	   3.9609	  -46.7188	   3.9629	 6180	 0.367432	 0.009132	 0.034637	 0.068420	 0.182251	 0.297607	 0.003263	 0.012764	 0.037537	 0.069885	 0.197754	 0.002224	 0.008888	 0.025742	 0.063721	 0.109741	1	   0	 0.004086	 0.015572	 0.061676	 0.239990	 0.424561	 0.000839	 0.011719	 0.050079	 0.134277	 0.407471	 0.000999	 0.004757	 0.021835	 0.087463	 0.458008	1	   0	 0.590820	Gaia
+0.038	  100417	591803219	  3	83564428	2458031.02403	58031	HIP9587901          	 3	219	291.072330	+47.487064	  6.429688	  4.828125	  -55.9062	   0.9502	  -47.8750	   0.9619	 6180	 0.379883	          	         	          	         	     	         	 0.009743	 0.021194	 0.045258	 0.135498	 0.402344	 0.001760	 0.007065	 0.025635	 0.081726	 0.311035	 0.001681	 0.005745	 0.016937	 0.049255	 0.135254	1	   0	         	         	         	         	         	         	         	         	         	         	         	         	         	         	         	0	9999	 0.590820	Gaia
+

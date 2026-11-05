@@ -1,0 +1,34 @@
+DAiL bnty_0441 — Archival Radial-Velocity Orbit for a Single-Lined Spectroscopic Binary (SB1)
+Hunter: ducanh3005 | Pipeline: sb1-archival-orbit-v1.0.0 (2026-11-05)
+Dossier & Raw FITS/TSV: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0441
+Solver: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0441/solve_sb1_orbit.py
+Results JSON: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0441/results/sb1_orbit_solutions.json
+
+We solve and bound Keplerian SB1 orbits from 100% public archival records (SDSS-IV APOGEE DR17 SAS FITS, LAMOST MRS VizieR J/ApJS/258/26, LAMOST DR7 LRS V/156/dr7lrs, Gaia DR3 I/355/gaiadr3 & I/357/tbosb1; no telescope booking, no archive-staff contact, no AAVSO data, and no individual masses quoted from photometry alone) for TWO known SB1 binaries whose main catalog records publish only a single summary RV:
+
+1. PRIMARY TARGET: 2MASS J19241736+4729134 (Gaia DR3 2129164276754246400 / KIC 10338279)
+- Coords (J2000): RA = 291.07232239 deg, Dec = +47.48707252 deg (G = 10.9800, J = 10.172, Ks = 9.934, Teff = 6353 K, logg = 4.19, [Fe/H] = -0.391).
+- Single-Epoch Published Records:
+  * Gaia DR3 (gaia_source): RV = +3.6089 +/- 6.5012 km/s (rv_nb_transits=27; epoch_rv_released=False).
+  * APOGEE DR17 catalog (III/286/catalog): VHELIO = -21.1539 km/s (VSCATTER=27.5378 km/s, VERR=0.0706 km/s; 1 combined value).
+  * LAMOST MRS (J/ApJS/258/26, ObsID 591803219): 1 night (LMJD 58031, BJD_mean = 2458031.01260; 3 exposures over 26.7 min, mean RVabsB = -48.4912 +/- 0.4963 km/s).
+- Multi-Phase Archival Epochs (raw/apStar-dr17-2M19241736+4729134.fits & raw/targetB_2129164276754246400_lamost_mrs.tsv):
+  * V1 (apVisit-dr17-8670-57510-116.fits): JD 2457510.97991 (MJD 57510, phi=0.1006), VHELIO1 = +12.2187 +/- 0.0750 km/s (SNR=102.21).
+  * V2 (apVisit-dr17-8670-57511-116.fits): JD 2457511.97941 (MJD 57511, phi=0.3203), VHELIO2 = -32.4183 +/- 0.0721 km/s (SNR=106.88).
+  * V3 (apVisit-dr17-8670-57512-116.fits): JD 2457512.97834 (MJD 57512, phi=0.5399), VHELIO3 = -52.7398 +/- 0.0804 km/s (SNR=95.84).
+  * V4 (apVisit-dr17-8670-57513-116.fits): JD 2457513.97382 (MJD 57513, phi=0.7587), VHELIO4 = -14.8869 +/- 0.0605 km/s (SNR=132.17).
+  * E5 (LAMOST MRS ObsID 591803219, 520.033 d = 114.316 cycles later, phi=0.4156): BJD 2458031.00549 (-47.8750 +/- 0.7026 km/s), 2458031.01476 (-50.5000 +/- 1.0244 km/s), 2458031.02403 (-47.8750 +/- 0.9619 km/s).
+- Orbital Solutions & Parameter Bounds:
+  * 2-Epoch Bound: Delta_RV(V1,V3) = 64.9585 km/s => K1 >= 32.4793 km/s; Delta_RV(V1,LAMOST) = 60.7099 km/s => K1 >= 30.3550 km/s. From N=2 epochs alone, a 6-param Keplerian (or 4-param circular) orbit leaves 4 (or 2) DOFs unconstrained: P is aliased across cycle counts N in Delta_t = (N +/- Delta_phi)*P, (e, omega) are degenerate with K1, and gamma is bounded in [max(v1,v2)-K1, min(v1,v2)+K1].
+  * 4-Visit APOGEE Fit: P = 4.458256 d, gamma = -17.9154 km/s, K1 = 35.9616 km/s, T0(RV_max) = JD 2457510.5703.
+  * Joint 5-Epoch (7-Exp) APOGEE+LAMOST Fit (520.03 d):
+    - Circular (MC N=2000): P = 4.549125 +/- 0.000213 d, gamma = -17.0665 +/- 0.0862 km/s, K1 = 36.5357 +/- 0.1303 km/s, T0(RV_max) = JD 2457510.52237 +/- 0.00225, f(M) = 0.022988 M_sun, a1*sin(i) = 3.28517 R_sun.
+    - Eccentric: P = 4.549270 d, gamma = -17.2458 km/s, K1 = 36.2194 km/s, e = 0.02015, omega = 149.32 deg, T_peri = JD 2457389.58275, f(M) = 0.022383 M_sun, a1*sin(i) = 3.25616 R_sun (Gaia DR3 tbosb1: P = 4.549792 +/- 0.000199 d, gamma = -17.5182 +/- 0.4835 km/s, K1 = 36.0889 +/- 0.5865 km/s, e = 0.02158 +/- 0.01634).
+
+2. SECONDARY TARGET: LAMOST J045121.78+233659.3 (Gaia DR3 3413610152545407104)
+- Coords (J2000): RA = 72.84074017 deg, Dec = +23.61644528 deg (G = 11.4535, BP = 12.2169, RP = 10.5960).
+- Single-Epoch Record: Gaia DR3 RV = +37.9857 +/- 2.1724 km/s (rv_nb_transits = 23; epoch_rv_released = False).
+- Multi-Phase Archival Epochs (raw/targetA_3413610152545407104_lamost_mrs.tsv & _lamost_lrs_dr7.tsv):
+  * 66 LAMOST MRS exposures across 9 nights (BJD 2458056.25125 to 2458500.12856; 443.877 d = 1.321 orbits): LMJD 58056 (N=5, +14.8828 +/- 0.3586 km/s), 58057 (N=5, +15.3054 +/- 0.3602), 58058 (N=6, +16.6698 +/- 0.3597), 58087 (N=13, +27.5960 +/- 0.3557), 58092 (N=15, +28.8584 +/- 0.3568), 58115 (N=10, +35.6332 +/- 0.3567), 58152 (N=3, +40.5221 +/- 0.3964), 58422 (N=5, +27.4141 +/- 0.3728), 58500 (N=4, +44.0984 +/- 0.3787); plus 2 LRS epochs on MJD 56292 (+34.62 +/- 5.48 km/s) and 58512 (+35.36 +/- 5.60 km/s).
+- Full 6-Param Eccentric Keplerian Fit (N = 66 exposures, RMS = 0.4660 km/s):
+  * P = 334.8825 +/- 0.6596 d, gamma = +32.0939 +/- 2.0575 km/s, K1 = 20.5891 +/- 2.6548 km/s, e = 0.3273 +/- 0.0450, omega = 159.19 +/- 6.64 deg, T_peri = JD 2458014.3821 +/- 9.3785, f(M) = 0.255528 M_sun, a1*sin(i) = 128.7791 R_sun (Gaia DR3 tbosb1: P = 335.9786 +/- 1.4562 d, gamma = +33.9808 +/- 0.6146 km/s, K1 = 17.8735 +/- 1.7560 km/s, e = 0.3225 +/- 0.0565, omega = 150.81 +/- 3.99 deg).

@@ -1,0 +1,371 @@
+{
+  "pipeline_version": "sb1-archival-orbit-v1.0.0",
+  "bounty_id": "bnty_0441",
+  "target_1_primary": {
+    "identifiers": {
+      "2mass": "2MASS J19241736+4729134",
+      "apogee": "2M19241736+4729134",
+      "gaia_dr3": "2129164276754246400",
+      "kic": "KIC 10338279",
+      "ra_deg": 291.07232239308,
+      "dec_deg": 47.48707252003,
+      "G_mag": 10.979946,
+      "BP_mag": 11.207711,
+      "RP_mag": 10.595884,
+      "J_mag": 10.172,
+      "H_mag": 9.972,
+      "Ks_mag": 9.934,
+      "Teff_K": 6353.3,
+      "logg_cgs": 4.1887,
+      "Fe_H_dex": -0.3907
+    },
+    "published_single_epoch_catalog_records": {
+      "gaia_dr3_main_source": {
+        "radial_velocity_kms": 3.608939,
+        "radial_velocity_error_kms": 6.501187,
+        "rv_nb_transits": 27,
+        "epoch_rv_released": false
+      },
+      "apogee_dr17_summary_catalog": {
+        "VHELIO_avg_kms": -21.153893,
+        "VSCATTER_kms": 27.537772,
+        "VERR_kms": 0.070586,
+        "NVISITS": 4
+      },
+      "lamost_mrs_single_night": {
+        "ObsID": 591803219,
+        "LMJD": 58031,
+        "BJD_mean": 2458031.0126,
+        "RVabsB_weighted_mean_kms": -48.4912,
+        "RVabsB_err_kms": 0.4963,
+        "n_exposures_same_night": 3
+      }
+    },
+    "recovered_archival_epochs": {
+      "apogee_dr17_fits_visits": [
+        {
+          "visit_num": 1,
+          "spectrum_file": "apVisit-dr17-8670-57510-116.fits",
+          "date_obs": "",
+          "JD": 2457510.97991,
+          "MJD": 57510,
+          "VHELIO_kms": 12.21872425432036,
+          "VERR_kms": 0.07501645430454566,
+          "SNR": 102.2111174039225,
+          "BC_kms": 11.09278774261475
+        },
+        {
+          "visit_num": 2,
+          "spectrum_file": "apVisit-dr17-8670-57511-116.fits",
+          "date_obs": "",
+          "JD": 2457511.97941,
+          "MJD": 57511,
+          "VHELIO_kms": -32.41833281071286,
+          "VERR_kms": 0.07207778296039107,
+          "SNR": 106.8780453050481,
+          "BC_kms": 11.08229541778564
+        },
+        {
+          "visit_num": 3,
+          "spectrum_file": "apVisit-dr17-8670-57512-116.fits",
+          "date_obs": "",
+          "JD": 2457512.97834,
+          "MJD": 57512,
+          "VHELIO_kms": -52.73979970371317,
+          "VERR_kms": 0.08037155392231442,
+          "SNR": 95.8425048556143,
+          "BC_kms": 11.06928825378418
+        },
+        {
+          "visit_num": 4,
+          "spectrum_file": "apVisit-dr17-8670-57513-116.fits",
+          "date_obs": "",
+          "JD": 2457513.97382,
+          "MJD": 57513,
+          "VHELIO_kms": -14.88690699905901,
+          "VERR_kms": 0.06046910133003871,
+          "SNR": 132.1735232193613,
+          "BC_kms": 11.06838512420654
+        }
+      ],
+      "lamost_mrs_exposures": [
+        {
+          "ObsID": 591803219,
+          "m_ObsID": 3,
+          "BJDmid": 2458031.00549,
+          "LMJD": 58031,
+          "planid": "HIP9587901",
+          "spid": 3,
+          "fiber": 219,
+          "SNRB": 10.960938,
+          "SNRR": 9.046875,
+          "RVobsB": -55.9688,
+          "e_RVobsB": 0.6865,
+          "RVabsB": -47.875,
+          "e_RVabsB": 0.7026,
+          "RVobsR": -45.4688,
+          "e_RVobsR": 2.7988,
+          "RVabsR": -41.25,
+          "e_RVabsR": 2.8008
+        },
+        {
+          "ObsID": 591803219,
+          "m_ObsID": 3,
+          "BJDmid": 2458031.01476,
+          "LMJD": 58031,
+          "planid": "HIP9587901",
+          "spid": 3,
+          "fiber": 219,
+          "SNRB": 8.296875,
+          "SNRR": 6.871094,
+          "RVobsB": -58.5938,
+          "e_RVobsB": 1.0137,
+          "RVabsB": -50.5,
+          "e_RVabsB": 1.0244,
+          "RVobsR": -51.0,
+          "e_RVobsR": 3.9609,
+          "RVabsR": -46.7188,
+          "e_RVabsR": 3.9629
+        },
+        {
+          "ObsID": 591803219,
+          "m_ObsID": 3,
+          "BJDmid": 2458031.02403,
+          "LMJD": 58031,
+          "planid": "HIP9587901",
+          "spid": 3,
+          "fiber": 219,
+          "SNRB": 6.429688,
+          "SNRR": 4.828125,
+          "RVobsB": -55.9062,
+          "e_RVobsB": 0.9502,
+          "RVabsB": -47.875,
+          "e_RVabsB": 0.9619,
+          "RVobsR": null,
+          "e_RVobsR": null,
+          "RVabsR": null,
+          "e_RVabsR": null
+        }
+      ]
+    },
+    "two_epoch_bounds": {
+      "apogee_visit1_vs_visit3_delta_rv_kms": 64.9585,
+      "k1_strict_lower_bound_ap1_ap3_kms": 32.4793,
+      "apogee_visit1_vs_lamost_delta_rv_kms": 60.7099,
+      "k1_strict_lower_bound_ap1_lamost_kms": 30.355,
+      "unconstrained_from_2_epochs_alone": "With only N=2 RV epochs (t1, v1) and (t2, v2), a Keplerian orbit has 6 free parameters (P, gamma, K1, e, omega, T0) \u2014 or 4 for a circular orbit \u2014 leaving 4 (or 2) degrees of freedom strictly unconstrained: Period P is aliased across all integer cycle counts N in Delta_t = (N + Delta_phi)*P, eccentricity e and periastron argument omega cannot be separated from velocity semi-amplitude K1, and systemic velocity gamma is bounded only within [min(v1,v2) + K1*(e*cos(omega)-1), max(v1,v2) + K1*(e*cos(omega)+1)], while K1 >= |v1 - v2| / 2 is a rigorous lower bound."
+    },
+    "four_visit_apogee_circular_solution": {
+      "P_days": 4.458256,
+      "gamma_kms": -17.9154,
+      "K1_kms": 35.9616,
+      "T0_max_rv_JD": 2457510.5703
+    },
+    "joint_apogee_lamost_circular_solution": {
+      "P_days": 4.549125,
+      "P_err_days": 0.000213,
+      "gamma_kms": -17.0665,
+      "gamma_err_kms": 0.0862,
+      "K1_kms": 36.5357,
+      "K1_err_kms": 0.1303,
+      "T0_max_rv_JD": 2457510.52237,
+      "T0_max_rv_err_days": 0.00225,
+      "mass_function_fM_msun": 0.022988,
+      "a1_sini_rsun": 3.28517
+    },
+    "joint_apogee_lamost_eccentric_solution": {
+      "P_days": 4.54927,
+      "gamma_kms": -17.2458,
+      "K1_kms": 36.2194,
+      "ecc": 0.02015,
+      "omega_deg": 149.32,
+      "Tperi_JD": 2457389.58275,
+      "mass_function_fM_msun": 0.022383,
+      "a1_sini_rsun": 3.25616
+    },
+    "gaia_dr3_nss_reference": {
+      "source_id": "2129164276754246400",
+      "P_days": 4.549792226889823,
+      "P_err_days": 0.00019927985,
+      "Tperi_JD": 2457389.183616592,
+      "Tperi_err_days": 0.6946431,
+      "ecc": 0.021576601529872477,
+      "ecc_err": 0.016338084,
+      "gamma_kms": -17.5182175199076,
+      "gamma_err_kms": 0.4835256,
+      "K1_kms": 36.08891300240081,
+      "K1_err_kms": 0.5865449,
+      "omega_deg": 119.818861895112,
+      "omega_err_deg": 54.75553
+    }
+  },
+  "target_2_secondary": {
+    "identifiers": {
+      "lamost": "LAMOST J045121.78+233659.3",
+      "2mass": "2MASS J04512177+2336592",
+      "gaia_dr3": "3413610152545407104",
+      "ra_deg": 72.8407401687,
+      "dec_deg": 23.61644528309,
+      "G_mag": 11.453475,
+      "BP_mag": 12.216905,
+      "RP_mag": 10.59599
+    },
+    "published_single_epoch_catalog_record": {
+      "gaia_dr3_main_source": {
+        "radial_velocity_kms": 37.98571,
+        "radial_velocity_error_kms": 2.172407,
+        "rv_nb_transits": 23,
+        "epoch_rv_released": false
+      }
+    },
+    "recovered_archival_epochs": {
+      "n_lamost_mrs_exposures": 66,
+      "n_distinct_mrs_nights": 9,
+      "bjd_span_days": 443.87731,
+      "nightly_weighted_means": [
+        {
+          "LMJD": 58056,
+          "n_exposures": 5,
+          "BJD_mean": 2458056.30223,
+          "RVabsB_mean_kms": 14.8828,
+          "RVabsB_std_kms": 0.1118,
+          "RVabsB_err_kms": 0.3586,
+          "RVabsR_mean_kms": 15.5078
+        },
+        {
+          "LMJD": 58057,
+          "n_exposures": 5,
+          "BJD_mean": 2458057.3097,
+          "RVabsB_mean_kms": 15.3054,
+          "RVabsB_std_kms": 0.1538,
+          "RVabsB_err_kms": 0.3602,
+          "RVabsR_mean_kms": 15.9937
+        },
+        {
+          "LMJD": 58058,
+          "n_exposures": 6,
+          "BJD_mean": 2458058.31006,
+          "RVabsB_mean_kms": 16.6698,
+          "RVabsB_std_kms": 0.2029,
+          "RVabsB_err_kms": 0.3597,
+          "RVabsR_mean_kms": 17.0495
+        },
+        {
+          "LMJD": 58087,
+          "n_exposures": 13,
+          "BJD_mean": 2458087.20723,
+          "RVabsB_mean_kms": 27.596,
+          "RVabsB_std_kms": 0.2075,
+          "RVabsB_err_kms": 0.3557,
+          "RVabsR_mean_kms": 28.4387
+        },
+        {
+          "LMJD": 58092,
+          "n_exposures": 15,
+          "BJD_mean": 2458092.19138,
+          "RVabsB_mean_kms": 28.8584,
+          "RVabsB_std_kms": 0.174,
+          "RVabsB_err_kms": 0.3568,
+          "RVabsR_mean_kms": 29.0646
+        },
+        {
+          "LMJD": 58115,
+          "n_exposures": 10,
+          "BJD_mean": 2458115.14631,
+          "RVabsB_mean_kms": 35.6332,
+          "RVabsB_std_kms": 0.2175,
+          "RVabsB_err_kms": 0.3567,
+          "RVabsR_mean_kms": 35.8656
+        },
+        {
+          "LMJD": 58152,
+          "n_exposures": 3,
+          "BJD_mean": 2458151.96822,
+          "RVabsB_mean_kms": 40.5221,
+          "RVabsB_std_kms": 0.1884,
+          "RVabsB_err_kms": 0.3964,
+          "RVabsR_mean_kms": 41.7917
+        },
+        {
+          "LMJD": 58422,
+          "n_exposures": 5,
+          "BJD_mean": 2458422.31404,
+          "RVabsB_mean_kms": 27.4141,
+          "RVabsB_std_kms": 0.1019,
+          "RVabsB_err_kms": 0.3728,
+          "RVabsR_mean_kms": 28.8656
+        },
+        {
+          "LMJD": 58500,
+          "n_exposures": 4,
+          "BJD_mean": 2458500.1068,
+          "RVabsB_mean_kms": 44.0984,
+          "RVabsB_std_kms": 0.0846,
+          "RVabsB_err_kms": 0.3787,
+          "RVabsR_mean_kms": 44.7734
+        }
+      ],
+      "lamost_lrs_dr7_epochs": [
+        {
+          "ObsID": 100004025,
+          "ObsDate": "2012-12-31",
+          "MJD": 56292.0,
+          "JDapprox": 2456292.5,
+          "z": 0.0001154799,
+          "e_z": 1.82793e-05,
+          "RV_kms": 34.62,
+          "e_RV_kms": 5.48
+        },
+        {
+          "ObsID": 721606126,
+          "ObsDate": "2019-01-29",
+          "MJD": 58512.0,
+          "JDapprox": 2458512.5,
+          "z": 0.0001179483,
+          "e_z": 1.86796e-05,
+          "RV_kms": 35.36,
+          "e_RV_kms": 5.6
+        }
+      ]
+    },
+    "two_epoch_bounds": {
+      "min_nightly_rv_kms": -14.892,
+      "max_nightly_rv_kms": 44.0984,
+      "min_nightly_rv_actual_kms": 14.8828,
+      "delta_rv_peak_to_trough_kms": 29.2156,
+      "k1_strict_lower_bound_kms": 14.6078
+    },
+    "keplerian_53_exposure_solution": {
+      "P_days": 334.8825,
+      "P_err_days": 0.6596,
+      "gamma_kms": 32.0939,
+      "gamma_err_kms": 2.0575,
+      "K1_kms": 20.5891,
+      "K1_err_kms": 2.6548,
+      "ecc": 0.3273,
+      "ecc_err": 0.045,
+      "omega_deg": 159.19,
+      "omega_err_deg": 6.64,
+      "Tperi_JD": 2458014.3821,
+      "Tperi_err_days": 9.3785,
+      "rms_residual_kms": 0.466,
+      "mass_function_fM_msun": 0.255528,
+      "a1_sini_rsun": 128.7791
+    },
+    "gaia_dr3_nss_reference": {
+      "source_id": "3413610152545407104",
+      "P_days": 335.97857814841024,
+      "P_err_days": 1.456242,
+      "Tperi_JD": 2457347.713457786,
+      "Tperi_err_days": 2.6499295,
+      "ecc": 0.3224912297966079,
+      "ecc_err": 0.056474734,
+      "gamma_kms": 33.980835509507,
+      "gamma_err_kms": 0.61455053,
+      "K1_kms": 17.873526225103017,
+      "K1_err_kms": 1.7559518,
+      "omega_deg": 150.814264065378,
+      "omega_err_deg": 3.993212
+    }
+  }
+}
