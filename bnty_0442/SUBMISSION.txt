@@ -1,0 +1,33 @@
+DAiL bnty_0442 — Multi-Survey Archival Confirmation of a New Variable Star
+Hunter: ducanh3005 | Pipeline: multisurvey-var-confirm-v1.0.0 (2026-11-05)
+Dossier & Raw FITS/CSV: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0442
+Code: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0442/fold_multisurvey_0442.py
+Results JSON: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0442/results/multisurvey_confirmation_0442.json
+
+We confirm two single-survey variable-star candidates across THREE independent public archival surveys (ESA Gaia DR3 multi-band epoch photometry, NASA TESS QLP multi-sector FITS light curves, and Palomar ZTF DR ground-based CCD zg/zr time series; public archives only, no AAVSO data/contact, no telescope booking), reporting each survey fold separately and assigning variability to the target vs neighbours within r <= 60" via flux-dilution bounds:
+
+1. PRIMARY TARGET: ASASSN-V J092057.16+543942.3 / Gaia DR3 1023231501066579840 (TIC 137675945 / 2MASS J09205715+5439422)
+- Coords (J2000): RA = 140.2381666 deg, Dec = +54.6617504 deg (G = 13.3758, BP = 13.8208, RP = 12.7136, T = 12.7981, Teff = 5309 K, plx = 2.2090 mas).
+- Claimed Period: P_claimed = 0.71746200 d (P_Gaia = 0.71746361 +/- 0.00002272 d; joint 3-survey refined P = 0.71745737 d, T0 = BJD 2458878.352785).
+- Separate Survey Phase-Folds (depths/amplitudes & point counts in primary eclipse E1, secondary eclipse E2, and quadrature max):
+  * Leg 1 — ESA Gaia DR3 Epoch Photometry (status: FOUND, raw/gaia_dr3_epoch_photometry_1023231501066579840.csv):
+    - G (N=37): N_E1=3 (1 core), N_E2=7, N_max=12, base=13.3490 mag (OOE scatter 2.23%), Depth_E1=25.55% (0.3203 mag), Depth_E2=20.90% (0.2546 mag).
+    - BP (N=36): N_E1=2 (1 core), N_E2=7, N_max=12, base=13.8208 mag, Depth_E1=26.02% (0.3272 mag), Depth_E2=20.89% (0.2544 mag).
+    - RP (N=36): N_E1=2 (1 core), N_E2=7, N_max=12, base=12.7136 mag, Depth_E1=24.10% (0.2994 mag), Depth_E2=19.83% (0.2399 mag).
+  * Leg 2 — NASA TESS QLP Sectors 21 & 47 FITS (status: FOUND, raw/hlsp_qlp_tess_ffi_s0021/s0047-0000000137675945_tess_v01_llc.fits):
+    - S21+S47 SAP (N=4,051): N_E1=618 (246 core), N_E2=625, N_max=1,282, OOE scatter=2.40%, Depth_E1=30.25% peak / 23.50% core (0.3911 / 0.2908 mag), Depth_E2=27.14% peak / 21.38% core (0.3437 / 0.2612 mag).
+    - S21 SAP (N=1,093): N_E1=164 (65 core), N_E2=172, N_max=347, Depth_E1=28.56% peak / 24.21% core (0.3652 / 0.3009 mag), Depth_E2=25.25% peak / 21.74% core.
+    - S47 SAP (N=2,958): N_E1=454 (181 core), N_E2=453, N_max=935, Depth_E1=30.25% peak / 23.38% core (0.3910 / 0.2891 mag), Depth_E2=27.14% peak / 21.25% core.
+  * Leg 3 — Palomar ZTF DR Ground CCD (status: FOUND, raw/ztf_dr_lightcurves_1023231501066579840.csv):
+    - Combined zg+zr (N=2,314 catflags=0): N_E1=372 (136 core), N_E2=339, N_max=711, Depth_E1=31.36% peak / 23.33% core (0.4085 / 0.2884 mag), Depth_E2=32.05% peak / 21.35% core (0.4195 / 0.2608 mag).
+    - zg (N=953): N_E1=139 (42 core), N_E2=130, N_max=320, base=13.9143 mag, Depth_E1=31.17% peak / 24.24% core (0.4056 / 0.3014 mag), Depth_E2=31.19% peak / 20.87% core.
+    - zr (N=1,361): N_E1=233 (94 core), N_E2=209, N_max=391, base=13.2348 mag, Depth_E1=30.01% peak / 23.19% core (0.3875 / 0.2864 mag), Depth_E2=32.15% peak / 21.58% core.
+  * Other Survey Legs (raw/survey_catalog_checks_1023231501066579840_60arcsec.json): Catalina CSS (J/ApJS/213/9): NONE; ASAS-3 (II/264): NONE; Hipparcos (I/239): NONE; TESS-EB (J/ApJS/258/16): NONE; GCVS (B/gcvs): NONE.
+- Neighbour Flux-Dilution Bound (raw/mast_tic_neighbors_1023231501066579840_60arcsec.json):
+  * r <= 15" (0.2" Gaia window & 2.0" ZTF PSF): 0 neighbours (0.0000% dilution).
+  * r <= 20" (central 21" TESS pixel): 1 faint neighbour (TIC 137675946 at 17.784", T=16.1637, G=17.1176, F_nbr/F_target=4.5057% in T, max blended depth=4.3114% in T).
+  * All 6 neighbours within r <= 60" combined: sum(F_nbr)/F_target=7.8316% in T (6.7601% in G), capping max blended depth at 7.2628% in T (6.3321% in G) — 4.16x smaller than the 30.25% TESS primary eclipse (4.03x smaller than the 25.55% Gaia G eclipse), assigning variability to TIC 137675945.
+
+2. SECONDARY TARGET: Gaia DR3 2014878564261767680 (TIC 435354753 / 2MASS J23072975+6106266)
+- Coords: RA = 346.8739511 deg, Dec = +61.1073977 deg (G=13.8698, T=13.2562). Sole entry in VSX is Gaia DR3 I/358/veb (P_Gaia = 1.07195519 d = 183/615 * P_true; 9.5-yr 961-cycle true period P_true = 3.60205010 d, T0 = BJD 2458766.723845).
+- Confirmed across: (1) Gaia DR3 (FOUND, N=47, N_E1=3, N_max=21, Depth_E1=36.81% / 0.4985 mag in G, 39.15% in BP, 35.12% in RP, OOE scatter 0.21%); (2) TESS QLP S17/S24/S57/S58 (FOUND, N=23,883, N_E1=1,775, N_max=7,683, Depth_E1=46.02% peak / 38.85% core); (3) ZTF DR zg+zr (FOUND, N=3,216, N_E1=227, N_max=1,051, Depth_E1=43.72% peak / 39.14% core; zg 43.74%, zr 42.63%). Central-pixel (r<=20") TESS neighbour bound = 13.75% vs 46.02% depth (3.35x kill); r<=8" ZTF/Gaia bound = 0.00% (0 neighbours).
