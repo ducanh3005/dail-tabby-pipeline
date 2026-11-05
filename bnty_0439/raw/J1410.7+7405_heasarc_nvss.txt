@@ -1,0 +1,5 @@
+BatchStart
+|name               |ra         |dec        |flux_20_cm|flux_20_cm_error|bii     |dec_error|field_name|lii      |limit_major_axis|limit_minor_axis|major_axis|major_axis_error|minor_axis|minor_axis_error|pol_angle|pol_angle_error|pol_flux|pol_flux_error|position_angle|position_angle_error|ra_error|residual_code|residual_flux|x_pixel|y_pixel|_Search_Offset          |
++-------------------+-----------+-----------+----------+----------------+--------+---------+----------+---------+----------------+----------------+----------+----------------+----------+----------------+---------+---------------+--------+--------------+--------------+--------------------+--------+-------------+-------------+-------+-------+------------------------+
+|NVSS J141136+740342|14 11 36.33|+74 03 42.8|       6.3|             0.5|41.91638|      2.9|C1415P76  |115.66641|<               |<               |      41.0|                |      31.0|                |    73.80|          17.30|    0.51|          0.47|              |                    |    0.58|             |             |  567.9|   48.3|3.910 (212.6869,74.0899)|
+BatchEnd

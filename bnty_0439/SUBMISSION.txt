@@ -1,0 +1,38 @@
+DAiL bnty_0439 - Fermi-LAT 4FGL-DR4 Unassociated Sources: Vetted Counterparts, Quantified
+Hunter: ducanh3005 | v1.0.0 | Repo: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0439
+Run (61 raw files in bnty_0439/raw/): python3 bnty_0439/vet_fermi_counterparts.py && python3 bnty_0439/verify_bnty_0439.py
+
+1. SCOPE & EPOCH LOG (v1.0.0, 2026-11-04T17:45Z-17:53Z; excludes all 16 sources in bnty_0276/0314/0348):
+4FGL J2240.3-5241 (340.0858,-52.6862, 90.0''x85.7'', PA=+86.8, 17:46:30Z); 4FGL J1410.7+7405 (212.6869,+74.0899, 90.0''x87.8'', PA=-86.3, 17:47:15Z); 4FGL J0251.1-1830 (42.7835,-18.5093, 123.5''x123.1'', PA=-41.5, 17:53:10Z); 4FGL J1539.4-3323 (234.8511,-33.3987, 82.4''x77.4'', PA=+27.5, 17:45:40Z).
+Catalogs: MAST TIC v8.2 (Gaia DR3+AllWISE+2MASS, 3'), NED (3') & HEASARC (13 cats, 5': fermilpsc..atnfpulsar) HTTP 200. SIMBAD & VizieR: UNUSABLE (TCP timeout WinError 10060; never counted as non-detection).
+Methods: r_ell=sqrt((x/a95)^2+(y/b95)^2)<=1; P_sep=1-exp(-Sigma*pi*sep^2). Kills: Gaia plx>=3sig or pm>=5 mas/yr; WISE W1-W2<0.50 or W1>17.1; X-ray SNR<3sig + radio non-detection. Full 73-row table in results/in_ellipse_counterparts.csv.
+
+2. 4FGL J2240.3-5241 (13 TIC, 28 NED, 5 HEASARC in 95% Ellipse)
+A) SURVIVOR (25.03''-26.42'', r_ell=0.278-0.294):
+- 5XMM J224017.8-524114 (25.03'', F_X=1.797e-13+/-2.089e-14, 8.6sig, P_sep=0.08015) + XRT J224017.55-524112.3(27.7''), SWIFT J224017.5-524117(28.9''), 3FHL J2240.3-5240(33.1'').
+- SUMSS J224017-524111 (25.49'', S_843=19.4+/-1.0 mJy, P_sep=0.00719) + SPT-S J224016-5241.3(35.6'').
+- 3HSPJ224017.1-524113 / RACD J224017.7-524113 (26.27'', R=16.61, B=18.33, P_sep=0.00764).
+- TIC 161175075 / Gaia DR3 6507562240186836992 / WISEA J224017.71-524113.8 (26.26'', W1=13.797, W1-W2=0.577, W2-W3=2.085, z=0.2223, P_blz=0.02106).
+- Kill on survivor: VLBI 8.4GHz <1.0 mJy, Gaia plx>=3sig, or z=0 stellar lines.
+B) KILLS & LIMITS: 5XMM J224015.6-524035(57.0'',P=.35167,SNR=.77<3) & 5XMM J224023.2-523953(81.0'',P=.58270,SNR=2.41<3,S_843<6mJy) KILLED. Other 12 TICs: 2055420395(23.6'',pm=8.5), 2055420407(32.1'',pm=5.4), 161175071(44.6'',pm=5.8,W12=.059), 161175073(49.8'',plx=7.6sig), 2055420393(51.5'',pm=5.8), 2055420394(60.1'',W1>17.1), 2055420408(63.0'',pm=17.0), 2055420399(66.1'',W1>17.1), 161175069(80.4'',plx=3.8sig), 2055420398(80.5'',pm=62.3), 2055420397(80.6'',W1>17.1), 161175078(81.0'',W12=-.065) KILLED. Limits: 2RXS<1e-13, 2SXPS<6.5e-14; NVSS/FIRST/VLSSr/CSC: UNUSABLE.
+
+3. 4FGL J1410.7+7405 (6 TIC, 27 NED, 3 HEASARC in 95% Ellipse)
+A) SURVIVOR (12.72''-14.15'', r_ell=0.145-0.161):
+- 2SXPS J141045.6+740511 (12.72'', rate=4.482e-3+/-9.014e-4 [5.0sig], F_X=1.914e-13, P_sep=0.00538) + XRT J141045.6+740509.8(14.2'').
+- 3HSPJ141046.0+740511 / VLAJ141046.08+740510.9 (13.51'', R=19.89, B=19.94, P_sep=0.00203).
+- WISEA J141046.00+740511.2 / TIC 1001569279 / Gaia DR3 1711934622285213312 (13.51'', plx=-0.73sig, pm=0.70<5, z=0.4290, P_blz=0.00563).
+- Kill on survivor: VLA 5GHz <0.5 mJy, Gaia plx>=3sig, or z=0 stellar lines.
+B) KILLS & LIMITS: TIC 198514152(WISEA J141042.92+740534.5,13.7'',plx=32.7sig,pm=28.7,W12=.167), 1001569320(45.6'',pm=14.6), 1001569281(72.0'',W1>17.1), 1001569278(74.6'',W1>17.1), 1001569282(79.4'',pm=20.7) & 2SXPS J141051.5+740414(74.8'',P=.17010,SNR=2.66<3,S_1.4<2.5mJy) KILLED. Limits: NVSS<2.5 mJy; VLSSr<0.50 Jy; 2RXS<1e-13; SUMSS/FIRST/XMM/CSC: UNUSABLE.
+
+4. 4FGL J0251.1-1830 (8 TIC, 77 NED, 3 HEASARC in 95% Ellipse)
+A) SURVIVOR (62.06''-64.31'', r_ell=0.503-0.521):
+- NVSS J025111-183112 (62.06'', S_1.4=13.3+/-0.6 mJy [22.2sig], P_sep=0.04190<0.05).
+- 3HSPJ025111.5-183112 / VLAJ025111.53-183112.3 (63.27'', R=18.94, B=19.58, z=0.500, P_sep=0.04350<0.05).
+- 2SXPS J025111.4-183114 (63.72'', rate=1.960e-2+/-2.122e-3 [9.2sig], P_sep=0.04411<0.05) + XRT J025111.7-183111.1(64.3'').
+- WISEA J025111.52-183112.7 (63.27'', z=0.5000) + TIC 651805436 / Gaia DR3 5129198825629823232 (63.33'', plx=0.84sig, pm=1.15<5).
+- Kill on survivor: Gaia plx>=3sig, pm>=5 mas/yr, or spectrum refuting z=0.500.
+B) KILLS & LIMITS: TIC 274016147(55.4'',plx=5.2sig,pm=5.7), 651805435(58.3'',plx=3.7sig,pm=5.0), 274016146(69.3'',W1>17.1), 651805437(79.9'',pm=10.6), 274016150(103.8'',W12=.134), 651805441(107.9'',pm=7.5), 274016151(113.7'',plx=4.2sig) KILLED. Limits: VLSSr<0.50 Jy; 2RXS<1e-13; SUMSS/FIRST/XMM/CSC: UNUSABLE.
+
+5. 4FGL J1539.4-3323 (35 TIC, 65 NED, 0 Non-Fermi HEASARC in 95% Ellipse) -> QUANTIFIED NULL
+- All 35 in-ellipse TICs (2.68''..76.51'', results/in_ellipse_counterparts.csv) KILLED: 16 WISE-detected have W1-W2 in [-0.402,+0.152] (<0.50 floor; max +0.152 on TIC 8157613 at 59.69'', pm=6.76>=5; nearest TIC 8157608 at 2.68'', W12=-.026, plx=3.77sig); 19 WISE-undetected fail W1>17.1 + stellar plx/pm.
+- Limits: NVSS S_1.4<2.5 mJy (0/3 in 5'); SUMSS S_843<6.0 mJy (0/1); 2SXPS F_0.3-10<6.5e-14 (0/5); 2RXS F_0.1-2.4<1e-13; FIRST/XMM/CSC: UNUSABLE.
