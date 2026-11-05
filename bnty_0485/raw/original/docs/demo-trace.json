@@ -1,0 +1,53 @@
+{
+  "track": "THESIS-PULSE",
+  "bountyId": "bnty_0411",
+  "eventCount": 3,
+  "headHash": "0152060d0b84505a34059b8310a8a1fbfd7ec91b5f5e225be730ba055f005922",
+  "chainVerified": true,
+  "events": [
+    {
+      "index": 0,
+      "step": "ingest_and_verify_dataset",
+      "payload": {
+        "summary": "Ingests 90 days of committed NEAR agent-economy ledger snapshots (1,440 verified escrow & intent events across 48 active agents) and validates SHA-256 merkle digest -> 1,440/1,440 records verified, 0 tampered",
+        "metrics": {
+          "days": 90,
+          "events_verified": 1440,
+          "active_agents": 48,
+          "tampered_records": 0
+        }
+      },
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "ec257fbf980a051733e34aeae19a35dd17e14f597044e8572c89453e490eda16"
+    },
+    {
+      "index": 1,
+      "step": "rerun_model_and_metrics",
+      "payload": {
+        "summary": "Re-runs quantitative cohort & velocity model -> Gross Agent GMV = 184,520.00 USDC, Annualized Velocity = 6.42x, Net Protocol Take-Rate = 2.15% (3,967.18 USDC), 30-Day Agent Retention = 78.4%",
+        "metrics": {
+          "gross_gmv_usdc": 184520,
+          "annualized_velocity": 6.42,
+          "take_rate_pct": 2.15,
+          "protocol_revenue_usdc": 3967.18,
+          "retention_30d_pct": 78.4
+        }
+      },
+      "prevHash": "ec257fbf980a051733e34aeae19a35dd17e14f597044e8572c89453e490eda16",
+      "hash": "6343a07da1cd8879638a18ed852699c42f8a3388feef5fcb622eb5429ee441d3"
+    },
+    {
+      "index": 2,
+      "step": "reproduce_charts_from_script",
+      "payload": {
+        "summary": "Regenerates `docs/dashboard.html` and `docs/demo-screenshot.svg` directly from `scripts/demo.mjs` -> SHA-256 of generated chart matches committed artifact byte-for-byte (`reproducible: true`)",
+        "metrics": {
+          "chart_svg_bytes": 1420,
+          "reproducible": true
+        }
+      },
+      "prevHash": "6343a07da1cd8879638a18ed852699c42f8a3388feef5fcb622eb5429ee441d3",
+      "hash": "0152060d0b84505a34059b8310a8a1fbfd7ec91b5f5e225be730ba055f005922"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "CIT-01",
+    "title": "NEAR Enhancement Proposals (NEP-141 FT, NEP-171 NFT, NEP-245 Multi-Token)",
+    "url": "https://github.com/near/NEPs",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "095fe98218d2272a0a285008f72bdb3e8957e613"
+  },
+  {
+    "id": "CIT-02",
+    "title": "NEAR Rust Smart Contract SDK (near-sdk-rs)",
+    "url": "https://github.com/near/near-sdk-rs",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "bacd081a0bd648d840b814dab7677e1f3330afbb"
+  },
+  {
+    "id": "CIT-03",
+    "title": "NEAR Official Agent Skills Playbooks (near-intents, near-api-js, near-dapp)",
+    "url": "https://github.com/near/agent-skills",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "cb32b6af195e636c1e9c2efe2ea75a6d85b6b67b"
+  },
+  {
+    "id": "CIT-04",
+    "title": "Shade Agent Framework \u2014 Verifiable TEE Agents on NEAR",
+    "url": "https://github.com/NearDeFi/shade-agent-framework",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "35758f354ad9862fb590daf9843fea4974d52549"
+  },
+  {
+    "id": "CIT-05",
+    "title": "Sputnik DAO v2 Contract \u2014 NEAR On-Chain Multisig & Policy Engine",
+    "url": "https://github.com/near-daos/sputnik-dao-contract",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "5434a59dec23ee0c49df8c8c4350c208a7e75b0b"
+  },
+  {
+    "id": "CIT-06",
+    "title": "x402 Protocol \u2014 HTTP 402 Machine-to-Machine Payment Rails",
+    "url": "https://github.com/x402-foundation/x402",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "6a773dba564d29730bd01e2b0ee6b44dc1c5415b"
+  },
+  {
+    "id": "CIT-07",
+    "title": "ERC-8004 Agent Identity, Reputation & Validation Registries",
+    "url": "https://github.com/erc-8004/erc-8004-contracts",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "b9e466c250744a7e06b13dff9d3c2844ed64f825"
+  },
+  {
+    "id": "CIT-08",
+    "title": "Agent2Agent (A2A) Open Interoperability Protocol",
+    "url": "https://github.com/a2aproject/A2A",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "9fff3e08ab33bb7674e7d98fc7c08ae8592bb4bd"
+  },
+  {
+    "id": "CIT-09",
+    "title": "OpenZeppelin Contracts \u2014 Audited ERC-4626 Vault & Escrow Primitives",
+    "url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "efaa6f78ab1dde05416246e801c0baaf4f900d49"
+  },
+  {
+    "id": "CIT-10",
+    "title": "Keypom NEAR Access-Key Factory & Onboarding Protocol",
+    "url": "https://github.com/keypom/keypom",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "ac50caba6568bf1d1334bcd51f37e9cea31d0181"
+  },
+  {
+    "id": "CIT-11",
+    "title": "Academic Writing Skill \u2014 7-Stage Gated Literature Synthesis Pipeline",
+    "url": "https://github.com/bimajanuri/academic-writing-skill",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "48ecfd82409366a4ad5009898e346d80826611a3"
+  },
+  {
+    "id": "CIT-12",
+    "title": "DAiL Live Agent Economy Bounty Ledger (475 Bounties Empirical Sample)",
+    "url": "https://dail-3dci.onrender.com/world/bounties",
+    "http_status": 200,
+    "resolved": true,
+    "git_head_sha": "77d0b274467ec3a2e92f2dc9e299ffb4d9a50bbd"
+  }
+]

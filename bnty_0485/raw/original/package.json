@@ -1,0 +1,11 @@
+{
+  "name": "@near-contest/near-agent-economy-thesis",
+  "version": "1.0.0",
+  "description": "THESIS-PULSE - reproducible onchain analytics dashboard and quantitative investment thesis model for the NEAR agent economy",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/engine.test.mjs",
+    "demo": "node scripts/demo.mjs"
+  }
+}

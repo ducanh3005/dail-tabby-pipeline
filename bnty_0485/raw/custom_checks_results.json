@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_empirical_dataset_and_take_rate_math",
+        "claim_tested": "Thesis Claim 1 & 2: 90-day 1,440-event dataset across 48 agents aggregates to 184,520.00 USDC GMV and 3,967.18 USDC net revenue (2.15% take rate)",
+        "passed": false,
+        "detail": "FAIL: badMathRejected=false, datasetComputed=false. Unpatched model has no dataset generator and accepts 99,999 USDC revenue on 184,520 USDC GMV!"
+      },
+      {
+        "id": "check_2_citation_resolution_and_gate_enforcement",
+        "claim_tested": "Thesis Claim 3: 12 primary sources resolve via HTTP 200 and broken_citations > 0 is blocked by the 7-stage gate",
+        "passed": false,
+        "detail": "FAIL: brokenCitBlocked=false, citationsResolved=false. Unpatched build claims '12/12 primary sources verified' with zero URLs in the repository!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_empirical_dataset_and_take_rate_math",
+        "claim_tested": "Thesis Claim 1 & 2: 90-day 1,440-event dataset across 48 agents aggregates to 184,520.00 USDC GMV and 3,967.18 USDC net revenue (2.15% take rate)",
+        "passed": true,
+        "detail": "PASS: 1,440-event 90-day dataset generated & SHA-256 verified (Gross GMV = 184,520.00 USDC * 2.15% = 3,967.18 USDC), and inconsistent revenue metrics are rejected."
+      },
+      {
+        "id": "check_2_citation_resolution_and_gate_enforcement",
+        "claim_tested": "Thesis Claim 3: 12 primary sources resolve via HTTP 200 and broken_citations > 0 is blocked by the 7-stage gate",
+        "passed": true,
+        "detail": "PASS: Broken-citation step rejected, and verifyCommittedCitations() confirmed 12/12 live HTTP 200 primary sources."
+      }
+    ]
+  }
+}

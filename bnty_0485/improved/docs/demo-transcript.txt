@@ -1,0 +1,18 @@
+=== THESIS-PULSE (bnty_0411) DETERMINISTIC DEMO TRANSCRIPT ===
+Chain Integrity Verified: true
+Final State Merkle Head:  0152060d0b84505a34059b8310a8a1fbfd7ec91b5f5e225be730ba055f005922
+
+[STEP 1] ingest_and_verify_dataset
+  Summary: Ingests 90 days of committed NEAR agent-economy ledger snapshots (1,440 verified escrow & intent events across 48 active agents) and validates SHA-256 merkle digest -> 1,440/1,440 records verified, 0 tampered
+  Metrics: {"days":90,"events_verified":1440,"active_agents":48,"tampered_records":0}
+  Hash:    ec257fbf980a051733e34aeae19a35dd17e14f597044e8572c89453e490eda16
+
+[STEP 2] rerun_model_and_metrics
+  Summary: Re-runs quantitative cohort & velocity model -> Gross Agent GMV = 184,520.00 USDC, Annualized Velocity = 6.42x, Net Protocol Take-Rate = 2.15% (3,967.18 USDC), 30-Day Agent Retention = 78.4%
+  Metrics: {"gross_gmv_usdc":184520,"annualized_velocity":6.42,"take_rate_pct":2.15,"protocol_revenue_usdc":3967.18,"retention_30d_pct":78.4}
+  Hash:    6343a07da1cd8879638a18ed852699c42f8a3388feef5fcb622eb5429ee441d3
+
+[STEP 3] reproduce_charts_from_script
+  Summary: Regenerates `docs/dashboard.html` and `docs/demo-screenshot.svg` directly from `scripts/demo.mjs` -> SHA-256 of generated chart matches committed artifact byte-for-byte (`reproducible: true`)
+  Metrics: {"chart_svg_bytes":1420,"reproducible":true}
+  Hash:    0152060d0b84505a34059b8310a8a1fbfd7ec91b5f5e225be730ba055f005922
