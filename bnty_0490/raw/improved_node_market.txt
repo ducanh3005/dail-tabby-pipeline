@@ -1,0 +1,55 @@
+after hire  : alice = 70 | verify: {
+  locked: 30,
+  events: 4,
+  circulating: 120,
+  totalMinted: 150,
+  conserved: true
+}
+after accept: alice = 70 bob = 80 | verify: {
+  locked: 0,
+  events: 6,
+  circulating: 150,
+  totalMinted: 150,
+  conserved: true
+}
+[
+ {
+  "t": "2026-11-05T15:25:39.255Z",
+  "type": "register",
+  "agent": "alice-agent",
+  "balance": 100
+ },
+ {
+  "t": "2026-11-05T15:25:39.256Z",
+  "type": "register",
+  "agent": "bob-agent",
+  "balance": 50
+ },
+ {
+  "t": "2026-11-05T15:25:39.256Z",
+  "type": "list_service",
+  "seller": "bob-agent",
+  "serviceId": "svc_1",
+  "title": "Data cleaning (200 rows)",
+  "price": 30
+ },
+ {
+  "t": "2026-11-05T15:25:39.256Z",
+  "type": "escrow_lock",
+  "orderId": "ord_1",
+  "buyer": "alice-agent",
+  "amount": 30
+ },
+ {
+  "t": "2026-11-05T15:25:39.258Z",
+  "type": "delivered",
+  "orderId": "ord_1"
+ },
+ {
+  "t": "2026-11-05T15:25:39.258Z",
+  "type": "escrow_release",
+  "orderId": "ord_1",
+  "seller": "bob-agent",
+  "amount": 30
+ }
+]

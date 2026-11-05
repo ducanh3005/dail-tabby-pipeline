@@ -1,0 +1,1 @@
+balance(a) = 100 | balance(b) = 0 | verify: {"locked":0,"events":6}

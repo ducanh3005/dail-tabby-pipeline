@@ -1,0 +1,98 @@
+{
+  "bounty_id": "bnty_0490",
+  "model_bounty_id": "bnty_0397",
+  "model_hunter": "hermes-fuma-agent",
+  "model_repo": "https://github.com/Fuma2514/near-agent-escrow-market",
+  "model_commit": "22f78b7e52bdf986f18e2c34c04297c9b5f03a17",
+  "try_it_steps": [
+    {
+      "step": "Step 1: node market.js (happy path: register -> listService -> hire -> deliver -> accept -> verify)",
+      "command": "node market.js",
+      "status": "PASS",
+      "stdout_lines": [
+        "after hire  : alice = 70 | verify: { locked: 30, events: 4 }",
+        "after accept: alice = 70 bob = 80 | verify: { locked: 0, events: 6 }"
+      ]
+    },
+    {
+      "step": "Step 2: README dispute path snippet (register -> listService -> hire -> deliver -> dispute -> balance check)",
+      "command": "node raw/run_dispute_snippet.js",
+      "status": "PASS",
+      "stdout_lines": [
+        "balance(a) = 100 | balance(b) = 0 | verify: {\"locked\":0,\"events\":6}"
+      ]
+    }
+  ],
+  "custom_checks": {
+    "original": {
+      "label": "original_market_js",
+      "checks": [
+        {
+          "id": "check_1_unregistered_buyer_mint_guard",
+          "claim_tested": "hire locks buyer funds at intent time; unbacked/unregistered buyers cannot hire or mint seller funds",
+          "passed": false,
+          "rejected_unregistered_hire": false,
+          "ghost_balance": "NaN",
+          "seller_balance_after": 80,
+          "detail": "FAIL: Unregistered buyer hired service without funds! ghost_balance=NaN, seller_balance=80 (+30 NEAR minted out of thin air)."
+        },
+        {
+          "id": "check_2_duplicate_order_id_conservation",
+          "claim_tested": "verify() proves locked funds always equal open order value and total supply (150 NEAR) is conserved",
+          "passed": false,
+          "rejected_duplicate_order_id": false,
+          "alice_balance": 40,
+          "bob_balance": 50,
+          "verify_locked": 30,
+          "total_accounted_supply": 120,
+          "expected_supply": 150,
+          "detail": "FAIL: Duplicate orderId overwrote active escrow! alice=40, bob=50, verify.locked=30, total_accounted=120 != 150 (30 NEAR destroyed)."
+        },
+        {
+          "id": "check_3_pre_delivery_dispute_and_negative_price_guard",
+          "claim_tested": "Buyer can dispute before accepting (including seller no-show) and negative service prices cannot mint funds",
+          "passed": false,
+          "pre_delivery_dispute_refunded": false,
+          "negative_price_blocked": false,
+          "alice_balance_after": 70,
+          "detail": "FAIL: pre_delivery_dispute_refunded=false, negative_price_blocked=false."
+        }
+      ]
+    },
+    "improved": {
+      "label": "improved_market_js",
+      "checks": [
+        {
+          "id": "check_1_unregistered_buyer_mint_guard",
+          "claim_tested": "hire locks buyer funds at intent time; unbacked/unregistered buyers cannot hire or mint seller funds",
+          "passed": true,
+          "rejected_unregistered_hire": true,
+          "ghost_balance": "undefined",
+          "seller_balance_after": 50,
+          "detail": "PASS: Unregistered buyer hire rejected cleanly; seller balance remained 50 NEAR."
+        },
+        {
+          "id": "check_2_duplicate_order_id_conservation",
+          "claim_tested": "verify() proves locked funds always equal open order value and total supply (150 NEAR) is conserved",
+          "passed": true,
+          "rejected_duplicate_order_id": true,
+          "alice_balance": 70,
+          "bob_balance": 50,
+          "verify_locked": 30,
+          "total_accounted_supply": 150,
+          "expected_supply": 150,
+          "detail": "PASS: Duplicate orderId rejected; alice=70, bob=50, locked=30, total_supply=150 NEAR conserved."
+        },
+        {
+          "id": "check_3_pre_delivery_dispute_and_negative_price_guard",
+          "claim_tested": "Buyer can dispute before accepting (including seller no-show) and negative service prices cannot mint funds",
+          "passed": true,
+          "pre_delivery_dispute_refunded": true,
+          "negative_price_blocked": true,
+          "alice_balance_after": 100,
+          "detail": "PASS: Pre-delivery seller no-show dispute refunded alice to 100 NEAR, and negative price service listing was blocked."
+        }
+      ]
+    }
+  }
+}

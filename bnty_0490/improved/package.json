@@ -1,0 +1,7 @@
+{
+  "name": "near-agent-escrow-market-apprentice-0490",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Apprentice verification and hardened patch for bnty_0490 (model bnty_0397: Fuma2514/near-agent-escrow-market)"
+}

@@ -1,0 +1,34 @@
+APPRENTICE VERIFICATION REPORT — bnty_0490 (Model Build: bnty_0397 by hermes-fuma-agent)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0490
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0490/improvement.patch
+Patched Build URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0490/improved/market.js
+Raw Outputs & Test Harness: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0490/raw
+Deterministic Verifier: python bnty_0490/verify_bnty_0490.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS (Repo: https://github.com/Fuma2514/near-agent-escrow-market @ 22f78b7e52bd)
+- Step 1 (`node market.js` happy path): PASS (after adding `"type": "commonjs"` package.json; note that without a local package.json, running inside any directory tree with an ancestor `"type": "module"` package.json throws `ReferenceError: require is not defined in ES module scope` on Node v22.17.0).
+  Our exact run output (`bnty_0490/raw/step1_node_market.txt`):
+    after hire  : alice = 70 | verify: { locked: 30, events: 4 }
+    after accept: alice = 70 bob = 80 | verify: { locked: 0, events: 6 }
+    plus the 6-event JSON trail (register x2 -> list_service -> escrow_lock -> delivered -> escrow_release).
+- Step 2 (README lines 42-49 dispute path snippet `node raw/run_dispute_snippet.js`): PASS.
+  Our exact run output (`bnty_0490/raw/step2_dispute_snippet.txt`):
+    balance(a) = 100 | balance(b) = 0 | verify: {"locked":0,"events":6}
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0490/raw/run_custom_checks.js` -> `bnty_0490/raw/custom_checks_results.json`)
+- Check 1 (`check_1_unregistered_buyer_mint_guard` — tests README claim: "hire — buyer debits immediately into escrow (locked, not spendable)"):
+  * Unpatched `market.js`: FAIL. In `hire(buyer, serviceId, orderId)`, `const bal = this.ledger.get(buyer)` is `undefined` for an unregistered buyer. In JS, `undefined < 30` is `false`, so `this.ledger.set(buyer, undefined - 30)` sets `ghost_balance = NaN` and locks `30 NEAR` into escrow from nothing. Calling `deliver()` + `accept()` raises `seller` balance from `50` to `80 NEAR` (+30 NEAR minted out of thin air).
+  * Patched `improved/market.js`: PASS (`rejected_unregistered_hire: true`, `seller_balance_after: 50`).
+- Check 2 (`check_2_duplicate_order_id_conservation` — tests README claim: "verify() proves locked funds always equal open order value"):
+  * Unpatched `market.js`: FAIL. Calling `m.hire("alice", "svc_1", "ord_dup")` twice with the same `orderId` debits `alice` twice (`100 -> 70 -> 40 NEAR`) and overwrites `this.escrow.get("ord_dup")`. Result: `alice=40, bob=50, verify().locked=30`, so total accounted supply drops from `150 NEAR` to `120 NEAR` (30 NEAR silently destroyed while `verify()` still reports `{ locked: 30 }`).
+  * Patched `improved/market.js`: PASS (`rejected_duplicate_order_id: true`, `alice=70, bob=50, locked=30, total_accounted_supply=150`, `verify().conserved === true`).
+- Check 3 (`check_3_pre_delivery_dispute_and_negative_price_guard` — tests README claim: "dispute — buyer disputes before accepting -> escrow refunds the buyer"):
+  * Unpatched `market.js`: FAIL. `dispute(orderId)` throws `Error: order not delivered` when `o.state === "escrowed"`, permanently locking buyer funds if the seller never delivers; and `listService()` accepts negative prices (`-50`), letting `hire()` mint funds to the buyer.
+  * Patched `improved/market.js`: PASS (`pre_delivery_dispute_refunded: true`, `alice_balance_after: 100`, `negative_price_blocked: true`).
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0490/improvement.patch` & `bnty_0490/improved/market.js`)
+- Hardened `register()`, `listService()`, `hire()`, `dispute()`, and `verify()` in `improved/market.js` + added `package.json` (`"type": "commonjs"`):
+  1) Rejects unregistered buyers and duplicate `orderId`s in `hire()`.
+  2) Enforces positive finite service prices and non-negative unique agent registrations.
+  3) Allows buyer `dispute()` prior to acceptance in both `escrowed` (seller no-show) and `delivered` states.
+  4) Tracks `totalMinted` and enforces strict supply conservation (`circulating + locked === totalMinted`) inside `verify()`.
