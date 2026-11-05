@@ -1,0 +1,20 @@
+--- a/src/mechanics.js
++++ b/src/mechanics.js
+@@ -37,7 +37,17 @@
+ // Execute a swap: reserves move, the trader is credited, the fee goes to the
+ // treasury in USDC and the howl tax is burned.
+ export function applySwap(state, { trader, dir, amountIn }) {
++  if (!(amountIn > 0)) throw new Error('swap amountIn must be positive');
++  if (dir !== 'y_to_x' && dir !== 'x_to_y') throw new Error(`invalid swap direction ${dir}`);
++  if (dir === 'y_to_x' && (state.usdc[trader] ?? 0) < amountIn) {
++    throw new Error(`insufficient USDC balance for trader ${trader}`);
++  }
++  if (dir === 'x_to_y' && (state.balances[trader] ?? 0) < amountIn) {
++    throw new Error(`insufficient token balance for trader ${trader}`);
++  }
+   const q = quoteSwap(state, dir, amountIn);
++  if (dir === 'y_to_x' && q.out >= state.pool.x) throw new Error('swap exceeds pool token reserve');
++  if (dir === 'x_to_y' && q.out >= state.pool.y) throw new Error('swap exceeds pool USDC reserve');
+   if (dir === 'y_to_x') {
+     state.usdc[trader] = round((state.usdc[trader] ?? 0) - amountIn, 8);
+     state.pool.y = round(state.pool.y + q.netIn, 8);

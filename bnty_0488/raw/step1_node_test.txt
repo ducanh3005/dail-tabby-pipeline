@@ -1,0 +1,418 @@
+TAP version 13
+# Subtest: LocalChain is a NearChain
+ok 1 - LocalChain is a NearChain
+  ---
+  duration_ms: 1.8767
+  type: 'test'
+  ...
+# Subtest: accounts hold and transfer balances
+ok 2 - accounts hold and transfer balances
+  ---
+  duration_ms: 0.3993
+  type: 'test'
+  ...
+# Subtest: transfers above the balance are refused
+ok 3 - transfers above the balance are refused
+  ---
+  duration_ms: 0.6556
+  type: 'test'
+  ...
+# Subtest: an unknown account is an error
+ok 4 - an unknown account is an error
+  ---
+  duration_ms: 0.2256
+  type: 'test'
+  ...
+# Subtest: contract calls are dispatched and logged with a deterministic hash
+ok 5 - contract calls are dispatched and logged with a deterministic hash
+  ---
+  duration_ms: 3.6717
+  type: 'test'
+  ...
+# Subtest: calling an unknown method or contract fails loudly
+ok 6 - calling an unknown method or contract fails loudly
+  ---
+  duration_ms: 0.2965
+  type: 'test'
+  ...
+# Subtest: views are read-only and do not cost gas
+ok 7 - views are read-only and do not cost gas
+  ---
+  duration_ms: 0.1885
+  type: 'test'
+  ...
+# Subtest: the abstract NearChain refuses everything
+ok 8 - the abstract NearChain refuses everything
+  ---
+  duration_ms: 0.2489
+  type: 'test'
+  ...
+# Subtest: NearRpcChain.fromEnv returns null without env vars
+ok 9 - NearRpcChain.fromEnv returns null without env vars
+  ---
+  duration_ms: 0.3194
+  type: 'test'
+  ...
+# Subtest: NearRpcChain refuses to pretend it can sign transactions
+ok 10 - NearRpcChain refuses to pretend it can sign transactions
+  ---
+  duration_ms: 0.4254
+  type: 'test'
+  ...
+# Subtest: NearRpcChain issues a correct JSON-RPC view request
+ok 11 - NearRpcChain issues a correct JSON-RPC view request
+  ---
+  duration_ms: 0.5663
+  type: 'test'
+  ...
+# Subtest: keypairs are deterministic and verifiable
+ok 12 - keypairs are deterministic and verifiable
+  ---
+  duration_ms: 4.9799
+  type: 'test'
+  ...
+# Subtest: bulk discounts lower the unit price
+ok 13 - bulk discounts lower the unit price
+  ---
+  duration_ms: 2.0102
+  type: 'test'
+  ...
+# Subtest: a plan splits the units and charges each agent its share
+ok 14 - a plan splits the units and charges each agent its share
+  ---
+  duration_ms: 1.156
+  type: 'test'
+  ...
+# Subtest: no agent pays more than its max_spend
+ok 15 - no agent pays more than its max_spend
+  ---
+  duration_ms: 0.393
+  type: 'test'
+  ...
+# Subtest: agents that value a unit below the price do not get one
+ok 16 - agents that value a unit below the price do not get one
+  ---
+  duration_ms: 0.4648
+  type: 'test'
+  ...
+# Subtest: the social-money subsidy increases total utility
+ok 17 - the social-money subsidy increases total utility
+  ---
+  duration_ms: 18.0701
+  type: 'test'
+  ...
+# Subtest: no plan when nobody wants the goods
+ok 18 - no plan when nobody wants the goods
+  ---
+  duration_ms: 0.2117
+  type: 'test'
+  ...
+# Subtest: the plan is deterministic
+ok 19 - the plan is deterministic
+  ---
+  duration_ms: 1.7567
+  type: 'test'
+  ...
+# Subtest: quorum is a strict supermajority
+ok 20 - quorum is a strict supermajority
+  ---
+  duration_ms: 1.5219
+  type: 'test'
+  ...
+# Subtest: a supermajority of matching votes commits the digest
+ok 21 - a supermajority of matching votes commits the digest
+  ---
+  duration_ms: 14.981
+  type: 'test'
+  ...
+# Subtest: a minority does not commit
+ok 22 - a minority does not commit
+  ---
+  duration_ms: 5.5012
+  type: 'test'
+  ...
+# Subtest: split votes do not commit
+ok 23 - split votes do not commit
+  ---
+  duration_ms: 9.4782
+  type: 'test'
+  ...
+# Subtest: a forged signature is rejected
+ok 24 - a forged signature is rejected
+  ---
+  duration_ms: 5.5547
+  type: 'test'
+  ...
+# Subtest: a validator cannot vote twice
+ok 25 - a validator cannot vote twice
+  ---
+  duration_ms: 5.6943
+  type: 'test'
+  ...
+# Subtest: a non-validator cannot vote
+ok 26 - a non-validator cannot vote
+  ---
+  duration_ms: 4.3879
+  type: 'test'
+  ...
+# Subtest: a vote from another round is rejected
+ok 27 - a vote from another round is rejected
+  ---
+  duration_ms: 2.5919
+  type: 'test'
+  ...
+# Subtest: a failed round escalates to the next round
+ok 28 - a failed round escalates to the next round
+  ---
+  duration_ms: 2.7448
+  type: 'test'
+  ...
+# Subtest: a job maps onto a DAiL bounty post
+ok 29 - a job maps onto a DAiL bounty post
+  ---
+  duration_ms: 1.0487
+  type: 'test'
+  ...
+# Subtest: claim and submit respect the 5000-character submission cap
+ok 30 - claim and submit respect the 5000-character submission cap
+  ---
+  duration_ms: 1.2333
+  type: 'test'
+  ...
+# Subtest: read requests are shaped correctly
+ok 31 - read requests are shaped correctly
+  ---
+  duration_ms: 0.3011
+  type: 'test'
+  ...
+# Subtest: agent messages are capped at 2000 characters
+ok 32 - agent messages are capped at 2000 characters
+  ---
+  duration_ms: 0.3326
+  type: 'test'
+  ...
+# Subtest: market events map onto DAiL requests
+ok 33 - market events map onto DAiL requests
+  ---
+  duration_ms: 0.5038
+  type: 'test'
+  ...
+# Subtest: events with no DAiL counterpart map to null
+ok 34 - events with no DAiL counterpart map to null
+  ---
+  duration_ms: 0.4605
+  type: 'test'
+  ...
+# Subtest: the base URL is the public DAiL API
+ok 35 - the base URL is the public DAiL API
+  ---
+  duration_ms: 0.2255
+  type: 'test'
+  ...
+# Subtest: additive secret sharing: shares sum back to the secret
+ok 36 - additive secret sharing: shares sum back to the secret
+  ---
+  duration_ms: 1.0233
+  type: 'test'
+  ...
+# Subtest: no single share leaks the secret
+ok 37 - no single share leaks the secret
+  ---
+  duration_ms: 0.2612
+  type: 'test'
+  ...
+# Subtest: the aggregate equals the sum of the private values, not any of them
+ok 38 - the aggregate equals the sum of the private values, not any of them
+  ---
+  duration_ms: 0.4405
+  type: 'test'
+  ...
+# Subtest: splitSecret needs at least two agents
+ok 39 - splitSecret needs at least two agents
+  ---
+  duration_ms: 0.4881
+  type: 'test'
+  ...
+# Subtest: the field arithmetic wraps modulo P
+ok 40 - the field arithmetic wraps modulo P
+  ---
+  duration_ms: 0.1725
+  type: 'test'
+  ...
+# Subtest: a shielded commitment opens only with the right reveal
+ok 41 - a shielded commitment opens only with the right reveal
+  ---
+  duration_ms: 0.8868
+  type: 'test'
+  ...
+# Subtest: a commitment does not reveal the amount (it is not the amount)
+ok 42 - a commitment does not reveal the amount (it is not the amount)
+  ---
+  duration_ms: 1.039
+  type: 'test'
+  ...
+# Subtest: the split is deterministic for a given rng seed
+ok 43 - the split is deterministic for a given rng seed
+  ---
+  duration_ms: 1.2375
+  type: 'test'
+  ...
+# Subtest: a fresh passport starts at the base score
+ok 44 - a fresh passport starts at the base score
+  ---
+  duration_ms: 1.569
+  type: 'test'
+  ...
+# Subtest: a settled job moves the score by quality
+ok 45 - a settled job moves the score by quality
+  ---
+  duration_ms: 1.7289
+  type: 'test'
+  ...
+# Subtest: a default is punished
+ok 46 - a default is punished
+  ---
+  duration_ms: 0.2668
+  type: 'test'
+  ...
+# Subtest: the score is clamped to [0, 100]
+ok 47 - the score is clamped to [0, 100]
+  ---
+  duration_ms: 1.7007
+  type: 'test'
+  ...
+# Subtest: the event log is hash-linked and tamper evident
+ok 48 - the event log is hash-linked and tamper evident
+  ---
+  duration_ms: 0.5654
+  type: 'test'
+  ...
+# Subtest: a passport is portable: export, verify elsewhere, re-import
+ok 49 - a passport is portable: export, verify elsewhere, re-import
+  ---
+  duration_ms: 0.3413
+  type: 'test'
+  ...
+# Subtest: the passport id is stable for the same agent and issuer
+ok 50 - the passport id is stable for the same agent and issuer
+  ---
+  duration_ms: 0.4019
+  type: 'test'
+  ...
+# Subtest: the issuer signature verifies
+ok 51 - the issuer signature verifies
+  ---
+  duration_ms: 5.7646
+  type: 'test'
+  ...
+# Subtest: the escrow history lists only money events
+ok 52 - the escrow history lists only money events
+  ---
+  duration_ms: 0.7181
+  type: 'test'
+  ...
+# Subtest: scoreDelta is 0 for unknown events
+ok 53 - scoreDelta is 0 for unknown events
+  ---
+  duration_ms: 0.5441
+  type: 'test'
+  ...
+# Subtest: the simulation runs offline and produces a trace
+ok 54 - the simulation runs offline and produces a trace
+  ---
+  duration_ms: 36.0261
+  type: 'test'
+  ...
+# Subtest: the simulation is deterministic: same seed, same trace
+ok 55 - the simulation is deterministic: same seed, same trace
+  ---
+  duration_ms: 44.4818
+  type: 'test'
+  ...
+# Subtest: a different seed produces a different run
+ok 56 - a different seed produces a different run
+  ---
+  duration_ms: 38.9095
+  type: 'test'
+  ...
+# Subtest: money is conserved: no NEAR is created or destroyed
+ok 57 - money is conserved: no NEAR is created or destroyed
+  ---
+  duration_ms: 20.0756
+  type: 'test'
+  ...
+# Subtest: the reputation gate blocks agents below the threshold
+ok 58 - the reputation gate blocks agents below the threshold
+  ---
+  duration_ms: 20.9058
+  type: 'test'
+  ...
+# Subtest: a job that cannot reach consensus is not awarded
+ok 59 - a job that cannot reach consensus is not awarded
+  ---
+  duration_ms: 17.3361
+  type: 'test'
+  ...
+# Subtest: awards need a supermajority of matching votes
+ok 60 - awards need a supermajority of matching votes
+  ---
+  duration_ms: 16.8842
+  type: 'test'
+  ...
+# Subtest: a shielded escrow never publishes its amount before the reveal
+ok 61 - a shielded escrow never publishes its amount before the reveal
+  ---
+  duration_ms: 17.0621
+  type: 'test'
+  ...
+# Subtest: the private aggregate equals the sum of the private values and leaks none of them
+ok 62 - the private aggregate equals the sum of the private values and leaks none of them
+  ---
+  duration_ms: 17.2119
+  type: 'test'
+  ...
+# Subtest: the collective purchase draws on the social-money pool
+ok 63 - the collective purchase draws on the social-money pool
+  ---
+  duration_ms: 16.5486
+  type: 'test'
+  ...
+# Subtest: reputation rises for good work and the social money pool grows
+ok 64 - reputation rises for good work and the social money pool grows
+  ---
+  duration_ms: 16.7171
+  type: 'test'
+  ...
+# Subtest: the privacy pool refuses a reveal that does not open the commitment
+ok 65 - the privacy pool refuses a reveal that does not open the commitment
+  ---
+  duration_ms: 17.2941
+  type: 'test'
+  ...
+# Subtest: the pool refuses to pay out twice
+ok 66 - the pool refuses to pay out twice
+  ---
+  duration_ms: 15.8741
+  type: 'test'
+  ...
+# Subtest: the winner rule is deterministic and independent of bid order
+ok 67 - the winner rule is deterministic and independent of bid order
+  ---
+  duration_ms: 0.1448
+  type: 'test'
+  ...
+# Subtest: the bid digest covers every bid
+ok 68 - the bid digest covers every bid
+  ---
+  duration_ms: 0.1466
+  type: 'test'
+  ...
+1..68
+# tests 68
+# suites 0
+# pass 68
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 463.9175

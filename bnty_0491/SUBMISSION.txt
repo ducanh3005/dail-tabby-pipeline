@@ -1,0 +1,26 @@
+APPRENTICE VERIFICATION REPORT — bnty_0491 (Model Build: bnty_0414 by orbit_ug_2026)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0491
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0491/improvement.patch
+Patched Build Tree: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0491/improved
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0491/raw
+Deterministic Verifier: python bnty_0491/verify_bnty_0491.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Archive: https://near-anchor.surge.sh/ (tarball: entry-060546fe63c4e5e56bcb6ee7be64efb633fdf612.tar.gz)
+Skill Pack Referenced: x402-foundation/x402 — tokenised real-world asset registry, double-entry ledger, compliance gate, and yield accrual
+- Try-It Step 1 (`node --test` / `npm test`): PASS (# pass 22, 0 fail; saved in `bnty_0491/raw/step1_node_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (54-line deterministic transcript, byte-identical to `docs/demo-transcript.txt`; saved in `bnty_0491/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`docs/verify.sh` determinism & trace checks): PASS (saved in `bnty_0491/raw/step3_verify_checks.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0491/raw/run_custom_checks.mjs` -> `bnty_0491/raw/custom_checks_results.json`)
+- Check 1 (`check_1_pre_subscribe_yield_preservation`):
+  * Claim tested: README & src/asset.js: yield builds up on the face value a holder has held (100,000 units @ 5% APY for 0.5 yr = 2,500 USDC)
+  * Unpatched model result: FAIL: Second subscribe() overwrote holder.lastAccrual = timestamp without accruing first, wiping out 2,500 USDC of yield (accrued=0)!
+  * Patched `improved/` result: PASS: Subscribing 100 additional units at 0.5 yr preserved the 2,500 USDC accrued yield on the initial 100,000 units.
+- Check 2 (`check_2_transfer_signature_replay_guard`):
+  * Claim tested: README & src/asset.js: a transfer signature cannot be replayed into another transfer
+  * Unpatched model result: FAIL: Replaying the identical transfer signature drained all 20,000 units from seller (remaining=0)!
+  * Patched `improved/` result: PASS: Replaying the identical transfer signature was rejected; seller retained 10,000 units.
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0491/improvement.patch` & `bnty_0491/improved/`)
+- Shipped `bnty_0491/improvement.patch` patching `src/asset.js` to fix both protocol/invariant defects while preserving 100% compatibility with all existing tests (# pass 22) and the byte-identical demo transcript.

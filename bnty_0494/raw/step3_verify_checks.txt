@@ -1,0 +1,5 @@
+$ node --test
+# pass 21
+$ out1=$(node scripts/demo.mjs) && out2=$(node scripts/demo.mjs)
+Byte-identical demo transcript (4049 chars, 70 lines)
+ALL CHECKS PASSED

@@ -1,0 +1,32 @@
+--- a/src/escrow.js
++++ b/src/escrow.js
+@@ -49,11 +49,16 @@
+   const escrow = state.escrows[escrowId];
+   if (!escrow) throw new Error('unknown escrow');
+   if (escrow.status !== 'OPEN') throw new Error(`the escrow is ${escrow.status}, not OPEN`);
++  if (!state.agents[payer]) throw new Error('the payer is not a registered agent');
+   if (!(amount > 0)) throw new Error('the funding amount must be positive');
++  if (amount !== escrow.amount) {
++    throw new Error(`the funding amount ${amount} must equal the escrow amount ${escrow.amount}`);
++  }
+   if (amount > state.agents[payer].credits) {
+     throw new Error(`${state.agents[payer].name} holds ${state.agents[payer].credits} credits, needs ${amount}`);
+   }
+   state.agents[payer].credits -= amount;
++  escrow.payer = payer;
+   escrow.funded += amount;
+   escrow.status = 'FUNDED';
+   escrow.fundedAt = timestamp;
+--- a/src/score.js
++++ b/src/score.js
+@@ -16,7 +16,9 @@
+ export function categoryScores(attestations, policy, asOf) {
+   const scores = {};
+   for (const [category, rule] of Object.entries(policy.categories)) {
+-    const relevant = attestations.filter((attestation) => attestation.category === category);
++    const relevant = attestations.filter(
++      (attestation) => attestation.category === category && (asOf === undefined || attestation.issuedAt <= asOf),
++    );
+     let weighted = 0;
+     let weightTotal = 0;
+     const detail = [];

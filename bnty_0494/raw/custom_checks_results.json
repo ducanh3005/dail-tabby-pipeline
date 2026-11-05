@@ -1,0 +1,48 @@
+{
+  "original": {
+    "label": "original",
+    "checks": [
+      {
+        "id": "check_1_amm_swap_trader_solvency_guard",
+        "claim_tested": "README & src/mechanics.js: trader pays USDC/tokens into the AMM pool; unbacked overdraft swaps are rejected",
+        "passed": false,
+        "overdraft_blocked": false,
+        "trader_usdc_after": -500000,
+        "trader_tokens_after": 79679.67967968,
+        "detail": "FAIL: Unfunded trader swapped 500,000 USDC with 0 balance! traderUsdcAfter=-500000, traderTokensAfter=79679.67967968."
+      },
+      {
+        "id": "check_2_negative_swap_and_pool_reserve_underflow_guard",
+        "claim_tested": "README & src/mechanics.js: constant-product AMM reserves stay strictly positive and reject negative swap inputs",
+        "passed": false,
+        "negative_amount_blocked": false,
+        "pool_underflow_blocked": false,
+        "pool_y_reserve_after": -713446.59874071,
+        "detail": "FAIL: negAmountBlocked=false, poolDrainBlocked=false, pool.y=-713446.59874071 (x_to_y swap of 500k tokens output 1.11M USDC from a 400k USDC pool, driving pool.y negative!)."
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved",
+    "checks": [
+      {
+        "id": "check_1_amm_swap_trader_solvency_guard",
+        "claim_tested": "README & src/mechanics.js: trader pays USDC/tokens into the AMM pool; unbacked overdraft swaps are rejected",
+        "passed": true,
+        "overdraft_blocked": true,
+        "trader_usdc_after": 0,
+        "trader_tokens_after": 0,
+        "detail": "PASS: Unfunded swap of 500,000 USDC by a 0-USDC trader was rejected."
+      },
+      {
+        "id": "check_2_negative_swap_and_pool_reserve_underflow_guard",
+        "claim_tested": "README & src/mechanics.js: constant-product AMM reserves stay strictly positive and reject negative swap inputs",
+        "passed": true,
+        "negative_amount_blocked": true,
+        "pool_underflow_blocked": true,
+        "pool_y_reserve_after": 400000,
+        "detail": "PASS: Negative swap input and pool-underflow x_to_y swap were both rejected; pool.y reserve remained positive (400000)."
+      }
+    ]
+  }
+}

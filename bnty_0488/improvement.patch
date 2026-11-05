@@ -1,0 +1,29 @@
+--- a/src/shield-pool.js
++++ b/src/shield-pool.js
+@@ -55,6 +55,11 @@
+       if (!Number.isInteger(reveal.amount) || reveal.amount <= 0) {
+         return { ok: false, error: 'bad amount' };
+       }
++      for (const s of splits) {
++        if (!Number.isInteger(s.amount) || s.amount <= 0) {
++          return { ok: false, error: `invalid non-positive split amount ${s.amount}` };
++        }
++      }
+       const total = splits.reduce((a, s) => a + s.amount, 0);
+       if (total !== reveal.amount) {
+         return { ok: false, error: `splits sum to ${total}, expected ${reveal.amount}` };
+--- a/src/reputation.js
++++ b/src/reputation.js
+@@ -111,6 +111,12 @@
+       if (event.hash !== expected) return { valid: false, reason: `bad hash at index ${event.index}` };
+       prev = event.hash;
+     }
++    if (doc.id && doc.agentId && doc.id !== ReputationPassport.idFor(doc.agentId, doc.issuer)) {
++      return { valid: false, reason: 'passport id does not match agentId and issuer' };
++    }
++    if (doc.head && doc.head !== prev) {
++      return { valid: false, reason: 'head hash does not match event chain tip' };
++    }
+     return { valid: true, reason: 'ok' };
+   }
+ 

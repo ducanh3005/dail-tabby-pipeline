@@ -1,0 +1,46 @@
+{
+  "original": {
+    "label": "original",
+    "checks": [
+      {
+        "id": "check_1_shield_pool_negative_split_drain_guard",
+        "claim_tested": "README & src/shield-pool.js: payout_split ensures splits sum to revealed amount and never drains more than revealed commitment",
+        "passed": false,
+        "attacker_balance_unear": 5000000,
+        "detail": "FAIL: Negative split bypassed sum check (5M + -4M = 1M) and drained 5000000 uNEAR (5x the 1M escrow!) from shield-pool.near!"
+      },
+      {
+        "id": "check_2_reputation_passport_identity_binding",
+        "claim_tested": "README & src/reputation.js: ReputationPassport.verifyChain(doc) verifies portable passport integrity and rejects stolen/rebound agentId documents",
+        "passed": false,
+        "verify_chain_on_stolen_passport": {
+          "valid": true,
+          "reason": "ok"
+        },
+        "detail": "FAIL: ReputationPassport.verifyChain(doc) returned valid=true when atlas.near's passport was rebound to agentId='sybil-attacker.near'!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved",
+    "checks": [
+      {
+        "id": "check_1_shield_pool_negative_split_drain_guard",
+        "claim_tested": "README & src/shield-pool.js: payout_split ensures splits sum to revealed amount and never drains more than revealed commitment",
+        "passed": true,
+        "attacker_balance_unear": 0,
+        "detail": "PASS: Negative split amount (-4,000,000 uNEAR paired with +5,000,000 uNEAR) rejected; attacker balance = 0."
+      },
+      {
+        "id": "check_2_reputation_passport_identity_binding",
+        "claim_tested": "README & src/reputation.js: ReputationPassport.verifyChain(doc) verifies portable passport integrity and rejects stolen/rebound agentId documents",
+        "passed": true,
+        "verify_chain_on_stolen_passport": {
+          "valid": false,
+          "reason": "passport id does not match agentId and issuer"
+        },
+        "detail": "PASS: ReputationPassport.verifyChain(doc) rejected stolen passport where agentId was swapped to sybil-attacker.near."
+      }
+    ]
+  }
+}

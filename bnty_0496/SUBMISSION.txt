@@ -1,0 +1,26 @@
+APPRENTICE VERIFICATION REPORT — bnty_0496 (Model Build: bnty_0415 by orbit_ug_2026)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0496
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0496/improvement.patch
+Patched Build Tree: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0496/improved
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0496/raw
+Deterministic Verifier: python bnty_0496/verify_bnty_0496.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Archive: https://near-passport.surge.sh/ (tarball: entry-d95c602881619ab640ff322459e9b9175fc62e01.tar.gz)
+Skill Pack Referenced: a2aproject/A2A (Apache-2.0) & MarimerLLC/agentregistry (MIT) — portable agent reputation passport, category gates, and escrow history
+- Try-It Step 1 (`node --test` / `npm test`): PASS (# pass 26, 0 fail; saved in `bnty_0496/raw/step1_node_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (51-line deterministic transcript, byte-identical to `docs/demo-transcript.txt`; saved in `bnty_0496/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`docs/verify.sh` determinism & trace checks): PASS (saved in `bnty_0496/raw/step3_verify_checks.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0496/raw/run_custom_checks.mjs` -> `bnty_0496/raw/custom_checks_results.json`)
+- Check 1 (`check_1_escrow_payer_refund_and_exact_funding_guard`):
+  * Claim tested: README & src/escrow.js: fundEscrow locks the agreed escrow amount and refundEscrow returns funds to the actual payer
+  * Unpatched model result: FAIL: underfundBlocked=false; fundEscrow forgot to set escrow.payer, so refundEscrow sent bob's 300 credits to creator echo (bob=700, echo=1300)!
+  * Patched `improved/` result: PASS: 1-credit underfunding of 300-credit escrow rejected, and refundEscrow returned all 300 credits to payer bob (1000).
+- Check 2 (`check_2_historical_asof_future_attestation_leak_guard`):
+  * Claim tested: README & src/score.js: passport lookup at timestamp asOf evaluates only attestations issued at or before asOf
+  * Unpatched model result: FAIL: decayFactor clamped negative age to 0, granting future attestation (issuedAt=500,000) a full score of 95 at historical t=100,000!
+  * Patched `improved/` result: PASS: Historical passport lookup at t=100,000 excluded future-dated attestation (issuedAt=500,000).
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0496/improvement.patch` & `bnty_0496/improved/`)
+- Shipped `bnty_0496/improvement.patch` patching `src/escrow.js, src/score.js` to fix both protocol/invariant defects while preserving 100% compatibility with all existing tests (# pass 26) and the byte-identical demo transcript.

@@ -1,0 +1,33 @@
+--- a/src/engine.js
++++ b/src/engine.js
+@@ -198,6 +198,10 @@
+   const index = state.pending.findIndex((request) => request.id === requestId);
+   if (index === -1) throw new Error('unknown request');
+   const request = state.pending[index];
++  const targetWallet = state.wallets[request.walletId];
++  if (targetWallet && approver !== targetWallet.owner) {
++    throw new Error('only the wallet owner may approve or reject a held spend request');
++  }
+   state.pending.splice(index, 1);
+   request.approver = approver;
+   request.resolvedAt = timestamp;
+@@ -236,7 +240,7 @@
+   request.evaluation = evaluation;
+   request.status = 'EXECUTED';
+   execute(state, wallet, request.to, evaluation.amount, timestamp);
+-  emit(state, 'spend_executed', { walletId: wallet.id, to: request.to, amount: evaluation.amount, timestamp, balance: wallet.balance });
++  emit(state, 'spend_approved_request', { id: request.id, walletId: wallet.id, to: request.to, amount: evaluation.amount, approver, timestamp, balance: wallet.balance });
+   return request;
+ }
+ 
+--- a/src/policy.js
++++ b/src/policy.js
+@@ -77,7 +77,7 @@
+ 
+     switch (rule.kind) {
+       case 'dustFloor': {
+-        const floor = rule.floor;
++        const floor = wallet.dustFloor ?? rule.floor;
+         const spendable = Math.max(0, wallet.balance - floor);
+         if (effective > spendable) {
+           verdict = 'clamp';

@@ -1,0 +1,44 @@
+{
+  "original": {
+    "label": "original",
+    "checks": [
+      {
+        "id": "check_1_pre_subscribe_yield_preservation",
+        "claim_tested": "README & src/asset.js: yield builds up on the face value a holder has held (100,000 units @ 5% APY for 0.5 yr = 2,500 USDC)",
+        "passed": false,
+        "accrued_usdc": 0,
+        "expected_usdc": 2500,
+        "detail": "FAIL: Second subscribe() overwrote holder.lastAccrual = timestamp without accruing first, wiping out 2,500 USDC of yield (accrued=0)!"
+      },
+      {
+        "id": "check_2_transfer_signature_replay_guard",
+        "claim_tested": "README & src/asset.js: a transfer signature cannot be replayed into another transfer",
+        "passed": false,
+        "replay_blocked": false,
+        "seller_units_remaining": 0,
+        "detail": "FAIL: Replaying the identical transfer signature drained all 20,000 units from seller (remaining=0)!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved",
+    "checks": [
+      {
+        "id": "check_1_pre_subscribe_yield_preservation",
+        "claim_tested": "README & src/asset.js: yield builds up on the face value a holder has held (100,000 units @ 5% APY for 0.5 yr = 2,500 USDC)",
+        "passed": true,
+        "accrued_usdc": 2500,
+        "expected_usdc": 2500,
+        "detail": "PASS: Subscribing 100 additional units at 0.5 yr preserved the 2,500 USDC accrued yield on the initial 100,000 units."
+      },
+      {
+        "id": "check_2_transfer_signature_replay_guard",
+        "claim_tested": "README & src/asset.js: a transfer signature cannot be replayed into another transfer",
+        "passed": true,
+        "replay_blocked": true,
+        "seller_units_remaining": 10000,
+        "detail": "PASS: Replaying the identical transfer signature was rejected; seller retained 10,000 units."
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "original": {
+    "label": "original",
+    "checks": [
+      {
+        "id": "check_1_escrow_payer_refund_and_exact_funding_guard",
+        "claim_tested": "README & src/escrow.js: fundEscrow locks the agreed escrow amount and refundEscrow returns funds to the actual payer",
+        "passed": false,
+        "underfund_blocked": false,
+        "payer_bob_credits_after_refund": 700,
+        "creator_echo_credits_after_refund": 1300,
+        "detail": "FAIL: underfundBlocked=false; fundEscrow forgot to set escrow.payer, so refundEscrow sent bob's 300 credits to creator echo (bob=700, echo=1300)!"
+      },
+      {
+        "id": "check_2_historical_asof_future_attestation_leak_guard",
+        "claim_tested": "README & src/score.js: passport lookup at timestamp asOf evaluates only attestations issued at or before asOf",
+        "passed": false,
+        "settlement_score_at_100k_from_500k_attestation": 95,
+        "detail": "FAIL: decayFactor clamped negative age to 0, granting future attestation (issuedAt=500,000) a full score of 95 at historical t=100,000!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved",
+    "checks": [
+      {
+        "id": "check_1_escrow_payer_refund_and_exact_funding_guard",
+        "claim_tested": "README & src/escrow.js: fundEscrow locks the agreed escrow amount and refundEscrow returns funds to the actual payer",
+        "passed": true,
+        "underfund_blocked": true,
+        "payer_bob_credits_after_refund": 1000,
+        "creator_echo_credits_after_refund": 1000,
+        "detail": "PASS: 1-credit underfunding of 300-credit escrow rejected, and refundEscrow returned all 300 credits to payer bob (1000)."
+      },
+      {
+        "id": "check_2_historical_asof_future_attestation_leak_guard",
+        "claim_tested": "README & src/score.js: passport lookup at timestamp asOf evaluates only attestations issued at or before asOf",
+        "passed": true,
+        "settlement_score_at_100k_from_500k_attestation": 0,
+        "detail": "PASS: Historical passport lookup at t=100,000 excluded future-dated attestation (issuedAt=500,000)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+--- a/src/asset.js
++++ b/src/asset.js
+@@ -53,9 +53,12 @@
+   const wallet = state.balances[investor] ?? 0;
+   if (wallet < amount) throw new Error(`${investor} holds ${wallet} USDC, needs ${amount}`);
+ 
++  const holder = holderOf(asset, investor);
++  if (holder.units > 0 && timestamp > holder.lastAccrual) {
++    accrue(state, { assetId, timestamp });
++  }
+   state.balances[investor] = round(wallet - amount, 8);
+   asset.issued = issued;
+-  const holder = holderOf(asset, investor);
+   holder.units = round(holder.units + amount, 8);
+   holder.lastAccrual = timestamp;
+ 
+@@ -125,6 +128,11 @@
+   if (!verifySignature(state, from, expected, signature)) {
+     throw new Error(`bad signature from ${from}`);
+   }
++  if (!asset.usedSignatures) asset.usedSignatures = {};
++  if (asset.usedSignatures[signature]) {
++    throw new Error('transfer signature already used (replay rejected)');
++  }
++  asset.usedSignatures[signature] = true;
+ 
+   seller.units = round(seller.units - units, 8);
+   const buyer = holderOf(asset, to);

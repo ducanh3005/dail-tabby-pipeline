@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: a seed always produces the same address
+ok 1 - a seed always produces the same address
+  ---
+  duration_ms: 4.4513
+  type: 'test'
+  ...
+# Subtest: only the registry may register an asset
+ok 2 - only the registry may register an asset
+  ---
+  duration_ms: 6.8116
+  type: 'test'
+  ...
+# Subtest: only the feed may publish a net asset value
+ok 3 - only the feed may publish a net asset value
+  ---
+  duration_ms: 4.1659
+  type: 'test'
+  ...
+# Subtest: an uncleared party cannot subscribe
+ok 4 - an uncleared party cannot subscribe
+  ---
+  duration_ms: 3.7786
+  type: 'test'
+  ...
+# Subtest: a party in a disallowed jurisdiction cannot hold the asset
+ok 5 - a party in a disallowed jurisdiction cannot hold the asset
+  ---
+  duration_ms: 4.9464
+  type: 'test'
+  ...
+# Subtest: a subscription issues the units and backs them with cash
+ok 6 - a subscription issues the units and backs them with cash
+  ---
+  duration_ms: 4.3042
+  type: 'test'
+  ...
+# Subtest: the issue cap is enforced
+ok 7 - the issue cap is enforced
+  ---
+  duration_ms: 3.7223
+  type: 'test'
+  ...
+# Subtest: a subscriber without enough USDC is rejected
+ok 8 - a subscriber without enough USDC is rejected
+  ---
+  duration_ms: 4.6818
+  type: 'test'
+  ...
+# Subtest: the yield accrues at the stated rate
+ok 9 - the yield accrues at the stated rate
+  ---
+  duration_ms: 4.9989
+  type: 'test'
+  ...
+# Subtest: the reserve always covers the claims outstanding
+ok 10 - the reserve always covers the claims outstanding
+  ---
+  duration_ms: 4.0904
+  type: 'test'
+  ...
+# Subtest: a transfer moves units and USDC at the net asset value
+ok 11 - a transfer moves units and USDC at the net asset value
+  ---
+  duration_ms: 4.3156
+  type: 'test'
+  ...
+# Subtest: a transfer without a valid signature is rejected
+ok 12 - a transfer without a valid signature is rejected
+  ---
+  duration_ms: 3.8115
+  type: 'test'
+  ...
+# Subtest: a transfer to an uncleared party is rejected
+ok 13 - a transfer to an uncleared party is rejected
+  ---
+  duration_ms: 3.8706
+  type: 'test'
+  ...
+# Subtest: a frozen party cannot transfer
+ok 14 - a frozen party cannot transfer
+  ---
+  duration_ms: 5.2881
+  type: 'test'
+  ...
+# Subtest: redemption before maturity is rejected
+ok 15 - redemption before maturity is rejected
+  ---
+  duration_ms: 3.8406
+  type: 'test'
+  ...
+# Subtest: redemption pays face plus yield, less the registry fee
+ok 16 - redemption pays face plus yield, less the registry fee
+  ---
+  duration_ms: 9.6312
+  type: 'test'
+  ...
+# Subtest: the journal balances: debits equal credits, account by account
+ok 17 - the journal balances: debits equal credits, account by account
+  ---
+  duration_ms: 7.5253
+  type: 'test'
+  ...
+# Subtest: an unbalanced journal entry is refused
+ok 18 - an unbalanced journal entry is refused
+  ---
+  duration_ms: 5.5883
+  type: 'test'
+  ...
+# Subtest: the event log is an unbroken hash chain
+ok 19 - the event log is an unbroken hash chain
+  ---
+  duration_ms: 4.5406
+  type: 'test'
+  ...
+# Subtest: a rejected action is still recorded in the log
+ok 20 - a rejected action is still recorded in the log
+  ---
+  duration_ms: 4.6072
+  type: 'test'
+  ...
+# Subtest: the same run twice gives the same state hash
+ok 21 - the same run twice gives the same state hash
+  ---
+  duration_ms: 9.2228
+  type: 'test'
+  ...
+# Subtest: a replay of the same actions reproduces the same event hashes
+ok 22 - a replay of the same actions reproduces the same event hashes
+  ---
+  duration_ms: 8.3107
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 209.5192

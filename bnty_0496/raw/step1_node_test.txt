@@ -1,0 +1,166 @@
+TAP version 13
+# Subtest: a seed always produces the same address
+ok 1 - a seed always produces the same address
+  ---
+  duration_ms: 4.4372
+  type: 'test'
+  ...
+# Subtest: every claim traces to a record in a shipped source file
+ok 2 - every claim traces to a record in a shipped source file
+  ---
+  duration_ms: 12.1387
+  type: 'test'
+  ...
+# Subtest: a claim whose source hash is not in the excerpt is refused
+ok 3 - a claim whose source hash is not in the excerpt is refused
+  ---
+  duration_ms: 1.4654
+  type: 'test'
+  ...
+# Subtest: a tampered source record breaks the provenance of its claim
+ok 4 - a tampered source record breaks the provenance of its claim
+  ---
+  duration_ms: 0.8513
+  type: 'test'
+  ...
+# Subtest: an attestation whose content was changed is refused
+ok 5 - an attestation whose content was changed is refused
+  ---
+  duration_ms: 3.4532
+  type: 'test'
+  ...
+# Subtest: an attestation in an unknown category is refused
+ok 6 - an attestation in an unknown category is refused
+  ---
+  duration_ms: 4.0912
+  type: 'test'
+  ...
+# Subtest: the passport is a vector of category scores, not one number
+ok 7 - the passport is a vector of category scores, not one number
+  ---
+  duration_ms: 9.214
+  type: 'test'
+  ...
+# Subtest: a strong composite does not open a gate a weak category fails
+ok 8 - a strong composite does not open a gate a weak category fails
+  ---
+  duration_ms: 9.712
+  type: 'test'
+  ...
+# Subtest: the gates are a conjunction over categories
+ok 9 - the gates are a conjunction over categories
+  ---
+  duration_ms: 7.8893
+  type: 'test'
+  ...
+# Subtest: a score falls as the attestations age
+ok 10 - a score falls as the attestations age
+  ---
+  duration_ms: 9.2235
+  type: 'test'
+  ...
+# Subtest: the score is recomputed from the attestations, never stored
+ok 11 - the score is recomputed from the attestations, never stored
+  ---
+  duration_ms: 6.9708
+  type: 'test'
+  ...
+# Subtest: a card verifies offline, with no registry access
+ok 12 - a card verifies offline, with no registry access
+  ---
+  duration_ms: 9.6715
+  type: 'test'
+  ...
+# Subtest: a tampered card fails verification
+ok 13 - a tampered card fails verification
+  ---
+  duration_ms: 9.6616
+  type: 'test'
+  ...
+# Subtest: a tampered signature fails verification
+ok 14 - a tampered signature fails verification
+  ---
+  duration_ms: 10.4101
+  type: 'test'
+  ...
+# Subtest: the cards form a chain
+ok 15 - the cards form a chain
+  ---
+  duration_ms: 8.9308
+  type: 'test'
+  ...
+# Subtest: an escrow opens and is funded
+ok 16 - an escrow opens and is funded
+  ---
+  duration_ms: 8.6513
+  type: 'test'
+  ...
+# Subtest: an escrow releases when the gates pass
+ok 17 - an escrow releases when the gates pass
+  ---
+  duration_ms: 7.5926
+  type: 'test'
+  ...
+# Subtest: an escrow is refused when one category fails, and the money stays put
+ok 18 - an escrow is refused when one category fails, and the money stays put
+  ---
+  duration_ms: 9.062
+  type: 'test'
+  ...
+# Subtest: the refusal names the failing category and never the composite
+ok 19 - the refusal names the failing category and never the composite
+  ---
+  duration_ms: 8.2105
+  type: 'test'
+  ...
+# Subtest: a refused release is recorded in the escrow history
+ok 20 - a refused release is recorded in the escrow history
+  ---
+  duration_ms: 8.8234
+  type: 'test'
+  ...
+# Subtest: a refund returns the money to the payer
+ok 21 - a refund returns the money to the payer
+  ---
+  duration_ms: 7.2268
+  type: 'test'
+  ...
+# Subtest: an escrow must name at least one known category
+ok 22 - an escrow must name at least one known category
+  ---
+  duration_ms: 8.4339
+  type: 'test'
+  ...
+# Subtest: a payer cannot fund more than they hold
+ok 23 - a payer cannot fund more than they hold
+  ---
+  duration_ms: 6.6128
+  type: 'test'
+  ...
+# Subtest: the event log is an unbroken hash chain
+ok 24 - the event log is an unbroken hash chain
+  ---
+  duration_ms: 9.1785
+  type: 'test'
+  ...
+# Subtest: the same run twice gives the same result
+ok 25 - the same run twice gives the same result
+  ---
+  duration_ms: 16.8042
+  type: 'test'
+  ...
+# Subtest: the shipped claims file is reproducible from the shipped sources
+ok 26 - the shipped claims file is reproducible from the shipped sources
+  ---
+  duration_ms: 57.7923
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 367.8527

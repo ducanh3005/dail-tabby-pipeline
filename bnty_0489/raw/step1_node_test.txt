@@ -1,0 +1,184 @@
+TAP version 13
+# Subtest: a seed always produces the same address
+ok 1 - a seed always produces the same address
+  ---
+  duration_ms: 4.2101
+  type: 'test'
+  ...
+# Subtest: a sandbox can never hold more than its allowance
+ok 2 - a sandbox can never hold more than its allowance
+  ---
+  duration_ms: 5.0389
+  type: 'test'
+  ...
+# Subtest: funding a sandbox takes the money from the parent wallet
+ok 3 - funding a sandbox takes the money from the parent wallet
+  ---
+  duration_ms: 3.6161
+  type: 'test'
+  ...
+# Subtest: the parent wallet is not spendable by the agent
+ok 4 - the parent wallet is not spendable by the agent
+  ---
+  duration_ms: 4.0595
+  type: 'test'
+  ...
+# Subtest: an overspend over the per-transfer limit is blocked
+ok 5 - an overspend over the per-transfer limit is blocked
+  ---
+  duration_ms: 3.6465
+  type: 'test'
+  ...
+# Subtest: the 24h window limit is enforced
+ok 6 - the 24h window limit is enforced
+  ---
+  duration_ms: 3.4781
+  type: 'test'
+  ...
+# Subtest: the window resets on a later day but the balances do not
+ok 7 - the window resets on a later day but the balances do not
+  ---
+  duration_ms: 4.9359
+  type: 'test'
+  ...
+# Subtest: the per-counterparty limit is enforced
+ok 8 - the per-counterparty limit is enforced
+  ---
+  duration_ms: 4.3414
+  type: 'test'
+  ...
+# Subtest: a counterparty outside the allowlist is blocked
+ok 9 - a counterparty outside the allowlist is blocked
+  ---
+  duration_ms: 3.5445
+  type: 'test'
+  ...
+# Subtest: a category outside the allowlist is blocked
+ok 10 - a category outside the allowlist is blocked
+  ---
+  duration_ms: 3.2309
+  type: 'test'
+  ...
+# Subtest: the dust floor clamps a spend and never raises it
+ok 11 - the dust floor clamps a spend and never raises it
+  ---
+  duration_ms: 4.6539
+  type: 'test'
+  ...
+# Subtest: a spend below the spendable amount is not touched
+ok 12 - a spend below the spendable amount is not touched
+  ---
+  duration_ms: 3.5377
+  type: 'test'
+  ...
+# Subtest: the balance never falls below the dust floor
+ok 13 - the balance never falls below the dust floor
+  ---
+  duration_ms: 3.112
+  type: 'test'
+  ...
+# Subtest: a spend that would empty the sandbox is blocked
+ok 14 - a spend that would empty the sandbox is blocked
+  ---
+  duration_ms: 3.2371
+  type: 'test'
+  ...
+# Subtest: a benign instruction passes the screen
+ok 15 - a benign instruction passes the screen
+  ---
+  duration_ms: 0.5606
+  type: 'test'
+  ...
+# Subtest: a suspicious instruction is held, not executed
+ok 16 - a suspicious instruction is held, not executed
+  ---
+  duration_ms: 3.7114
+  type: 'test'
+  ...
+# Subtest: a hard-block instruction is refused even when the policy would allow it
+ok 17 - a hard-block instruction is refused even when the policy would allow it
+  ---
+  duration_ms: 3.6502
+  type: 'test'
+  ...
+# Subtest: the scam screen catches a known-bad destination
+ok 18 - the scam screen catches a known-bad destination
+  ---
+  duration_ms: 0.1438
+  type: 'test'
+  ...
+# Subtest: a held request can be rejected by the owner
+ok 19 - a held request can be rejected by the owner
+  ---
+  duration_ms: 3.5085
+  type: 'test'
+  ...
+# Subtest: an approval cannot override a policy block
+ok 20 - an approval cannot override a policy block
+  ---
+  duration_ms: 3.0203
+  type: 'test'
+  ...
+# Subtest: an approval of a held request re-runs the policy
+ok 21 - an approval of a held request re-runs the policy
+  ---
+  duration_ms: 3.0018
+  type: 'test'
+  ...
+# Subtest: the money is conserved: balances plus wallets never change
+ok 22 - the money is conserved: balances plus wallets never change
+  ---
+  duration_ms: 4.0266
+  type: 'test'
+  ...
+# Subtest: the reclaim keeps the dust floor
+ok 23 - the reclaim keeps the dust floor
+  ---
+  duration_ms: 3.7019
+  type: 'test'
+  ...
+# Subtest: the sandbox never touches the parent wallet
+ok 24 - the sandbox never touches the parent wallet
+  ---
+  duration_ms: 3.0262
+  type: 'test'
+  ...
+# Subtest: every decision carries a rule trace
+ok 25 - every decision carries a rule trace
+  ---
+  duration_ms: 3.4276
+  type: 'test'
+  ...
+# Subtest: the policy engine blocks and explains
+ok 26 - the policy engine blocks and explains
+  ---
+  duration_ms: 3.8598
+  type: 'test'
+  ...
+# Subtest: the event log is an unbroken hash chain
+ok 27 - the event log is an unbroken hash chain
+  ---
+  duration_ms: 4.2076
+  type: 'test'
+  ...
+# Subtest: the same run twice gives the same result
+ok 28 - the same run twice gives the same result
+  ---
+  duration_ms: 6.3951
+  type: 'test'
+  ...
+# Subtest: the wallet inspector reports what the agent can still do
+ok 29 - the wallet inspector reports what the agent can still do
+  ---
+  duration_ms: 3.4186
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 202.393

@@ -1,0 +1,26 @@
+APPRENTICE VERIFICATION REPORT — bnty_0494 (Model Build: bnty_0421 by orbit_ug_2026)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0494
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0494/improvement.patch
+Patched Build Tree: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0494/improved
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0494/raw
+Deterministic Verifier: python bnty_0494/verify_bnty_0494.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Archive: https://near-ritual.surge.sh/ (tarball: entry-5220181036f1fc1dba015229f368cfde98729860.tar.gz)
+Skill Pack Referenced: Model build pattern reference (Ed25519 quorum rituals, treasury floor & buyback rules, constant-product AMM)
+- Try-It Step 1 (`node --test` / `npm test`): PASS (# pass 21, 0 fail; saved in `bnty_0494/raw/step1_node_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (70-line deterministic transcript, byte-identical to `docs/demo-transcript.txt`; saved in `bnty_0494/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`docs/verify.sh` determinism & trace checks): PASS (saved in `bnty_0494/raw/step3_verify_checks.txt`). Note: in bnty_0421's submission text, `ritual-5220181036f1fc1dba015229f368cfde98729860.tar.gz` returns HTTP 404; the actual archive URL on `near-ritual.surge.sh` is `entry-5220181036f1fc1dba015229f368cfde98729860.tar.gz`.
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0494/raw/run_custom_checks.mjs` -> `bnty_0494/raw/custom_checks_results.json`)
+- Check 1 (`check_1_amm_swap_trader_solvency_guard`):
+  * Claim tested: README & src/mechanics.js: trader pays USDC/tokens into the AMM pool; unbacked overdraft swaps are rejected
+  * Unpatched model result: FAIL: Unfunded trader swapped 500,000 USDC with 0 balance! traderUsdcAfter=-500000, traderTokensAfter=79679.67967968.
+  * Patched `improved/` result: PASS: Unfunded swap of 500,000 USDC by a 0-USDC trader was rejected.
+- Check 2 (`check_2_negative_swap_and_pool_reserve_underflow_guard`):
+  * Claim tested: README & src/mechanics.js: constant-product AMM reserves stay strictly positive and reject negative swap inputs
+  * Unpatched model result: FAIL: negAmountBlocked=false, poolDrainBlocked=false, pool.y=-713446.59874071 (x_to_y swap of 500k tokens output 1.11M USDC from a 400k USDC pool, driving pool.y negative!).
+  * Patched `improved/` result: PASS: Negative swap input and pool-underflow x_to_y swap were both rejected; pool.y reserve remained positive (400000).
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0494/improvement.patch` & `bnty_0494/improved/`)
+- Shipped `bnty_0494/improvement.patch` patching `src/mechanics.js` to fix both protocol/invariant defects while preserving 100% compatibility with all existing tests (# pass 21) and the byte-identical demo transcript.

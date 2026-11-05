@@ -1,0 +1,46 @@
+{
+  "original": {
+    "label": "original",
+    "checks": [
+      {
+        "id": "check_1_approve_spend_double_counting_window_limit",
+        "claim_tested": "README & src/engine.js: approving a held 600 USDC request records 600 USDC (not 1,200 USDC) toward the 2,000 USDC 24h window and counterparty limits",
+        "passed": false,
+        "recorded_window_spend": 1200,
+        "recorded_counterparty_spend": 1200,
+        "detail": "FAIL: approveSpend() emitted 'spend_executed' twice (once in execute() and once at line 244), inflating windowSpend=1200 and counterpartySpend=1200 to 2x actual spend!"
+      },
+      {
+        "id": "check_2_owner_only_approval_and_custom_dust_floor",
+        "claim_tested": "README & src/engine.js: only wallet owner can approve held spend requests, and custom sandbox dustFloor (250 USDC) is enforced",
+        "passed": false,
+        "custom_dust_floor_respected": false,
+        "non_owner_approval_blocked": true,
+        "sandbox_balance_after": 100,
+        "detail": "FAIL: customDustRespected=false (balance=100), nonOwnerBlocked=true (agent-nova self-approved its own held scam request!)."
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved",
+    "checks": [
+      {
+        "id": "check_1_approve_spend_double_counting_window_limit",
+        "claim_tested": "README & src/engine.js: approving a held 600 USDC request records 600 USDC (not 1,200 USDC) toward the 2,000 USDC 24h window and counterparty limits",
+        "passed": true,
+        "recorded_window_spend": 600,
+        "recorded_counterparty_spend": 600,
+        "detail": "PASS: Approved 600 USDC request recorded exactly 600 USDC in windowSpend and counterpartySpend."
+      },
+      {
+        "id": "check_2_owner_only_approval_and_custom_dust_floor",
+        "claim_tested": "README & src/engine.js: only wallet owner can approve held spend requests, and custom sandbox dustFloor (250 USDC) is enforced",
+        "passed": true,
+        "custom_dust_floor_respected": true,
+        "non_owner_approval_blocked": true,
+        "sandbox_balance_after": 250,
+        "detail": "PASS: Custom sandbox dustFloor=250 clamped 400 request to 250 USDC, and non-owner agent-nova self-approval of held request was blocked."
+      }
+    ]
+  }
+}

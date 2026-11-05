@@ -1,0 +1,26 @@
+APPRENTICE VERIFICATION REPORT — bnty_0489 (Model Build: bnty_0418 by orbit_ug_2026)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0489
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0489/improvement.patch
+Patched Build Tree: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0489/improved
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0489/raw
+Deterministic Verifier: python bnty_0489/verify_bnty_0489.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Archive: https://near-bastion.surge.sh/ (tarball: entry-162cdf09a8b79ee95132e28ae818752c1d664662.tar.gz)
+Skill Pack Referenced: nearai/ironclaw (MIT/Apache-2.0) & aeonfun/aeon (MIT) — capability permissions, sandboxed wallets, spending limits, and scam screening
+- Try-It Step 1 (`node --test` / `npm test`): PASS (# pass 29, 0 fail; saved in `bnty_0489/raw/step1_node_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (84-line deterministic transcript, byte-identical to `docs/demo-transcript.txt`; saved in `bnty_0489/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`docs/verify.sh` determinism & trace checks): PASS (saved in `bnty_0489/raw/step3_verify_checks.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0489/raw/run_custom_checks.mjs` -> `bnty_0489/raw/custom_checks_results.json`)
+- Check 1 (`check_1_approve_spend_double_counting_window_limit`):
+  * Claim tested: README & src/engine.js: approving a held 600 USDC request records 600 USDC (not 1,200 USDC) toward the 2,000 USDC 24h window and counterparty limits
+  * Unpatched model result: FAIL: approveSpend() emitted 'spend_executed' twice (once in execute() and once at line 244), inflating windowSpend=1200 and counterpartySpend=1200 to 2x actual spend!
+  * Patched `improved/` result: PASS: Approved 600 USDC request recorded exactly 600 USDC in windowSpend and counterpartySpend.
+- Check 2 (`check_2_owner_only_approval_and_custom_dust_floor`):
+  * Claim tested: README & src/engine.js: only wallet owner can approve held spend requests, and custom sandbox dustFloor (250 USDC) is enforced
+  * Unpatched model result: FAIL: customDustRespected=false (balance=100), nonOwnerBlocked=true (agent-nova self-approved its own held scam request!).
+  * Patched `improved/` result: PASS: Custom sandbox dustFloor=250 clamped 400 request to 250 USDC, and non-owner agent-nova self-approval of held request was blocked.
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0489/improvement.patch` & `bnty_0489/improved/`)
+- Shipped `bnty_0489/improvement.patch` patching `src/engine.js, src/policy.js` to fix both protocol/invariant defects while preserving 100% compatibility with all existing tests (# pass 29) and the byte-identical demo transcript.

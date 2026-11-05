@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: a seed always produces the same address
+ok 1 - a seed always produces the same address
+  ---
+  duration_ms: 3.2714
+  type: 'test'
+  ...
+# Subtest: a signature verifies, and a tampered payload does not
+ok 2 - a signature verifies, and a tampered payload does not
+  ---
+  duration_ms: 1.2094
+  type: 'test'
+  ...
+# Subtest: a holder below minStake cannot sign a ritual
+ok 3 - a holder below minStake cannot sign a ritual
+  ---
+  duration_ms: 1.3117
+  type: 'test'
+  ...
+# Subtest: one address cannot vote twice in the same epoch
+ok 4 - one address cannot vote twice in the same epoch
+  ---
+  duration_ms: 0.6779
+  type: 'test'
+  ...
+# Subtest: a ritual without quorum changes nothing
+ok 5 - a ritual without quorum changes nothing
+  ---
+  duration_ms: 0.7167
+  type: 'test'
+  ...
+# Subtest: a ritual that reaches quorum mints exactly cap x participation
+ok 6 - a ritual that reaches quorum mints exactly cap x participation
+  ---
+  duration_ms: 1.9359
+  type: 'test'
+  ...
+# Subtest: the mint is split by stake, not equally
+ok 7 - the mint is split by stake, not equally
+  ---
+  duration_ms: 0.892
+  type: 'test'
+  ...
+# Subtest: a BURN ritual contracts the supply
+ok 8 - a BURN ritual contracts the supply
+  ---
+  duration_ms: 1.3338
+  type: 'test'
+  ...
+# Subtest: a howl window burns a share of every trade, and only then
+ok 9 - a howl window burns a share of every trade, and only then
+  ---
+  duration_ms: 1.6664
+  type: 'test'
+  ...
+# Subtest: trading fees are collected by the treasury in USDC
+ok 10 - trading fees are collected by the treasury in USDC
+  ---
+  duration_ms: 0.4814
+  type: 'test'
+  ...
+# Subtest: the treasury mints itself up to its token floor
+ok 11 - the treasury mints itself up to its token floor
+  ---
+  duration_ms: 1.3968
+  type: 'test'
+  ...
+# Subtest: above the ceiling the treasury buys tokens back and burns them
+ok 12 - above the ceiling the treasury buys tokens back and burns them
+  ---
+  duration_ms: 1.1766
+  type: 'test'
+  ...
+# Subtest: the constant product never decreases (the fee keeps it growing)
+ok 13 - the constant product never decreases (the fee keeps it growing)
+  ---
+  duration_ms: 0.438
+  type: 'test'
+  ...
+# Subtest: buying tokens pushes the price up (regression: the reserves were inverted once)
+ok 14 - buying tokens pushes the price up (regression: the reserves were inverted once)
+  ---
+  duration_ms: 0.1372
+  type: 'test'
+  ...
+# Subtest: the event log is an unbroken hash chain
+ok 15 - the event log is an unbroken hash chain
+  ---
+  duration_ms: 1.4143
+  type: 'test'
+  ...
+# Subtest: the same run twice gives the same state hash
+ok 16 - the same run twice gives the same state hash
+  ---
+  duration_ms: 1.6738
+  type: 'test'
+  ...
+# Subtest: supply accounting balances: supply == balances + pool + treasury
+ok 17 - supply accounting balances: supply == balances + pool + treasury
+  ---
+  duration_ms: 2.2561
+  type: 'test'
+  ...
+# Subtest: a whale vote counts the same as anyone else
+ok 18 - a whale vote counts the same as anyone else
+  ---
+  duration_ms: 0.1185
+  type: 'test'
+  ...
+# Subtest: the same action sequence always produces the same trace
+ok 19 - the same action sequence always produces the same trace
+  ---
+  duration_ms: 1.3026
+  type: 'test'
+  ...
+# Subtest: the quote is a constant product, and the fee is taken out of the USDC input
+ok 20 - the quote is a constant product, and the fee is taken out of the USDC input
+  ---
+  duration_ms: 0.4844
+  type: 'test'
+  ...
+# Subtest: a swap never creates or destroys tokens outside the howl tax
+ok 21 - a swap never creates or destroys tokens outside the howl tax
+  ---
+  duration_ms: 0.3788
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 125.7122
