@@ -1,0 +1,75 @@
+--- a/trezu-social-money/src/engine.mjs
++++ b/trezu-social-money/src/engine.mjs
+@@ -54,12 +54,20 @@
+   constructor() {
+     this.events = [];
+     this.headHash = '0'.repeat(64);
++    this.state = {
++      settledNonces: new Set(),
++      committedJobs: new Map(),
++      lockedAmounts: new Map(),
++      settledJobs: new Set(),
++      claimedMilestones: new Set(),
++    };
+   }
+ 
+   applyStep(stepName, payload) {
+     if (!stepName || typeof stepName !== 'string') {
+       throw new Error('stepName must be a non-empty string');
+     }
++    validateStepInvariants(stepName, payload, this.state);
+     const index = this.events.length;
+     const canonical = JSON.stringify({ index, prev: this.headHash, step: stepName, payload });
+     const hash = sha256Hex(canonical);
+@@ -99,3 +107,51 @@
+     };
+   }
+ }
++
++
++export function evaluateBudgetSpend({ budgetRemainingUsdc, vaultBalanceUsdc, spendUsdc, reputation, minReputation = 65 }) {
++  if (reputation < minReputation) {
++    return {
++      status: 'REFUSED',
++      reason: 'reputation_below_minimum',
++      remaining_budget_usdc: budgetRemainingUsdc,
++      vault_balance_usdc: vaultBalanceUsdc
++    };
++  }
++  if (spendUsdc <= 0 || spendUsdc > budgetRemainingUsdc || spendUsdc > vaultBalanceUsdc) {
++    throw new Error('spend exceeds remaining shared budget or vault balance');
++  }
++  return {
++    status: 'APPROVED',
++    remaining_budget_usdc: budgetRemainingUsdc - spendUsdc,
++    vault_balance_usdc: vaultBalanceUsdc - spendUsdc
++  };
++}
++
++export function validateStepInvariants(stepName, payload, state) {
++  const m = payload?.metrics || {};
++  if (stepName === 'shared_budget_spend') {
++    if (m.reputation < m.min_reputation && m.status === 'APPROVED') {
++      throw new Error(`reputation gate bypassed: rep ${m.reputation} < gate ${m.min_reputation}`);
++    }
++    if (m.spend_usdc <= 0 || m.remaining_budget_usdc < 0) {
++      throw new Error('shared budget overspent');
++    }
++    state.remainingBudget = m.remaining_budget_usdc;
++  } else if (stepName === 'reward_payout') {
++    if (m.steward_approvals < 3) {
++      throw new Error(`insufficient steward quorum: ${m.steward_approvals} < 3`);
++    }
++    if (state.claimedMilestones.has(m.milestone)) {
++      throw new Error(`milestone ${m.milestone} already claimed`);
++    }
++    state.claimedMilestones.add(m.milestone);
++  } else if (stepName === 'reputation_gate') {
++    if (m.reputation < m.min_reputation && m.status !== 'REFUSED') {
++      throw new Error('low-reputation spend must be REFUSED');
++    }
++    if (state.remainingBudget !== undefined && m.remaining_budget_usdc !== state.remainingBudget) {
++      throw new Error('refused spend must not alter remaining_budget_usdc');
++    }
++  }
++}

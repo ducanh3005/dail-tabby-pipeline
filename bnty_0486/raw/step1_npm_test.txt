@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: deterministic state machine executes all 3 try-it steps identically across runs
+ok 1 - deterministic state machine executes all 3 try-it steps identically across runs
+  ---
+  duration_ms: 3.0575
+  type: 'test'
+  ...
+# Subtest: tampering with any event payload invalidates hash chain verification
+ok 2 - tampering with any event payload invalidates hash chain verification
+  ---
+  duration_ms: 0.4155
+  type: 'test'
+  ...
+# Subtest: rejects empty step names
+ok 3 - rejects empty step names
+  ---
+  duration_ms: 0.6095
+  type: 'test'
+  ...
+# Subtest: each try-it step produces non-empty metrics and valid 64-hex SHA-256 digest
+ok 4 - each try-it step produces non-empty metrics and valid 64-hex SHA-256 digest
+  ---
+  duration_ms: 0.4509
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 77.6304

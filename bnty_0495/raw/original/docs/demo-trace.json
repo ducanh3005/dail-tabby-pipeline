@@ -1,0 +1,65 @@
+{
+  "track": "TREZU-SOCIAL",
+  "bountyId": "bnty_0422",
+  "eventCount": 3,
+  "headHash": "665465ae2267e2ccb52b116e34f32d43990cdfbe21997bfb5ae62487f2e01826",
+  "chainVerified": true,
+  "events": [
+    {
+      "index": 0,
+      "step": "shared_budget_spend",
+      "payload": {
+        "summary": "ops-alice spends 1,200 USDC from the 5,000 USDC Q4 Growth shared budget (reputation 82 >= gate 65) -> APPROVED; remaining epoch budget = 3,800 USDC, multisig vault balance = 48,800 USDC",
+        "metrics": {
+          "actor": "ops-alice.near",
+          "budget_id": "q4-growth",
+          "spend_usdc": 1200,
+          "reputation": 82,
+          "min_reputation": 65,
+          "status": "APPROVED",
+          "remaining_budget_usdc": 3800,
+          "vault_balance_usdc": 48800
+        }
+      },
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "6bb5a9aea35cfc02810b1b2eeb750e7c083435aef520a212fe20de966fd4112c"
+    },
+    {
+      "index": 1,
+      "step": "reward_payout",
+      "payload": {
+        "summary": "milestone M-104 verified by 3/3 stewards -> programmable reward engine releases 450 USDC + 18 reputation points to builder-bob -> balance = 450 USDC, reputation = 78",
+        "metrics": {
+          "actor": "builder-bob.near",
+          "milestone": "M-104",
+          "steward_approvals": 3,
+          "reward_usdc": 450,
+          "reputation_delta": 18,
+          "new_reputation": 78,
+          "status": "RELEASED"
+        }
+      },
+      "prevHash": "6bb5a9aea35cfc02810b1b2eeb750e7c083435aef520a212fe20de966fd4112c",
+      "hash": "e09b6442329edd01fe5d0db27e059c573983aa39cabe0bd62181a6798bea016e"
+    },
+    {
+      "index": 2,
+      "step": "reputation_gate",
+      "payload": {
+        "summary": "newcomer-eve (reputation 41 < gate 65) attempts 500 USDC shared budget spend -> REFUSED (reputation_below_minimum: 41 < 65); budget unchanged at 3,800 USDC",
+        "metrics": {
+          "actor": "newcomer-eve.near",
+          "budget_id": "q4-growth",
+          "attempted_usdc": 500,
+          "reputation": 41,
+          "min_reputation": 65,
+          "status": "REFUSED",
+          "reason": "reputation_below_minimum",
+          "remaining_budget_usdc": 3800
+        }
+      },
+      "prevHash": "e09b6442329edd01fe5d0db27e059c573983aa39cabe0bd62181a6798bea016e",
+      "hash": "665465ae2267e2ccb52b116e34f32d43990cdfbe21997bfb5ae62487f2e01826"
+    }
+  ]
+}

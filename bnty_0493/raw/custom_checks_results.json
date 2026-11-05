@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_nft_inflow_and_royalty_split_conservation",
+        "claim_tested": "README Step 1 & 2: 2,000 USDC inflow splits 1,800 treasury / 200 royalty pool, and distributeRoyalties(#42) pays 140 (70%) + 60 (30%)",
+        "passed": false,
+        "detail": "FAIL: overpayBlocked=false, distFnWorks=false. Unpatched engine has no distributeRoyalties() and accepts 500 USDC payouts from a 200 USDC pool!"
+      },
+      {
+        "id": "check_2_nft_owner_transfer_credential_revocation",
+        "claim_tested": "README Step 3: verifyCredential() returns ok=true for current owner and ok=false (signer_not_current_owner) for old owner after transfer",
+        "passed": false,
+        "detail": "FAIL: staleAcceptedBlocked=false, credFnWorks=false. Unpatched engine has no verifyCredential() and accepts stale_owner_verified=true!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_nft_inflow_and_royalty_split_conservation",
+        "claim_tested": "README Step 1 & 2: 2,000 USDC inflow splits 1,800 treasury / 200 royalty pool, and distributeRoyalties(#42) pays 140 (70%) + 60 (30%)",
+        "passed": true,
+        "detail": "PASS: Overpaying royalties (500 USDC from 200 USDC pool) rejected, and distributeRoyalties(200) computes 140/60 USDC exactly."
+      },
+      {
+        "id": "check_2_nft_owner_transfer_credential_revocation",
+        "claim_tested": "README Step 3: verifyCredential() returns ok=true for current owner and ok=false (signer_not_current_owner) for old owner after transfer",
+        "passed": true,
+        "detail": "PASS: Stale owner credential presentation rejected (signer_not_current_owner) in both verifyCredential() and applyStep()."
+      }
+    ]
+  }
+}

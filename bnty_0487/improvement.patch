@@ -1,0 +1,77 @@
+--- a/intents-autonomous-shop/src/engine.mjs
++++ b/intents-autonomous-shop/src/engine.mjs
+@@ -50,12 +50,20 @@
+   constructor() {
+     this.events = [];
+     this.headHash = '0'.repeat(64);
++    this.state = {
++      settledNonces: new Set(),
++      committedJobs: new Map(),
++      lockedAmounts: new Map(),
++      settledJobs: new Set(),
++      claimedMilestones: new Set(),
++    };
+   }
+ 
+   applyStep(stepName, payload) {
+     if (!stepName || typeof stepName !== 'string') {
+       throw new Error('stepName must be a non-empty string');
+     }
++    validateStepInvariants(stepName, payload, this.state);
+     const index = this.events.length;
+     const canonical = JSON.stringify({ index, prev: this.headHash, step: stepName, payload });
+     const hash = sha256Hex(canonical);
+@@ -95,3 +103,53 @@
+     };
+   }
+ }
++
++
++export function closeEpoch({ operatingCashUsdc, reserveFloorUsdc = 1000 }) {
++  if (!Number.isFinite(operatingCashUsdc) || operatingCashUsdc < reserveFloorUsdc) {
++    throw new Error('operating cash below reserve floor');
++  }
++  const distributable = Number((operatingCashUsdc - reserveFloorUsdc).toFixed(2));
++  const ownerVault = Number((distributable * 0.70).toFixed(2));
++  const growthPool = Number((distributable * 0.20).toFixed(2));
++  const gasBuffer = Number((distributable - ownerVault - growthPool).toFixed(2));
++  return {
++    reserve_floor_usdc: reserveFloorUsdc,
++    distributable_profit_usdc: distributable,
++    owner_vault_usdc: ownerVault,
++    growth_pool_usdc: growthPool,
++    gas_buffer_usdc: gasBuffer
++  };
++}
++
++export function validateStepInvariants(stepName, payload, state) {
++  const m = payload?.metrics || {};
++  if (stepName === 'sale') {
++    if (m.inventory_before - m.qty !== m.inventory_after || m.inventory_after < 0) {
++      throw new Error('sale inventory conservation violated');
++    }
++    state.inventory = m.inventory_after;
++    state.grossRevenue = m.gross_usdc;
++  } else if (stepName === 'procurement') {
++    if (m.cogs_ratio_bps > m.max_cogs_bps) {
++      throw new Error(`COGS policy breached: ${m.cogs_ratio_bps} bps > max ${m.max_cogs_bps} bps`);
++    }
++    if (m.procured_units * m.unit_cost_usdc !== m.total_cogs_usdc) {
++      throw new Error('procurement total_cogs_usdc arithmetic mismatch');
++    }
++    state.operatingCash = m.operating_cash_usdc;
++  } else if (stepName === 'treasury_split') {
++    const sumSplits = m.owner_vault_usdc + m.growth_pool_usdc + m.gas_buffer_usdc;
++    if (Math.abs(sumSplits - m.distributable_profit_usdc) > 1e-2) {
++      throw new Error('treasury_split sum does not equal distributable_profit_usdc');
++    }
++    if (Math.abs(m.owner_vault_usdc - m.distributable_profit_usdc * 0.70) > 1e-2 ||
++        Math.abs(m.growth_pool_usdc - m.distributable_profit_usdc * 0.20) > 1e-2 ||
++        Math.abs(m.gas_buffer_usdc - m.distributable_profit_usdc * 0.10) > 1e-2) {
++      throw new Error('treasury_split violates 70/20/10 policy ratio');
++    }
++    if (state.operatingCash !== undefined && (state.operatingCash - m.distributable_profit_usdc) < m.reserve_floor_usdc) {
++      throw new Error('treasury_split violates reserve_floor_usdc');
++    }
++  }
++}

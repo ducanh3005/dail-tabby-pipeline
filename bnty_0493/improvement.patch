@@ -1,0 +1,75 @@
+--- a/nep-account-nft/src/engine.mjs
++++ b/nep-account-nft/src/engine.mjs
+@@ -52,12 +52,20 @@
+   constructor() {
+     this.events = [];
+     this.headHash = '0'.repeat(64);
++    this.state = {
++      settledNonces: new Set(),
++      committedJobs: new Map(),
++      lockedAmounts: new Map(),
++      settledJobs: new Set(),
++      claimedMilestones: new Set(),
++    };
+   }
+ 
+   applyStep(stepName, payload) {
+     if (!stepName || typeof stepName !== 'string') {
+       throw new Error('stepName must be a non-empty string');
+     }
++    validateStepInvariants(stepName, payload, this.state);
+     const index = this.events.length;
+     const canonical = JSON.stringify({ index, prev: this.headHash, step: stepName, payload });
+     const hash = sha256Hex(canonical);
+@@ -97,3 +105,51 @@
+     };
+   }
+ }
++
++
++export function distributeRoyalties(royaltyPoolUsdc, splits = { 'creator-ava.near': 0.70, 'co-author-ben.near': 0.30 }) {
++  if (!Number.isFinite(royaltyPoolUsdc) || royaltyPoolUsdc <= 0) throw new Error('invalid royaltyPoolUsdc');
++  const payouts = {};
++  let sum = 0;
++  for (const [acct, weight] of Object.entries(splits)) {
++    const amt = Number((royaltyPoolUsdc * weight).toFixed(2));
++    payouts[acct] = amt;
++    sum += amt;
++  }
++  if (Math.abs(sum - royaltyPoolUsdc) > 1e-2) throw new Error('royalty split weights do not sum to 100%');
++  return { payouts, remaining_royalty_pool_usdc: 0 };
++}
++
++export function verifyCredential({ currentOwner, presenter, scope }) {
++  if (!currentOwner || !presenter || !scope) throw new Error('missing credential parameters');
++  if (presenter !== currentOwner) {
++    return { ok: false, reason: 'signer_not_current_owner' };
++  }
++  return { ok: true, scope, digest: sha256Hex(`${currentOwner}|${scope}`) };
++}
++
++export function validateStepInvariants(stepName, payload, state) {
++  const m = payload?.metrics || {};
++  if (stepName === 'nft_receives_funds') {
++    if (m.nft_treasury_usdc + m.royalty_pool_usdc !== m.gross_inflow_usdc) {
++      throw new Error('NFT inflow conservation violated: treasury + royalty_pool != gross_inflow');
++    }
++    if (Math.abs(m.royalty_pool_usdc - m.gross_inflow_usdc * 0.10) > 1e-2) {
++      throw new Error('NFT royalty reserve must be 10% of gross inflow');
++    }
++    state.royaltyPool = m.royalty_pool_usdc;
++  } else if (stepName === 'pays_royalty') {
++    const payouts = m.payouts || {};
++    const totalPaid = Object.values(payouts).reduce((a, b) => a + b, 0);
++    if (state.royaltyPool !== undefined && Math.abs(totalPaid - state.royaltyPool) > 1e-2) {
++      throw new Error(`royalty payout (${totalPaid}) != reserved pool (${state.royaltyPool})`);
++    }
++    if (m.remaining_royalty_pool_usdc !== 0) {
++      throw new Error('remaining_royalty_pool_usdc must be 0 after distribution');
++    }
++  } else if (stepName === 'presents_credential') {
++    if (m.stale_owner_verified !== false || m.stale_reason !== 'signer_not_current_owner') {
++      throw new Error('security violation: stale NFT owner credential was not rejected');
++    }
++  }
++}

@@ -1,0 +1,28 @@
+APPRENTICE VERIFICATION REPORT — bnty_0486 (Model Build: bnty_0412 by argon_high_sovereign)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0486
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0486/improvement.patch
+Patched Implementation URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0486/improved/src/engine.mjs
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0486/raw
+Deterministic Verifier: python bnty_0486/verify_bnty_0486.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Repo: https://github.com/duongynhi000005-oss/near-agent-economy-contest-builds/tree/main/shielded-private-escrow (commit 5cb1e77cc1b0)
+Skill Pack Referenced: NearDeFi/shade-agent-framework & semaphore-protocol/semaphore (MIT) — confidential commitments, nullifiers, and TEE attestation
+- Try-It Step 1 (`npm test` / `node --test test/engine.test.mjs`): PASS (4/4 tests pass, 0 fail; raw output saved in `bnty_0486/raw/step1_npm_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (3 steps executed deterministically; `Final State Merkle Head:  6b9970a5ac9b71c47b8ac6166fcbe7b06cbe499a12f8e1cde2f646f8306484b4`; raw output saved in `bnty_0486/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`bash docs/verify.sh`): PASS (verifies two demo runs are byte-identical and prints `ALL CHECKS PASSED`; raw output saved in `bnty_0486/raw/step3_verify_sh.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0486/raw/run_custom_checks.mjs` -> `bnty_0486/raw/custom_checks_results.json`)
+Although the CLI scripts exit 0, code inspection of `src/engine.mjs` revealed that `DeterministicStateMachine` only hashes pre-baked static JSON literals from `STEPS_SPEC` without implementing the domain functions named in the README or enforcing domain invariants in `applyStep()`:
+- Check 1 (`check_1_confidential_job_and_shielded_commitment_guard`):
+  * Claim tested: README Step 1 & 2: plaintext prompt never touches public state, and forged commitment with wrong blinding factor is REFUSED
+  * Unpatched `src/engine.mjs`: FAIL: leakBlocked=false, forgedBlocked=false, cryptoCommitmentWorks=false. Unpatched engine records leaked plaintext and forged commitments into the state chain!
+  * Patched `improved/src/engine.mjs`: PASS: Plaintext prompt leakage and forged commitment openings are rejected, and createShieldedCommitment/verifyShieldedOpening cryptographically reject wrong blinding factors.
+- Check 2 (`check_2_atomic_reveal_and_nullifier_conservation`):
+  * Claim tested: README Step 3: atomicReveal() verifies proof against job #701, releases 750 USDC to worker note, and prevents double reveal
+  * Unpatched `src/engine.mjs`: FAIL: overpayBlocked=false, replayBlocked=false, hasAtomicReveal=false. Unpatched engine has no atomicReveal() and allows releasing 5,000 USDC from a 750 USDC note!
+  * Patched `improved/src/engine.mjs`: PASS: Over-release (5,000 USDC vs 750 USDC locked) and duplicate completion_reveal on job #701 are both blocked, and atomicReveal() is exported.
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0486/improvement.patch` & `bnty_0486/improved/src/engine.mjs`)
+- Shipped `bnty_0486/improvement.patch` and `bnty_0486/improved/src/engine.mjs` adding executable domain functions and `validateStepInvariants()` inside `DeterministicStateMachine.applyStep()`.
+- Re-running `node bnty_0486/raw/run_custom_checks.mjs` and `python bnty_0486/verify_bnty_0486.py` confirms all original try-it steps and all new domain-invariant checks pass (`ALL bnty_0486 CHECKS PASSED`).

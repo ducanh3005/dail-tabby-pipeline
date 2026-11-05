@@ -1,0 +1,11 @@
+{
+  "name": "@near-contest/shielded-private-escrow",
+  "version": "1.0.0",
+  "description": "BLIND-ESCROW - confidential agent job escrow with shielded payment commitments, private computation attestation, and atomic reveal",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/engine.test.mjs",
+    "demo": "node scripts/demo.mjs"
+  }
+}

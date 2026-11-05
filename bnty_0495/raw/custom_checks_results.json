@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_reputation_gate_and_budget_preservation",
+        "claim_tested": "README Step 1 & 3: reputation >= 65 required for shared_budget_spend; newcomer-eve (rep 41 < 65) is REFUSED and budget stays 3,800 USDC",
+        "passed": false,
+        "detail": "FAIL: lowRepBypassBlocked=false, evalFnWorks=false. Unpatched engine approves shared_budget_spend with reputation 41 < 65!"
+      },
+      {
+        "id": "check_2_steward_quorum_and_milestone_replay_guard",
+        "claim_tested": "README Step 2: milestone M-104 verified by 3/3 stewards releases 450 USDC + 18 reputation points once",
+        "passed": false,
+        "detail": "FAIL: unapprovedQuorumBlocked=false, duplicateMilestoneBlocked=false. Unpatched engine releases rewards with 1/3 stewards and allows claiming M-104 repeatedly!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_reputation_gate_and_budget_preservation",
+        "claim_tested": "README Step 1 & 3: reputation >= 65 required for shared_budget_spend; newcomer-eve (rep 41 < 65) is REFUSED and budget stays 3,800 USDC",
+        "passed": true,
+        "detail": "PASS: Low-reputation spend (rep 41 < gate 65 with status=APPROVED) rejected, and evaluateBudgetSpend() enforces the gate and preserves the 3,800 USDC budget."
+      },
+      {
+        "id": "check_2_steward_quorum_and_milestone_replay_guard",
+        "claim_tested": "README Step 2: milestone M-104 verified by 3/3 stewards releases 450 USDC + 18 reputation points once",
+        "passed": true,
+        "detail": "PASS: Sub-quorum reward release (1/3 stewards) and duplicate milestone replay ('M-104') were both blocked."
+      }
+    ]
+  }
+}

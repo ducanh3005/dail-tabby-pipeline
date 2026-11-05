@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_intent_quote_and_nonce_replay_guard",
+        "claim_tested": "README Step 1 & 2: quote verifies 5000 * 0.9992 = 4996 + 4 fee, and swap refuses replay of same intent nonce (intent_already_settled)",
+        "passed": false,
+        "detail": "FAIL: unbalancedQuoteRejected=false, replayAcceptedError=false, hasSwapFn=false. Unpatched engine only hashes static STEPS_SPEC literals without checking quote math or nonce replay!"
+      },
+      {
+        "id": "check_2_erc4626_share_accounting_invariant",
+        "claim_tested": "README Step 3: Agent deposits 4,000 USDC -> 4,000 shares; +120 USDC yield -> share price 1.03 USDC; redeeming 2,000 shares yields 2,060.00 USDC",
+        "passed": false,
+        "detail": "FAIL: inflatedWithdrawRejected=false, vaultMathExact=false. Unpatched engine accepts 999,999 USDC withdrawal on 4,120 USDC vault assets!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_intent_quote_and_nonce_replay_guard",
+        "claim_tested": "README Step 1 & 2: quote verifies 5000 * 0.9992 = 4996 + 4 fee, and swap refuses replay of same intent nonce (intent_already_settled)",
+        "passed": true,
+        "detail": "PASS: Unbalanced solver quote (6000 out > 5000 in) and duplicate intent nonce replay ('n-100') were both rejected, and EarningsVault.executeIntentSwap() is exported."
+      },
+      {
+        "id": "check_2_erc4626_share_accounting_invariant",
+        "claim_tested": "README Step 3: Agent deposits 4,000 USDC -> 4,000 shares; +120 USDC yield -> share price 1.03 USDC; redeeming 2,000 shares yields 2,060.00 USDC",
+        "passed": true,
+        "detail": "PASS: Inflated vault withdrawal (999,999 USDC for 2,000 shares) rejected, and EarningsVault computes 4,000 shares -> +120 yield -> 2,000 shares redeemed = 2,060.00 USDC exactly."
+      }
+    ]
+  }
+}

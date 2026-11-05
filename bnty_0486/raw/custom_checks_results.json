@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_confidential_job_and_shielded_commitment_guard",
+        "claim_tested": "README Step 1 & 2: plaintext prompt never touches public state, and forged commitment with wrong blinding factor is REFUSED",
+        "passed": false,
+        "detail": "FAIL: leakBlocked=false, forgedBlocked=false, cryptoCommitmentWorks=false. Unpatched engine records leaked plaintext and forged commitments into the state chain!"
+      },
+      {
+        "id": "check_2_atomic_reveal_and_nullifier_conservation",
+        "claim_tested": "README Step 3: atomicReveal() verifies proof against job #701, releases 750 USDC to worker note, and prevents double reveal",
+        "passed": false,
+        "detail": "FAIL: overpayBlocked=false, replayBlocked=false, hasAtomicReveal=false. Unpatched engine has no atomicReveal() and allows releasing 5,000 USDC from a 750 USDC note!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_confidential_job_and_shielded_commitment_guard",
+        "claim_tested": "README Step 1 & 2: plaintext prompt never touches public state, and forged commitment with wrong blinding factor is REFUSED",
+        "passed": true,
+        "detail": "PASS: Plaintext prompt leakage and forged commitment openings are rejected, and createShieldedCommitment/verifyShieldedOpening cryptographically reject wrong blinding factors."
+      },
+      {
+        "id": "check_2_atomic_reveal_and_nullifier_conservation",
+        "claim_tested": "README Step 3: atomicReveal() verifies proof against job #701, releases 750 USDC to worker note, and prevents double reveal",
+        "passed": true,
+        "detail": "PASS: Over-release (5,000 USDC vs 750 USDC locked) and duplicate completion_reveal on job #701 are both blocked, and atomicReveal() is exported."
+      }
+    ]
+  }
+}

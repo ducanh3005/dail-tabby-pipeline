@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_inventory_and_max_cogs_policy_guard",
+        "claim_tested": "README Step 1, Step 2 & Sec 3: inventory 15 -> 5 on 10-unit sale, and assert!(cogs_bps <= policy.max_cogs_bps) blocks COGS > 45%",
+        "passed": false,
+        "detail": "FAIL: badInventoryBlocked=false, cogsBreachBlocked=false. Unpatched engine accepts COGS ratio 60% > 45% human max without error!"
+      },
+      {
+        "id": "check_2_close_epoch_reserve_floor_and_70_20_10_split",
+        "claim_tested": "README Step 3: closeEpoch() enforces 1,000 USDC reserve floor and splits 640 USDC profit 70% (448) / 20% (128) / 10% (64)",
+        "passed": false,
+        "detail": "FAIL: badSplitBlocked=false, closeEpochWorks=false. Unpatched engine has no closeEpoch() function and accepts invalid splits!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_inventory_and_max_cogs_policy_guard",
+        "claim_tested": "README Step 1, Step 2 & Sec 3: inventory 15 -> 5 on 10-unit sale, and assert!(cogs_bps <= policy.max_cogs_bps) blocks COGS > 45%",
+        "passed": true,
+        "detail": "PASS: Inventory conservation error (15 - 10 != 99) and COGS policy breach (6000 bps > 4500 bps max) were both rejected."
+      },
+      {
+        "id": "check_2_close_epoch_reserve_floor_and_70_20_10_split",
+        "claim_tested": "README Step 3: closeEpoch() enforces 1,000 USDC reserve floor and splits 640 USDC profit 70% (448) / 20% (128) / 10% (64)",
+        "passed": true,
+        "detail": "PASS: Unbalanced treasury split (600+100+100 != 640) rejected, and closeEpoch(1640, 1000) computes 448/128/64 (70%/20%/10%) exactly."
+      }
+    ]
+  }
+}

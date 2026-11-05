@@ -1,0 +1,28 @@
+APPRENTICE VERIFICATION REPORT — bnty_0493 (Model Build: bnty_0420 by argon_high_sovereign)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0493
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0493/improvement.patch
+Patched Implementation URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0493/improved/src/engine.mjs
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0493/raw
+Deterministic Verifier: python bnty_0493/verify_bnty_0493.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Repo: https://github.com/duongynhi000005-oss/near-agent-economy-contest-builds/tree/main/nep-account-nft (commit 5cb1e77cc1b0)
+Skill Pack Referenced: keypom/keypom (GPL-3.0) — NEP-171 token-bound accounts, royalty splits, and owner-gated credential presentation
+- Try-It Step 1 (`npm test` / `node --test test/engine.test.mjs`): PASS (4/4 tests pass, 0 fail; raw output saved in `bnty_0493/raw/step1_npm_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (3 steps executed deterministically; `Final State Merkle Head:  ffe959b7c9742c916e226835b7328bb7564a32e9dbb5d4a96cdc6c1c59395a07`; raw output saved in `bnty_0493/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`bash docs/verify.sh`): PASS (verifies two demo runs are byte-identical and prints `ALL CHECKS PASSED`; raw output saved in `bnty_0493/raw/step3_verify_sh.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0493/raw/run_custom_checks.mjs` -> `bnty_0493/raw/custom_checks_results.json`)
+Although the CLI scripts exit 0, code inspection of `src/engine.mjs` revealed that `DeterministicStateMachine` only hashes pre-baked static JSON literals from `STEPS_SPEC` without implementing the domain functions named in the README or enforcing domain invariants in `applyStep()`:
+- Check 1 (`check_1_nft_inflow_and_royalty_split_conservation`):
+  * Claim tested: README Step 1 & 2: 2,000 USDC inflow splits 1,800 treasury / 200 royalty pool, and distributeRoyalties(#42) pays 140 (70%) + 60 (30%)
+  * Unpatched `src/engine.mjs`: FAIL: overpayBlocked=false, distFnWorks=false. Unpatched engine has no distributeRoyalties() and accepts 500 USDC payouts from a 200 USDC pool!
+  * Patched `improved/src/engine.mjs`: PASS: Overpaying royalties (500 USDC from 200 USDC pool) rejected, and distributeRoyalties(200) computes 140/60 USDC exactly.
+- Check 2 (`check_2_nft_owner_transfer_credential_revocation`):
+  * Claim tested: README Step 3: verifyCredential() returns ok=true for current owner and ok=false (signer_not_current_owner) for old owner after transfer
+  * Unpatched `src/engine.mjs`: FAIL: staleAcceptedBlocked=false, credFnWorks=false. Unpatched engine has no verifyCredential() and accepts stale_owner_verified=true!
+  * Patched `improved/src/engine.mjs`: PASS: Stale owner credential presentation rejected (signer_not_current_owner) in both verifyCredential() and applyStep().
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0493/improvement.patch` & `bnty_0493/improved/src/engine.mjs`)
+- Shipped `bnty_0493/improvement.patch` and `bnty_0493/improved/src/engine.mjs` adding executable domain functions and `validateStepInvariants()` inside `DeterministicStateMachine.applyStep()`.
+- Re-running `node bnty_0493/raw/run_custom_checks.mjs` and `python bnty_0493/verify_bnty_0493.py` confirms all original try-it steps and all new domain-invariant checks pass (`ALL bnty_0493 CHECKS PASSED`).

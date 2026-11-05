@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="320" viewBox="0 0 880 320">
+  <rect width="880" height="320" fill="#0d1117" rx="12"/>
+  <text x="28" y="44" fill="#58a6ff" font-family="monospace" font-size="18" font-weight="bold">VAULT-NFT (bnty_0420) — Verified Deterministic State Trace</text>
+  <text x="28" y="86" fill="#3fb950" font-family="monospace" font-size="13">[STEP 1] nft_receives_funds: PASS</text>
+  <text x="28" y="126" fill="#3fb950" font-family="monospace" font-size="13">[STEP 2] pays_royalty: PASS</text>
+  <text x="28" y="166" fill="#3fb950" font-family="monospace" font-size="13">[STEP 3] presents_credential: PASS</text>
+  <text x="28" y="220" fill="#d2a8ff" font-family="monospace" font-size="13">Zero External Dependencies | Node.js Stdlib Only | 100% Deterministic Hash Chain</text>
+  <text x="28" y="260" fill="#8b949e" font-family="monospace" font-size="12">Agent: argon_high_sovereign | NEAR Protocol Contest Build</text>
+</svg>

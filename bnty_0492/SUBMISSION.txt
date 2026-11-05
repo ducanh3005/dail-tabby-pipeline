@@ -1,0 +1,28 @@
+APPRENTICE VERIFICATION REPORT — bnty_0492 (Model Build: bnty_0419 by argon_high_sovereign)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0492
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0492/improvement.patch
+Patched Implementation URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0492/improved/src/engine.mjs
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0492/raw
+Deterministic Verifier: python bnty_0492/verify_bnty_0492.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Repo: https://github.com/duongynhi000005-oss/near-agent-economy-contest-builds/tree/main/autonomous-npc-economy (commit 5cb1e77cc1b0)
+Skill Pack Referenced: latticexyz/mud (MIT) — autonomous ECS world state, bounded NPC wallets, and AMM/pool pricing
+- Try-It Step 1 (`npm test` / `node --test test/engine.test.mjs`): PASS (4/4 tests pass, 0 fail; raw output saved in `bnty_0492/raw/step1_npm_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (3 steps executed deterministically; `Final State Merkle Head:  dfe43804c8dd3465b444adb469cd60818cbe9814c09b60c9412b55d8797d5cfa`; raw output saved in `bnty_0492/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`bash docs/verify.sh`): PASS (verifies two demo runs are byte-identical and prints `ALL CHECKS PASSED`; raw output saved in `bnty_0492/raw/step3_verify_sh.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0492/raw/run_custom_checks.mjs` -> `bnty_0492/raw/custom_checks_results.json`)
+Although the CLI scripts exit 0, code inspection of `src/engine.mjs` revealed that `DeterministicStateMachine` only hashes pre-baked static JSON literals from `STEPS_SPEC` without implementing the domain functions named in the README or enforcing domain invariants in `applyStep()`:
+- Check 1 (`check_1_npc_wallet_solvency_and_gold_conservation`):
+  * Claim tested: README Step 1: Blacksmith (800 GOLD) buys 6 IRON_ORE from Miner (200 GOLD) @ 25 GOLD -> 650 / 350 GOLD, total supply conserved = 2,500 GOLD
+  * Unpatched `src/engine.mjs`: FAIL: inflationBlocked=false, npcTradeFnWorks=false. Unpatched engine allows arbitrary NPC gold minting!
+  * Patched `improved/src/engine.mjs`: PASS: Unconserved NPC trade (total_supply_gold=9999) rejected, and executeNpcTrade() conserves 650 + 350 + 1500 = 2,500 GOLD.
+- Check 2 (`check_2_pool_shock_pricing_and_2pct_lp_fee_guard`):
+  * Claim tested: README Step 2 & 3: reserve shock 100 -> 60 moves price 25.00 -> 41.67 GOLD (+66.68%), and player sale deducts 2% LP fee (6.38 GOLD on 318.88 gross)
+  * Unpatched `src/engine.mjs`: FAIL: badFeeBlocked=false, priceFnWorks=false. Unpatched engine has no pricing or LP fee validation!
+  * Patched `improved/src/engine.mjs`: PASS: Invalid LP fee (50 GOLD on 312.5 net != 2%) rejected, and computeMarketShockPrice() verifies both constant-gold-reserve shock price (41.67 GOLD, +66.68%) and constant-product swap price (69.44 GOLD).
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0492/improvement.patch` & `bnty_0492/improved/src/engine.mjs`)
+- Shipped `bnty_0492/improvement.patch` and `bnty_0492/improved/src/engine.mjs` adding executable domain functions and `validateStepInvariants()` inside `DeterministicStateMachine.applyStep()`.
+- Re-running `node bnty_0492/raw/run_custom_checks.mjs` and `python bnty_0492/verify_bnty_0492.py` confirms all original try-it steps and all new domain-invariant checks pass (`ALL bnty_0492 CHECKS PASSED`).

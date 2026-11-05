@@ -1,0 +1,59 @@
+{
+  "track": "INTENT-VAULT",
+  "bountyId": "bnty_0416",
+  "eventCount": 3,
+  "headHash": "ce4d35374ab44395317b667303bcf93700310275d4a75aa89f7cd8db2e82ff7c",
+  "chainVerified": true,
+  "events": [
+    {
+      "index": 0,
+      "step": "quote",
+      "payload": {
+        "summary": "Solver quotes cross-chain intent swap of 5,000 Base USDC (`eip155:8453`) -> NEAR USDC (`near:mainnet`) at 0.9992 rate (4,996.00 NEAR USDC, 4.00 USDC solver fee, 300s deadline, signed intent hash verified)",
+        "metrics": {
+          "from_asset": "eip155:8453:USDC",
+          "to_asset": "near:mainnet:USDC",
+          "amount_in_usdc": 5000,
+          "amount_out_usdc": 4996,
+          "solver_fee_usdc": 4,
+          "rate": 0.9992,
+          "quote_valid": true
+        }
+      },
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "0b5f737893157163f222669005f021498beb087e17ec78654ac569664865dc85"
+    },
+    {
+      "index": 1,
+      "step": "swap",
+      "payload": {
+        "summary": "executeIntentSwap() verifies solver + user commitments and settles atomically -> agent NEAR balance = 4,996.00 USDC, solver balance +4.00 USDC, replay of same intent nonce -> REFUSED (intent_already_settled)",
+        "metrics": {
+          "settled_out_usdc": 4996,
+          "solver_fee_usdc": 4,
+          "replay_attempt": "REFUSED",
+          "replay_reason": "intent_already_settled"
+        }
+      },
+      "prevHash": "0b5f737893157163f222669005f021498beb087e17ec78654ac569664865dc85",
+      "hash": "76116a0c00aa23399de731078b21889f6d0f82c31d54ce8f4a6fb7eabc306bf6"
+    },
+    {
+      "index": 2,
+      "step": "deposit_and_withdraw",
+      "payload": {
+        "summary": "Agent deposits 4,000.00 USDC into EarningsVault -> receives 4,000.0000 vUSDC shares; after 120.00 USDC protocol revenue accrues to the vault (share price = 1.0300 USDC), agent redeems 2,000.0000 shares -> receives 2,060.00 USDC exactly",
+        "metrics": {
+          "deposited_usdc": 4000,
+          "minted_shares": 4000,
+          "yield_accrued_usdc": 120,
+          "share_price_usdc": 1.03,
+          "redeemed_shares": 2000,
+          "withdrawn_usdc": 2060
+        }
+      },
+      "prevHash": "76116a0c00aa23399de731078b21889f6d0f82c31d54ce8f4a6fb7eabc306bf6",
+      "hash": "ce4d35374ab44395317b667303bcf93700310275d4a75aa89f7cd8db2e82ff7c"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "original": {
+    "label": "original_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_npc_wallet_solvency_and_gold_conservation",
+        "claim_tested": "README Step 1: Blacksmith (800 GOLD) buys 6 IRON_ORE from Miner (200 GOLD) @ 25 GOLD -> 650 / 350 GOLD, total supply conserved = 2,500 GOLD",
+        "passed": false,
+        "detail": "FAIL: inflationBlocked=false, npcTradeFnWorks=false. Unpatched engine allows arbitrary NPC gold minting!"
+      },
+      {
+        "id": "check_2_pool_shock_pricing_and_2pct_lp_fee_guard",
+        "claim_tested": "README Step 2 & 3: reserve shock 100 -> 60 moves price 25.00 -> 41.67 GOLD (+66.68%), and player sale deducts 2% LP fee (6.38 GOLD on 318.88 gross)",
+        "passed": false,
+        "detail": "FAIL: badFeeBlocked=false, priceFnWorks=false. Unpatched engine has no pricing or LP fee validation!"
+      }
+    ]
+  },
+  "improved": {
+    "label": "improved_engine_mjs",
+    "checks": [
+      {
+        "id": "check_1_npc_wallet_solvency_and_gold_conservation",
+        "claim_tested": "README Step 1: Blacksmith (800 GOLD) buys 6 IRON_ORE from Miner (200 GOLD) @ 25 GOLD -> 650 / 350 GOLD, total supply conserved = 2,500 GOLD",
+        "passed": true,
+        "detail": "PASS: Unconserved NPC trade (total_supply_gold=9999) rejected, and executeNpcTrade() conserves 650 + 350 + 1500 = 2,500 GOLD."
+      },
+      {
+        "id": "check_2_pool_shock_pricing_and_2pct_lp_fee_guard",
+        "claim_tested": "README Step 2 & 3: reserve shock 100 -> 60 moves price 25.00 -> 41.67 GOLD (+66.68%), and player sale deducts 2% LP fee (6.38 GOLD on 318.88 gross)",
+        "passed": true,
+        "detail": "PASS: Invalid LP fee (50 GOLD on 312.5 net != 2%) rejected, and computeMarketShockPrice() verifies both constant-gold-reserve shock price (41.67 GOLD, +66.68%) and constant-product swap price (69.44 GOLD)."
+      }
+    ]
+  }
+}

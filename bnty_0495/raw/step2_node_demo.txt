@@ -1,0 +1,18 @@
+=== TREZU-SOCIAL (bnty_0422) DETERMINISTIC DEMO TRANSCRIPT ===
+Chain Integrity Verified: true
+Final State Merkle Head:  665465ae2267e2ccb52b116e34f32d43990cdfbe21997bfb5ae62487f2e01826
+
+[STEP 1] shared_budget_spend
+  Summary: ops-alice spends 1,200 USDC from the 5,000 USDC Q4 Growth shared budget (reputation 82 >= gate 65) -> APPROVED; remaining epoch budget = 3,800 USDC, multisig vault balance = 48,800 USDC
+  Metrics: {"actor":"ops-alice.near","budget_id":"q4-growth","spend_usdc":1200,"reputation":82,"min_reputation":65,"status":"APPROVED","remaining_budget_usdc":3800,"vault_balance_usdc":48800}
+  Hash:    6bb5a9aea35cfc02810b1b2eeb750e7c083435aef520a212fe20de966fd4112c
+
+[STEP 2] reward_payout
+  Summary: milestone M-104 verified by 3/3 stewards -> programmable reward engine releases 450 USDC + 18 reputation points to builder-bob -> balance = 450 USDC, reputation = 78
+  Metrics: {"actor":"builder-bob.near","milestone":"M-104","steward_approvals":3,"reward_usdc":450,"reputation_delta":18,"new_reputation":78,"status":"RELEASED"}
+  Hash:    e09b6442329edd01fe5d0db27e059c573983aa39cabe0bd62181a6798bea016e
+
+[STEP 3] reputation_gate
+  Summary: newcomer-eve (reputation 41 < gate 65) attempts 500 USDC shared budget spend -> REFUSED (reputation_below_minimum: 41 < 65); budget unchanged at 3,800 USDC
+  Metrics: {"actor":"newcomer-eve.near","budget_id":"q4-growth","attempted_usdc":500,"reputation":41,"min_reputation":65,"status":"REFUSED","reason":"reputation_below_minimum","remaining_budget_usdc":3800}
+  Hash:    665465ae2267e2ccb52b116e34f32d43990cdfbe21997bfb5ae62487f2e01826

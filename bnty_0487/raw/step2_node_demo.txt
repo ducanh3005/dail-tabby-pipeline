@@ -1,0 +1,18 @@
+=== INTENT-SHOP (bnty_0417) DETERMINISTIC DEMO TRANSCRIPT ===
+Chain Integrity Verified: true
+Final State Merkle Head:  a622619842c55e35a6d0a14278e1029580302fdeacd8d274713d761c43aaea4a
+
+[STEP 1] sale
+  Summary: Customer settles cross-chain NEAR Intent (`eip155:8453:USDC -> near:USDC`, 1,000 USDC) for 10 API-Audit packs -> order fulfilled, gross revenue = 1,000 USDC, inventory 15 -> 5 units
+  Metrics: {"intent_chain":"eip155:8453->near:mainnet","sku":"API-AUDIT-PACK","qty":10,"gross_usdc":1000,"inventory_before":15,"inventory_after":5}
+  Hash:    c546da3d1cfbc56a29993aaca2b453d17a2295b5b870b3f4fe2aae5404fa24f1
+
+[STEP 2] procurement
+  Summary: Inventory (5) <= reorder point (6) triggers autonomous procurement of 20 upstream units at 18 USDC/unit (360 USDC total, COGS ratio 36% <= human max 45%) -> inventory = 25 units, operating cash = 1,640 USDC
+  Metrics: {"reorder_point":6,"procured_units":20,"unit_cost_usdc":18,"total_cogs_usdc":360,"cogs_ratio_bps":3600,"max_cogs_bps":4500,"inventory_after":25,"operating_cash_usdc":1640}
+  Hash:    910d7d7d8511d2f470177a0f8b4aded1fc1b40cccf7e72bec9050ef628e2f874
+
+[STEP 3] treasury_split
+  Summary: closeEpoch() enforces 1,000 USDC reserve floor and splits 640 USDC distributable profit -> 70% (448 USDC) to human owner vault, 20% (128 USDC) to growth pool, 10% (64 USDC) to agent compute gas buffer
+  Metrics: {"reserve_floor_usdc":1000,"distributable_profit_usdc":640,"owner_vault_usdc":448,"growth_pool_usdc":128,"gas_buffer_usdc":64}
+  Hash:    a622619842c55e35a6d0a14278e1029580302fdeacd8d274713d761c43aaea4a

@@ -1,0 +1,28 @@
+APPRENTICE VERIFICATION REPORT — bnty_0487 (Model Build: bnty_0417 by argon_high_sovereign)
+Public Verification Report URL: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0487
+Unified Diff / Patch URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0487/improvement.patch
+Patched Implementation URL: https://github.com/ducanh3005/dail-tabby-pipeline/blob/main/bnty_0487/improved/src/engine.mjs
+Raw Execution Outputs & Checks: https://github.com/ducanh3005/dail-tabby-pipeline/tree/main/bnty_0487/raw
+Deterministic Verifier: python bnty_0487/verify_bnty_0487.py
+
+1. PER-STEP REPRODUCTION OF MODEL README TRY-IT STEPS
+Model Repo: https://github.com/duongynhi000005-oss/near-agent-economy-contest-builds/tree/main/intents-autonomous-shop (commit 5cb1e77cc1b0)
+Skill Pack Referenced: RequestNetwork/requestNetwork (MIT) — on-chain invoicing, autonomous procurement policy rails, and revenue split
+- Try-It Step 1 (`npm test` / `node --test test/engine.test.mjs`): PASS (4/4 tests pass, 0 fail; raw output saved in `bnty_0487/raw/step1_npm_test.txt`).
+- Try-It Step 2 (`node scripts/demo.mjs`): PASS (3 steps executed deterministically; `Final State Merkle Head:  a622619842c55e35a6d0a14278e1029580302fdeacd8d274713d761c43aaea4a`; raw output saved in `bnty_0487/raw/step2_node_demo.txt`).
+- Try-It Step 3 (`bash docs/verify.sh`): PASS (verifies two demo runs are byte-identical and prints `ALL CHECKS PASSED`; raw output saved in `bnty_0487/raw/step3_verify_sh.txt`).
+
+2. INDEPENDENT CHECKS TESTING MODEL README CLAIMS (`node bnty_0487/raw/run_custom_checks.mjs` -> `bnty_0487/raw/custom_checks_results.json`)
+Although the CLI scripts exit 0, code inspection of `src/engine.mjs` revealed that `DeterministicStateMachine` only hashes pre-baked static JSON literals from `STEPS_SPEC` without implementing the domain functions named in the README or enforcing domain invariants in `applyStep()`:
+- Check 1 (`check_1_inventory_and_max_cogs_policy_guard`):
+  * Claim tested: README Step 1, Step 2 & Sec 3: inventory 15 -> 5 on 10-unit sale, and assert!(cogs_bps <= policy.max_cogs_bps) blocks COGS > 45%
+  * Unpatched `src/engine.mjs`: FAIL: badInventoryBlocked=false, cogsBreachBlocked=false. Unpatched engine accepts COGS ratio 60% > 45% human max without error!
+  * Patched `improved/src/engine.mjs`: PASS: Inventory conservation error (15 - 10 != 99) and COGS policy breach (6000 bps > 4500 bps max) were both rejected.
+- Check 2 (`check_2_close_epoch_reserve_floor_and_70_20_10_split`):
+  * Claim tested: README Step 3: closeEpoch() enforces 1,000 USDC reserve floor and splits 640 USDC profit 70% (448) / 20% (128) / 10% (64)
+  * Unpatched `src/engine.mjs`: FAIL: badSplitBlocked=false, closeEpochWorks=false. Unpatched engine has no closeEpoch() function and accepts invalid splits!
+  * Patched `improved/src/engine.mjs`: PASS: Unbalanced treasury split (600+100+100 != 640) rejected, and closeEpoch(1640, 1000) computes 448/128/64 (70%/20%/10%) exactly.
+
+3. GENUINE IMPROVEMENT SHIPPED (`bnty_0487/improvement.patch` & `bnty_0487/improved/src/engine.mjs`)
+- Shipped `bnty_0487/improvement.patch` and `bnty_0487/improved/src/engine.mjs` adding executable domain functions and `validateStepInvariants()` inside `DeterministicStateMachine.applyStep()`.
+- Re-running `node bnty_0487/raw/run_custom_checks.mjs` and `python bnty_0487/verify_bnty_0487.py` confirms all original try-it steps and all new domain-invariant checks pass (`ALL bnty_0487 CHECKS PASSED`).
