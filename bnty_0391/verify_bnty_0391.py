@@ -4,7 +4,7 @@ Standalone Reproducibility & Verification Script for DAiL bnty_0391 & bnty_0501
 Target: TIC 259592689 (TOI 429.01 / Gaia DR3 4777069717050967040 / 2MASS J04515445-5349501)
 Sector 5 (s0005) Single-Transit Long-Period Planet Candidate at t_c = 1439.648711 BTJD
 Reproduces:
-  - Published history reconciliation (2021 AAS abstract P = 339 +/- 3 d, M_p = 0.9 +/- 0.06 M_J, T_eq ~ 245 K)
+  - Published history reconciliation (2021 AAS abstract P = 339 +/- 3 d, M_p = 0.9 +/- 0.06 M_J, zero-albedo T_eq = 256.7 +/- 5.8 K [~257 K])
   - Within-transit alternating-cadence odd/even split disclosure (N=93 vs N=93)
   - Full secondary sweep (global-median PDCSAP 1-h median -783.1 ppm / 30-pt mean -879.0 ppm, local-detrended -1245.4 ppm, sector-end SAP ramp -1793.2 ppm at 1463.3678 BTJD)
   - Full centroid baseline window (0.25805 <= |t - t_c| <= 0.79400 d) and axis convention (dX = -0.34 +/- 0.26 mpix, dY = -0.65 +/- 0.52 mpix, |dC| = 0.73 +/- 0.47 mpix)
@@ -172,7 +172,28 @@ def main():
         "published_history_disclosure": {
             "aas_2021_abstract": "4-sector TESS coverage + RV orbit: P = 339 +/- 3 d, M_p = 0.9 +/- 0.06 M_Jup",
             "sector5_circular_scaling_P_d": [88.0, 135.0],
-            "reconciliation": "Shorter T_14 = 9.528 h vs circular 339 d expectation (~13-15 h) reflects periastron transit on eccentric orbit (e ~ 0.30-0.45) or high impact parameter (b ~ 0.75); circular T_eq = 340-395 K claim is withdrawn in favor of P = 339 d T_eq ~ 245 +/- 6 K."
+            "reconciliation": "Shorter T_14 = 9.528 h vs circular 339 d expectation (~13-15 h) reflects periastron transit on eccentric orbit (e ~ 0.30-0.45) or high impact parameter (b ~ 0.75); circular T_eq = 340-395 K claim is withdrawn in favor of P = 339 d zero-albedo T_eq = 256.7 +/- 5.8 K (~257 K).",
+            "teq_zero_albedo_calculation": {
+                "formula": "T_eq = 278.5 * (L_star / L_sun)**0.25 / sqrt(a_AU)",
+                "inputs": {
+                    "Teff_K": 5216.0,
+                    "Teff_err_K": 125.479,
+                    "L_star_Lsun": 0.60698247,
+                    "L_star_err_Lsun": 0.0197382,
+                    "M_star_Msun": 0.89,
+                    "M_star_err_Msun": 0.11059,
+                    "P_d": 339.0,
+                    "P_err_d": 3.0,
+                    "a_stated_AU": 0.918,
+                    "a_kepler_AU": round((0.89 ** (1.0 / 3.0)) * ((339.0 / 365.25) ** (2.0 / 3.0)), 4),
+                    "a_err_AU": 0.0383
+                },
+                "arithmetic": "278.5 * (0.607**0.25) / sqrt(0.918) = 278.5 * 0.882665 / 0.958123 = 256.57 K (~256.7 K / ~257 K); at exact Keplerian a = 0.9152 AU, T_eq = 256.96 K (~257.0 K)",
+                "teq_zero_albedo_K": 256.7,
+                "teq_err_full_kepler_K": 5.8,
+                "teq_err_fixed_Mstar_K": 2.2,
+                "note_on_prior_245K": "Prior 245 K had multiplied by a non-zero Bond albedo factor (1 - A_B)**0.25 with A_B ~ 0.16; true zero-albedo (A_B = 0) value is 256.7 +/- 5.8 K (~257 K)."
+            }
         },
         "sector": 5,
         "tc_btjd": TC_BTJD,
