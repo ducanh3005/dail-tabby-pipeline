@@ -11,7 +11,7 @@
     "phi_sec_eccentric": 0.514107
   },
   "method_version": "1.0.0",
-  "execution_utc": "2026-11-04T17:14:30Z",
+  "execution_utc": "2026-11-07T01:55:09Z",
   "mandatory_widefield_surveys": {
     "ATLAS": {
       "survey_name": "ATLAS (Asteroid Terrestrial-impact Last Alert System - Sutherland & El Sauce southern nodes)",
@@ -121,7 +121,7 @@
       "covers_dec_minus36p6": true,
       "coverage_statement": "YES - Dec = -36.5803 deg transits within 5-13 deg of zenith at all three longitudinal HATSouth stations (Las Campanas lat=-29.01 deg, Siding Spring lat=-31.27 deg, HESS Namibia lat=-23.27 deg), which tile the southern sky in 8.2x8.2 deg fields (including the Dec = -33 deg and -41 deg strips).",
       "data_retrieved": false,
-      "retrieval_status_and_reason": "0 light curves retrieved. (1) Audited the official public HATSouth light curve archive (https://hatsouth.org/planets/ and https://hatsouth.org/planets/lightcurves.html, saved in raw/hatsouth_org_planets.html and raw/hatsouth_org_lcs.html, HTTP 200): only 72 confirmed exoplanet hosts (HATS-1b through HATS-77b) have publicly released light curves on hatsouth.org; there is no public general-star light-curve server on hatsouth.org, MAST (0 HATSouth rows in raw/mast_caom_cone_all.json), or NASA Exoplanet Archive. (2) VizieR mirrors timed out (WinError 10060).",
+      "retrieval_status_and_reason": "0 light curves retrieved. (1) Audited the official public HATSouth light curve archive (https://hatsouth.org/planets/ and https://hatsouth.org/planets/lightcurves.html, saved in raw/hatsouth_org_planets.html and raw/hatsouth_org_lcs.html, HTTP 200): only 72 confirmed exoplanet hosts (HATS-1b through HATS-72b) have publicly released light curves on hatsouth.org; there is no public general-star light-curve server on hatsouth.org, MAST (0 HATSouth rows in raw/mast_caom_cone_all.json), or NASA Exoplanet Archive. (2) VizieR mirrors timed out (WinError 10060).",
       "saturation_and_blending_caveats_V8p8": {
         "instrument_specs": "4x 18cm f/2.8 Takahashi epsilon-180 reflectors per mount, Apogee U16M 4096x4096 CCD, 3.7 arcsec/px, 8.2x8.2 deg FOV, 240s exposures, Sloan r band",
         "target_mag_est": {
@@ -555,8 +555,35 @@
       }
     },
     "MIT_QLP_S63_Blended_Neighbour_TIC_942348495": {
+      "n_rows_total": 11190,
       "n_pts_q0": 9951,
-      "note": "Demonstrates 21 arcsec/px wide-field blending: neighbour aperture captures target PSF wings and shows ~32%/28% apparent eclipse!",
+      "note": "QLP S63 neighbour FITS has 11,190 total rows (9,951/9,958 quality-0+finite rows), but SAP_FLUX and DET_FLUX are NaN across all eclipse cadences (31 PRI / 20 SEC rows in |dphi|<=0.0010 core windows, 0 finite; 52 PRI / 35 SEC rows in |dphi|<=0.0017 box windows, 0 finite), so no neighbour fold is measurable from these files.",
+      "eclipse_window_row_audit": {
+        "core_hw0010_PRI": {
+          "n_rows_in_window": 31,
+          "n_rows_q0_in_window": 21,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "core_hw0010_SEC_ecc": {
+          "n_rows_in_window": 20,
+          "n_rows_q0_in_window": 19,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "box_hw0017_PRI": {
+          "n_rows_in_window": 52,
+          "n_rows_q0_in_window": 35,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "box_hw0017_SEC_ecc": {
+          "n_rows_in_window": 35,
+          "n_rows_q0_in_window": 32,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        }
+      },
       "SAP_core_hw0010_PRI": {
         "n_pts": 0,
         "biweight_depth": null,
@@ -587,8 +614,35 @@
       }
     },
     "MIT_QLP_S63_Blended_Neighbour_TIC_942348496": {
+      "n_rows_total": 11190,
       "n_pts_q0": 9958,
-      "note": "Demonstrates 21 arcsec/px wide-field blending: neighbour aperture captures target PSF wings and shows ~32%/28% apparent eclipse!",
+      "note": "QLP S63 neighbour FITS has 11,190 total rows (9,951/9,958 quality-0+finite rows), but SAP_FLUX and DET_FLUX are NaN across all eclipse cadences (31 PRI / 20 SEC rows in |dphi|<=0.0010 core windows, 0 finite; 52 PRI / 35 SEC rows in |dphi|<=0.0017 box windows, 0 finite), so no neighbour fold is measurable from these files.",
+      "eclipse_window_row_audit": {
+        "core_hw0010_PRI": {
+          "n_rows_in_window": 31,
+          "n_rows_q0_in_window": 21,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "core_hw0010_SEC_ecc": {
+          "n_rows_in_window": 20,
+          "n_rows_q0_in_window": 19,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "box_hw0017_PRI": {
+          "n_rows_in_window": 52,
+          "n_rows_q0_in_window": 35,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        },
+        "box_hw0017_SEC_ecc": {
+          "n_rows_in_window": 35,
+          "n_rows_q0_in_window": 32,
+          "n_finite_sap": 0,
+          "n_finite_det": 0
+        }
+      },
       "SAP_core_hw0010_PRI": {
         "n_pts": 0,
         "biweight_depth": null,

@@ -570,7 +570,7 @@ def main():
                 round(tess_folds["SAP_biweight_detrended"]["house_match_box_hw0017"]["primary_phi0000"]["median_depth"] - 0.332, 5),
                 round(tess_folds["SAP_biweight_detrended"]["house_match_box_hw0017"]["secondary_ecc_phi05141"]["median_depth"] - 0.293, 5),
             ],
-            "explanation": "House TESS 0.332/0.293 averages PDCSAP over a |dphi|<0.0017 (+/-28.8 min) box around minimum. True eclipse bottom (|dphi|<0.0008) is +0.0056/+0.0051 deeper (0.3376/0.2981), while un-deblended SAP_FLUX is -0.0112/-0.0085 shallower in the same box (0.3208/0.2845) due to CROWDSAP=0.966.",
+            "explanation": "House TESS 0.332/0.293 averages PDCSAP over a |dphi|<0.0017 (+/-28.8 min) box around minimum (our box: 0.33091/0.29287, diff -0.00109/-0.00013). True eclipse bottom (|dphi|<0.0008) is +0.00369/+0.00370 deeper than house (0.33569/0.29670), while un-deblended SAP_FLUX is -0.01131/-0.00895 shallower in the same box (0.32069/0.28405) due to CROWDSAP=0.966.",
         },
         "discrepancy_3_superwasp_true_bottom_vs_house_wide_box_dilution": {
             "house_swasp_pri_sec_mag": [0.189, 0.137],
@@ -594,7 +594,7 @@ def main():
                 round(swasp_folds["TAMFLUX2_biweight_detrended_clean"]["house_match_full_dur_hw0108"]["primary_phi0000"]["median_dmag"] - 0.189, 4),
                 round(swasp_folds["TAMFLUX2_biweight_detrended_clean"]["house_match_full_dur_hw0108"]["secondary_ecc_phi05141"]["median_dmag"] - 0.137, 4),
             ],
-            "explanation": "House SuperWASP +0.189/+0.137 mag is heavily diluted by taking the median across the entire 6.1-h eclipse duration (|dphi|<0.0108, which includes shallow ingress/egress wings and a -0.0033 phase drift at P=11.7672 d). At the actual eclipse bottom (|dphi|<0.0025), SuperWASP depths are +0.3519 +/- 0.0063 mag (27.66% flux) for primary and +0.3059 +/- 0.0073 mag (24.59% flux) for secondary — +0.1629 mag (+86%) and +0.1689 mag (+123%) deeper than the house numbers, bringing SuperWASP into physical agreement with TESS!",
+            "explanation": "House SuperWASP +0.189/+0.137 mag is heavily diluted by taking the median across the entire 6.1-h eclipse duration (|dphi|<0.0108, which includes shallow ingress/egress wings and a +0.0494 mag 2008 zero-point step). At the actual eclipse bottom (|dphi|<0.0025, clean sample n=6,146), SuperWASP depths are +0.3946 +/- 0.0062 mag (30.47% flux) for primary and +0.3426 +/- 0.0031 mag (27.06% flux) for secondary — +0.2056 mag (+108.8%) and +0.2056 mag (+150.1%) deeper than the house +0.189/+0.137 mag numbers, bringing SuperWASP into physical agreement with TESS!",
         },
     }
 

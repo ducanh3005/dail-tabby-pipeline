@@ -15,9 +15,12 @@
       "J_mag": 10.172,
       "H_mag": 9.972,
       "Ks_mag": 9.934,
-      "Teff_K": 6353.3,
-      "logg_cgs": 4.1887,
-      "Fe_H_dex": -0.3907
+      "aspcap_Teff_K": 6151.9,
+      "aspcap_logg_cgs": 3.648,
+      "aspcap_catalog_Fe_H_dex": -0.3871,
+      "rv_template_header_RV_TEFF_K": 6353.3,
+      "rv_template_header_RV_LOGG_cgs": 4.1887,
+      "rv_template_header_RV_FEH_dex": -0.3907
     },
     "published_single_epoch_catalog_records": {
       "gaia_dr3_main_source": {
@@ -159,17 +162,144 @@
       "P_days": 4.458256,
       "gamma_kms": -17.9154,
       "K1_kms": 35.9616,
-      "T0_max_rv_JD": 2457510.5703
+      "T0_max_rv_JD": 2457510.5703,
+      "chi2": 0.0,
+      "degrees_of_freedom": 0,
+      "disclosure": "Fitting 4 circular parameters (P, gamma, K1, T0) to 4 APOGEE visits has DOF = 0 (chi2 = 0) and carries no independent statistical period constraint alone without external epochs or priors."
+    },
+    "cycle_count_alias_ladder_n110_to_118": {
+      "grid_search_n110_to_118": [
+        {
+          "n_cycles": 110,
+          "P_days": 4.714487,
+          "gamma_kms": -15.4767,
+          "K1_kms": 37.6779,
+          "T0_max_rv_JD": 2457510.43518,
+          "chi2": 55.93,
+          "post_trough_branch_P_days": 4.707689,
+          "post_trough_branch_chi2": 53.77
+        },
+        {
+          "n_cycles": 111,
+          "P_days": 4.672029,
+          "gamma_kms": -15.8904,
+          "K1_kms": 37.3731,
+          "T0_max_rv_JD": 2457510.45755,
+          "chi2": 41.61,
+          "post_trough_branch_P_days": 4.665244,
+          "post_trough_branch_chi2": 39.73
+        },
+        {
+          "n_cycles": 112,
+          "P_days": 4.63033,
+          "gamma_kms": -16.293,
+          "K1_kms": 37.0814,
+          "T0_max_rv_JD": 2457510.47954,
+          "chi2": 29.29,
+          "post_trough_branch_P_days": 4.623558,
+          "post_trough_branch_chi2": 27.72
+        },
+        {
+          "n_cycles": 113,
+          "P_days": 4.589368,
+          "gamma_kms": -16.6849,
+          "K1_kms": 36.8024,
+          "T0_max_rv_JD": 2457510.50114,
+          "chi2": 19.15,
+          "post_trough_branch_P_days": 4.58261,
+          "post_trough_branch_chi2": 17.94
+        },
+        {
+          "n_cycles": 114,
+          "P_days": 4.549125,
+          "gamma_kms": -17.0665,
+          "K1_kms": 36.5358,
+          "T0_max_rv_JD": 2457510.52237,
+          "chi2": 11.37,
+          "post_trough_branch_P_days": 4.542381,
+          "post_trough_branch_chi2": 10.56
+        },
+        {
+          "n_cycles": 115,
+          "P_days": 4.509582,
+          "gamma_kms": -17.438,
+          "K1_kms": 36.2811,
+          "T0_max_rv_JD": 2457510.54323,
+          "chi2": 6.16,
+          "post_trough_branch_P_days": 4.502852,
+          "post_trough_branch_chi2": 5.8
+        },
+        {
+          "n_cycles": 116,
+          "P_days": 4.470775,
+          "gamma_kms": -17.8002,
+          "K1_kms": 36.041,
+          "T0_max_rv_JD": 2457510.56368,
+          "chi2": 3.79,
+          "post_trough_branch_P_days": 4.464005,
+          "post_trough_branch_chi2": 3.86
+        },
+        {
+          "n_cycles": 117,
+          "P_days": 4.432523,
+          "gamma_kms": -18.1526,
+          "K1_kms": 35.8061,
+          "T0_max_rv_JD": 2457510.58387,
+          "chi2": 4.27,
+          "post_trough_branch_P_days": 4.425823,
+          "post_trough_branch_chi2": 4.97
+        },
+        {
+          "n_cycles": 118,
+          "P_days": 4.394973,
+          "gamma_kms": -18.4962,
+          "K1_kms": 35.5851,
+          "T0_max_rv_JD": 2457510.60367,
+          "chi2": 8.05,
+          "post_trough_branch_P_days": 4.388288,
+          "post_trough_branch_chi2": 9.37
+        }
+      ],
+      "unconstrained_best_alias": {
+        "n_cycles": 116,
+        "P_days": 4.470775,
+        "gamma_kms": -17.8002,
+        "K1_kms": 36.041,
+        "T0_max_rv_JD": 2457510.56368,
+        "chi2": 3.79
+      },
+      "gaia_consistent_alias_n114": {
+        "n_cycles": 114,
+        "P_days": 4.549125,
+        "P_within_alias_err_days": 0.000213,
+        "chi2": 11.37
+      },
+      "alias_aware_period_bound_days": [
+        4.394973,
+        4.589368
+      ],
+      "full_grid_period_range_n110_118_days": [
+        4.394973,
+        4.714487
+      ],
+      "disclosure": "Across the 520.03-day APOGEE-to-LAMOST gap, the 7 archival exposures alone admit discrete integer-cycle aliases spanning ~4.39 to 4.55 d (grid n_cyc = 110..118: unconstrained minimum chi2 = 3.86 is at n_cyc = 116, P = 4.464095 d; n_cyc = 114 gives P = 4.549125 d with chi2 = 11.37). P = 4.549125 d is the Gaia-consistent alias adopted using Gaia DR3's published SB1 period (P = 4.549792 d) as the cycle-count prior; +/-0.000213 d is the local within-alias error for fixed n_cyc = 114, while the alias-aware archival bound spans 4.464 to 4.549 d (or 4.389 to 4.716 d across n_cyc = 110..118)."
     },
     "joint_apogee_lamost_circular_solution": {
+      "adopted_cycle_count_n": 114,
+      "cycle_count_prior": "Gaia DR3 tbosb1 P = 4.549792 d selects n_cyc = 114 (unconstrained grid minimum is n_cyc = 116, P = 4.464095 d, chi2 = 3.86 vs chi2 = 11.37 at n_cyc = 114)",
       "P_days": 4.549125,
       "P_err_days": 0.000213,
+      "P_alias_aware_range_days": [
+        4.470775,
+        4.549125
+      ],
       "gamma_kms": -17.0665,
       "gamma_err_kms": 0.0862,
       "K1_kms": 36.5357,
       "K1_err_kms": 0.1303,
       "T0_max_rv_JD": 2457510.52237,
       "T0_max_rv_err_days": 0.00225,
+      "chi2": 11.37,
       "mass_function_fM_msun": 0.022988,
       "a1_sini_rsun": 3.28517
     },
@@ -222,6 +352,8 @@
       "n_lamost_mrs_exposures": 66,
       "n_distinct_mrs_nights": 9,
       "bjd_span_days": 443.87731,
+      "n_orbits_spanned_using_gaia_P335p9786": 1.3211,
+      "n_orbits_spanned_using_fitted_P334p8825": 1.3255,
       "nightly_weighted_means": [
         {
           "LMJD": 58056,
@@ -329,7 +461,7 @@
       ]
     },
     "two_epoch_bounds": {
-      "min_nightly_rv_kms": -14.892,
+      "min_nightly_rv_kms": 14.8828,
       "max_nightly_rv_kms": 44.0984,
       "min_nightly_rv_actual_kms": 14.8828,
       "delta_rv_peak_to_trough_kms": 29.2156,

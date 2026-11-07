@@ -18,21 +18,21 @@ value published in their main survey catalog(s):
    - Archival multi-phase epochs recovered from public FITS & spectroscopic archives:
      * SDSS-IV APOGEE DR17 FITS header (apStar-dr17-2M19241736+4729134.fits, R ~ 22,500):
        4 distinct visit epochs across 4 consecutive nights (JD 2457510.97991 to 2457513.97382)
-       spanning orbital phases phi = 0.812, 0.032, 0.251, 0.470 with VHELIO = +12.219, -32.418, -52.740, -14.887 km/s.
-     * LAMOST MRS (ObsID 591803219, R ~ 7,500) 520.03 days (114.30 orbital cycles) later at BJD 2458031.01476:
-       3 back-to-back exposures giving RVabsB = -48.556 +/- 0.495 km/s at phase phi = 0.114.
+       spanning orbital phases phi = 0.1006, 0.3203, 0.5399, 0.7587 with VHELIO = +12.219, -32.418, -52.740, -14.887 km/s.
+     * LAMOST MRS (ObsID 591803219, R ~ 7,500) 520.03 days (114.316 orbital cycles at P=4.549125 d) later at BJD 2458031.01260:
+       3 back-to-back exposures giving RVabsB = -48.4912 +/- 0.4963 km/s at phase phi = 0.4156.
      * Exact analysis of:
        (a) 2-epoch archival bound (what is constrained vs unconstrained from 2 epochs alone),
        (b) 4-epoch APOGEE circular & eccentric Keplerian fit (4 parameters vs 4 epochs -> exact circular fit; 6 eccentric parameters -> 2 degrees of freedom underconstrained without external period/eccentricity),
        (c) Joint 5-epoch (7-exposure) APOGEE DR17 + LAMOST MRS 520-day baseline Keplerian orbit fit with Monte Carlo (N=2,000) parameter uncertainties, compared against Gaia DR3 nss_two_body_orbit (I/357/tbosb1).
 
-2. Secondary Target (Multi-Season 9-Night / 53-Exposure LAMOST MRS + 2-Epoch LAMOST LRS):
+2. Secondary Target (Multi-Season 9-Night / 66-Exposure LAMOST MRS + 2-Epoch LAMOST LRS):
    LAMOST J045121.78+233659.3 (Gaia DR3 3413610152545407104 / 2MASS J04512177+2336592)
    - Published single-value catalog RV:
      * Gaia DR3 main catalog (gaia_dr3.gaia_source): RV = +37.9857 +/- 2.1724 km/s (1 combined value; 0 epoch RVs released)
    - Archival multi-phase epochs recovered from J/ApJS/258/26 (LAMOST MRS) & V/156/dr7lrs (LAMOST LRS):
-     * 53 individual medium-resolution exposures across 9 distinct observing nights spanning
-       BJD 2458056.25125 to 2458500.12856 (Delta_t = 443.877 d = 1.321 orbital cycles of P ~ 336 d),
+     * 66 individual medium-resolution exposures across 9 distinct observing nights spanning
+       BJD 2458056.25125 to 2458500.12856 (Delta_t = 443.877 d = 1.3211 orbital cycles using Gaia P = 335.9786 d, or 1.3255 cycles using fitted P = 334.8825 d),
        plus 2 LAMOST LRS spectra on MJD 56292 (2012-12-31) and MJD 58512 (2019-01-29).
      * Full 6-parameter eccentric Keplerian orbit fit (P, gamma, K1, e, omega, T0) + mass function f(M) and a1*sin(i) with Monte Carlo uncertainties.
 """
@@ -197,7 +197,7 @@ def main():
     }
 
     # Step 1A: Strict 2-epoch bound analysis (APOGEE Visit 1 max RV = +12.2187 km/s vs Visit 3 min RV = -52.7398 km/s,
-    # and APOGEE Visit 1 +12.2187 km/s vs LAMOST MRS Epoch -48.5562 km/s):
+    # and APOGEE Visit 1 +12.2187 km/s vs LAMOST MRS Epoch -48.4912 km/s):
     dv_ap1_ap3 = apogee_visits[0]["VHELIO_kms"] - apogee_visits[2]["VHELIO_kms"]
     k1_min_ap1_ap3 = 0.5 * abs(dv_ap1_ap3)
     dv_ap1_lam = apogee_visits[0]["VHELIO_kms"] - lamost_b_mean_rv
@@ -218,6 +218,7 @@ def main():
         bounds=([4.0, -40.0, 20.0, 2457508.0], [5.2, 10.0, 60.0, 2457513.0]),
     )
     P_ap4, gam_ap4, K1_ap4, T0_ap4 = [float(x) for x in fit_ap4.x]
+    chi2_ap4 = float(np.sum(fit_ap4.fun ** 2))
 
     # Step 1C: Fit joint 7-exposure (4 APOGEE visits + 3 LAMOST MRS exposures across 520.03 days)
     # Note: we allow an instrumental zero-point offset or use the Gaia eDR3-calibrated RVabsB directly
@@ -226,9 +227,11 @@ def main():
     rv_joint1 = np.concatenate([rv_ap, b_rvs])
     err_joint1 = np.sqrt(np.concatenate([err_ap, b_errs]) ** 2 + np.array([0.15]*4 + [0.60]*3) ** 2)
 
-    # Grid search over integer cycle count N_cycles around 520.03 / 4.55 ~ 114 cycles
+    # Grid search over integer cycle count N_cycles around 520.03 / 4.55 ~ 114 cycles (n_cyc = 110..118)
     best_chi2_circ = 1e99
     best_p_circ = None
+    best_ncyc_circ = None
+    alias_ladder = []
     for n_cyc in range(110, 119):
         p_guess = (lamost_b_mean_t - T0_ap4) / (n_cyc + 0.35)
         res_c = least_squares(
@@ -236,18 +239,42 @@ def main():
             x0=[p_guess, gam_ap4, K1_ap4, T0_ap4],
             bounds=([p_guess - 0.02, -30.0, 25.0, 2457509.0], [p_guess + 0.02, 0.0, 50.0, 2457512.5]),
         )
+        # Also evaluate the post-trough branch (n_cyc + 0.58)
+        p_guess_b = (lamost_b_mean_t - T0_ap4) / (n_cyc + 0.58)
+        res_cb = least_squares(
+            lambda p: (rv_circular(t_joint1, p[0], p[1], p[2], p[3]) - rv_joint1) / err_joint1,
+            x0=[p_guess_b, gam_ap4, K1_ap4, T0_ap4],
+            bounds=([p_guess_b - 0.02, -30.0, 25.0, 2457509.0], [p_guess_b + 0.02, 0.0, 50.0, 2457512.5]),
+        )
         chi2 = float(np.sum(res_c.fun ** 2))
+        chi2_b = float(np.sum(res_cb.fun ** 2))
+        alias_ladder.append({
+            "n_cycles": int(n_cyc),
+            "P_days": round(float(res_c.x[0]), 6),
+            "gamma_kms": round(float(res_c.x[1]), 4),
+            "K1_kms": round(float(res_c.x[2]), 4),
+            "T0_max_rv_JD": round(float(res_c.x[3]), 5),
+            "chi2": round(chi2, 2),
+            "post_trough_branch_P_days": round(float(res_cb.x[0]), 6),
+            "post_trough_branch_chi2": round(chi2_b, 2),
+        })
+        if chi2_b < best_chi2_circ:
+            best_chi2_circ = chi2_b
+            best_p_circ = res_cb.x
+            best_ncyc_circ = int(n_cyc)
         if chi2 < best_chi2_circ:
             best_chi2_circ = chi2
             best_p_circ = res_c.x
+            best_ncyc_circ = int(n_cyc)
 
-    # Also fit starting at the exact cycle matching Gaia DR3 P = 4.5497922 d:
+    # Also fit starting at the exact cycle (n_cyc = 114) matching Gaia DR3 P = 4.5497922 d:
     res_joint1_circ = least_squares(
         lambda p: (rv_circular(t_joint1, p[0], p[1], p[2], p[3]) - rv_joint1) / err_joint1,
         x0=[4.54979, gam_ap4, K1_ap4, T0_ap4],
         bounds=([4.540, -30.0, 25.0, 2457509.0], [4.560, 0.0, 50.0, 2457512.5]),
     )
     P_j1, gam_j1, K1_j1, T0_j1 = [float(x) for x in res_joint1_circ.x]
+    chi2_j1_gaia_alias = float(np.sum(res_joint1_circ.fun ** 2))
 
     # Monte Carlo error propagation (N=2,000) for Target 1 joint circular orbit
     mc_j1 = []
@@ -311,7 +338,7 @@ def main():
         {"ObsID": 721606126, "ObsDate": "2019-01-29", "MJD": 58512.0, "JDapprox": 2458512.5, "z": 0.0001179483, "e_z": 0.0000186796, "RV_kms": round(0.0001179483 * c_kms, 3), "e_RV_kms": round(0.0000186796 * c_kms, 3)},
     ]
 
-    # Fit full 6-parameter eccentric Keplerian orbit to the 53 LAMOST MRS exposures of Target 2
+    # Fit full 6-parameter eccentric Keplerian orbit to the 66 LAMOST MRS exposures of Target 2
     t_a53 = np.array([r["BJDmid"] for r in clean_a])
     rv_a53 = np.array([r["RVabsB"] for r in clean_a])
     err_a53 = np.sqrt(np.array([r["e_RVabsB"] for r in clean_a]) ** 2 + 0.35 ** 2)
@@ -373,9 +400,12 @@ def main():
                 "J_mag": 10.172,
                 "H_mag": 9.972,
                 "Ks_mag": 9.934,
-                "Teff_K": 6353.3,
-                "logg_cgs": 4.1887,
-                "Fe_H_dex": -0.3907,
+                "aspcap_Teff_K": 6151.9,
+                "aspcap_logg_cgs": 3.648,
+                "aspcap_catalog_Fe_H_dex": -0.3871,
+                "rv_template_header_RV_TEFF_K": 6353.3,
+                "rv_template_header_RV_LOGG_cgs": 4.1887,
+                "rv_template_header_RV_FEH_dex": -0.3907,
             },
             "published_single_epoch_catalog_records": {
                 "gaia_dr3_main_source": {"radial_velocity_kms": 3.608939, "radial_velocity_error_kms": 6.501187, "rv_nb_transits": 27, "epoch_rv_released": False},
@@ -398,16 +428,55 @@ def main():
                 "gamma_kms": round(gam_ap4, 4),
                 "K1_kms": round(K1_ap4, 4),
                 "T0_max_rv_JD": round(T0_ap4, 5),
+                "chi2": round(chi2_ap4, 6),
+                "degrees_of_freedom": 0,
+                "disclosure": "Fitting 4 circular parameters (P, gamma, K1, T0) to 4 APOGEE visits has DOF = 0 (chi2 = 0) and carries no independent statistical period constraint alone without external epochs or priors.",
+            },
+            "cycle_count_alias_ladder_n110_to_118": {
+                "grid_search_n110_to_118": alias_ladder,
+                "unconstrained_best_alias": {
+                    "n_cycles": best_ncyc_circ,
+                    "P_days": round(float(best_p_circ[0]), 6),
+                    "gamma_kms": round(float(best_p_circ[1]), 4),
+                    "K1_kms": round(float(best_p_circ[2]), 4),
+                    "T0_max_rv_JD": round(float(best_p_circ[3]), 5),
+                    "chi2": round(best_chi2_circ, 2),
+                },
+                "gaia_consistent_alias_n114": {
+                    "n_cycles": 114,
+                    "P_days": round(P_j1, 6),
+                    "P_within_alias_err_days": round(P_j1_err, 6),
+                    "chi2": round(chi2_j1_gaia_alias, 2),
+                },
+                "alias_aware_period_bound_days": [
+                    min(a["P_days"] for a in alias_ladder if a["chi2"] < 25.0),
+                    max(a["P_days"] for a in alias_ladder if a["chi2"] < 25.0),
+                ],
+                "full_grid_period_range_n110_118_days": [
+                    alias_ladder[-1]["P_days"],
+                    alias_ladder[0]["P_days"],
+                ],
+                "disclosure": (
+                    "Across the 520.03-day APOGEE-to-LAMOST gap, the 7 archival exposures alone admit discrete integer-cycle aliases "
+                    "spanning ~4.39 to 4.55 d (grid n_cyc = 110..118: unconstrained minimum chi2 = 3.86 is at n_cyc = 116, P = 4.464095 d; "
+                    "n_cyc = 114 gives P = 4.549125 d with chi2 = 11.37). P = 4.549125 d is the Gaia-consistent alias adopted using Gaia DR3's "
+                    "published SB1 period (P = 4.549792 d) as the cycle-count prior; +/-0.000213 d is the local within-alias error for fixed "
+                    "n_cyc = 114, while the alias-aware archival bound spans 4.464 to 4.549 d (or 4.389 to 4.716 d across n_cyc = 110..118)."
+                ),
             },
             "joint_apogee_lamost_circular_solution": {
+                "adopted_cycle_count_n": 114,
+                "cycle_count_prior": "Gaia DR3 tbosb1 P = 4.549792 d selects n_cyc = 114 (unconstrained grid minimum is n_cyc = 116, P = 4.464095 d, chi2 = 3.86 vs chi2 = 11.37 at n_cyc = 114)",
                 "P_days": round(P_j1, 6),
                 "P_err_days": round(P_j1_err, 6),
+                "P_alias_aware_range_days": [round(float(best_p_circ[0]), 6), round(P_j1, 6)],
                 "gamma_kms": round(gam_j1, 4),
                 "gamma_err_kms": round(gam_j1_err, 4),
                 "K1_kms": round(K1_j1, 4),
                 "K1_err_kms": round(K1_j1_err, 4),
                 "T0_max_rv_JD": round(T0_j1, 5),
                 "T0_max_rv_err_days": round(T0_j1_err, 5),
+                "chi2": round(chi2_j1_gaia_alias, 2),
                 "mass_function_fM_msun": round(mass_function_msun(P_j1, K1_j1, 0.0), 6),
                 "a1_sini_rsun": round(a1_sini_rsun(P_j1, K1_j1, 0.0), 5),
             },
@@ -441,11 +510,13 @@ def main():
                 "n_lamost_mrs_exposures": len(clean_a),
                 "n_distinct_mrs_nights": len(nightly_a),
                 "bjd_span_days": round(float(np.max(t_a53) - np.min(t_a53)), 5),
+                "n_orbits_spanned_using_gaia_P335p9786": round(float(np.max(t_a53) - np.min(t_a53)) / 335.97857815, 4),
+                "n_orbits_spanned_using_fitted_P334p8825": round(float(np.max(t_a53) - np.min(t_a53)) / P_a2, 4),
                 "nightly_weighted_means": nightly_a,
                 "lamost_lrs_dr7_epochs": lrs_a_epochs,
             },
             "two_epoch_bounds": {
-                "min_nightly_rv_kms": -14.892,  # wait, let's compute exact min/max from nightly_a
+                "min_nightly_rv_kms": round(min(n["RVabsB_mean_kms"] for n in nightly_a), 4),
                 "max_nightly_rv_kms": round(max(n["RVabsB_mean_kms"] for n in nightly_a), 4),
                 "min_nightly_rv_actual_kms": round(min(n["RVabsB_mean_kms"] for n in nightly_a), 4),
                 "delta_rv_peak_to_trough_kms": round(max(n["RVabsB_mean_kms"] for n in nightly_a) - min(n["RVabsB_mean_kms"] for n in nightly_a), 4),

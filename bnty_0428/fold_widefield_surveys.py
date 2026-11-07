@@ -318,7 +318,7 @@ def audit_four_mandatory_surveys():
                 "0 light curves retrieved. (1) Audited the official public HATSouth light curve archive "
                 "(https://hatsouth.org/planets/ and https://hatsouth.org/planets/lightcurves.html, saved in "
                 f"raw/hatsouth_org_planets.html and raw/hatsouth_org_lcs.html, HTTP 200): only {len(distinct_hats_planets)} "
-                "confirmed exoplanet hosts (HATS-1b through HATS-77b) have publicly released light curves on hatsouth.org; "
+                "confirmed exoplanet hosts (HATS-1b through HATS-72b) have publicly released light curves on hatsouth.org; "
                 "there is no public general-star light-curve server on hatsouth.org, MAST (0 HATSouth rows in "
                 "raw/mast_caom_cone_all.json), or NASA Exoplanet Archive. (2) VizieR mirrors timed out (WinError 10060)."
             ),
@@ -476,12 +476,38 @@ def fold_supplementary_widefield_hlsps():
         t_nb = np.asarray(d_nb["TIME"], dtype=np.float64)
         q_nb = np.asarray(d_nb["QUALITY"], dtype=np.int32)
         sap_nb = np.asarray(d_nb["SAP_FLUX"], dtype=np.float64)
-        ok_nb = (q_nb == 0) & np.isfinite(t_nb) & np.isfinite(sap_nb)
+        det_nb = np.asarray(d_nb["DET_FLUX" if "DET_FLUX" in d_nb.dtype.names else "KSPSAP_FLUX"], dtype=np.float64)
+        ok_time_nb = np.isfinite(t_nb)
+        phi_all_nb = np.where(ok_time_nb, ((t_nb - T0_HOUSE) / P_HOUSE) % 1.0, np.nan)
+        ok_nb = (q_nb == 0) & ok_time_nb & np.isfinite(sap_nb)
         phi_nb = ((t_nb[ok_nb] - T0_HOUSE) / P_HOUSE) % 1.0
         depth_nb = 1.0 - (sap_nb[ok_nb] / tukey_biweight(sap_nb[ok_nb]))
+
+        def _count_window_rows(cphi, hw):
+            dphi_w = (phi_all_nb - cphi + 0.5) % 1.0 - 0.5
+            m_all = ok_time_nb & (np.abs(dphi_w) <= hw)
+            m_q0 = m_all & (q_nb == 0)
+            return {
+                "n_rows_in_window": int(np.sum(m_all)),
+                "n_rows_q0_in_window": int(np.sum(m_q0)),
+                "n_finite_sap": int(np.sum(m_all & np.isfinite(sap_nb))),
+                "n_finite_det": int(np.sum(m_all & np.isfinite(det_nb))),
+            }
+
         results[f"MIT_QLP_S63_Blended_Neighbour_TIC_{nb_tic}"] = {
+            "n_rows_total": int(len(t_nb)),
             "n_pts_q0": int(np.sum(ok_nb)),
-            "note": "Demonstrates 21 arcsec/px wide-field blending: neighbour aperture captures target PSF wings and shows ~32%/28% apparent eclipse!",
+            "note": (
+                "QLP S63 neighbour FITS has 11,190 total rows (9,951/9,958 quality-0+finite rows), but SAP_FLUX and DET_FLUX "
+                "are NaN across all eclipse cadences (31 PRI / 20 SEC rows in |dphi|<=0.0010 core windows, 0 finite; "
+                "52 PRI / 35 SEC rows in |dphi|<=0.0017 box windows, 0 finite), so no neighbour fold is measurable from these files."
+            ),
+            "eclipse_window_row_audit": {
+                "core_hw0010_PRI": _count_window_rows(0.00000, 0.0010),
+                "core_hw0010_SEC_ecc": _count_window_rows(PHI_SEC_ECC, 0.0010),
+                "box_hw0017_PRI": _count_window_rows(0.00000, 0.0017),
+                "box_hw0017_SEC_ecc": _count_window_rows(PHI_SEC_ECC, 0.0017),
+            },
             "SAP_core_hw0010_PRI": measure_phase_window(phi_nb, depth_nb, 0.00000, 0.0010),
             "SAP_core_hw0010_SEC_ecc": measure_phase_window(phi_nb, depth_nb, PHI_SEC_ECC, 0.0010),
             "SAP_box_hw0017_PRI": measure_phase_window(phi_nb, depth_nb, 0.00000, 0.0017),

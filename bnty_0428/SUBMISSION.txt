@@ -14,13 +14,13 @@ A) ATLAS (0.5m f/2.0, Sutherland & El Sauce + Haleakala/Mauna Loa, 1.86"/px, 30s
 
 B) KELT-South (42mm f/1.9, Sutherland -32.38, 23.0"/px, 26x26 deg FOV, 150s, R_KELT):
 - Coverage: Survey Zone: YES (Dec -84..+5 deg). Public KELT DR (NEA kelttimeseries) at target: NO (3.34x2.74 deg gap between S23 & S24).
-- Retrieved: 0 LCs for target. NEA TAP kelttimeseries (28 fields; nea_kelt_box1deg/2p5deg.json [0 rows], nea_kelttimeseries_grid_140_190.json [1,220 cells]): (a) S23 (RA 146..175, Dec -33.24..-20) ends 3.34 deg north; edge star KELT_S23_lc_041816_V01_east at (164.7036, -32.4136, n=1874/2785, nea_kelt_S23_southern_edge.json). (b) S24 (RA 166.9..190, Dec -43..-20) starts 2.74 deg east; edge star KELT_S24_lc_038382_V01_east at (169.2567, -36.9984, n=2039/2522, nea_kelt_S24_western_edge.json). (c) S22<=152, S34<=144, S38>=173.
-- Sat/Blend (V=8.81): UNSATURATED (linear: V_sat~7.8, R_KELT~8.52 = 0.52x sat flux, ~3-5 mmag precision), but 100% SUB-PIXEL BLENDED: at 23.0"/px (3px=69" ap), both 9.5" nbrs (0.40/0.41px) fall inside the target pixel, adding eps_R=2.681%+/-0.055% flux dilution (-0.0090 flux / -0.012 mag dilution) + 8 faint Gaia stars within 69".
+- Retrieved: 0 LCs. NEA TAP kelttimeseries (28 fields; nea_kelt_box1deg/2p5deg.json [0 rows], grid_140_190.json [1,220 cells]): (a) S23 (RA 146..175, Dec -33.24..-20) ends 3.34 deg N; edge star KELT_S23_lc_041816_V01_east (164.7036, -32.4136, n=1874/2785). (b) S24 (RA 166.9..190, Dec -43..-20) starts 2.74 deg E; edge star KELT_S24_lc_038382_V01_east (169.2567, -36.9984, n=2039/2522). (c) S22<=152, S34<=144, S38>=173.
+- Sat/Blend (V=8.81): UNSATURATED (linear: V_sat~7.8, R_KELT~8.52 = 0.52x sat flux, ~3-5 mmag precision), but 100% SUB-PIXEL BLENDED: at 23.0"/px (3px=69" ap), both 9.5" nbrs (0.40/0.41px) fall inside target pixel, adding eps_R=2.681%+/-0.055% dilution (-0.0090 flux / -0.012 mag) + 8 faint Gaia stars within 69".
 - Folded (11.7672d/2286.3720): UNVERIFIED (PRI=UNVERIFIED, SEC=UNVERIFIED).
 
 C) HATSouth (4x18cm f/2.8, LCO, SSO, HESS, 3.7"/px, 8.2x8.2 deg FOV, 240s, Sloan r):
 - Coverage: YES (Transits 5-13 deg from zenith at all 3 stations; Dec=-33/-41 deg strips).
-- Retrieved: 0 LCs. hatsouth.org (hatsouth_org_*.html, HTTP 200) releases only 77 planet hosts (HATS-1b..77b); 0 general-star rows on MAST/NEA; VizieR timed out (WinError 10060).
+- Retrieved: 0 LCs. hatsouth.org (hatsouth_org_*.html, HTTP 200) releases only 72 planet hosts (HATS-1b..72b); 0 general-star rows on MAST/NEA; VizieR timed out (WinError 10060).
 - Sat/Blend (V=8.81): CORE SATURATED in 240s Sloan-r frames (r_sat~9.5-10.0; target r~8.65 is 0.85-1.35 mag = 2.2x-3.5x brighter than sat). At 3.7"/px (3-4px=11.1-14.8" ap), both 9.5" nbrs (2.51/2.58px) are blended in ap (eps_r~2.60%).
 - Folded (11.7672d/2286.3720): UNVERIFIED (PRI=UNVERIFIED, SEC=UNVERIFIED).
 
@@ -31,7 +31,7 @@ D) Evryscope (Evryscope-South CTIO -30.17, 22x61mm f/1.4, 13.2"/px, 8,150 sq.deg
 - Folded (11.7672d/2286.3720): UNVERIFIED (PRI=UNVERIFIED, SEC=UNVERIFIED).
 
 2. SUPPLEMENTARY PUBLIC WIDE-FIELD FOLDS (raw/hlsp_*.fits, P=11.7672d, T0=2286.3720)
-- MIT QLP (S9..100, n=38,075): SAP Core PRI=0.33883+/-0.00033(92), SEC_ecc(0.51411)=0.29902+/-0.00032(70), SEC(0.5)=+0.00006+/-0.00005|Box PRI=0.33397+/-0.00058(155), SEC_ecc=0.29523+/-0.00051(118)|Ctrl: +0.00002/-0.00001. QLP S63 on nbrs TIC 942348495/942348496 (n=10,829): Core PRI=0.33851, SEC=0.29839 (21"/px blend).
+- MIT QLP (S9..100, n=38,075; S99/S100: 0 in-eclipse pts): SAP Core PRI=0.33883+/-0.00066(n=49), SEC_ecc(0.51411)=0.29902+/-0.00070(n=45), SEC(0.5)=+0.00001+/-0.00019(n=61)|Box PRI=0.33397+/-0.00096(n=83), SEC_ecc=0.29523+/-0.00081(n=75)|Ctrl: +0.00012/-0.00015. QLP S63 nbrs TIC 942348495/942348496 (11,190 rows; 9,951/9,958 Q=0+finite): SAP/DET are NaN in both eclipses (31/20 core rows, 0 finite; 52/35 box rows, 0 finite -> None).
 - T16 HATSouth/fitsh (S9, n=1,106): IFL1 Box PRI=0.31657+/-0.00674, SEC_ecc=0.28093+/-0.00158|IRM1/EPD1/TFA1 mag Box PRI=+0.4134/+0.4091/+0.3911, SEC_ecc=+0.3581/+0.3578/+0.3489 mag.
 - GSFC-ELEANOR-LITE (S9, n=1,061): CORR Box PRI=0.31409+/-0.00674, SEC_ecc=0.28283+/-0.00161.
 - TGLC Gaia-ePSF (S9, n=1,084): T=8.262<9 disables psf_flux (NaN) & over-subtracts sky -> Box PRI=0.43488+/-0.00918, SEC_ecc=0.39105+/-0.00208.

@@ -18,7 +18,7 @@ A) TESS SPOC (S9+S36):
   * Controls (PDCSAP |dphi|<.0017): phi=0.25->-.00003+/-.00005 (n=115); phi=0.75->-.00002+/-.00005 (n=116).
 - SAP Biweight (CROWDSAP=0.966): Core(|dphi|<.0008) PRI=.32506+/-.00027, SEC(0.51411)=.28751+/-.00027|Box(|dphi|<.0017) PRI=.32069+/-.00070, SEC=.28405+/-.00056|Controls: phi=0.25->-.00008, phi=0.75->-.00019.
 B) SuperWASP DR1 (2006-08):
-- TAMFLUX2 Biweight (clean, n=6,170): Core(|dphi|<.0025, n=30/48): PRI(0.0)=+.3946+/-.0062 mag (30.47% flux)|SEC(0.51411)=+.3426+/-.0031 mag (27.06% flux)|Circ SEC(0.5, n=2)=-.0153+/-.0028 mag. Mid(|dphi|<.0050, n=79/88): PRI=+.3555+/-.0067, SEC=+.3065+/-.0070. Full-dur(|dphi|<.0108, n=179/192): PRI=+.1872+/-.0150, SEC=+.1566+/-.0110 mag.
+- TAMFLUX2 Biweight (clean, n=6,146): Core(|dphi|<.0025, n=30/48): PRI(0.0)=+.3946+/-.0062 mag (30.47% flux)|SEC(0.51411)=+.3426+/-.0031 mag (27.06% flux)|Circ SEC(0.5, n=2)=-.0153+/-.0028 mag. Mid(|dphi|<.0050, n=79/88): PRI=+.3555+/-.0067, SEC=+.3065+/-.0070. Full-dur(|dphi|<.0108, n=179/192): PRI=+.1872+/-.0150, SEC=+.1566+/-.0110 mag.
   * Controls (|dphi|<.0108): phi=0.25->-.0006+/-.0007 mag (n=121); phi=0.75->+.0030+/-.0011 mag (n=127).
 - TAMFLUX2 Raw Global Med (6,789 pts): Core(|dphi|<.0025) PRI=+.3521+/-.0067, SEC=+.2991+/-.0048|Full-dur(|dphi|<.0108) PRI=+.1932+/-.0134, SEC=+.1405+/-.0100 mag.
 - FLUX2 Aperture Biweight: Core PRI=+.4080+/-.0066 (31.33% flux), SEC=+.3557+/-.0042 mag (27.93% flux).

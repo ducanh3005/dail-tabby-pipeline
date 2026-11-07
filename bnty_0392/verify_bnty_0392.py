@@ -105,10 +105,72 @@ def main():
             "teff_k": t0["Teff"],
             "radius_rsun": t0["rad"],
             "mass_msun": t0["mass"],
+            "galactic_coords_deg": {
+                "l_deg": round(t0["gallong"], 4),
+                "b_deg": round(t0["gallat"], 4),
+                "region": "Cygnus Galactic plane (d = 972.6 +/- 33.9 pc, near outer Cygnus X / Cyg OB2 complex)"
+            },
             "ir_magnitudes": {
                 "J": t0["Jmag"], "H": t0["Hmag"], "K": t0["Kmag"],
                 "W1": t0["w1mag"], "W2": t0["w2mag"], "W3": t0["w3mag"], "W4": t0["w4mag"],
+                "J_minus_H": round(t0["Jmag"] - t0["Hmag"], 3),
+                "H_minus_K": round(t0["Hmag"] - t0["Kmag"], 3),
+                "W1_minus_W2": round(t0["w1mag"] - t0["w2mag"], 3),
+                "W2_minus_W3": round(t0["w2mag"] - t0["w3mag"], 3),
                 "W1_minus_W4_excess_mag": round(t0["w1mag"] - t0["w4mag"], 3)
+            }
+        },
+        "yso_classifier_and_dipper_evaluation": {
+            "alerce_yso_probabilities_disclosed": {
+                f"{p['classifier_name']}__{p['classifier_version']}": {
+                    "probability": round(float(p["probability"]), 4),
+                    "ranking": int(p["ranking"])
+                }
+                for p in alerce_raw.get("probabilities", [])
+                if p.get("class_name") == "YSO"
+            },
+            "alerce_conflicting_rank1_classes": {
+                f"{p['classifier_name']}__{p['classifier_version']}": {
+                    "class_name": p["class_name"],
+                    "probability": round(float(p["probability"]), 4)
+                }
+                for p in alerce_raw.get("probabilities", [])
+                if p.get("ranking") == 1 and p.get("class_name") != "YSO"
+            },
+            "class_ii_yso_colors_and_location": {
+                "W1_minus_W4": round(t0["w1mag"] - t0["w4mag"], 3),
+                "W1_minus_W2": round(t0["w1mag"] - t0["w2mag"], 3),
+                "W2_minus_W3": round(t0["w2mag"] - t0["w3mag"], 3),
+                "J_minus_H": round(t0["Jmag"] - t0["Hmag"], 3),
+                "H_minus_K": round(t0["Hmag"] - t0["Kmag"], 3),
+                "galactic_l_b_deg": [round(t0["gallong"], 4), round(t0["gallat"], 4)],
+                "distance_pc": round(1000.0 / g0["parallax"], 1)
+            },
+            "why_unexplained_rather_than_standard_dipper": {
+                "1_bimodal_amplitude_and_symmetric_bursts": (
+                    "Classical Class II inner-disk dippers (Cody et al. 2014; Ansdell et al. 2016) exhibit 0.1-0.8 mag extinction dips "
+                    "below a flat photospheric ceiling (asymmetry M > +0.5). ZTF18aaxioyg spans 1.7751 mag (zg) and 1.7779 mag (zr) peak-to-peak, "
+                    "combining +1.4571 mag (73.87% flux drop) deep fades below strict median with -0.5866 mag (+71.6% flux surge) brightening bursts "
+                    "above the all-clean median (16.6764 vs 17.2630 in zg; 15.4186 vs 15.9930 in zr; Gskew = +0.385/+0.399)."
+                ),
+                "2_super_rayleigh_dimming_and_reddening_when_brighter_inversion": (
+                    "Across 49 same-night zg+zr pairs (baseline median zg-zr = 1.0851 mag), the top 3 fades show selective dimming slopes "
+                    "d(zg)/d(zr) = 1.464, 1.435, and 1.475 — steeper than both standard R_V=3.1 ISM dust (A_g/A_r = 1.31) and evolved large-grain "
+                    "Class II inner-disk dippers (d(g)/d(r) ~ 1.05-1.25). Conversely, during the MJD 59883.17 outburst (zg=16.6968, zr=15.5644), "
+                    "the star reddens while brightening (d_zg = -0.2976 vs d_zr = -0.3449 mag, zg-zr = 1.1324 mag, +0.0473 mag redder than median), "
+                    "contradicting both magnetospheric accretion hotspots (bluer when brighter) and simple dust-screen clearing."
+                ),
+                "3_no_keplerian_corotation_period_and_multi_scale_mhps": (
+                    "Unlike inner-disk warp dippers locked at P ~ 2-10 d, ALeRCE finds only diurnal cadence aliases (Period_band_1 = 0.0556 d, "
+                    "Period_band_2 = 0.9959 d, Psi_eta = 1.90/1.64), while Mexican-Hat Power Spectrum ratios (MHPS_ratio = 3.79 in zg, 4.10 in zr; "
+                    "MHPS_low_365_2 = 30.77 vs MHPS_high_30_2 = 9.29) indicate dominant 100-365 d outer-disk modulation superposed with "
+                    "GP_DRW_tau = 1.55-2.67 d stochastic collapses."
+                ),
+                "4_uncataloged_across_surveys": (
+                    "Despite 924 ZTF epochs, Gaia DR3 lists phot_variable_flag = NOT_AVAILABLE (while 5 stars within 120 arcsec are flagged VARIABLE), "
+                    "with 0 entries in SIMBAD, VSX, or published Cygnus YSO dipper catalogs, and conflicting ALeRCE rank-1 classes (YSO 0.74-0.99 in 11 "
+                    "LC classifiers vs CV/Nova in 2 beta LC classifiers, EA/CEP in periodic classifiers, and AGN/VS in stamp classifiers)."
+                )
             }
         },
         "light_curve_evidence": {
